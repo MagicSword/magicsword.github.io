@@ -1,3 +1,7 @@
+README.md
+
+---
+
 由於 person.github.io的頁面只能用 master的分支來放網頁，不能放 docs，gh-pages
 
 所以
