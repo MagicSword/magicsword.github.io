@@ -1,87 +1,168 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on Notre-Dame de Paris</title>
-    <link>https://magicsword.github.com/post/</link>
-    <description>Recent content in Articles on Notre-Dame de Paris</description>
+    <title>Posts on After Dark</title>
+    <link>https://magicsword.github.io/post/</link>
+    <description>Recent content in Posts on After Dark</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 23 Sep 2017 22:40:35 +0800</lastBuildDate>
     
-	<atom:link href="https://magicsword.github.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://magicsword.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>This Is New Blog Post</title>
+      <link>https://magicsword.github.io/post/this-is-new-blog-post/</link>
+      <pubDate>Sat, 23 Sep 2017 22:40:35 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/post/this-is-new-blog-post/</guid>
+      <description>鳳山房價較高雄市中心便宜，吸引首購自住客前往置產，成為今年高雄上半年不動產交易 量最多的行政區，而交易主力在總價500～700萬外加車位的20年以上透天。 鳳山生活機能完善，房價較高雄市中心便宜，吸引首購族置產
+鳳山生活圈鄰近鳳山捷運站及鳳山火車站，具備雙鐵優勢，加上距國道1號約10分鐘車程 ，交通便利，且商圈林立，吸引家樂福、迪卡儂等大型賣場進駐，區域內還有大東文化藝 術中心、大東濕地公園等公共建設，近期鳳山體育館也規劃將改建成運動中心，生活機能 十分豐富。
+print(&amp;quot;hello,world!&amp;quot;)  print()
+1 var a string 2 var b string 3 var c string 4 var d string  &amp;lt;section id=&amp;quot;main&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;quot;title&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;quot;summary&amp;quot;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;  {{ % highlight javascript %}} var b = function () { console.log(123); }; {{ % /highlight %}}</description>
+    </item>
+    
+    <item>
       <title>My First Post</title>
-      <link>https://magicsword.github.com/post/my-first-post/</link>
+      <link>https://magicsword.github.io/post/my-first-post/</link>
       <pubDate>Thu, 21 Sep 2017 16:55:03 +0800</pubDate>
       
-      <guid>https://magicsword.github.com/post/my-first-post/</guid>
-      <description>中文測試
+      <guid>https://magicsword.github.io/post/my-first-post/</guid>
+      <description>toc = true
+ I think , therefore I am. Cogito ergo sum by René Descartes
+ H1 中文測試
+H2 中文測試中文測試 中文測試中文測試中文測試中文測試
+H3 中文測試中文測試中文測試中文測試中文測試中文測試
+H4 中文測試中文測試中文測試中文測試中文測試中文測試中文測試中文測試中文測試
+H5 中文測試中文測試中文測試中文測試
+&amp;lt;section id=&amp;quot;main&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;quot;title&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;quot;summary&amp;quot;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;  中文測試
 作者 wowqweasd (竹葉青加冰，正點) 看板 Gossiping 標題 [新聞] 柯P缺席警察局長交接 北市府幕僚：無聲 時間 Thu Sep 21 15:35:03 2017 ───────────────────────────────────────
 柯P缺席警察局長交接 北市府幕僚：無聲抗議
 自由時報
-http://news.ltn.com.tw/news/politics/breakingnews/2200209
-http://img.ltn.com.tw/Upload/liveNews/BigPic/600_php014Tpo.jpg
-台北市副市長鄧家基今天（21日）主持警察局長交接典禮，左起副局長林順家、警政署長 陳家欽、副市長鄧家基、新任警察局長陳嘉昌。（記者方賓照攝）
-2017-09-21 13:56 〔記者郭安家／台北報導〕台北市警察局長邱豐光被拔為警政署副署長，台北市長柯文哲 原定今上午要出席新任台北市警察局長陳嘉昌交接儀式，但柯昨晚決定缺席、今早由副市 長鄧家基代為出席。北市府發言人劉奕霆表示，柯文哲缺席「沒有理由」，其餘不再回應 。但有市府幕僚私下解讀，柯文哲在做無聲抗議。
-柯文哲昨於議會備詢，國民黨台北市議員紛紛建議，柯應效法前台北縣長周錫瑋當年拒絕</description>
+http://news.ltn.com.tw/news/politics/breakingnews/2200209</description>
     </item>
     
     <item>
       <title>Chapter VI: Esmeralda</title>
-      <link>https://magicsword.github.com/post/chapter-6/</link>
+      <link>https://magicsword.github.io/post/chapter-6/</link>
       <pubDate>Fri, 14 Apr 2017 11:25:05 -0400</pubDate>
       
-      <guid>https://magicsword.github.com/post/chapter-6/</guid>
+      <guid>https://magicsword.github.io/post/chapter-6/</guid>
       <description>We are delighted to be able to inform the reader, that during the whole of this scene, Gringoire and his piece had stood firm. His actors, spurred on by him, had not ceased to spout his comedy, and he had not ceased to listen to it. He had made up his mind about the tumult, and was determined to proceed to the end, not giving up the hope of a return of attention on the part of the public.</description>
     </item>
     
     <item>
       <title>Chapter V: Quasimodo</title>
-      <link>https://magicsword.github.com/post/chapter-5/</link>
+      <link>https://magicsword.github.io/post/chapter-5/</link>
       <pubDate>Thu, 13 Apr 2017 11:15:58 -0400</pubDate>
       
-      <guid>https://magicsword.github.com/post/chapter-5/</guid>
+      <guid>https://magicsword.github.io/post/chapter-5/</guid>
       <description>In the twinkling of an eye, all was ready to execute Coppenole’s idea. Bourgeois, scholars and law clerks all set to work. The little chapel situated opposite the marble table was selected for the scene of the grinning match. A pane broken in the pretty rose window above the door, left free a circle of stone through which it was agreed that the competitors should thrust their heads. In order to reach it, it was only necessary to mount upon a couple of hogsheads, which had been produced from I know not where, and perched one upon the other, after a fashion.</description>
     </item>
     
     <item>
       <title>Chapter IV: Master Jacques Coppenole</title>
-      <link>https://magicsword.github.com/post/chapter-4/</link>
+      <link>https://magicsword.github.io/post/chapter-4/</link>
       <pubDate>Wed, 12 Apr 2017 11:14:48 -0400</pubDate>
       
-      <guid>https://magicsword.github.com/post/chapter-4/</guid>
+      <guid>https://magicsword.github.io/post/chapter-4/</guid>
       <description>While the pensioner of Ghent and his eminence were exchanging very low bows and a few words in voices still lower, a man of lofty stature, with a large face and broad shoulders, presented himself, in order to enter abreast with Guillaume Rym; one would have pronounced him a bull-dog by the side of a fox. His felt doublet and leather jerkin made a spot on the velvet and silk which surrounded him.</description>
     </item>
     
     <item>
       <title>Chapter III: Monsieur the Cardinal</title>
-      <link>https://magicsword.github.com/post/chapter-3/</link>
+      <link>https://magicsword.github.io/post/chapter-3/</link>
       <pubDate>Tue, 11 Apr 2017 11:13:32 -0400</pubDate>
       
-      <guid>https://magicsword.github.com/post/chapter-3/</guid>
+      <guid>https://magicsword.github.io/post/chapter-3/</guid>
       <description>Poor Gringoire! the din of all the great double petards of the Saint-Jean, the discharge of twenty arquebuses on supports, the detonation of that famous serpentine of the Tower of Billy, which, during the siege of Paris, on Sunday, the twenty-sixth of September, 1465, killed seven Burgundians at one blow, the explosion of all the powder stored at the gate of the Temple, would have rent his ears less rudely at that solemn and dramatic moment, than these few words, which fell from the lips of the usher, “His eminence, Monseigneur the Cardinal de Bourbon.</description>
     </item>
     
     <item>
       <title>Chapter II: Pierre Gringoire</title>
-      <link>https://magicsword.github.com/post/chapter-2/</link>
+      <link>https://magicsword.github.io/post/chapter-2/</link>
       <pubDate>Mon, 10 Apr 2017 11:00:59 -0400</pubDate>
       
-      <guid>https://magicsword.github.com/post/chapter-2/</guid>
+      <guid>https://magicsword.github.io/post/chapter-2/</guid>
       <description>Nevertheless, as be harangued them, the satisfaction and admiration unanimously excited by his costume were dissipated by his words; and when he reached that untoward conclusion: “As soon as his illustrious eminence, the cardinal, arrives, we will begin,” his voice was drowned in a thunder of hooting.
 “Begin instantly! The mystery! the mystery immediately!” shrieked the people. And above all the voices, that of Johannes de Molendino was audible, piercing the uproar like the fife’s derisive serenade: “Commence instantly!</description>
     </item>
     
     <item>
       <title>Chapter I: The Grand Hall</title>
-      <link>https://magicsword.github.com/post/chapter-1/</link>
+      <link>https://magicsword.github.io/post/chapter-1/</link>
       <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
       
-      <guid>https://magicsword.github.com/post/chapter-1/</guid>
+      <guid>https://magicsword.github.io/post/chapter-1/</guid>
       <description>Three hundred and forty-eight years, six months, and nineteen days ago to-day, the Parisians awoke to the sound of all the bells in the triple circuit of the city, the university, and the town ringing a full peal.
 The sixth of January, 1482, is not, however, a day of which history has preserved the memory. There was nothing notable in the event which thus set the bells and the bourgeois of Paris in a ferment from early morning.</description>
+    </item>
+    
+    <item>
+      <title>What is Hugo?</title>
+      <link>https://magicsword.github.io/post/what-is-hugo/</link>
+      <pubDate>Sun, 24 Apr 2016 02:50:28 +0200</pubDate>
+      
+      <guid>https://magicsword.github.io/post/what-is-hugo/</guid>
+      <description>Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike other systems which dynamically build a page every time a visitor requests one, Hugo does the building when you create your content. Since websites are viewed far more often than they are edited, Hugo is optimized for website viewing while providing a great writing experience.
+Sites built with Hugo are extremely fast and very secure.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://magicsword.github.io/post/introduction/</link>
+      <pubDate>Thu, 21 Apr 2016 02:50:28 +0200</pubDate>
+      
+      <guid>https://magicsword.github.io/post/introduction/</guid>
+      <description>Hugo is written in Go with support for multiple platforms.
+The latest release can be found at Hugo Releases. We currently provide pre-built binaries for &amp;nbsp;Windows, &amp;nbsp;Linux, &amp;nbsp;FreeBSD and &amp;nbsp;OS&amp;nbsp;X (Darwin) for x64, i386 and ARM architectures.
+Hugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan&amp;nbsp;9 and Solaris. See http://golang.org/doc/install/source for the full set of supported combinations of target operating systems and compilation architectures.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://magicsword.github.io/post/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://magicsword.github.io/post/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>https://magicsword.github.io/post/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://magicsword.github.io/post/goisforlovers/</guid>
+      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://magicsword.github.io/post/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://magicsword.github.io/post/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at installing hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>https://magicsword.github.io/post/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://magicsword.github.io/post/migrate-from-jekyll/</guid>
+      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
     </item>
     
   </channel>

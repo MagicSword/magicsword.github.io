@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on After Dark</title>
+    <link>https://magicsword.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on After Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 23 Sep 2017 22:40:35 +0800</lastBuildDate>
+    
+	<atom:link href="https://magicsword.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>This Is New Blog Post</title>
+      <link>https://magicsword.github.io/post/this-is-new-blog-post/</link>
+      <pubDate>Sat, 23 Sep 2017 22:40:35 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/post/this-is-new-blog-post/</guid>
+      <description>鳳山房價較高雄市中心便宜，吸引首購自住客前往置產，成為今年高雄上半年不動產交易 量最多的行政區，而交易主力在總價500～700萬外加車位的20年以上透天。 鳳山生活機能完善，房價較高雄市中心便宜，吸引首購族置產
+鳳山生活圈鄰近鳳山捷運站及鳳山火車站，具備雙鐵優勢，加上距國道1號約10分鐘車程 ，交通便利，且商圈林立，吸引家樂福、迪卡儂等大型賣場進駐，區域內還有大東文化藝 術中心、大東濕地公園等公共建設，近期鳳山體育館也規劃將改建成運動中心，生活機能 十分豐富。
+print(&amp;quot;hello,world!&amp;quot;)  print()
+1 var a string 2 var b string 3 var c string 4 var d string  &amp;lt;section id=&amp;quot;main&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;quot;title&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;quot;summary&amp;quot;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;  {{ % highlight javascript %}} var b = function () { console.log(123); }; {{ % /highlight %}}</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://magicsword.github.io/post/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://magicsword.github.io/post/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at installing hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+  </channel>
+</rss>
