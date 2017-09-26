@@ -20,4 +20,5 @@ $ git push -u origin master
 
 
 Ref:
-1.[手把手教你通过Hugo搭建个人博客](http://www.jianshu.com/p/475110a1c811)
+1. [手把手教你通过Hugo搭建个人博客](http://www.jianshu.com/p/475110a1c811)
+2. [Hugo中文文件](http://www.gohugo.org/doc/tutorials/github-pages-blog/)
