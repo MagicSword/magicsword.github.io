@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on After Dark</title>
+    <link>https://magicsword.github.io/articles/</link>
+    <description>Recent content in Articles on After Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 24 Sep 2017 04:04:34 +0800</lastBuildDate>
+    
+	<atom:link href="https://magicsword.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Article Test</title>
+      <link>https://magicsword.github.io/articles/article-test/</link>
+      <pubDate>Sun, 24 Sep 2017 04:04:34 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/articles/article-test/</guid>
+      <description>Article tesete</description>
+    </item>
+    
+  </channel>
+</rss>

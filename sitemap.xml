@@ -8,6 +8,26 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/post/golang-intro/</loc>
+    <lastmod>2017-09-24T04:21:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/articles/article-test/</loc>
+    <lastmod>2017-09-24T04:04:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/post/markdown-syntax-intro/</loc>
+    <lastmod>2017-09-24T03:53:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/post/install-hugo/</loc>
+    <lastmod>2017-09-24T03:06:33+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/post/this-is-new-blog-post/</loc>
     <lastmod>2017-09-23T22:40:35+08:00</lastmod>
   </url>
@@ -15,36 +35,6 @@
   <url>
     <loc>https://magicsword.github.io/post/my-first-post/</loc>
     <lastmod>2017-09-21T16:55:03+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://magicsword.github.io/post/chapter-6/</loc>
-    <lastmod>2017-04-14T11:25:05-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://magicsword.github.io/post/chapter-5/</loc>
-    <lastmod>2017-04-13T11:15:58-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://magicsword.github.io/post/chapter-4/</loc>
-    <lastmod>2017-04-12T11:14:48-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://magicsword.github.io/post/chapter-3/</loc>
-    <lastmod>2017-04-11T11:13:32-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://magicsword.github.io/post/chapter-2/</loc>
-    <lastmod>2017-04-10T11:00:59-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://magicsword.github.io/post/chapter-1/</loc>
-    <lastmod>2017-04-09T10:58:08-04:00</lastmod>
   </url>
   
   <url>
@@ -84,8 +74,14 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/articles/</loc>
+    <lastmod>2017-09-24T04:04:34+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/tags/blog/</loc>
-    <lastmod>2017-09-23T22:40:35+08:00</lastmod>
+    <lastmod>2017-09-24T03:06:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -125,14 +121,26 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/tags/hello/</loc>
+    <lastmod>2017-09-24T04:21:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/tags/hugo/</loc>
-    <lastmod>2017-09-23T22:40:35+08:00</lastmod>
+    <lastmod>2017-09-24T03:06:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/tags/markdown/</loc>
+    <lastmod>2017-09-24T03:53:39+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://magicsword.github.io/post/</loc>
-    <lastmod>2017-09-23T22:40:35+08:00</lastmod>
+    <lastmod>2017-09-24T04:21:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -143,14 +151,20 @@
   </url>
   
   <url>
-    <loc>https://magicsword.github.io/tags/scene/</loc>
-    <lastmod>2017-04-12T11:14:48-04:00</lastmod>
+    <loc>https://magicsword.github.io/tags/syntax/</loc>
+    <lastmod>2017-09-24T03:53:39+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://magicsword.github.io/tags/</loc>
-    <lastmod>2017-09-23T22:40:35+08:00</lastmod>
+    <lastmod>2017-09-24T03:06:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/categories/technology/</loc>
+    <lastmod>2017-09-24T04:21:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -163,6 +177,12 @@
   <url>
     <loc>https://magicsword.github.io/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/tags/world/</loc>
+    <lastmod>2017-09-24T04:21:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   

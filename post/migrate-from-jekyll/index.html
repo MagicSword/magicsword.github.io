@@ -8,14 +8,14 @@
     <meta name="description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &lt;root&gt;/ ▾ images/ logo.png  should become
 ▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.">
-    <meta name="keywords" content="development, golang, ">
+    <meta name="keywords" content="development, golang, technology, ">
     
     
     
     
     
 
-  <meta name="author" content="">
+  <meta name="author" content="Nero">
 
 
     <meta property="og:title" content="Migrate to Hugo from Jekyll" />
@@ -148,6 +148,8 @@ article [itemprop="description"] {
       <a itemprop="url" class="" href="/"><span itemprop="name">Home</span></a>
     
       <a itemprop="url" class="active" href="/post/"><span itemprop="name">Posts</span></a>
+    
+      <a itemprop="url" class="" href="/articles/"><span itemprop="name">Articles</span></a>
     
       <a itemprop="url" class="" href="/about/"><span itemprop="name">About</span></a>
     
@@ -369,7 +371,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
   Published
   
     
-      by <span itemprop="author"></span>
+      by <span itemprop="author">Nero</span>
     
   
   <time datetime="2014-03-10T00:00:00&#43;00:00">
