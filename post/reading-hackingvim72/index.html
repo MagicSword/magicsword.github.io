@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta name="generator" content="Hugo 0.27.1" />
+    <meta name="generator" content="Hugo 0.37" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reading Hackingvim72 | After Dark</title>
@@ -26,6 +26,7 @@
 
 
 <meta property="article:published_time" content="2018-03-24T01:00:23&#43;08:00"/>
+
 <meta property="article:modified_time" content="2018-03-24T01:00:23&#43;08:00"/>
 
 
@@ -162,8 +163,9 @@ article [itemprop="description"] {
 <meta itemprop="description" content="HackingVim72 reading.">
 
 
+<meta itemprop="datePublished" content="2018-03-24T01:00:23&#43;08:00" />
 <meta itemprop="dateModified" content="2018-03-24T01:00:23&#43;08:00" />
-<meta itemprop="wordCount" content="963">
+<meta itemprop="wordCount" content="1353">
 
   <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
 
@@ -178,7 +180,7 @@ article [itemprop="description"] {
   <circle cx="16" cy="16" r="14" />
   <path d="M16 8 L16 16 20 20" />
 </svg>
-<span>5 minute read</span>
+<span>7 minute read</span>
 <svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
   <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
 </svg>
@@ -248,7 +250,48 @@ article [itemprop="description"] {
 </ul></li>
 <li><a href="#3-7-小結">3.7 小結</a></li>
 </ul></li>
-<li><a href="#ch4-production-boosters-增強生產力">Ch4: PRODUCTION BOOSTERS       #增強生產力</a></li>
+<li><a href="#ch4-production-boosters-增強生產力">Ch4: PRODUCTION BOOSTERS       #增強生產力</a>
+<ul>
+<li><a href="#4-1-模版">4.1 模版</a></li>
+<li><a href="#4-1-1-模版文件">4.1.1 模版文件</a></li>
+<li><a href="#4-1-2-把縮寫作為模版">4.1.2 把縮寫作為模版</a></li>
+<li><a href="#4-1-3-snipmate">4.1.3 snipMate</a></li>
+<li><a href="#4-1-4-其他-snippets-pluging">4.1.4 其他 snippets Pluging</a></li>
+<li><a href="#4-2-tag-list">4.2 Tag List</a></li>
+<li><a href="#4-3-autocomplete-自動補全">4.3 AutoComplete 自動補全</a>
+<ul>
+<li><a href="#4-3-2-依字典的自動補全">4.3.2 依字典的自動補全</a></li>
+<li><a href="#4-3-3-omnicompletion">4.3.3 Omnicompletion</a></li>
+<li><a href="#4-3-4-多合一-autocomplete">4.3.4  多合一 autocomplete</a></li>
+</ul></li>
+<li><a href="#4-4-錄製巨集-macros">4.4 錄製巨集 Macros</a></li>
+<li><a href="#4-5-會話-session">4.5 會話 Session</a>
+<ul>
+<li><a href="#4-5-1-簡單會話使用">4.5.1 簡單會話使用</a></li>
+<li><a href="#4-5-2-個人化-session-使用">4.5.2 個人化 Session 使用</a></li>
+<li><a href="#4-5-3-sessions-as-a-project-manager">4.5.3 Sessions as a project manager</a></li>
+</ul></li>
+<li><a href="#4-6-暫存器-和-undo-分支">4.6 暫存器 和 Undo 分支</a>
+<ul>
+<li><a href="#4-6-1-暫存器">4.6.1 暫存器</a></li>
+<li><a href="#4-6-2-unod-list">4.6.2 Unod list</a></li>
+</ul></li>
+<li><a href="#4-7-folding-折疉">4.7 Folding 折疉</a>
+<ul>
+<li><a href="#4-7-1-simple-text-file-outlining">4.7.1 Simple text file outlining</a></li>
+<li><a href="#4-7-2-using-vimdiff-to-track-the-changes">4.7.2 Using vimdiff to track the changes</a></li>
+<li><a href="#4-7-3-navigation-in-vimdiff">4.7.3 Navigation in vimdiff</a></li>
+<li><a href="#4-7-4-using-diff-to-track-changes">4.7.4 Using diff to track changes</a></li>
+</ul></li>
+<li><a href="#4-8-打開任意位置的文件">4.8 打開任意位置的文件</a>
+<ul>
+<li><a href="#4-8-1-faster-remote-file-editing">4.8.1 Faster remote file editing</a></li>
+</ul></li>
+<li><a href="#4-9-小結">4.9 小結</a></li>
+</ul></li>
+<li><a href="#ch5-advanced-formatting-進階格式化">Ch5: ADVANCED FORMATTING 進階格式化</a></li>
+<li><a href="#ch6-basic-vim-scripting-基本-vim-scripting">Ch6: BASIC VIM SCRIPTING 基本 Vim Scripting</a></li>
+<li><a href="#ch7-extended-vim-scripting-進階-vim-scripting">Ch7: EXTENDED VIM SCRIPTING 進階 Vim Scripting</a></li>
 <li><a href="#區塊元素">區塊元素</a>
 <ul>
 <li><a href="#標題">標題</a></li>
@@ -859,6 +902,217 @@ end of a function)</li>
 
 <p>這一章會簡介一些能增加效率的工具。</p>
 
+<h2 id="4-1-模版">4.1 模版</h2>
+
+<p>建立模版 Template ，減少重複性的工作。</p>
+
+<h2 id="4-1-1-模版文件">4.1.1 模版文件</h2>
+
+<p>應該可以分為兩種行為</p>
+
+<ul>
+<li>新建立文件時，讀取 已有的模版  或是骨架 Skeleton</li>
+<li>在已存在的文件中，要加入小部分的文件結構 Snippets, 檔頭(C語言的 <code>#include</code>)，檔尾</li>
+</ul>
+
+<p>方法：</p>
+
+<ul>
+<li>建立模版檔：在 <code>$VIMHOME</code>/templates/下加入新的  <code>file-type.tpl</code> ，像是 <code>html.tpl</code></li>
+<li>設定程式設定： 加入 <code>autocmd</code> 在開啟新檔時，自動讀入模版。</li>
+</ul>
+
+<h2 id="4-1-2-把縮寫作為模版">4.1.2 把縮寫作為模版</h2>
+
+<p>前面有提為的功能 縮寫可以用來快速輸入一些結構，像是迴圈、或是snippets</p>
+
+<h2 id="4-1-3-snipmate">4.1.3 snipMate</h2>
+
+<p>更完整的功能，有人編寫了完整的 plugins。</p>
+
+<p><a href="https://vimawesome.com/plugin/snipmate">https://vimawesome.com/plugin/snipmate</a>
+<a href="https://www.vim.org/scripts/script.php?script_id=2540">https://www.vim.org/scripts/script.php?script_id=2540</a>
+<a href="https://github.com/garbas/vim-snipmate">https://github.com/garbas/vim-snipmate</a></p>
+
+<h2 id="4-1-4-其他-snippets-pluging">4.1.4 其他 snippets Pluging</h2>
+
+<p>比較
+<a href="http://vim-wiki.mawercer.de/wiki/topic/text-snippets-skeletons-templates.html">http://vim-wiki.mawercer.de/wiki/topic/text-snippets-skeletons-templates.html</a></p>
+
+<p>除了 snipMate以外，還有其他plugins有snippets的功能</p>
+
+<p>UltiSnipsby HOLGER RAPP36216612
+UltiSnips - The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!</p>
+
+<p>neosnippet-snippetsby SHOUGO1972908
+The standard snippets repository for neosnippet</p>
+
+<p><a href="https://vimawesome.com/plugin/vim-snippets">vim-snippets</a>
+* by HONZA POKORNY25449499
+* vim-snipmate default snippets (Previously snipmate-snippets)
+* 這個是 snippets程式片段檔的集合</p>
+
+<h2 id="4-2-tag-list">4.2 Tag List</h2>
+
+<p>產生程式中的所有關鍵字、函數名、…</p>
+
+<p>Tag List的產生要用外部的程式，常見的有：</p>
+
+<ul>
+<li>Exuberant Ctags: For C, C++, Java, Perl, Python, Vim, Ruby (and 25 others)</li>
+<li>Vtags: For Verilog files</li>
+<li>Jtags: For Java files</li>
+<li>Hdrtags: For C / C++, Asm, Lex / Yacc, LaTeX, Vim, and Maple</li>
+<li>Ptags: For Perl files</li>
+</ul>
+
+<p>用法，可以快速跳到函數定義的地方。</p>
+
+<p>###　4.2.1 Tag List 的其他用法</p>
+
+<p>除了用來找函數、和變數外，還有其他用法。</p>
+
+<p><code>:help tags</code></p>
+
+<h2 id="4-3-autocomplete-自動補全">4.3 AutoComplete 自動補全</h2>
+
+<p>分三種</p>
+
+<ul>
+<li>依前後文</li>
+<li>依字典</li>
+<li>Omnicompletion</li>
+</ul>
+
+<p>4.3.1 已知單詞的自動補全</p>
+
+<p><code>C-p</code> <code>C-n</code> 在打完的前兩個字母後按，</p>
+
+<p>會出現auto complete的選項，向前、或向後</p>
+
+<h3 id="4-3-2-依字典的自動補全">4.3.2 依字典的自動補全</h3>
+
+<p>利用已有的字典作 autocomplete</p>
+
+<p>設定字典檔
+<code>:set dictionary+=/path/to/dictionary/file/with/words</code></p>
+
+<p><code>C-x C-k</code>
+x是進入autocomplete模式， k是從字典中找相近的單字。</p>
+
+<p>其他模式：</p>
+
+<ul>
+<li>Ctrl+l: Complete whole lines of the text</li>
+<li>Ctrl+n: Complete words from the current buffer</li>
+<li>Ctrl+k: Complete words from the dictionaries</li>
+<li>Ctrl+t: Complete words from the thesaurus (see :help &lsquo;thesaurus&rsquo;)</li>
+<li>Ctrl+i: Words from the current and included files</li>
+<li>S: Spelling the suggestions (Vim 7.0 and newer only)</li>
+</ul>
+
+<h3 id="4-3-3-omnicompletion">4.3.3 Omnicompletion</h3>
+
+<p><code>C-x C-o</code> 進入 Omnicompletion 模式</p>
+
+<p>pass</p>
+
+<h3 id="4-3-4-多合一-autocomplete">4.3.4  多合一 autocomplete</h3>
+
+<p>把前面多種autocomplete模式整合
+這個指令可以找到,<code>CleverTab()</code></p>
+
+<p><code>help ins-complete</code></p>
+
+<p>可以用 <code>Tab</code> 來選取需要的選項。</p>
+
+<h2 id="4-4-錄製巨集-macros">4.4 錄製巨集 Macros</h2>
+
+<p>用來錄製指令</p>
+
+<ul>
+<li>qa: Record from now on into register a. Any register can be used, but q is often used for simplicity.</li>
+<li>q: If pressed while recording, the recording is ended.</li>
+<li>@a: Executes the recording in register a (replace with any register).</li>
+<li>@@: Repeats the last executed command.</li>
+</ul>
+
+<h2 id="4-5-會話-session">4.5 會話 Session</h2>
+
+<p>Vim保存了許多資訊，分成幾種：</p>
+
+<ul>
+<li>View: 單一視窗的資訊</li>
+<li>Session: 多個View的集合</li>
+<li>Other: 其他通用的設定</li>
+</ul>
+
+<h3 id="4-5-1-簡單會話使用">4.5.1 簡單會話使用</h3>
+
+<p>保存目前視圖、會話</p>
+
+<pre><code>:mkview file
+:mksession file
+
+:set viewdir=$HOME/.vim/views  #設定視圖存放的目錄
+
+載入視圖方式
+$vim -S Session.vim
+:source Session.vim
+:loadview View.vim
+
+</code></pre>
+
+<h3 id="4-5-2-個人化-session-使用">4.5.2 個人化 Session 使用</h3>
+
+<p>pass</p>
+
+<h3 id="4-5-3-sessions-as-a-project-manager">4.5.3 Sessions as a project manager</h3>
+
+<p>pass</p>
+
+<h2 id="4-6-暫存器-和-undo-分支">4.6 暫存器 和 Undo 分支</h2>
+
+<ul>
+<li>暫存器 Register: 儲存多個緩衝區的高級剪貼薄</li>
+<li>Undo Branching: 文件修改的記錄</li>
+</ul>
+
+<h3 id="4-6-1-暫存器">4.6.1 暫存器</h3>
+
+<h3 id="4-6-2-unod-list">4.6.2 Unod list</h3>
+
+<h2 id="4-7-folding-折疉">4.7 Folding 折疉</h2>
+
+<p>把段落、或是區塊 多行折疉成一行</p>
+
+<h3 id="4-7-1-simple-text-file-outlining">4.7.1 Simple text file outlining</h3>
+
+<h3 id="4-7-2-using-vimdiff-to-track-the-changes">4.7.2 Using vimdiff to track the changes</h3>
+
+<h3 id="4-7-3-navigation-in-vimdiff">4.7.3 Navigation in vimdiff</h3>
+
+<h3 id="4-7-4-using-diff-to-track-changes">4.7.4 Using diff to track changes</h3>
+
+<h2 id="4-8-打開任意位置的文件">4.8 打開任意位置的文件</h2>
+
+<p>打開遠端的文件</p>
+
+<pre><code>:Nread ftp://user@server/path/to/file
+:Nwrite server user passwd path/to/file
+
+</code></pre>
+
+<h3 id="4-8-1-faster-remote-file-editing">4.8.1 Faster remote file editing</h3>
+
+<h2 id="4-9-小結">4.9 小結</h2>
+
+<h1 id="ch5-advanced-formatting-進階格式化">Ch5: ADVANCED FORMATTING 進階格式化</h1>
+
+<h1 id="ch6-basic-vim-scripting-基本-vim-scripting">Ch6: BASIC VIM SCRIPTING 基本 Vim Scripting</h1>
+
+<h1 id="ch7-extended-vim-scripting-進階-vim-scripting">Ch7: EXTENDED VIM SCRIPTING 進階 Vim Scripting</h1>
+
 <p><a href="https://www.google.com">I&rsquo;m an inline-style link</a></p>
 
 <p><a href="https://www.google.com" title="Google's Homepage">I&rsquo;m an inline-style link with title</a></p>
@@ -981,7 +1235,7 @@ This is an H2
 
 <p>Footer</p>
 
-<p>That&rsquo;s some text with a footnote.<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup></p>
+<p>That&rsquo;s some text with a footnote.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
 
 <pre><code>That's the second paragraph.
 </code></pre>
@@ -1019,12 +1273,10 @@ This is an H2
 
 <p>如果要的syntax highlighting的話，要用hugo內的 <code>shortcode</code></p>
 
-<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="background-color: #f0f0f0; padding: 0 5px 0 5px">1 </span><span style="color: #66d9ef">var</span> <span style="color: #a6e22e">a</span> <span style="color: #66d9ef">string</span>
-<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">2 </span><span style="background-color: #49483e"><span style="color: #66d9ef">var</span> <span style="color: #a6e22e">b</span> <span style="color: #66d9ef">string</span>
-</span><span style="background-color: #f0f0f0; padding: 0 5px 0 5px">3 </span><span style="background-color: #49483e"><span style="color: #66d9ef">var</span> <span style="color: #a6e22e">c</span> <span style="color: #66d9ef">string</span>
-</span><span style="background-color: #f0f0f0; padding: 0 5px 0 5px">4 </span><span style="color: #66d9ef">var</span> <span style="color: #a6e22e">d</span> <span style="color: #66d9ef">string</span>
-</pre></div>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#66d9ef">string</span>
+<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">b</span> <span style="color:#66d9ef">string</span>
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">c</span> <span style="color:#66d9ef">string</span>
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">d</span> <span style="color:#66d9ef">string</span></code></pre></div>
 
 <h1 id="參考連結">參考連結</h1>
 
@@ -1063,7 +1315,7 @@ This is an H2
   
     and tagged <a href="/tags/reading/">reading</a> and <a href="/tags/vim/">vim</a>
   
-  using <span itemprop="wordCount">963</span> words.
+  using <span itemprop="wordCount">1353</span> words.
 </p>
 
       

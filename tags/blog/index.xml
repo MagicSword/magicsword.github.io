@@ -33,7 +33,7 @@
       <description>鳳山房價較高雄市中心便宜，吸引首購自住客前往置產，成為今年高雄上半年不動產交易 量最多的行政區，而交易主力在總價500～700萬外加車位的20年以上透天。 鳳山生活機能完善，房價較高雄市中心便宜，吸引首購族置產
 鳳山生活圈鄰近鳳山捷運站及鳳山火車站，具備雙鐵優勢，加上距國道1號約10分鐘車程 ，交通便利，且商圈林立，吸引家樂福、迪卡儂等大型賣場進駐，區域內還有大東文化藝 術中心、大東濕地公園等公共建設，近期鳳山體育館也規劃將改建成運動中心，生活機能 十分豐富。
 print(&amp;quot;hello,world!&amp;quot;)  print()
-1 var a string 2 var b string 3 var c string 4 var d string  &amp;lt;section id=&amp;quot;main&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;quot;title&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;quot;summary&amp;quot;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;  </description>
+1var a string 2var b string 3var c string 4var d string &amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Data.Pages }} {{ .Render &amp;#34;summary&amp;#34;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;</description>
     </item>
     
   </channel>
