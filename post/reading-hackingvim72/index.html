@@ -165,7 +165,7 @@ article [itemprop="description"] {
 
 <meta itemprop="datePublished" content="2018-03-24T01:00:23&#43;08:00" />
 <meta itemprop="dateModified" content="2018-03-24T01:00:23&#43;08:00" />
-<meta itemprop="wordCount" content="1353">
+<meta itemprop="wordCount" content="1533">
 
   <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
 
@@ -180,7 +180,7 @@ article [itemprop="description"] {
   <circle cx="16" cy="16" r="14" />
   <path d="M16 8 L16 16 20 20" />
 </svg>
-<span>7 minute read</span>
+<span>8 minute read</span>
 <svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
   <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
 </svg>
@@ -289,9 +289,28 @@ article [itemprop="description"] {
 </ul></li>
 <li><a href="#4-9-小結">4.9 小結</a></li>
 </ul></li>
-<li><a href="#ch5-advanced-formatting-進階格式化">Ch5: ADVANCED FORMATTING 進階格式化</a></li>
+<li><a href="#ch5-advanced-formatting-進階格式化">Ch5: ADVANCED FORMATTING 進階格式化</a>
+<ul>
+<li><a href="#5-1-文本格式化">5.1 文本格式化</a>
+<ul>
+<li><a href="#5-1-1-文本分段">5.1.1 文本分段</a></li>
+<li><a href="#5-1-2-內文對齊">5.1.2 內文對齊</a></li>
+<li><a href="#5-1-3-標記標題">5.1.3 標記標題</a></li>
+<li><a href="#5-1-4-建立清單">5.1.4 建立清單</a></li>
+</ul></li>
+<li><a href="#5-2-代碼格式化">5.2 代碼格式化</a></li>
+<li><a href="#5-3-使用外部工具格式化">5.3 使用外部工具格式化</a></li>
+<li><a href="#5-4-小結">5.4 小結</a></li>
+</ul></li>
 <li><a href="#ch6-basic-vim-scripting-基本-vim-scripting">Ch6: BASIC VIM SCRIPTING 基本 Vim Scripting</a></li>
 <li><a href="#ch7-extended-vim-scripting-進階-vim-scripting">Ch7: EXTENDED VIM SCRIPTING 進階 Vim Scripting</a></li>
+<li><a href="#appendix-a-vim的其他功能">Appendix A Vim的其他功能</a></li>
+<li><a href="#appendix-b-vimrc-設定">Appendix B Vimrc 設定</a>
+<ul>
+<li><a href="#b-1-保持-vimrc-簡潔的技巧">B.1 保持 Vimrc 簡潔的技巧</a></li>
+<li><a href="#b-2-vimrc的設定系統">B.2 Vimrc的設定系統</a></li>
+<li><a href="#b-3-vimrc雲端儲存">B.3 Vimrc雲端儲存</a></li>
+</ul></li>
 <li><a href="#區塊元素">區塊元素</a>
 <ul>
 <li><a href="#標題">標題</a></li>
@@ -1109,9 +1128,132 @@ $vim -S Session.vim
 
 <h1 id="ch5-advanced-formatting-進階格式化">Ch5: ADVANCED FORMATTING 進階格式化</h1>
 
+<p>將文件重新排版的過程。</p>
+
+<ul>
+<li>文本格式化</li>
+<li>代碼格式化</li>
+<li>使用外部工具格式化</li>
+</ul>
+
+<h2 id="5-1-文本格式化">5.1 文本格式化</h2>
+
+<h3 id="5-1-1-文本分段">5.1.1 文本分段</h3>
+
+<p>例：將長行自動斷行</p>
+
+<p><code>gpap</code></p>
+
+<h3 id="5-1-2-內文對齊">5.1.2 內文對齊</h3>
+
+<p>向左、 置中、向右對齊</p>
+
+<h3 id="5-1-3-標記標題">5.1.3 標記標題</h3>
+
+<p>在 Markdown、reST中，H1、H2的語法可以寫成：</p>
+
+<pre><code>Level1
+====== 
+
+Level2
+------
+
+-Level3-
+</code></pre>
+
+<p>這邊利用接鍵組合，可以快速在文字下加上相同長度的 <code>=</code>，或<code>-</code></p>
+
+<p>像在 <code>New Heading</code>上按 <code>yypVr=o</code></p>
+
+<h3 id="5-1-4-建立清單">5.1.4 建立清單</h3>
+
+<p>用函式快速加入 lists的格式</p>
+
+<h2 id="5-2-代碼格式化">5.2 代碼格式化</h2>
+
+<p>排版良好的程式碼，對方便閱讀很有幫助。</p>
+
+<p>前面幾小節 介紹了縮排的幾個方式。</p>
+
+<ul>
+<li>Autoindent <code>:set ai</code> : 會依前一行的設定，縮排之後的文件</li>
+<li>Smartindent <code>:set si</code> : smarter than autoindent</li>
+<li>Cindent: pass</li>
+<li>Indentexpr: pass</li>
+</ul>
+
+<p>要貼程式碼時，可以用下面的指令，讓貼上的程式碼排版不會跑掉。</p>
+
+<pre><code>:set paste
+:set nopaste
+:set pastetoggle
+
+</code></pre>
+
+<h2 id="5-3-使用外部工具格式化">5.3 使用外部工具格式化</h2>
+
+<p>使用 其他程式來排版，像是 Indent,Berkeley Par,Tidy</p>
+
+<pre><code>#設定 indent
+:set equalprg=program
+</code></pre>
+
+<p>Tidy 是用來排版 XML,HTML 文件的工具。</p>
+
+<pre><code># XML 文件
+au FileType xml exe &quot;:silent 1,$!tidy --input-xml true --indent yes -q&quot;
+# HTML 文件
+au FileType html,htm exe &quot;:silent 1,$!tidy --indent yes -q&quot;
+</code></pre>
+
+<h2 id="5-4-小結">5.4 小結</h2>
+
+<p>本章介紹了一些排版的方式</p>
+
 <h1 id="ch6-basic-vim-scripting-基本-vim-scripting">Ch6: BASIC VIM SCRIPTING 基本 Vim Scripting</h1>
 
 <h1 id="ch7-extended-vim-scripting-進階-vim-scripting">Ch7: EXTENDED VIM SCRIPTING 進階 Vim Scripting</h1>
+
+<h1 id="appendix-a-vim的其他功能">Appendix A Vim的其他功能</h1>
+
+<p>Vim game，發 mail,twitter,IRC&hellip;</p>
+
+<p>或是 設定成 IDE</p>
+
+<pre><code>:help compiler
+:help quickfix
+</code></pre>
+
+<p>參考 <a href="http://vim.wikia.com/wiki/Use_Vim_like_an_IDE">http://vim.wikia.com/wiki/Use_Vim_like_an_IDE</a></p>
+
+<h1 id="appendix-b-vimrc-設定">Appendix B Vimrc 設定</h1>
+
+<p>Vimrc是 Vim 所有設定存放的檔案，隨著時間 Vimrc可能會變的越來越大，而以維護。</p>
+
+<h2 id="b-1-保持-vimrc-簡潔的技巧">B.1 保持 Vimrc 簡潔的技巧</h2>
+
+<ol>
+<li><code>:set nocompatible</code>: 把vim設成不相容模式，能開啟比較多的功能。</li>
+<li>使用注釋: 使用 <code>&quot;</code> 開頭的注釋，可以讓區段的功能容易了解修改</li>
+<li>內容分段: 可以分成 全局、個人、腳本、其他 …有主題性的區段，方便修改。</li>
+<li>使用多文件: 可以將部分的內容切出另一個檔案，在本檔內用 <code>source</code>讀進程式</li>
+<li>測試時使用另一份vimrc</li>
+<li>不同系統使用不定的設定: 像是 .vimrc.linux , _vimrc.win32 , _gvimrc.win32 , &hellip; etc.</li>
+</ol>
+
+<h2 id="b-2-vimrc的設定系統">B.2 Vimrc的設定系統</h2>
+
+<p><a href="https://www.vim.org/scripts/script.php?script_id=1894">Vim Setup system : Vim Setup system - persistent setup directly in vim </a></p>
+
+<p>這個plugin讓vim的設定，有選單的可以直接設定，設定完了，再存回 .vimrc</p>
+
+<p>有GUI來設定，的確是方便了一些。</p>
+
+<h2 id="b-3-vimrc雲端儲存">B.3 Vimrc雲端儲存</h2>
+
+<p>把vim的設定放在網路上，可以方便在多台機器間轉移。</p>
+
+<p>這邊是用 <code>netrw</code> 來讀寫網路上的設定檔。</p>
 
 <p><a href="https://www.google.com">I&rsquo;m an inline-style link</a></p>
 
@@ -1315,7 +1457,7 @@ This is an H2
   
     and tagged <a href="/tags/reading/">reading</a> and <a href="/tags/vim/">vim</a>
   
-  using <span itemprop="wordCount">1353</span> words.
+  using <span itemprop="wordCount">1533</span> words.
 </p>
 
       
