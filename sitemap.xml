@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://magicsword.github.io/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -74,7 +74,7 @@
   
   <url>
     <loc>https://magicsword.github.io/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -96,13 +96,13 @@
   </url>
   
   <url>
-    <loc>https://magicsword.github.io/tags/development/</loc>
+    <loc>https://magicsword.github.io/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://magicsword.github.io/categories/development/</loc>
+    <loc>https://magicsword.github.io/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -114,14 +114,14 @@
   </url>
   
   <url>
-    <loc>https://magicsword.github.io/tags/golang/</loc>
-    <lastmod>2017-09-23T22:40:35+08:00</lastmod>
+    <loc>https://magicsword.github.io/categories/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://magicsword.github.io/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://magicsword.github.io/tags/golang/</loc>
+    <lastmod>2017-09-23T22:40:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   

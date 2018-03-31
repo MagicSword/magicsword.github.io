@@ -244,7 +244,7 @@ figure a:hover {
 
 <meta itemprop="datePublished" content="2018-03-24T01:00:23&#43;08:00" />
 <meta itemprop="dateModified" content="2018-03-24T01:00:23&#43;08:00" />
-<meta itemprop="wordCount" content="1980">
+<meta itemprop="wordCount" content="2476">
 
   <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
 
@@ -259,7 +259,7 @@ figure a:hover {
   <circle cx="16" cy="16" r="14" />
   <path d="M16 8 L16 16 20 20" />
 </svg>
-<span>10 minute read</span>
+<span>12 minute read</span>
 <svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
   <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
 </svg>
@@ -450,13 +450,6 @@ figure a:hover {
 <li><a href="#b-2-vimrc的設定系統">B.2 Vimrc的設定系統</a></li>
 <li><a href="#b-3-vimrc雲端儲存">B.3 Vimrc雲端儲存</a></li>
 </ul></li>
-<li><a href="#區塊元素">區塊元素</a>
-<ul>
-<li><a href="#標題">標題</a></li>
-<li><a href="#連結">連結</a></li>
-<li><a href="#圖片-其他-youtube">圖片、其他、youtube</a></li>
-<li><a href="#程式碼">程式碼</a></li>
-</ul></li>
 <li><a href="#參考連結">參考連結</a></li>
 </ul>
 </nav>
@@ -483,6 +476,15 @@ figure a:hover {
 <p>以及一些簡單的筆記、和心得記錄。</p>
 
 <p></p>
+
+<p>Task list: 😄</p>
+
+<ul class="task-list">
+<li><label><input type="checkbox" checked disabled class="task-list-item"> 初稿</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> 修正</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> incomplete</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> completed</label></li>
+</ul>
 
 <h1 id="概述">概述</h1>
 
@@ -890,11 +892,10 @@ end of a function)</li>
 
 <h4 id="3-1-2-在長行內移動">3.1.2 在長行內移動</h4>
 
-<p>長行：</p>
-
-<blockquote>
-<p>一行的內容過長，超過VIM視窗範圍的話，程式會自動把超出視窗寬的在下一行顯示。</p>
-</blockquote>
+<dl>
+<dt>長行：</dt>
+<dd><p>一行的內容過長，超過VIM視窗範圍的話，程式會自動把超出視窗寬的在下一行顯示。</p></dd>
+</dl>
 
 <p><code>gk</code>,<code>gj</code> :會以視覺上的行為主而移動。</p>
 
@@ -1408,7 +1409,7 @@ au FileType html,htm exe &quot;:silent 1,$!tidy --indent yes -q&quot;
 
 <ul>
 <li><code>.vim</code>，或是壓縮檔：直接(解壓)放到 <code>$HOME/.vim/</code> 目錄下</li>
-<li>Vimball格式: 是壓縮檔，安裝完 <a href="https://www.vim.org/scripts/script.php?script_id=1502" title="vim-based archiver: builds, extracts, and previews">Vimball</a> 後， <code>$vim something.vba</code> <code>:so %</code> 安裝</li>
+<li>Vimball格式: 是壓縮檔，安裝完 <a href="https://www.vim.org/scripts/script.php?script_id=1502" title="vim-based archiver: builds, extracts, and previews ">Vimball</a> 後， <code>$vim something.vba</code> <code>:so %</code> 安裝</li>
 <li>Vim Plugin Manager: 專門管理plugins的程式，可以直接從 github 上安裝腳本
 
 <ul>
@@ -1507,6 +1508,61 @@ list[0]是第一個元素。</p>
 <pre><code class="language-vim">:let mydictvar2 =  {1: &quot;one&quot;,2: &quot;two&quot;,&quot;tens&quot;:{0: &quot;ten&quot;,1: &quot;eleven&quot;}}
 </code></pre>
 
+<p>key不一定是數值，也不需要照順序。</p>
+
+<p><strong>函式</strong></p>
+
+<pre><code class="language-vim">:let Myfunrefvar= function(&quot;Myfunction&quot;)
+</code></pre>
+
+<ul>
+<li>變量 Myfunrefvar , 綁定到 函數 Myfunction</li>
+<li>自定變數名以大寫開頭，跟vim內建的變數區別。</li>
+</ul>
+
+<pre><code class="language-vim">:echo  Myfunrefvar()
+</code></pre>
+
+<ul>
+<li>使用函數時，函數名後加 ()</li>
+</ul>
+
+<p><strong>刪除函數</strong>
+<code>delfunction function-name</code></p>
+
+<p>函數中使用的變數的 <strong>變數可視範圍 Scope</strong>
+變數前的字母，代表變數的作用區域。</p>
+
+<p><a id="Scope">[Scope]</a></p>
+
+<ul>
+<li>v: Vim predefined global scope</li>
+<li>g: Global scope</li>
+<li>b: Buffer scope—only available in the buffer where it was defined</li>
+<li>t: Tab scope—only available in the Vim tab where it was defined</li>
+<li>w: Window scope—only available to the current Vim window (viewport)</li>
+<li>l: Function scope—local to the function it is defined in</li>
+<li>s: Sourced file scope—local to a Vim script loaded using :source</li>
+<li>a: Argument scope—used in arguments for functions</li>
+</ul>
+
+<p>Vim中的注釋是以引號開始 \&rdquo;</p>
+
+<pre><code class="language-vim">let g:sum=0
+function SumNumbers(num1,num2)
+    let l:sum = a:num1+a:num2
+    &quot;check if previous sum was lower than this
+    if g:sum &lt; l:sum
+       let g:sum=l:sum
+    endif
+    return l:sum
+endfunction
+&quot; test code, this will print 7 (value of l:sum)
+echo SumNumbers(3,4)
+&quot; this should also print  7 (value of g:sum)
+echo g:sum
+</code></pre>
+
 <p><strong>See Also</strong>:</p>
 
 <ul>
@@ -1515,66 +1571,443 @@ list[0]是第一個元素。</p>
 <li><a href="http://learnvimscriptthehardway.stevelosh.com/chapters/35.html">LVtHW:Lists</a></li>
 <li><a href="http://learnvimscriptthehardway.stevelosh.com/chapters/37.html">LVtHW:Dictionary</a></li>
 <li><a href="http://learnvimscriptthehardway.stevelosh.com/chapters/23.html">LVtHW:Function</a></li>
+<li><a href="http://learnvimscriptthehardway.stevelosh.com/chapters/20.html">LVtHW:Variable_Scope</a></li>
 </ul>
 
 <h4 id="conditions">Conditions</h4>
 
+<p>If條件式</p>
+
+<pre><code class="language-vim">if condition1
+    code-to-execute-if-condition1-is-true
+else
+    if condition2
+      code-to-execute-if-condition2-is-true
+    endif
+endif
+</code></pre>
+
+<p><strong>See Also</strong>:</p>
+
+<ul>
+<li><code>:help if</code> 向下翻，還有 <code>while, for, try , catch, throw,final</code></li>
+<li><a href="http://learnvimscriptthehardway.stevelosh.com/chapters/21.html">LVtWY:Conditional</a></li>
+</ul>
+
 <h4 id="working-with-lists-and-dictionaries">Working with lists and dictionaries</h4>
+
+<p>List, Dic 的 <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" title="Create, read, update and delete">CRUD</a></p>
+
+<p>[CRUD」分別為 Create, Read, Update, Delete</p>
+
+<p><strong>Create</strong></p>
+
+<pre><code class="language-vim">:let mylist = [1,2,3,&quot;cat&quot;, myvar1]
+:let mydicfruit = {'banana':'yellow','apple':'green','orange':'orange'}
+</code></pre>
+
+<p><strong>Read</strong></p>
+
+<pre><code class="language-vim">:echo mylist[0],mylist[-1] &quot; 1  , cat (-1是最後的一個值)
+:echo mydicfruit['banana'] &quot; yellow
+&quot; 如果 key是[0-9][a-zA-Z][_]的話
+:echo mydicfruit.banana  &quot; yellow
+</code></pre>
+
+<p><strong>Update</strong></p>
+
+<pre><code class="language-vim">:let mylist[0]=99 &quot; 
+:let mydicfruit['banana']='green' &quot; 
+</code></pre>
+
+<p><strong>Delete</strong></p>
+
+<pre><code class="language-vim">&quot;用 unlet
+:unlet mylist[0]
+:unlet mydicfruit['banana'] 
+
+&quot; remove()
+:call remove(mylist,2)
+</code></pre>
+
+<p><strong>其他操作</strong></p>
+
+<pre><code class="language-vim">:let mylist3 = mylist1 + mylist
+:let mylist4 += [5,6,7,8]
+&quot; extend() 會把兩個 list 相加
+:call extend(mylist3,mylist4)
+:echo myilst3 &quot; mylist3會變成 mylist3 + mylist4, mylist4 不變 
+&quot; add() list4 加進 list3，變成 list3 的一個元素
+:call add(mylist3,mylist4)
+</code></pre>
+
+<p><strong>See Also</strong>:</p>
+
+<ul>
+<li><code>:help Dictionary, List</code></li>
+<li><code>:help get(), has_key(), items(), keys(), values()</code></li>
+<li><code>:help add(), extend(), remove()</code></li>
+</ul>
 
 <h4 id="loops">Loops</h4>
 
-<p><strong>For Loops</strong>
-<strong>While Loops</strong></p>
+<p><strong>For Loops</strong></p>
+
+<pre><code class="language-vim">for item in mylist
+   call remove(mylist, 0)
+endfor
+</code></pre>
+
+<p><strong>While Loops</strong></p>
+
+<pre><code class="language-vim">:let lnum = 1
+:while lnum &lt;= line(&quot;$&quot;)
+    :call FixLine(lnum)
+    :let lnum = lnum + 1
+:endwhile
+</code></pre>
+
+<p><strong>See Also</strong>:</p>
+
+<ul>
+<li><code>:help break</code> : 離開 loop</li>
+<li><code>:help continue</code> : 開始下一個loop</li>
+</ul>
 
 <h4 id="creating-functions">Creating functions</h4>
 
+<!---
+Markdown沒有適合的語法，這邊用HTML的語法，注釋也是
+-->
+
+<dl>
+  <dt>函數的定義</dt>
+  <dd>
+<pre>
+function Name (arg1, arg2, ... argN) keyword
+    code-to-excute-when-func-call
+endfunction
+</pre>
+</dl>
+
+<p><strong>keyword</strong></p>
+
+<ul>
+<li>dict: 把函數綁定到一個 dict</li>
+<li>range: 函數的作用範圍</li>
+<li>特別的變數: <code>a:000</code> 代表所有 argX的集合</li>
+</ul>
+
+<p><strong>Scope</strong>
+通常函數是local的，可以在函數前加 <code>g:</code>以代表全域函數。
+這邊參照</p>
+
+<p><a href="#Scope">Scope變數值域</a></p>
+
 <h4 id="variable-argument-list">Variable argument list</h4>
+
+<ul>
+<li>`:help a:000: 所以參數集合，是 List 型態</li>
+<li><code>a:0</code>: 參數個數</li>
+<li><code>a:1</code>: 第一個參數名字，其他以此類推 a:2, a:3&hellip;</li>
+</ul>
+
+<p><strong>See Also</strong>:
+* <code>:help function-argument</code>
+* <code>:help local-variables</code>
+* <code>:help function-lsit</code></p>
 
 <h1 id="6-5-小結-summary">6.5 小結 Summary</h1>
 
+<p>VimScript 的安裝、移除，管理。</p>
+
+<p>基本的資料型態、結構、操作。</p>
+
 <h1 id="ch7-extended-vim-scripting-進階-vim-scripting">Ch7: EXTENDED VIM SCRIPTING 進階 Vim Scripting</h1>
+
+<p>本章會介紹 Script的結構，技巧、如何除錯、使用其他外部語言。</p>
 
 <h2 id="7-1-script-structure">7.1 Script structure</h2>
 
 <h3 id="7-1-1-script-header">7.1.1 Script header</h3>
 
+<p>腳本前最好加上一個檔頭，說明腳本的一些基本資料。
+例：作者、日期、版本，以及 著作權授權聲明。</p>
+
+<ul>
+<li><a href="https://www.gnu.org/licenses/license-list.html">Open Source License</a></li>
+<li><a href="https://creativecommons.org/licenses/?lang=zh_TW">CreativeCommons</a></li>
+</ul>
+
+<p>像是：</p>
+
+<pre><code class="language-vim">&quot; myscript.vim  : Example script to show how a script is structured.
+&quot; Version       : 1.0.5
+&quot; Maintainer    : Who Who &lt;who@what.com&gt;
+&quot; Last modified : 01/01/2007
+&quot; License       : This script is released under the Vim License.
+</code></pre>
+
 <h3 id="7-1-2-script-loaded-check">7.1.2 Script-loaded check</h3>
+
+<p>腳本在執行前，最好先檢查腳本是否正常載入，以免發生問題。</p>
+
+<p>ex: 如果腳本載入不成功，會先把函數先缷載，
+把loaded_myscript(是不是要載入腳本)設成true，</p>
+
+<pre><code class="language-vim">if exists(&quot;loaded_myscript&quot;)
+   delfunction MyglobalfunctionB
+   delfunction MyglobalfunctionC
+endif
+let loaded_myscript=1
+</code></pre>
 
 <h3 id="7-1-3-script-configuration">7.1.3 Script configuration</h3>
 
+<p>腳本的開頭可以放設定，如：顏色，路徑…
+或是一些設定使用者已有原本的設定，
+可以檢查是否已有原本的設定值，再決定要不要取代原本的設定。</p>
+
 <h3 id="7-1-4-key-mappings">7.1.4 Key mappings</h3>
+
+<p>修改按鍵設定，尋找是否有舊的設定，決定取代、或建立新的設定。</p>
+
+<p>這邊有些新的代碼：</p>
+
+<ul>
+<li><code>hasmapto()</code>: 檢查是否有maping 對映到你的程式</li>
+<li><code>&lt;unique&gt;</code>: 檢查 mapping是否唯一</li>
+<li><code>&lt;Leader&gt;</code>: 前導符號，用來開始一些功能的快速鍵。<code>&lt;Leader&gt;</code> 會被 全域的 Leader 覆蓋</li>
+<li><code>&lt;Plug&gt;</code>: 建立一個全域、唯一的Mapping。 這樣就不會和全域變數中的其他函數衝突</li>
+</ul>
+
+<p><strong>See Also</strong>:</p>
+
+<ul>
+<li><code>:help &lt;SID&gt;</code>: Script ID ?</li>
+<li><code>:help &lt;Plug&gt;</code></li>
+<li><code>:help</code>script-local`</li>
+</ul>
 
 <h3 id="7-1-5-functions">7.1.5 Functions</h3>
 
+<p><code>s:MyfunctionA</code> : 前綴的 <code>s</code> 把函數的範圍限定在 script 內。</p>
+
+<p>設定函數的正確的Scope，才不會發現意料之外的問題。</p>
+
 <h3 id="7-1-6-putting-it-all-together">7.1.6 Putting it all together</h3>
+
+<p>完整腳本的例子：</p>
+
+<p>pass</p>
+
+<p><strong>See Also</strong>:</p>
+
+<ul>
+<li><code>:help 'write-filetype-plugin'</code></li>
+<li><code>:help 'write-compiler-plugin'</code></li>
+<li><code>:help 'write-library-script'</code></li>
+</ul>
 
 <h2 id="7-2-scripting-tips">7.2 Scripting tips</h2>
 
 <h3 id="7-2-1-gvim-or-vim">7.2.1 Gvim or Vim?</h3>
 
+<p>Gvim 和 vim有不少不同的地方，如何知道目前執行的是哪一個版本？</p>
+
+<pre><code class="language-vim">if has(&quot;gui_running&quot;)
+    &quot;execute gui-only command here&quot;
+endif
+</code></pre>
+
+<p><strong>See Also</strong>:</p>
+
+<ul>
+<li><code>:help 'feature-list</code></li>
+</ul>
+
 <h3 id="7-2-2-which-operating-system">7.2.2 Which operating system?</h3>
+
+<p>作業系統間的不同：路徑、檔案存取權限、…</p>
+
+<pre><code class="language-vim">if has(&quot;win16&quot;) || has(&quot;win32&quot;) || has(&quot;win64&quot;)|| has(&quot;win95&quot;)
+   &quot; do windows things here
+elseif has(&quot;unix&quot;)
+   &quot; do linux/unix things here
+</code></pre>
+
+<p>說明文件內的例子：</p>
+
+<ul>
+<li>macunix                 Macintosh version of Vim, using Unix files (OS-X).</li>
+<li>unix                    Unix version of Vim.</li>
+<li>win32                   Win32 version of Vim (MS-Windows 95 and later, 32 or 64 bits)</li>
+<li>win32unix               Win32 version of Vim, using Unix files (Cygwin)</li>
+</ul>
+
+<p><strong>See Also</strong>:</p>
+
+<ul>
+<li><code>:help 'feature-list</code></li>
+</ul>
 
 <h3 id="7-2-3-which-version-of-vim">7.2.3 Which version of Vim?</h3>
 
+<dl>
+<dt>Vim版本，ex: Vim 8.0.1626</dt>
+<dd><p>主版號.副版號.補丁編號</p></dd>
+</dl>
+
+<pre><code class="language-vim">if v:version &gt;= 702 || v:version == 701 &amp;&amp; has(&quot;patch123&quot;)
+   &quot; code here is only done for version 7.1 with patch 123 
+   &quot; and version 7.2 and above
+endif
+</code></pre>
+
+<p><code>:if has(&quot;patch-7.4.123&quot;)</code></p>
+
 <h3 id="7-2-4-printing-longer-lines">7.2.4 Printing longer lines</h3>
+
+<p>視窗的寬度不少可能超出 80，如果內容太長，
+需要函數偵測、防止出錯。</p>
 
 <h2 id="7-3-debugging-vim-scripts">7.3 Debugging Vim scripts</h2>
 
+<p><code>-D</code> : 例如， <code>Vim -D something.txt</code>，可以印出除錯訊息</p>
+
+<p><code>:debug</code> 用來除錯的命令。</p>
+
+<p>基本上就是，設立中錯點、印出數值，除錯。</p>
+
 <h2 id="7-4-distributing-vim-scripts">7.4 Distributing Vim scripts</h2>
+
+<p>依之前的安裝多樣的方式，發布腳本的方向也很多樣。</p>
 
 <h3 id="7-4-1-making-vimballs">7.4.1 Making Vimballs</h3>
 
+<p>要確定有安裝 <a href="https://www.vim.org/scripts/script.php?script_id=1502" title="vim-based archiver: builds, extracts, and previews ">VimBall</a></p>
+
+<p>制作Vimball 的命令是:</p>
+
+<p><code>:[range]MkVimball filename.vba</code></p>
+
+<p>中間填入需要檔案的路徑、其他設定後。</p>
+
+<p><code>:MkVimball myscript.vba</code> 打包</p>
+
 <h2 id="7-5-remember-the-documentation">7.5 Remember the documentation</h2>
+
+<p>Vim說明文件的寫法。</p>
+
+<p>腳本寫好了以後，好的說明文件也是很重要的一部分。</p>
+
+<p>Vim的說明文件，基本上是普通的 text，加上一些記號</p>
+
+<p><strong>First Line</strong>
+<code>*myscript.txt* Documentation for example script myscript.vim</code></p>
+
+<p>文件的第一行，開頭字符號一定要是 <code>\*</code> ，兩個<code>\*</code>中間是文件檔名， 後面是文件簡述</p>
+
+<p>這邊用書上的例子：</p>
+
+<pre><code class="language-vim">*myscript.txt* Documentation for example script myscript.vim
+
+Script : myscript.vim - Example script for vim developers
+Author : Kim Schulz
+Email : &lt;kim@schulz.dk&gt;
+Changed : 01/01/2007
+=============================================================
+                                            *myscript-intro*
+
+1. Overview
+
+This document gives a short introduction to the example
+script myscript.vim.
+This script is made as an example for vim users on how to
+structure a simple vim plugin script such that it is easy
+to read and figure out.
+The following is covered in this document:
+
+1. Overview         |myscript-intro|
+2. Mappings         |myscript-mappings|
+3. Functions        |myscript-functions|
+4. Todo             |myscript-todo|
+
+=============================================================
+</code></pre>
+
+<ul>
+<li>首行是特別資訊</li>
+<li>檔頭資訊</li>
+<li><code>\*</code>myscript-intro<code>\*</code> 是連結目標，可以用 <code>:help 'myscript-intro'</code>跳到這</li>
+<li><code>\|</code>myscript-intro<code>\|</code> 建立類似超連結功能，能快速跳到連結目標</li>
+<li><code>\&gt;</code> Code here<code>\&lt;</code> 中間的是Code</li>
+</ul>
+
+<p>寫好文件後，執行：</p>
+
+<pre><code class="language-vim">:helptags docdir
+&quot; docdir 是指向你的文件  `PLUGIN/doc` 
+</code></pre>
+
+<p><strong>See Also</strong>:</p>
+
+<ul>
+<li><code>:help 'help-translated'</code></li>
+</ul>
 
 <h2 id="7-6-using-external-interpreters">7.6 Using external interpreters</h2>
 
+<p>輸入 <code>:version</code> 和以看到目這的Vim技援的外部功能
+像是這些，+lua,+perl,+python,+python3,+ruby,-tcl</p>
+
+<p>或是輸入指令，是是否有支援。
+<code>:echo has(&quot;perl&quot;)</code></p>
+
 <h3 id="7-6-1-vim-scripting-in-perl">7.6.1 Vim scripting in Perl</h3>
+
+<p>pass</p>
 
 <h3 id="7-6-2-vim-scripting-in-python">7.6.2 Vim scripting in Python</h3>
 
+<p>這邊只看一下比較熟的python。</p>
+
+<p>單行</p>
+
+<pre><code class="language-vim">:python3 print(&quot;This is  Python3&quot;)
+</code></pre>
+
+<p>多行</p>
+
+<pre><code class="language-vim">:python3 &lt;&lt; *endpattern*
+some statement here
+and here
+*endpattern*
+
+&quot; endpattern : 像是 EOF
+</code></pre>
+
+<p>Vim 的的 <code>vim</code> 模組，可以讀取vim的資訊</p>
+
+<pre><code class="language-vim">import vim
+window = vim.current.window
+window.height = 200
+window.width = 10
+window.cursor = (1,1)
+</code></pre>
+
+<p><strong>See Also</strong>:</p>
+
+<p>下面的命令可以用來獲取所有的可用函数列表:
+* <code>:help 'python-vim'</code></p>
+
 <h3 id="7-6-3-vim-scripting-in-ruby">7.6.3 Vim scripting in Ruby</h3>
 
+<p>pass</p>
+
 <h2 id="7-7-小結-summary">7.7 小結 Summary</h2>
+
+<p>pass</p>
 
 <h1 id="appendix-a-vim的其他功能">Appendix A Vim的其他功能</h1>
 
@@ -1617,190 +2050,6 @@ list[0]是第一個元素。</p>
 
 <p>這邊是用 <code>netrw</code> 來讀寫網路上的設定檔。</p>
 
-<p><a href="https://www.google.com">I&rsquo;m an inline-style link</a></p>
-
-<p><a href="https://www.google.com" title="Google's Homepage">I&rsquo;m an inline-style link with title</a></p>
-
-<p><a href="https://www.mozilla.org">I&rsquo;m a reference-style link</a></p>
-
-<p><a href="../blob/master/LICENSE">I&rsquo;m a relative reference to a repository file</a></p>
-
-<p><a href="1" title="And that's the footnote.
-">You can use numbers for reference-style link definitions</a></p>
-
-<p>Or leave it empty and use the <a href="http://www.reddit.com">link text itself</a>.</p>
-
-<p>URLs and URLs in angle brackets will automatically get turned into links.
-<a href="http://www.example.com">http://www.example.com</a> or <a href="http://www.example.com">http://www.example.com</a> and sometimes
-example.com (but not on Github, for example).</p>
-
-<p>Some text to show that the reference links can follow later.</p>
-
-<p>See Also:</p>
-
-<ul>
-<li><a href="https://github.com/powerline/powerline">powewrline</a></li>
-<li><a href="1" title="And that's the footnote.
-">1</a></li>
-</ul>
-
-<p>樣式可以用 星號* 或是 底線_</p>
-
-<p>斜體 emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.
-粗體 Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.
-合併 Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.
-刪除線 Strikethrough uses two tildes. <del>Scratch this.</del></p>
-
-<p>第一種是手工的目錄</p>
-
-<h3 id="toc">目錄</h3>
-
-<ul>
-<li><a href="#overview">概述</a>
-
-<ul>
-<li><a href="#syntax">語法</a></li>
-<li><a href="#toc">目錄</a></li>
-</ul></li>
-<li><a href="#block">區塊元素</a>
-
-<ul>
-<li><a href="#caption">標題</a></li>
-<li><a href="#link">連結</a></li>
-<li><a href="#media">圖片、其他、youtube</a></li>
-<li><a href="#code">程式碼</a></li>
-<li><a href="#ref">參考連結</a></li>
-</ul></li>
-</ul>
-
-<p>內文地方加上 <h2 id="overview">概述</h2>的連結</p>
-
-<p>第二種是 <a href="https://comfusion.github.io/after-dark/">After-Dark</a>  內建目錄，在
-標頭上加上  <code>toc: = true</code>，程式會把大的標題生成目錄</p>
-
-<h1 id="區塊元素">區塊元素</h1>
-
-<p>** List **</p>
-
-<ul>
-<li>AAA
-
-<ul>
-<li>BBB</li>
-</ul></li>
-<li>CCC</li>
-</ul>
-
-<ol>
-<li>what</li>
-<li>some</li>
-<li>soso</li>
-</ol>
-
-<h2 id="標題">標題</h2>
-
-<p>Setext 形式是用底線的形式，利用 <code>=</code> （最高階標題）和 <code>-</code> （第二階標題），例如：</p>
-
-<pre><code class="language-markdown">This is an H1
-=============
-
-This is an H2
--------------
-</code></pre>
-
-<p>任何數量的 <code>=</code> 和 <code>-</code> 都可以有效果。</p>
-
-<p>Atx 形式則是在行首插入 1 到 6 個 <code>#</code> ，對應到標題 1 到 6 階，例如：</p>
-
-<pre><code class="language-markdown"># This is an H1
-
-## This is an H2
-
-###### This is an H6
-</code></pre>
-
-<p>行首的井字數量決定標題的階數，行尾的#可不加</p>
-
-<h2 id="連結">連結</h2>
-
-<p>Markdown 支援兩種形式的連結語法： *行內*和*參考*兩種形式。</p>
-
-<pre><code>[連結文字](連結目標)
-</code></pre>
-
-<p>絕對路徑
-<a href="https://www.google.com">Google</a></p>
-
-<p>相對路徑
-<a href="/post/">post</a></p>
-
-<p>連結到文章內的id
-<a href="http://example.com/&gt;" title="Optional Title Here">example</a> 或是空白隔著 <a href="http://example.com/&gt;" title="Optional Title Here">2 example</a></p>
-
-<p>Footer</p>
-
-<p>That&rsquo;s some text with a footnote.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
-
-<pre><code>That's the second paragraph.
-</code></pre>
-
-<h2 id="圖片-其他-youtube">圖片、其他、youtube</h2>
-
-<p>行內和參考
-    <img src="/path/to/img.jpg" alt="Alt text" /></p>
-
-<pre><code>![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
-</code></pre>
-
-<p>參考式的圖片語法則長得像這樣：</p>
-
-<pre><code>![Alt text][id]
-</code></pre>
-
-<p>「id」是圖片參考的名稱，圖片參考的定義方式則和連結參考一樣：</p>
-
-<pre><code>[id]: url/to/image  &quot;Optional title attribute&quot;
-</code></pre>
-
-<p>要指定高度的話，也可以用 <code>&lt;img&gt;</code></p>
-
-<h2 id="程式碼">程式碼</h2>
-
-<p>分兩個，行內，整段
-行內像文中會提到的func name  <code>print()</code> <code>cast</code> <code>def()</code></p>
-
-<p>整段用 三個  ``` 包起，第一個後面放語言的名字</p>
-
-<pre><code class="language-python">    for i in 10:
-        print(&quot;heloo,world&quot;)
-</code></pre>
-
-<p>如果要的syntax highlighting的話，要用hugo內的 <code>shortcode</code></p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#66d9ef">string</span>
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">b</span> <span style="color:#66d9ef">string</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">c</span> <span style="color:#66d9ef">string</span>
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">d</span> <span style="color:#66d9ef">string</span></code></pre></div>
-
-<pre><code class="language-vim">if foo &gt; 2 || has(&quot;gui_running&quot;)
-  syntax on
-  set hlsearch
-endif
-
-set autoindent
-
-&quot; switch on highlighting
-function UnComment(fl, ll)
-  while idx &gt;= a:ll
-    let srclines=getline(idx)
-    let dstlines=substitute(srclines, b:comment, &quot;&quot;, &quot;&quot;)
-    call setline(idx, dstlines)
-  endwhile
-endfunction
-
-let conf = {'command': 'git'}
-</code></pre>
-
 <h1 id="參考連結">參考連結</h1>
 
 <ol>
@@ -1808,15 +2057,15 @@ let conf = {'command': 'git'}
 <li><a href="https://github.com/wuzhouhui/hacking_vim">HackingVim72簡中</a></li>
 <li><a href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">Vim Tips Wiki</a></li>
 </ol>
-<div class="footnotes">
 
-<hr />
+<p><strong>參考書藉</strong></p>
 
 <ol>
-<li id="fn:1">And that&rsquo;s the footnote.
- <a class="footnote-return" href="#fnref:1">↩</a></li>
+<li><a href="http://learnvimscriptthehardway.stevelosh.com/" title="a book for users of the Vim editor who want to learn how to customize Vim.">Learn Vimscript the Hard Way</a></li>
+<li><a href="http://learnvimscriptthehardway.onefloweroneworld.com/" title="Learn vimscript the hard way 簡中">Learn Vimscript the Hard Way_簡中</a></li>
+<li><a href="https://vim.swaroopch.com/" title="help you to learn how to use the Vim editor (version 7)">A Byte of Vim</a></li>
+<li><a href="http://vimskill.readthedocs.io/index.html" title="VimSkill 簡中文件">VimSkill</a></li>
 </ol>
-</div>
     </div>
     
     <footer>
@@ -1837,7 +2086,7 @@ let conf = {'command': 'git'}
   
     and tagged <a href="/tags/reading/">reading</a> and <a href="/tags/vim/">vim</a>
   
-  using <span itemprop="wordCount">1980</span> words.
+  using <span itemprop="wordCount">2476</span> words.
 </p>
 
       
