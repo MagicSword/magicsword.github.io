@@ -5,7 +5,7 @@
     <link>https://magicsword.github.io/tags/</link>
     <description>Recent content in Tags on After Dark</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>zh-Hant-TW</language>
     <lastBuildDate>Sun, 24 Sep 2017 03:06:33 +0800</lastBuildDate>
     
 	<atom:link href="https://magicsword.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -66,6 +66,15 @@
     </item>
     
     <item>
+      <title>Learning</title>
+      <link>https://magicsword.github.io/tags/learning/</link>
+      <pubDate>Fri, 30 Mar 2018 18:22:45 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/tags/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Markdown</title>
       <link>https://magicsword.github.io/tags/markdown/</link>
       <pubDate>Sun, 24 Sep 2017 03:53:39 +0800</pubDate>
@@ -98,6 +107,15 @@
       <pubDate>Sun, 24 Sep 2017 03:53:39 +0800</pubDate>
       
       <guid>https://magicsword.github.io/tags/syntax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ted</title>
+      <link>https://magicsword.github.io/tags/ted/</link>
+      <pubDate>Fri, 30 Mar 2018 18:22:45 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/tags/ted/</guid>
       <description></description>
     </item>
     

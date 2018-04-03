@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/post/learn-language-in-six-months/</loc>
+    <lastmod>2018-03-30T18:22:45+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/post/reading-hackingvim72/</loc>
     <lastmod>2018-03-24T01:00:23+08:00</lastmod>
   </url>
@@ -96,13 +101,13 @@
   </url>
   
   <url>
-    <loc>https://magicsword.github.io/categories/development/</loc>
+    <loc>https://magicsword.github.io/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://magicsword.github.io/tags/development/</loc>
+    <loc>https://magicsword.github.io/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -114,14 +119,14 @@
   </url>
   
   <url>
-    <loc>https://magicsword.github.io/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://magicsword.github.io/tags/golang/</loc>
+    <lastmod>2017-09-23T22:40:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://magicsword.github.io/tags/golang/</loc>
-    <lastmod>2017-09-23T22:40:35+08:00</lastmod>
+    <loc>https://magicsword.github.io/categories/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -138,6 +143,18 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/categories/language/</loc>
+    <lastmod>2018-03-30T18:22:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/tags/learning/</loc>
+    <lastmod>2018-03-30T18:22:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/tags/markdown/</loc>
     <lastmod>2017-09-24T03:53:39+08:00</lastmod>
     <priority>0</priority>
@@ -145,7 +162,7 @@
   
   <url>
     <loc>https://magicsword.github.io/post/</loc>
-    <lastmod>2018-03-24T01:00:23+08:00</lastmod>
+    <lastmod>2018-03-30T18:22:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -176,6 +193,12 @@
   <url>
     <loc>https://magicsword.github.io/categories/technology/</loc>
     <lastmod>2018-03-24T01:00:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/tags/ted/</loc>
+    <lastmod>2018-03-30T18:22:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
