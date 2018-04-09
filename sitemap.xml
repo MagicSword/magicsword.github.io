@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/post/reading-version-control-with-git-2nd/</loc>
+    <lastmod>2018-04-01T23:06:34+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/post/learn-language-in-six-months/</loc>
     <lastmod>2018-03-30T18:22:45+08:00</lastmod>
   </url>
@@ -113,6 +118,12 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/tags/git/</loc>
+    <lastmod>2018-04-01T23:06:34+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -162,7 +173,7 @@
   
   <url>
     <loc>https://magicsword.github.io/post/</loc>
-    <lastmod>2018-03-30T18:22:45+08:00</lastmod>
+    <lastmod>2018-04-01T23:06:34+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -174,7 +185,7 @@
   
   <url>
     <loc>https://magicsword.github.io/tags/reading/</loc>
-    <lastmod>2018-03-24T01:00:23+08:00</lastmod>
+    <lastmod>2018-04-01T23:06:34+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -192,7 +203,7 @@
   
   <url>
     <loc>https://magicsword.github.io/categories/technology/</loc>
-    <lastmod>2018-03-24T01:00:23+08:00</lastmod>
+    <lastmod>2018-04-01T23:06:34+08:00</lastmod>
     <priority>0</priority>
   </url>
   
