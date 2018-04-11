@@ -8,6 +8,16 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/post/tool-commandline-autojump/</loc>
+    <lastmod>2018-04-11T23:30:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/post/reading-dokusho-issatsu-matomenasai-2013/</loc>
+    <lastmod>2018-04-11T18:24:44+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/post/reading-version-control-with-git-2nd/</loc>
     <lastmod>2018-04-01T23:06:34+08:00</lastmod>
   </url>
@@ -106,6 +116,12 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/tags/commandline/</loc>
+    <lastmod>2018-04-11T23:30:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -166,6 +182,12 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/categories/life/</loc>
+    <lastmod>2018-04-11T18:24:44+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/tags/markdown/</loc>
     <lastmod>2017-09-24T03:53:39+08:00</lastmod>
     <priority>0</priority>
@@ -173,7 +195,7 @@
   
   <url>
     <loc>https://magicsword.github.io/post/</loc>
-    <lastmod>2018-04-01T23:06:34+08:00</lastmod>
+    <lastmod>2018-04-11T23:30:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -185,7 +207,13 @@
   
   <url>
     <loc>https://magicsword.github.io/tags/reading/</loc>
-    <lastmod>2018-04-01T23:06:34+08:00</lastmod>
+    <lastmod>2018-04-11T18:24:44+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/tags/study/</loc>
+    <lastmod>2018-04-11T18:24:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -203,7 +231,7 @@
   
   <url>
     <loc>https://magicsword.github.io/categories/technology/</loc>
-    <lastmod>2018-04-01T23:06:34+08:00</lastmod>
+    <lastmod>2018-04-11T23:30:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -222,6 +250,12 @@
   <url>
     <loc>https://magicsword.github.io/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/tags/unix/</loc>
+    <lastmod>2018-04-11T23:30:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -244,7 +244,7 @@ figure a:hover {
 
 <meta itemprop="datePublished" content="2018-04-01T23:06:34&#43;08:00" />
 <meta itemprop="dateModified" content="2018-04-01T23:06:34&#43;08:00" />
-<meta itemprop="wordCount" content="1126">
+<meta itemprop="wordCount" content="1132">
 
   <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
 
@@ -279,15 +279,15 @@ figure a:hover {
     <summary>Table of Contents</summary>
     <nav id="TableOfContents">
 <ul>
-<li><a href="#概述">概述</a>
-<ul>
-<li><a href="#ch1">Ch1</a></li>
-<li><a href="#ch2">Ch2</a></li>
-<li><a href="#ch3">Ch3</a></li>
+<li><a href="#概述">概述</a></li>
+<li><a href="#ch1-簡介">Ch1 簡介</a></li>
+<li><a href="#ch2-安裝-git">Ch2 安裝 Git</a></li>
+<li><a href="#ch3-準備開始">Ch3 準備開始</a></li>
 <li><a href="#ch4-基本概念">Ch4  基本概念</a></li>
 <li><a href="#ch5-檔案管理及索引">Ch5 檔案管理及索引</a></li>
 <li><a href="#ch6-提交">Ch6 提交</a></li>
-<li><a href="#ch7-分支">Ch7 分支</a></li>
+<li><a href="#ch7-分支">Ch7 分支</a>
+<ul>
 <li><a href="#目錄">目錄</a></li>
 </ul></li>
 <li><a href="#區塊元素">區塊元素</a>
@@ -322,10 +322,18 @@ figure a:hover {
 
 
     <div itemprop="articleBody">
-      <p><a href="http://shop.oreilly.com/product/0636920022862.do">Version Control with Git, 2nd Edition</a>
-簡單的一些筆記。</p>
+      <p>Version Control with Git, 2nd Edition 簡單的一些筆記。</p>
 
 <p></p>
+
+<p>Task list: 😄</p>
+
+<ul class="task-list">
+<li><label><input type="checkbox" checked disabled class="task-list-item"> 初稿</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> 修正</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> incomplete</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> completed</label></li>
+</ul>
 
 <p><img src="https://covers.oreillystatic.com/images/0636920022862/cat.gif" alt="Version Control with Git, 2nd Edition" /></p>
 
@@ -342,14 +350,29 @@ figure a:hover {
 <p><a href="https://www.kingstone.com.tw/book/book_page.asp?ActID=alsobuy&amp;LID=se_base001&amp;KMCode=2014713380050#detaildata">版本控制使用Git 第二版</a></p>
 
 <ul>
-<li>編／譯者：吳曜撰</li>
+<li>作者：Jon Loeliger</li>
+<li>譯者：吳曜撰</li>
+<li>出版社：歐萊禮</li>
+<li>出版日：2013/1/25</li>
+<li>ISBN：9789862766699</li>
+<li>語言：中文繁體</li>
+<li>規格：平裝</li>
+<li>開數：18.5x23</li>
+<li>頁數：452</li>
+<li>出版地：台灣</li>
 </ul>
 
 <p><a href="https://github.com/terryjbates/version-control-with-git">Exercise Codes</a></p>
 
 <h1 id="概述">概述</h1>
 
-<h2 id="ch1">Ch1</h2>
+<dl>
+<dd>這本書可以幫助您快速搞懂如何使用Git來追蹤、分支、合併並且管理程式碼修訂版本。</dd>
+<dd>藉由詳盡的步驟說明，本書將帶領您了解Git的基礎與進階技術，</dd>
+<dd>充分發揮這套版本控制系統的強大功能。</dd>
+</dl>
+
+<h1 id="ch1-簡介">Ch1 簡介</h1>
 
 <ul>
 <li>Git by Linus Torvalds at 2005，主要是用於 Linux Kernel 開發使用，之前是用  BitKeeper</li>
@@ -358,7 +381,7 @@ figure a:hover {
 <li>利用 SHA-1 hashes 來辨識檔案</li>
 </ul>
 
-<h2 id="ch2">Ch2</h2>
+<h1 id="ch2-安裝-git">Ch2 安裝 Git</h1>
 
 <ul>
 <li>Debian/Ubuntu: <code>sudo apt install git</code></li>
@@ -373,7 +396,7 @@ figure a:hover {
 </ul></li>
 </ul>
 
-<h2 id="ch3">Ch3</h2>
+<h1 id="ch3-準備開始">Ch3 準備開始</h1>
 
 <p><strong>建立程式庫</strong>
  在想監控的目錄中
@@ -409,6 +432,12 @@ Date:   Sun Apr 1 05:22:46 2018 +0800
 
 <p>commit 後的是 SHA-1 hash，用來分辨各版本間的不同</p>
 
+<p><strong>See Also</strong></p>
+
+<ul>
+<li><a href="https://zwischenzugs.com/2018/03/26/git-log-the-good-parts/">git log – the Good Parts</a></li>
+</ul>
+
 <p><code>git show</code>: 看詳細資料</p>
 
 <p><code>git diff a-hash b-hash</code></p>
@@ -436,7 +465,7 @@ $git commit -m &quot;mv rm some file&quot;
 
 <p>之後打<code>git show-graph</code> 就好</p>
 
-<h2 id="ch4-基本概念">Ch4  基本概念</h2>
+<h1 id="ch4-基本概念">Ch4  基本概念</h1>
 
 <p>Git  版本控制的一些概念。</p>
 
@@ -465,7 +494,7 @@ Repository n. 容器；貯藏處，
 <dt>Commits 提交</dt>
 <dd><p>提交物件有每次提交時的所有資訊，作者、時間、歷史資訊</p></dd>
 <dt>Tags</dt>
-<dd><p>Sha1-hashs 難記，  Tags提供一個別名的方式，</p></dd>
+<dd><p>SHA1-hashs 難記，  Tags提供一個別名的方式，</p></dd>
 <dd><p>像是： 8.0.1616-Alpha  這類方便記憶的名字</p></dd>
 </dl>
 
@@ -570,16 +599,12 @@ Repository n. 容器；貯藏處，
 
 <p><strong>標籤</strong></p>
 
-<p>標籤(TAG)，基本上就是別名(Alias)的功能</p>
+<p>標籤(TAG)，基本上就是別名(Alias)的功能
+分兩種：
+1. 輕量 lightweight tag: 不會建立永久物件
+2. 標示 annotated tag: 會建立你提交的物件</p>
 
-<p>分兩種：</p>
-
-<ol>
-<li>輕量 lightweight tag: 不會建立永久物件</li>
-<li>標示 annotated tag: 會建立你提交的物件</li>
-</ol>
-
-<h2 id="ch5-檔案管理及索引">Ch5 檔案管理及索引</h2>
+<h1 id="ch5-檔案管理及索引">Ch5 檔案管理及索引</h1>
 
 <p>基本上，本章討論檔案管理的一些方法，<code>create</code>, <code>remove</code>,<code>move</code>,<code>rename</code></p>
 
@@ -659,7 +684,7 @@ Repository n. 容器；貯藏處，
 
 <p>pass</p>
 
-<h2 id="ch6-提交">Ch6 提交</h2>
+<h1 id="ch6-提交">Ch6 提交</h1>
 
 <p>提交：檔案庫間的變動。</p>
 
@@ -806,7 +831,7 @@ Repository n. 容器；貯藏處，
 
 <p><code>git log -Sstring</code> 可以找出 string 這個字串是在哪個版本加入的。</p>
 
-<h2 id="ch7-分支">Ch7 分支</h2>
+<h1 id="ch7-分支">Ch7 分支</h1>
 
 <dl>
 <dt>分支是：</dt>
@@ -910,7 +935,18 @@ $git checkout -b new-branch start-point
 $git branch -d bug/pr-3
 </code></pre>
 
-<p>##Ch8 Diffs</p>
+<p>#Ch8 Diffs</p>
+
+<p>Diffs 比較兩個物件的差異。 Unix 有一個指令 <code>diff</code> 也是用來比較檔案間的差異。</p>
+
+<pre><code class="language-bash">$diff -u old new
+</code></pre>
+
+<ul>
+<li><code>---</code>: 減號開頭的是 old 有， new 沒有的內容</li>
+<li><code>+++</code>: 加號開頭的是 old沒有，new 有的內容</li>
+<li>: 空白開頭的是 old , new 共有的內容</li>
+</ul>
 
 <hr />
 
@@ -1103,42 +1139,6 @@ This is an H2
 <li><a href="https://learngitbranching.js.org/index.html">Learning Git Branching</a></li>
 <li><a href="https://legacy.gitbook.com/book/kingofamani/git-teach/details">新北市教研中心－GIT版本控制</a></li>
 </ul>
-
-<p>作者：Jon Loeliger 追蹤
-譯者：吳曜撰
-出版社：歐萊禮 出版社追蹤  功能說明
-出版日：2013/1/25
-ISBN：9789862766699
-金石碼：2014713380050
-語言：中文繁體
-適讀年齡：全齡適讀</p>
-
-<p>編／譯者：吳曜撰
-語言：中文繁體
-規格：平裝
-分級：普級
-開數：18.5x23
-頁數：452
-出版地：台灣</p>
-
-<p>版本控制使用Git 第二版－目錄導覽說明</p>
-
-<p>第1 章 簡介
-第2章 安裝Git
-第3章 準備開始
-第4章 基本的Git概念
-第5章 檔案管理以及索引
-第6章 送交
-第7章 分枝
-第8章 Diffs
-第9章 合併
-第10章 修改送交
-第11章 遠端程式庫
-第12章 管理程式庫
-第13章 補綴檔案
-第14章 掛鉤
-第15章 結合專案
-第16章 在Subversion程式庫上使用Git</p>
 <div class="footnotes">
 
 <hr />
@@ -1168,7 +1168,7 @@ ISBN：9789862766699
   
     and tagged <a href="/tags/git/">git</a> and <a href="/tags/reading/">reading</a>
   
-  using <span itemprop="wordCount">1126</span> words.
+  using <span itemprop="wordCount">1132</span> words.
 </p>
 
       
@@ -1178,7 +1178,7 @@ ISBN：9789862766699
     <header>Related Content</header>
     <ul>
       
-        <li><a href="/post/reading-hackingvim72/">Reading Hackingvim72</a>
+        <li><a href="/post/reading-hackingvim72/">Reading HackingVim 7.2</a>
         <time datetime="12M">12 minutes</time>
       
     </ul>

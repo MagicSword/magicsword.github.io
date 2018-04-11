@@ -6,10 +6,33 @@
     <description>Recent content in Posts on After Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hant-TW</language>
-    <lastBuildDate>Sun, 01 Apr 2018 23:06:34 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 11 Apr 2018 23:30:18 +0800</lastBuildDate>
     
 	<atom:link href="https://magicsword.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tool Commandline Autojump</title>
+      <link>https://magicsword.github.io/post/tool-commandline-autojump/</link>
+      <pubDate>Wed, 11 Apr 2018 23:30:18 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/post/tool-commandline-autojump/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34; title=&#34;easily navigate directories from the command line&#34;&gt;autojump&lt;/a&gt; 能快速的切換資料匣。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading 活用一輩子的讀書筆記術 2013</title>
+      <link>https://magicsword.github.io/post/reading-dokusho-issatsu-matomenasai-2013/</link>
+      <pubDate>Wed, 11 Apr 2018 18:24:44 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/post/reading-dokusho-issatsu-matomenasai-2013/</guid>
+      <description>&lt;p&gt;活用一輩子的筆記術 2013
+   作者： 奧野宣之 簡單筆記。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Reading Version Control With Git 2nd</title>
@@ -17,8 +40,7 @@
       <pubDate>Sun, 01 Apr 2018 23:06:34 +0800</pubDate>
       
       <guid>https://magicsword.github.io/post/reading-version-control-with-git-2nd/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://shop.oreilly.com/product/0636920022862.do&#34;&gt;Version Control with Git, 2nd Edition&lt;/a&gt;
-簡單的一些筆記。&lt;/p&gt;
+      <description>&lt;p&gt;Version Control with Git, 2nd Edition 簡單的一些筆記。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -39,12 +61,12 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;
     </item>
     
     <item>
-      <title>Reading Hackingvim72</title>
+      <title>Reading HackingVim 7.2</title>
       <link>https://magicsword.github.io/post/reading-hackingvim72/</link>
       <pubDate>Sat, 24 Mar 2018 01:00:23 +0800</pubDate>
       
       <guid>https://magicsword.github.io/post/reading-hackingvim72/</guid>
-      <description>&lt;p&gt;HackingVim72讀後心得。&lt;/p&gt;
+      <description>&lt;p&gt;Hacking Vim 7.2 讀後心得。&lt;/p&gt;
 
 &lt;p&gt;以及一些簡單的筆記、和心得記錄。&lt;/p&gt;
 
