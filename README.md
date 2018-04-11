@@ -2,6 +2,9 @@
 
 ---
 
+test for git kra ken
+
+
 由於 personal.github.io的頁面
 只能用 master的分支來放網頁，
 不能放 docs，gh-pages
