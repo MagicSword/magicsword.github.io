@@ -23,5 +23,17 @@
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Python Debugging With Pdb</title>
+      <link>https://magicsword.github.io/post/python-debugging-with-pdb/</link>
+      <pubDate>Fri, 13 Apr 2018 21:03:50 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/post/python-debugging-with-pdb/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://realpython.com/python-debugging-pdb/&#34;&gt;Python Debugging With Pdb&lt;/a&gt;
+簡單心得&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

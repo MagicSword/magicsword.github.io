@@ -8,12 +8,22 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/post/reading-making-perfect-bread/</loc>
+    <lastmod>2018-04-16T03:52:12+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/post/python-import-system/</loc>
     <lastmod>2018-04-14T14:44:03+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://magicsword.github.io/post/tool-python-interactive/</loc>
+    <loc>https://magicsword.github.io/post/python-debugging-with-pdb/</loc>
+    <lastmod>2018-04-13T21:03:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/post/tool-picon-python-interactive/</loc>
     <lastmod>2018-04-13T02:36:19+08:00</lastmod>
   </url>
   
@@ -121,6 +131,12 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/tags/bread/</loc>
+    <lastmod>2018-04-16T03:52:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/categories/</loc>
     <priority>0</priority>
   </url>
@@ -128,6 +144,18 @@
   <url>
     <loc>https://magicsword.github.io/tags/commandline/</loc>
     <lastmod>2018-04-13T02:36:19+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/tags/cooking/</loc>
+    <lastmod>2018-04-16T03:52:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/tags/debug/</loc>
+    <lastmod>2018-04-13T21:03:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -140,6 +168,12 @@
   <url>
     <loc>https://magicsword.github.io/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/tags/food/</loc>
+    <lastmod>2018-04-16T03:52:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -193,7 +227,7 @@
   
   <url>
     <loc>https://magicsword.github.io/categories/life/</loc>
-    <lastmod>2018-04-11T18:24:44+08:00</lastmod>
+    <lastmod>2018-04-16T03:52:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -211,7 +245,7 @@
   
   <url>
     <loc>https://magicsword.github.io/post/</loc>
-    <lastmod>2018-04-14T14:44:03+08:00</lastmod>
+    <lastmod>2018-04-16T03:52:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -229,7 +263,7 @@
   
   <url>
     <loc>https://magicsword.github.io/tags/reading/</loc>
-    <lastmod>2018-04-11T18:24:44+08:00</lastmod>
+    <lastmod>2018-04-16T03:52:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -253,7 +287,7 @@
   
   <url>
     <loc>https://magicsword.github.io/categories/technology/</loc>
-    <lastmod>2018-04-13T02:36:19+08:00</lastmod>
+    <lastmod>2018-04-13T21:03:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,17 +6,29 @@
     <description>Recent content in Technology on After Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hant-TW</language>
-    <lastBuildDate>Fri, 13 Apr 2018 02:36:19 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 21:03:50 +0800</lastBuildDate>
     
 	<atom:link href="https://magicsword.github.io/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Python Debugging With Pdb</title>
+      <link>https://magicsword.github.io/post/python-debugging-with-pdb/</link>
+      <pubDate>Fri, 13 Apr 2018 21:03:50 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/post/python-debugging-with-pdb/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://realpython.com/python-debugging-pdb/&#34;&gt;Python Debugging With Pdb&lt;/a&gt;
+簡單心得&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Picon: 在互動的環境下執行 Python 程式碼</title>
-      <link>https://magicsword.github.io/post/tool-python-interactive/</link>
+      <link>https://magicsword.github.io/post/tool-picon-python-interactive/</link>
       <pubDate>Fri, 13 Apr 2018 02:36:19 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/tool-python-interactive/</guid>
+      <guid>https://magicsword.github.io/post/tool-picon-python-interactive/</guid>
       <description>&lt;p&gt;可以在即時在編輯器看到程式碼執行的結果。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

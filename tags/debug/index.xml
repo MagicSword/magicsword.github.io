@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debug on After Dark</title>
+    <link>https://magicsword.github.io/tags/debug/</link>
+    <description>Recent content in Debug on After Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hant-TW</language>
+    <lastBuildDate>Fri, 13 Apr 2018 21:03:50 +0800</lastBuildDate>
+    
+	<atom:link href="https://magicsword.github.io/tags/debug/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python Debugging With Pdb</title>
+      <link>https://magicsword.github.io/post/python-debugging-with-pdb/</link>
+      <pubDate>Fri, 13 Apr 2018 21:03:50 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/post/python-debugging-with-pdb/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://realpython.com/python-debugging-pdb/&#34;&gt;Python Debugging With Pdb&lt;/a&gt;
+簡單心得&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -423,6 +423,29 @@ HELLO
 </ol>
     </div>
     
+      <article>
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "neromiller" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </article>
+    
     <footer>
       <hr>
       <p>
@@ -451,7 +474,10 @@ HELLO
     <header>Related Content</header>
     <ul>
       
-        <li><a href="/post/tool-python-interactive/">Picon: 在互動的環境下執行 Python 程式碼</a>
+        <li><a href="/post/python-debugging-with-pdb/">Python Debugging With Pdb</a>
+        <time datetime="2M">2 minutes</time>
+      
+        <li><a href="/post/tool-picon-python-interactive/">Picon: 在互動的環境下執行 Python 程式碼</a>
         <time datetime="1M">1 minutes</time>
       
         <li><a href="/post/this-is-new-blog-post/">This Is New Blog Post</a>
