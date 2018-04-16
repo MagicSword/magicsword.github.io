@@ -8,6 +8,16 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/post/python-import-system/</loc>
+    <lastmod>2018-04-14T14:44:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/post/tool-python-interactive/</loc>
+    <lastmod>2018-04-13T02:36:19+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/post/tool-commandline-autojump/</loc>
     <lastmod>2018-04-11T23:30:18+08:00</lastmod>
   </url>
@@ -117,18 +127,18 @@
   
   <url>
     <loc>https://magicsword.github.io/tags/commandline/</loc>
-    <lastmod>2018-04-11T23:30:18+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://magicsword.github.io/categories/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-13T02:36:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://magicsword.github.io/tags/development/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -146,14 +156,14 @@
   </url>
   
   <url>
-    <loc>https://magicsword.github.io/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://magicsword.github.io/tags/golang/</loc>
+    <lastmod>2017-09-23T22:40:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://magicsword.github.io/tags/golang/</loc>
-    <lastmod>2017-09-23T22:40:35+08:00</lastmod>
+    <loc>https://magicsword.github.io/categories/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -194,14 +204,26 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/tags/module/</loc>
+    <lastmod>2018-04-14T14:44:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/post/</loc>
-    <lastmod>2018-04-11T23:30:18+08:00</lastmod>
+    <lastmod>2018-04-14T14:44:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/categories/programming/</loc>
+    <lastmod>2018-04-14T14:44:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://magicsword.github.io/tags/python/</loc>
-    <lastmod>2017-09-23T22:40:35+08:00</lastmod>
+    <lastmod>2018-04-14T14:44:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -231,7 +253,7 @@
   
   <url>
     <loc>https://magicsword.github.io/categories/technology/</loc>
-    <lastmod>2018-04-11T23:30:18+08:00</lastmod>
+    <lastmod>2018-04-13T02:36:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -261,7 +283,7 @@
   
   <url>
     <loc>https://magicsword.github.io/tags/vim/</loc>
-    <lastmod>2018-03-24T01:00:23+08:00</lastmod>
+    <lastmod>2018-04-13T02:36:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,21 @@
     <description>Recent content in Commandline on After Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hant-TW</language>
-    <lastBuildDate>Wed, 11 Apr 2018 23:30:18 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Apr 2018 02:36:19 +0800</lastBuildDate>
     
 	<atom:link href="https://magicsword.github.io/tags/commandline/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Picon: 在互動的環境下執行 Python 程式碼</title>
+      <link>https://magicsword.github.io/post/tool-python-interactive/</link>
+      <pubDate>Fri, 13 Apr 2018 02:36:19 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/post/tool-python-interactive/</guid>
+      <description>&lt;p&gt;可以在即時在編輯器看到程式碼執行的結果。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Tool Commandline Autojump</title>
@@ -17,7 +28,7 @@
       <pubDate>Wed, 11 Apr 2018 23:30:18 +0800</pubDate>
       
       <guid>https://magicsword.github.io/post/tool-commandline-autojump/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34; title=&#34;easily navigate directories from the command line&#34;&gt;autojump&lt;/a&gt; 能快速的切換資料匣。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34; title=&#34;easily navigate directories from the command line&#34;&gt;autojump&lt;/a&gt; 能快速的切換資料夾。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

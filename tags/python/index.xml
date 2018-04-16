@@ -6,10 +6,33 @@
     <description>Recent content in Python on After Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hant-TW</language>
-    <lastBuildDate>Sat, 23 Sep 2017 22:40:35 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 14 Apr 2018 14:44:03 +0800</lastBuildDate>
     
 	<atom:link href="https://magicsword.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python Import System</title>
+      <link>https://magicsword.github.io/post/python-import-system/</link>
+      <pubDate>Sat, 14 Apr 2018 14:44:03 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/post/python-import-system/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;(https://manikos.github.io/how-pythons-import-machinery-works)&#34;&gt;How python&amp;rsquo;s import machinery works&lt;/a&gt; 簡單的筆記，
+順便整理一下 &lt;a href=&#34;https://docs.python.org/3/reference/import.html&#34; title=&#34;access to the code in another module&#34;&gt;import&lt;/a&gt; 的資料。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Picon: 在互動的環境下執行 Python 程式碼</title>
+      <link>https://magicsword.github.io/post/tool-python-interactive/</link>
+      <pubDate>Fri, 13 Apr 2018 02:36:19 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/post/tool-python-interactive/</guid>
+      <description>&lt;p&gt;可以在即時在編輯器看到程式碼執行的結果。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>This Is New Blog Post</title>
