@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
   <head>
-    <meta name="generator" content="Hugo 0.37" />
+    <meta name="generator" content="Hugo 0.38.2" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reading Version Control With Git 2nd | After Dark</title>
@@ -246,7 +246,7 @@ figure a:hover {
 
 <meta itemprop="datePublished" content="2018-04-01T23:06:34&#43;08:00" />
 <meta itemprop="dateModified" content="2018-04-01T23:06:34&#43;08:00" />
-<meta itemprop="wordCount" content="1140">
+<meta itemprop="wordCount" content="1224">
 
   <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
 
@@ -941,13 +941,36 @@ $git branch -d bug/pr-3
 
 <p>Diffs 比較兩個物件的差異。 Unix 有一個指令 <code>diff</code> 也是用來比較檔案間的差異。</p>
 
-<pre><code class="language-bash">$diff -u old new
+<pre><code class="language-bash">$ diff -u initial rewrite
+  --- initial     1867-01-02 11:22:33.000000000 -0500
+  +++ rewrite     2000-01-02 11:23:45.000000000 -0500
+  @@ -1,4 +1,5 @@
+  -Now is the time
+  +Today is the time
+   For all good men
+  +And women
+   To come to the aid
+   Of their country.
 </code></pre>
 
 <ul>
-<li><code>---</code>: 減號開頭的是 old 有， new 沒有的內容</li>
-<li><code>+++</code>: 加號開頭的是 old沒有，new 有的內容</li>
+<li><code>-u</code> : 使用 <code>-u</code> 的的顯示格式，<code>+ , -</code> 號</li>
+<li><code>@@</code>: 這行代表差異的行數，<code>-1,4</code> 指 <code>initial</code> 的 1,4 行</li>
+<li><code>-</code>: 減號開頭的是 old 有， new 沒有的內容</li>
+<li><code>+</code>: 加號開頭的是 old沒有，new 有的內容</li>
 <li>: 空白開頭的是 old , new 共有的內容</li>
+</ul>
+
+<p>** <code>git diff</code> 指令形式 **</p>
+
+<ul>
+<li><code>git diff</code>: 比較目前目錄狀態，與索引間的差異</li>
+<li><code>git diff commit:</code>比較 <code>commit</code> 與索引</li>
+<li><code>git diff --staged commit</code>: 比較已進入 <code>staged</code>，與 <code>HEAD</code></li>
+
+<li><p><code>git diff commit1 commit2</code>: 比較兩個 commit 的差異</p></li>
+
+<li><p><code>staged</code>: 已 <code>git add</code>，還未 <code>commit</code></p></li>
 </ul>
 
 <hr />
@@ -1194,7 +1217,7 @@ This is an H2
   
     and tagged <a href="/tags/git/">git</a> and <a href="/tags/reading/">reading</a>
   
-  using <span itemprop="wordCount">1140</span> words.
+  using <span itemprop="wordCount">1224</span> words.
 </p>
 
       

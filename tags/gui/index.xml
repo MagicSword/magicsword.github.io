@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gui on After Dark</title>
+    <link>https://magicsword.github.io/tags/gui/</link>
+    <description>Recent content in Gui on After Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hant-TW</language>
+    <lastBuildDate>Tue, 17 Apr 2018 02:47:36 +0800</lastBuildDate>
+    
+	<atom:link href="https://magicsword.github.io/tags/gui/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reading 15 Minute Apps</title>
+      <link>https://magicsword.github.io/post/15-minute-apps/</link>
+      <pubDate>Tue, 17 Apr 2018 02:47:36 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/post/15-minute-apps/</guid>
+      <description>&lt;p&gt;&amp;rdquo; &lt;a href=&#34;https://martinfitzpatrick.name/article/15-minute-apps/&#34; title=&#34;Common desktop apps in Python, using PyQt&#34;&gt;15 Minute Apps&lt;/a&gt;  | Common desktop apps in Python, using PyQt&amp;rdquo;
+簡單筆記&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

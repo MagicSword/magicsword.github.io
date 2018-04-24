@@ -6,10 +6,28 @@
     <description>Recent content in Tags on After Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hant-TW</language>
-    <lastBuildDate>Sun, 24 Sep 2017 03:06:33 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Apr 2018 14:37:58 +0800</lastBuildDate>
     
 	<atom:link href="https://magicsword.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Automatestuff</title>
+      <link>https://magicsword.github.io/tags/automatestuff/</link>
+      <pubDate>Thu, 19 Apr 2018 14:37:58 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/tags/automatestuff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automation</title>
+      <link>https://magicsword.github.io/tags/automation/</link>
+      <pubDate>Thu, 19 Apr 2018 14:37:58 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/tags/automation/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Blog</title>
@@ -102,6 +120,15 @@
     </item>
     
     <item>
+      <title>Gui</title>
+      <link>https://magicsword.github.io/tags/gui/</link>
+      <pubDate>Tue, 17 Apr 2018 02:47:36 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/tags/gui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hello</title>
       <link>https://magicsword.github.io/tags/hello/</link>
       <pubDate>Sun, 24 Sep 2017 04:21:50 +0800</pubDate>
@@ -147,9 +174,18 @@
     </item>
     
     <item>
+      <title>Pyqt</title>
+      <link>https://magicsword.github.io/tags/pyqt/</link>
+      <pubDate>Tue, 17 Apr 2018 02:47:36 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/tags/pyqt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Python</title>
       <link>https://magicsword.github.io/tags/python/</link>
-      <pubDate>Sat, 14 Apr 2018 14:44:03 +0800</pubDate>
+      <pubDate>Thu, 19 Apr 2018 14:37:58 +0800</pubDate>
       
       <guid>https://magicsword.github.io/tags/python/</guid>
       <description></description>
@@ -158,9 +194,18 @@
     <item>
       <title>Reading</title>
       <link>https://magicsword.github.io/tags/reading/</link>
-      <pubDate>Mon, 16 Apr 2018 03:52:12 +0800</pubDate>
+      <pubDate>Thu, 19 Apr 2018 14:37:58 +0800</pubDate>
       
       <guid>https://magicsword.github.io/tags/reading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>https://magicsword.github.io/tags/software/</link>
+      <pubDate>Tue, 24 Apr 2018 21:21:05 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/tags/software/</guid>
       <description></description>
     </item>
     
@@ -215,6 +260,24 @@
       <pubDate>Wed, 11 Apr 2018 23:30:18 +0800</pubDate>
       
       <guid>https://magicsword.github.io/tags/unix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vegas Pro</title>
+      <link>https://magicsword.github.io/tags/vegas-pro/</link>
+      <pubDate>Tue, 24 Apr 2018 21:21:05 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/tags/vegas-pro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Video Editing</title>
+      <link>https://magicsword.github.io/tags/video-editing/</link>
+      <pubDate>Tue, 24 Apr 2018 21:21:05 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/tags/video-editing/</guid>
       <description></description>
     </item>
     

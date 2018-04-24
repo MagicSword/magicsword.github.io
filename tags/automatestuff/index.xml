@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automatestuff on After Dark</title>
+    <link>https://magicsword.github.io/tags/automatestuff/</link>
+    <description>Recent content in Automatestuff on After Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hant-TW</language>
+    <lastBuildDate>Thu, 19 Apr 2018 14:37:58 +0800</lastBuildDate>
+    
+	<atom:link href="https://magicsword.github.io/tags/automatestuff/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reading Automate the Boring Stuff With Python 1st Edition</title>
+      <link>https://magicsword.github.io/post/reading-automate-the-boring-stuff-with-python-1st/</link>
+      <pubDate>Thu, 19 Apr 2018 14:37:58 +0800</pubDate>
+      
+      <guid>https://magicsword.github.io/post/reading-automate-the-boring-stuff-with-python-1st/</guid>
+      <description>&lt;p&gt;心得筆記&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Automate the Boring Stuff with Python&lt;/li&gt;
+&lt;li&gt;Practical Programming for Total Beginners&lt;/li&gt;
+&lt;li&gt;by Al Sweigart&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
