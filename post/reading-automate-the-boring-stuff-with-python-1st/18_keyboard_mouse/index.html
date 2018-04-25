@@ -4,28 +4,31 @@
     <meta name="generator" content="Hugo 0.38.2" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programming | After Dark</title>
-    <meta name="description" content="programming, writing">
-    <meta name="keywords" content="development, golang, language, life, programming, technology, ">
+    <title>Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠] | After Dark</title>
+    <meta name="description" content="pyautogui 控制 keyboard, mouse">
+    <meta name="keywords" content="reading, python, automation, automatestuff">
     
     
     
-    
-      <meta name="robots" content="noindex">
     
     
 
   <meta name="author" content="Nero">
 
 
-    <meta property="og:title" content="Programming" />
-<meta property="og:description" content="programming, writing" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://magicsword.github.io/categories/programming/" />
+    <meta property="og:title" content="Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠]" />
+<meta property="og:description" content="pyautogui 控制 keyboard, mouse" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://magicsword.github.io/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/" />
+
+  <meta property="og:image" content="https://source.unsplash.com/category/technology/1600x900" />
 
 
 
-<meta property="og:updated_time" content="2018-04-21T18:35:25&#43;08:00"/>
+<meta property="article:published_time" content="2018-04-21T18:35:25&#43;08:00"/>
+
+<meta property="article:modified_time" content="2018-04-21T18:35:25&#43;08:00"/>
+
 
 
 
@@ -37,14 +40,12 @@
 
 
     <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://source.unsplash.com/category/technology/2000x1322"/>
+<meta name="twitter:image" content="https://source.unsplash.com/category/technology/1600x900"/>
 
-<meta name="twitter:title" content="Programming"/>
-<meta name="twitter:description" content="programming, writing"/>
+<meta name="twitter:title" content="Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠]"/>
+<meta name="twitter:description" content="pyautogui 控制 keyboard, mouse"/>
 
     
-
-  <meta property="og:image" content="https://source.unsplash.com/category/technology/2000x1322">
 
 
 
@@ -54,9 +55,7 @@
     
     
     
-      <link href="https://magicsword.github.io/categories/programming/index.xml" rel="alternate" type="application/rss+xml" title="After Dark" />
-    
-    <link rel="canonical" href="https://magicsword.github.io/categories/programming/">
+    <link rel="canonical" href="https://magicsword.github.io/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/">
     
     
     
@@ -220,13 +219,13 @@ figure a:hover {
     
       <a itemprop="url" class="" href="/"><span itemprop="name">Home</span></a>
     
-      <a itemprop="url" class="" href="/post/"><span itemprop="name">Posts</span></a>
+      <a itemprop="url" class="active" href="/post/"><span itemprop="name">Posts</span></a>
     
       <a itemprop="url" class="" href="/articles/"><span itemprop="name">Articles</span></a>
     
       <a itemprop="url" class="" href="/tags/"><span itemprop="name">Tags</span></a>
     
-      <a itemprop="url" class="active" href="/categories/"><span itemprop="name">Categories</span></a>
+      <a itemprop="url" class="" href="/categories/"><span itemprop="name">Categories</span></a>
     
       <a itemprop="url" class="" href="/about/"><span itemprop="name">About</span></a>
     
@@ -239,17 +238,26 @@ figure a:hover {
 
 </header>
     <main>
-  <header>
-    <h1>Programming</h1>
-  </header>
-  
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h2 itemprop="name">
-      <a href="/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/">Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠]</a>
-    </h2>
+  <article itemscope itemtype="http://schema.org/BlogPosting">
     
-      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+<meta itemprop="name" content="Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠]">
+<meta itemprop="description" content="pyautogui 控制 keyboard, mouse">
+
+
+<meta itemprop="datePublished" content="2018-04-21T18:35:25&#43;08:00" />
+<meta itemprop="dateModified" content="2018-04-21T18:35:25&#43;08:00" />
+<meta itemprop="wordCount" content="847">
+
+  <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
+
+
+
+<meta itemprop="keywords" content="reading,python,automation,automatestuff," />
+
+    <header>
+      <h1 itemprop="headline">Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠]</h1>
+      <p class="muted">
+        <svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
   <circle cx="16" cy="16" r="14" />
   <path d="M16 8 L16 16 20 20" />
 </svg>
@@ -260,169 +268,525 @@ figure a:hover {
 
   Published: <time datetime="2018-04-21T18:35:25&#43;08:00">21 Apr, 2018</time>
 
-</p>
+
+      </p>
+      
+        <blockquote itemprop="description">pyautogui 控制 keyboard, mouse</blockquote>
+      
+      
+      
+    </header>
     
-  </header>
-  
-    <blockquote itemprop="headline">pyautogui 控制 keyboard, mouse</blockquote>
-  
-  <div itemprop="description">
-    <ul>
+  <details>
+    <summary>Table of Contents</summary>
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#概述">概述</a></li>
+<li><a href="#pyautogui-文件">PyAutoGUI 文件</a></li>
+<li><a href="#控制滑鼠移動">控制滑鼠移動</a>
+<ul>
+<li><a href="#程式-目前的游標位置">程式：目前的游標位置</a></li>
+<li><a href="#控制滑鼠游標的互動">控制滑鼠游標的互動</a></li>
+<li><a href="#滑鼠游標的捲動">滑鼠游標的捲動</a></li>
+</ul></li>
+<li><a href="#螢幕操作的函式">螢幕操作的函式</a>
+<ul>
+<li><a href="#程式-擴充-mousenow-的功能">程式：擴充 mouseNow 的功能</a></li>
+<li><a href="#影像圖片的識別">影像圖片的識別</a></li>
+</ul></li>
+<li><a href="#控制鍵盤">控制鍵盤</a>
+<ul>
+<li><a href="#傳送一個字串">傳送一個字串</a></li>
+<li><a href="#鍵盤按鍵名稱">鍵盤按鍵名稱</a></li>
+<li><a href="#按下-釋放按鍵">按下，釋放按鍵</a></li>
+<li><a href="#快速鍵組合">快速鍵組合</a></li>
+</ul></li>
+<li><a href="#整理-pyautogui-的函式">整理 PyAutoGUI 的函式</a></li>
+<li><a href="#程式-自動填寫表單">程式：自動填寫表單</a></li>
+<li><a href="#總結">總結</a></li>
+<li><a href="#習題">習題</a></li>
+<li><a href="#實作">實作</a>
+<ul>
+<li><a href="#looking-busy">Looking Busy</a></li>
+<li><a href="#instant-messenger-bot">Instant Messenger Bot</a></li>
+<li><a href="#game-playing-bot-tutorial">Game-Playing Bot Tutorial</a></li>
+</ul></li>
+<li><a href="#參考連結">參考連結</a></li>
+</ul>
+</nav>
+  </details>
+  <script>
+    const el = document.querySelector('details summary')
+    el.onclick = () => {
+      (function(l,o,a,d,e,r){e=o.createElement(a),r=o.getElementsByTagName(a)[0];e.async=1;e.src=d;r.parentNode.insertBefore(e,r)})(window,document,'script','/js/smoothscroll.js');
+      el.onclick = null
+    }
+    document.querySelectorAll('#TableOfContents a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector(
+          link.href.slice(link.href.indexOf('#'))
+        ).scrollIntoView({ behavior: 'smooth' })
+      })
+    })
+  </script>
+
+
+    <div itemprop="articleBody">
+      <ul>
 <li>沒有相應的程式庫時，可以模擬鍵盤、或滑鼠動作，直接操作 GUI 的得到相對的功能。</li>
 </ul>
 
 <p></p>
-  </div>
-  
-    <nav class="readmore"><a itemprop="url" href="/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/">Read More&nbsp;&raquo;</a></nav>
-  
-  <meta itemprop="inLanguage" content="zh-Hant-TW">
-  <meta itemprop="datePublished" content="2018-04-21T18:35:25&#43;08:00">
-  <meta itemprop="dateModified" content="2018-04-21T18:35:25&#43;08:00">
-  
-    <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
-  
-</article>
 
-  
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h2 itemprop="name">
-      <a href="/post/reading-automate-the-boring-stuff-with-python-1st/">Reading Automate the Boring Stuff With Python 1st Edition</a>
-    </h2>
-    
-      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <circle cx="16" cy="16" r="14" />
-  <path d="M16 8 L16 16 20 20" />
-</svg>
-<span>2 minute read</span>
-<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
-</svg>
+<p>Task list: 😄</p>
 
-  Published: <time datetime="2018-04-19T14:37:58&#43;08:00">19 Apr, 2018</time>
-
-</p>
-    
-  </header>
-  
-    <blockquote itemprop="headline">Python 自動化的樂趣 心得</blockquote>
-  
-  <div itemprop="description">
-    <p>心得筆記</p>
-
-<ul>
-<li>Automate the Boring Stuff with Python</li>
-<li>Practical Programming for Total Beginners</li>
-<li>by Al Sweigart</li>
+<ul class="task-list">
+<li><label><input type="checkbox" checked disabled class="task-list-item"> 初稿</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> 再讀</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> 筆記</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> 完成</label></li>
 </ul>
 
-<p></p>
-  </div>
-  
-    <nav class="readmore"><a itemprop="url" href="/post/reading-automate-the-boring-stuff-with-python-1st/">Read More&nbsp;&raquo;</a></nav>
-  
-  <meta itemprop="inLanguage" content="zh-Hant-TW">
-  <meta itemprop="datePublished" content="2018-04-19T14:37:58&#43;08:00">
-  <meta itemprop="dateModified" content="2018-04-19T14:37:58&#43;08:00">
-  
-    <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
-  
-</article>
+<h1 id="概述">概述</h1>
 
-  
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h2 itemprop="name">
-      <a href="/post/15-minute-apps/">Reading 15 Minute Apps</a>
-    </h2>
+<p><a href="https://github.com/pywinauto/pywinauto/wiki/UI-Automation-tools-ratings">UI Automation tools ratings</a></p>
+
+<p>GitHub (number of stars)(2018, April, 01)</p>
+
+<ol>
+<li><a href="https://github.com/Lexikos/AutoHotkey_L/">AutoHotkey (C++)</a> - 1 652</li>
+<li><a href="https://github.com/asweigart/pyautogui">pyautogui</a> - 1 630</li>
+<li><a href="https://github.com/sikuli/sikuli">sikuli</a> - 1 387</li>
+<li><a href="https://github.com/msanders/autopy/">autopy</a> - 856</li>
+<li><a href="https://github.com/TestStack/White">TestStack.White (C#)</a> - 797</li>
+<li><a href="https://github.com/pywinauto/pywinauto">pywinauto</a> - <strong>773</strong></li>
+</ol>
+
+<p>StackOverflow (number of tagged questions)</p>
+
+<ol>
+<li><a href="http://stackoverflow.com/questions/tagged/autohotkey">AutoHotkey</a> - 2663 (73.3% answered)</li>
+<li><a href="http://stackoverflow.com/questions/tagged/autoit">AutoIt</a> - 1627 (64.1% answered)</li>
+<li><a href="http://stackoverflow.com/questions/tagged/sikuli">sikuli</a> - 673 (53.6% answered)</li>
+<li><a href="http://stackoverflow.com/questions/tagged/pywinauto">pywinauto</a> - <strong>329</strong> (61.4% answered)</li>
+<li><a href="http://stackoverflow.com/questions/tagged/pyautogui">pyautogui</a> - 231 (36.4% answered)</li>
+</ol>
+
+<ul>
+<li>AutoHotkey: 是用自己的語法</li>
+<li>Python: 有 pyautogui,pywinauto,autopy(python2，較舊)</li>
+</ul>
+
+<p>PyAutoGUI vs PyWinAuto <a href="https://blog.csdn.net/huangzhang_123/article/details/58588362">Python PyAutoGUI和Pywinauto区别及安装</a></p>
+
+<blockquote>
+<p>&rdquo; 首先，这两者最大共同点就是可以操作计算机，模拟人工输入和鼠标操作等等。不过这两者也有侧重点，PyAutoGUI侧重于鼠标，键盘，截图，消息框的功能，Pywinauto侧重对CS的操作，虽然都有键盘，鼠标等模拟输入，不过最核心还是软件上的操作比较多。可以说各有所长。&rdquo;</p>
+</blockquote>
+
+<ul>
+<li>程式送出的鍵盤、滑鼠信號很快，不像手動的速度，所以記得留下檢查點</li>
+<li>藉由登出來關閉所有程式，或  <code>kill -9</code> ?</li>
+</ul>
+
+<p><strong>暫停與失效安全保護</strong></p>
+
+<ul>
+<li><code>pyautogui.PAUSE = 1.5</code> 暫停 1.5 秒</li>
+<li>把游標移出畫面， 會觸發 pyautogui 的異常，會暫停程式</li>
+<li>關掉失效保護功能：<code>pyautogui.FAILSAFE = False</code></li>
+</ul>
+
+<h1 id="pyautogui-文件">PyAutoGUI 文件</h1>
+
+<p><a href="(https://pyautogui.readthedocs.io/en/latest/)">PyAutoGUI Docs</a></p>
+
+<p>官方文件的大綱：</p>
+
+<ul>
+<li>安裝、基本操作</li>
+<li>滑鼠游標</li>
+<li>鍵盤</li>
+<li>訊息方塊</li>
+<li>截圖</li>
+</ul>
+
+<h1 id="控制滑鼠移動">控制滑鼠移動</h1>
+
+<ul>
+<li>畫面左上為原點 (0,0) ，向右 X 軸 正，向下 Y 軸 正</li>
+</ul>
+
+<p><img src="https://automatetheboringstuff.com/images/000011.jpg" alt="1920×1080" /></p>
+
+<pre><code>0,0       X increases --&gt;
++---------------------------+
+|                           | Y increases
+|                           |     |
+|   1920 x 1080 screen      |     |
+|                           |     V
+|                           |
+|                           |
++---------------------------+ 1919, 1079
+</code></pre>
+
+<pre><code class="language-python">&gt;&gt;&gt; import pyautogui
+&gt;&gt;&gt; pyautogui.size()
+(1920, 1080)
+&gt;&gt;&gt; width, height = pyautogui.size()
+</code></pre>
+
+<p><strong>取得滑鼠位置</strong></p>
+
+<pre><code class="language-python">&gt;&gt;&gt; pyautogui.postion()
+(311,32) # 傳回目前游標座標
+</code></pre>
+
+<p><strong>移動滑鼠游標</strong></p>
+
+<p><code>pyautogui.moveTo(xpos,ypos,duration=xxsec)</code>:
+<code>duration</code>是每次移動幾秒，直到到達目的座標</p>
+
+<dl>
+<dt><code>pyautogui.moveRel(xdis,ydis,duration=xxsec)</code></dt>
+<dd>相對座標移動</dd>
+</dl>
+
+<h2 id="程式-目前的游標位置">程式：目前的游標位置</h2>
+
+<pre><code class="language-python">import pyautogui
+print('Press Ctrl-C to quit')
+
+try:
+    while True:
+        x,y = pyautogui.position()
+        positionStr = 'X: ' + str(x).rjust(4) + ' Y: ' + str(y).rjust(4)
+        # str.rjust() 字串向右對齊
+        print(positionStr,end='')
+        print('\b'*len(positionStr), end='', flush=True)
+        # 字串印出後，用等長的 Backspace 刪除，並 flush
+except KeyboardInterrupt:
+    print('\nDone.')
+</code></pre>
+
+<h2 id="控制滑鼠游標的互動">控制滑鼠游標的互動</h2>
+
+<p><strong>Click</strong></p>
+
+<ul>
+<li>Click : mosueDown, mouseUp</li>
+</ul>
+
+<pre><code class="language-python">pyautogui.click(xpos,ypos,button='left') # right,middle,left
+pyautogui.click(xpos,ypos)
+pyautogui.mouseUp()
+pyautogui.mouseDown()
+pyautogui.doubleClick()
+pyautogui.rightClick()
+pyautogui.middleClick()
+</code></pre>
+
+<p><strong>Drag  and Drop</strong></p>
+
+<ul>
+<li>Drag : mouseDown()(一般是左鍵) -&gt; 移動游標</li>
+<li>Drop : (在 Drag狀態下)移動游標  -&gt; mouseUp()</li>
+<li>pyautogui.dragTo(xpos,ypos) : 絕對座標</li>
+<li>pyautogui.dragRel(xpos,ypos): 相對座標</li>
+</ul>
+
+<pre><code class="language-python"># spiralDraw.py
+import pyautogui, time
+time.sleep(5)   # 給緩衝時間
+pyautogui.click() # get focus
+distance = 200
+
+while distance &gt; 0:
+    pyautogui.dragRel(distance, 0, duration = 0.2) # move right
+    distance = distance -5
+    pyautogui.dragRel(0,distance, duration = 0.2) # move down
+    pyautogui.dragRel(-distance,0, duration = 0.2) # move left
+    distance = distance -5
+    pyautogui.dragRel(0, -distance, duration = 0.2) # move up
+</code></pre>
+
+<h2 id="滑鼠游標的捲動">滑鼠游標的捲動</h2>
+
+<dl>
+<dt><code>pyautogui.scroll(xdistance)</code>:</dt>
+<dd>傳入整數引數，向上(正數)、或向下(負數)捲動，這個單位在不同作業系統可能會不同，可能要先試看看。</dd>
+</dl>
+
+<pre><code class="language-python">&gt;&gt;&gt; pyautogui.scroll(10)   # scroll up 10 &quot;clicks&quot;
+&gt;&gt;&gt; pyautogui.scroll(-10)  # scroll down 10 &quot;clicks&quot;
+&gt;&gt;&gt; pyautogui.scroll(10, x=100, y=100)  # 游標先移到 x, y 後，再移動 10 &quot;步&quot;
+</code></pre>
+
+<pre><code class="language-python"># pyperclip.py
+import pyperclip  # 傳資料到剪貼簿的工具
+numbers = ''
+
+for i in range(200):
+    numbers = numbers + str(i) + '\n'
     
-      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <circle cx="16" cy="16" r="14" />
-  <path d="M16 8 L16 16 20 20" />
-</svg>
-<span>1 minute read</span>
-<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
-</svg>
+pyperclip.copy(numbers)
 
-  Published: <time datetime="2018-04-17T02:47:36&#43;08:00">17 Apr, 2018</time>
+# 開個 notepad ，把東西貼上去
 
+import time, pyautogui
+time.sleep(5); pyautogui.scroll(100)
+</code></pre>
+
+<h1 id="螢幕操作的函式">螢幕操作的函式</h1>
+
+<ul>
+<li>根據螢幕截圖的內容，分析後，再進行動作</li>
+<li>需要 Pillow (Linux中需要 scrot 來截圖)</li>
+</ul>
+
+<p><strong>截圖</strong></p>
+
+<pre><code class="language-python">&gt;&gt;&gt; import pyautogui
+&gt;&gt;&gt; im = pyautogui.screenshot()
+# im 就是 Pillow 的 Image 物件
+&gt;&gt;&gt; im.getpixel((0,0))
+# 傳回值是座標的 (R, G, B)
+(176,176,175)
+&gt;&gt;&gt; im.getpixel((50,200))
+(130,135,144)
+</code></pre>
+
+<p><strong>分析截圖</strong></p>
+
+<ul>
+<li>之前程式在執行前，先 click() 取得 focus 前，可以先確定座標位置的顏色和預想的一樣，再執行。</li>
+</ul>
+
+<p><code>pyautogui.pixelMatchsColor(xpos,ypos,(R,G,B))</code></p>
+
+<h2 id="程式-擴充-mousenow-的功能">程式：擴充 mouseNow 的功能</h2>
+
+<p>pass</p>
+
+<h2 id="影像圖片的識別">影像圖片的識別</h2>
+
+<ul>
+<li><code>pyautogui.locateOnScreen(</code>path2pic<code>)</code>找出小圖的位置在目前螢幕的某個位置</li>
+<li>傳回值是 左上的座標 (xpos,ypos，寬，高)</li>
+</ul>
+
+<h1 id="控制鍵盤">控制鍵盤</h1>
+
+<h2 id="傳送一個字串">傳送一個字串</h2>
+
+<p><code>pyautogui.typewrite('string')</code></p>
+
+<h2 id="鍵盤按鍵名稱">鍵盤按鍵名稱</h2>
+
+<ul>
+<li>一般字元 a-z,A-Z, 符號 …</li>
+<li>控制字元，BACKSPACE, ENTER, DELETE&hellip;</li>
+<li>功能鍵，F1-F12，Ctrl,Alt,Shift,winleft,command,option</li>
+</ul>
+
+<p><strong>SEE ALSO</strong></p>
+
+<ul>
+<li><a href="https://pyautogui.readthedocs.io/en/latest/keyboard.html#keyboard-keys">KEYBOARD_KEYS</a></li>
+</ul>
+
+<h2 id="按下-釋放按鍵">按下，釋放按鍵</h2>
+
+<ul>
+<li><code>pyautogui.keyUp('shift')</code>,<code>pyautogui.keyDown('ctrl')</code></li>
+<li><code>pyautogui.press('a')</code> = keyDown + keyUp</li>
+</ul>
+
+<h2 id="快速鍵組合">快速鍵組合</h2>
+
+<ul>
+<li><code>pyautogui.hotkey('ctrl','alt','shift','s')</code> 可以同時按下多鍵</li>
+</ul>
+
+<h1 id="整理-pyautogui-的函式">整理 PyAutoGUI 的函式</h1>
+
+<ul>
+<li>moveTo(x, y). Moves the mouse cursor to the given x and y coordinates.</li>
+<li>moveRel(xOffset, yOffset). Moves the mouse cursor relative to its current position.</li>
+<li>dragTo(x, y). Moves the mouse cursor while the left button is held down.</li>
+<li>dragRel(xOffset, yOffset). Moves the mouse cursor relative to its current position while the left button is held down.</li>
+<li>click(x, y, button). Simulates a click (left button by default).</li>
+<li>rightClick(). Simulates a right-button click.</li>
+<li>middleClick(). Simulates a middle-button click.</li>
+<li>doubleClick(). Simulates a double left-button click.</li>
+<li>mouseDown(x, y, button). Simulates pressing down the given button at the position x, y.</li>
+<li>mouseUp(x, y, button). Simulates releasing the given button at the position x, y.</li>
+<li>scroll(units). Simulates the scroll wheel. A positive argument scrolls up; a negative argument scrolls down.</li>
+<li>typewrite(message). Types the characters in the given message string.</li>
+<li>typewrite([key1, key2, key3]). Types the given keyboard key strings.</li>
+<li>press(key). Presses the given keyboard key string.</li>
+<li>keyDown(key). Simulates pressing down the given keyboard key.</li>
+<li>keyUp(key). Simulates releasing the given keyboard key.</li>
+<li>hotkey([key1, key2, key3]). Simulates pressing the given keyboard key strings down in order and then releasing them in reverse order.</li>
+<li>screenshot(). Returns a screenshot as an Image object. (See Chapter 17 for information on Image objects.)</li>
+</ul>
+
+<h1 id="程式-自動填寫表單">程式：自動填寫表單</h1>
+
+<ul>
+<li>簡列需要的動作</li>
+<li>詳列一下細步的動作，可用虛擬碼寫作</li>
+<li>實作</li>
+</ul>
+
+<h1 id="總結">總結</h1>
+
+<ul>
+<li>自動化可以節省不少時間，但是錯誤處理也很重要，可以確定程式走在正確的路徑上。</li>
+</ul>
+
+<h1 id="習題">習題</h1>
+
+<dl>
+<dt>Q: 1. How can you trigger PyAutoGUI’s fail safe to stop a program?</dt>
+<dd>A: <code>pyautogui.FAILSAFE = True</code>, 打開安全防護功能。
+滑鼠在移出畫面邊界時，會自動停止，會觸發 <code>pyautogui.FailSageExcetion</code></dd>
+<dt>Q: 2. What function returns the current resolution()?</dt>
+<dd>A: <code>pyautogui.size()</code> 傳回 xpos,ypos</dd>
+<dt>Q: 3. What function returns the coordinates for the mouse cursor’s current position?</dt>
+<dd>A: <code>pyautogui.position()</code></dd>
+<dt>Q: 4. What is the difference between pyautogui.moveTo() and pyautogui.moveRel()?</dt>
+<dd>A: 絕對座標，相對移動</dd>
+<dt>Q: 5. What functions can be used to drag the mouse?</dt>
+<dd>A: <code>pyautogui.dragTo()</code>, <code>pyautogui.dragRel()</code></dd>
+<dt>Q: 6. What function call will type out the characters of &ldquo;Hello world!&rdquo;?</dt>
+<dd>A: <code>pyautogui.typewriter()</code></dd>
+<dt>Q: 7. How can you do keypresses for special keys such as the keyboard’s left arrow key?</dt>
+<dd>A: <code>pyautogui.press(</code>left<code>)</code></dd>
+<dt>Q: 8. How can you save the current contents of the screen to an image file named screenshot.png?</dt>
+<dd>A: <code>im = pyaytogui.screenshot()</code></dd>
+<dt>Q: 9. What code would set a two second pause after every PyAutoGUI function call?</dt>
+<dd>A: <code>time.sleep(2)</code></dd>
+</dl>
+
+<h1 id="實作">實作</h1>
+
+<h2 id="looking-busy">Looking Busy</h2>
+
+<p>防閒罝動作：</p>
+
+<pre><code class="language-python">import pyautogui
+import time
+
+time.sleep(5)
+print('Press Ctrl-C to quit')
+
+distance = 4
+timespan = 1
+try:
+    while True:
+        pyautogui.moveRel(distance,0, duration = timespan)
+        time.sleep(5)
+        pyautogui.moveRel(-distance,0, duration = timespan)
+except KeyboardInterrupt:
+    print('\nDone.')
+</code></pre>
+
+<h2 id="instant-messenger-bot">Instant Messenger Bot</h2>
+
+<p>pass</p>
+
+<h2 id="game-playing-bot-tutorial">Game-Playing Bot Tutorial</h2>
+
+<p>pass</p>
+
+<h1 id="參考連結">參考連結</h1>
+
+<ol>
+<li><a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python 作者網站</a></li>
+<li><a href="https://pyautogui.readthedocs.io/en/latest/">PyAutoGUI Docs</a></li>
+</ol>
+    </div>
+    
+      <article>
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "neromiller-github" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </article>
+    
+    <footer>
+      <hr>
+      <p>
+  Published
+  
+    
+      by <span itemprop="author">Nero</span>
+    
+  
+  <time itemprop="datePublished" datetime="2018-04-21T18:35:25&#43;08:00">
+    21 Apr, 2018
+  </time>
+  
+    in <span itemprop="articleSection"><a href="/categories/programming/">programming</a></span>
+  
+  
+    and tagged <a href="/tags/automatestuff/">automatestuff</a>, <a href="/tags/automation/">automation</a>, <a href="/tags/python/">python</a> and <a href="/tags/reading/">reading</a>
+  
+  using <span itemprop="wordCount">847</span> words.
 </p>
-    
-  </header>
-  
-    <blockquote itemprop="headline">心得 15 Minute Apps | Common desktop apps in Python, using PyQt</blockquote>
-  
-  <div itemprop="description">
-    <p>&rdquo; <a href="https://martinfitzpatrick.name/article/15-minute-apps/" title="Common desktop apps in Python, using PyQt">15 Minute Apps</a>  | Common desktop apps in Python, using PyQt&rdquo;
-簡單筆記</p>
 
-<p></p>
-  </div>
-  
-    <nav class="readmore"><a itemprop="url" href="/post/15-minute-apps/">Read More&nbsp;&raquo;</a></nav>
-  
-  <meta itemprop="inLanguage" content="zh-Hant-TW">
-  <meta itemprop="datePublished" content="2018-04-17T02:47:36&#43;08:00">
-  <meta itemprop="dateModified" content="2018-04-17T02:47:36&#43;08:00">
-  
-    <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
-  
-</article>
+      
 
-  
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h2 itemprop="name">
-      <a href="/post/python-import-system/">Python Import System</a>
-    </h2>
-    
-      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <circle cx="16" cy="16" r="14" />
-  <path d="M16 8 L16 16 20 20" />
-</svg>
-<span>1 minute read</span>
-<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
-</svg>
 
-  Published: <time datetime="2018-04-14T14:44:03&#43;08:00">14 Apr, 2018</time>
+  <aside>
+    <header>Related Content</header>
+    <ul>
+      
+        <li><a href="/post/reading-automate-the-boring-stuff-with-python-1st/">Reading Automate the Boring Stuff With Python 1st Edition</a>
+        <time datetime="2M">2 minutes</time>
+      
+        <li><a href="/post/15-minute-apps/">Reading 15 Minute Apps</a>
+        <time datetime="1M">1 minutes</time>
+      
+        <li><a href="/post/reading-making-perfect-bread/">Reading 完美麵包製作書</a>
+        <time datetime="2M">2 minutes</time>
+      
+        <li><a href="/post/python-import-system/">Python Import System</a>
+        <time datetime="1M">1 minutes</time>
+      
+        <li><a href="/post/python-debugging-with-pdb/">Python Debugging With Pdb</a>
+        <time datetime="2M">2 minutes</time>
+      
+        <li><a href="/post/tool-picon-python-interactive/">Picon: 在互動的環境下執行 Python 程式碼</a>
+        <time datetime="1M">1 minutes</time>
+      
+        <li><a href="/post/reading-dokusho-issatsu-matomenasai-2013/">Reading 活用一輩子的讀書筆記術【完全攻略版】2013</a>
+        <time datetime="2M">2 minutes</time>
+      
+    </ul>
+  </aside>
 
-</p>
-    
-  </header>
-  
-    <blockquote itemprop="headline">Note for Python Import System</blockquote>
-  
-  <div itemprop="description">
-    <p><a href="(https://manikos.github.io/how-pythons-import-machinery-works)">How python&rsquo;s import machinery works</a> 簡單的筆記，
-順便整理一下 <a href="https://docs.python.org/3/reference/import.html" title="access to the code in another module">import</a> 的資料。</p>
 
-<p></p>
-  </div>
-  
-    <nav class="readmore"><a itemprop="url" href="/post/python-import-system/">Read More&nbsp;&raquo;</a></nav>
-  
-  <meta itemprop="inLanguage" content="zh-Hant-TW">
-  <meta itemprop="datePublished" content="2018-04-14T14:44:03&#43;08:00">
-  <meta itemprop="dateModified" content="2018-04-14T14:44:03&#43;08:00">
-  
-    <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
-  
-</article>
-
-  
+    </footer>
+  </article>
 </main>
     <footer>
-  <nav>
-  <p>
-    
-    <span>Page 1 of 1</span>
-    
-  </p>
-</nav>
-
   
   <p class="muted">
     This page was generated using
