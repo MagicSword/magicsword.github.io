@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
   <head>
-    <meta name="generator" content="Hugo 0.38.2" />
+    <meta name="generator" content="Hugo 0.40" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠] | After Dark</title>
@@ -246,7 +246,7 @@ figure a:hover {
 
 <meta itemprop="datePublished" content="2018-04-21T18:35:25&#43;08:00" />
 <meta itemprop="dateModified" content="2018-04-21T18:35:25&#43;08:00" />
-<meta itemprop="wordCount" content="847">
+<meta itemprop="wordCount" content="0">
 
   <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
 
@@ -261,7 +261,7 @@ figure a:hover {
   <circle cx="16" cy="16" r="14" />
   <path d="M16 8 L16 16 20 20" />
 </svg>
-<span>4 minute read</span>
+<span>0 minute read</span>
 <svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
   <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
 </svg>
@@ -648,24 +648,26 @@ time.sleep(5); pyautogui.scroll(100)
 
 <dl>
 <dt>Q: 1. How can you trigger PyAutoGUI’s fail safe to stop a program?</dt>
-<dd>A: <code>pyautogui.FAILSAFE = True</code>, 打開安全防護功能。
+<dd>A: 把游標移出邊界。</dd>
+<dd><code>pyautogui.FAILSAFE = True</code>, 打開安全防護功能。
 滑鼠在移出畫面邊界時，會自動停止，會觸發 <code>pyautogui.FailSageExcetion</code></dd>
 <dt>Q: 2. What function returns the current resolution()?</dt>
-<dd>A: <code>pyautogui.size()</code> 傳回 xpos,ypos</dd>
+<dd>A: <code>pyautogui.size()</code> 傳回 寬、高</dd>
 <dt>Q: 3. What function returns the coordinates for the mouse cursor’s current position?</dt>
-<dd>A: <code>pyautogui.position()</code></dd>
+<dd>A: <code>pyautogui.position()</code> ，x,y 座標</dd>
 <dt>Q: 4. What is the difference between pyautogui.moveTo() and pyautogui.moveRel()?</dt>
 <dd>A: 絕對座標，相對移動</dd>
 <dt>Q: 5. What functions can be used to drag the mouse?</dt>
 <dd>A: <code>pyautogui.dragTo()</code>, <code>pyautogui.dragRel()</code></dd>
 <dt>Q: 6. What function call will type out the characters of &ldquo;Hello world!&rdquo;?</dt>
-<dd>A: <code>pyautogui.typewriter()</code></dd>
+<dd>A: <code>pyautogui.typewriter(&quot;Hellow World!&quot;)</code></dd>
 <dt>Q: 7. How can you do keypresses for special keys such as the keyboard’s left arrow key?</dt>
 <dd>A: <code>pyautogui.press(</code>left<code>)</code></dd>
 <dt>Q: 8. How can you save the current contents of the screen to an image file named screenshot.png?</dt>
-<dd>A: <code>im = pyaytogui.screenshot()</code></dd>
+<dd>A: <code>im = pyaytogui.screenshot(</code>screenshot.png<code>)</code></dd>
 <dt>Q: 9. What code would set a two second pause after every PyAutoGUI function call?</dt>
 <dd>A: <code>time.sleep(2)</code></dd>
+<dd>錯，是用  <code>pyautogui.PAUSE= 2</code></dd>
 </dl>
 
 <h1 id="實作">實作</h1>
@@ -748,7 +750,7 @@ except KeyboardInterrupt:
   
     and tagged <a href="/tags/automatestuff/">automatestuff</a>, <a href="/tags/automation/">automation</a>, <a href="/tags/python/">python</a> and <a href="/tags/reading/">reading</a>
   
-  using <span itemprop="wordCount">847</span> words.
+  using <span itemprop="wordCount">0</span> words.
 </p>
 
       
@@ -759,25 +761,25 @@ except KeyboardInterrupt:
     <ul>
       
         <li><a href="/post/reading-automate-the-boring-stuff-with-python-1st/">Reading Automate the Boring Stuff With Python 1st Edition</a>
-        <time datetime="2M">2 minutes</time>
+        <time datetime="0M">0 minutes</time>
       
         <li><a href="/post/15-minute-apps/">Reading 15 Minute Apps</a>
-        <time datetime="1M">1 minutes</time>
+        <time datetime="0M">0 minutes</time>
       
         <li><a href="/post/reading-making-perfect-bread/">Reading 完美麵包製作書</a>
-        <time datetime="2M">2 minutes</time>
+        <time datetime="0M">0 minutes</time>
       
         <li><a href="/post/python-import-system/">Python Import System</a>
-        <time datetime="1M">1 minutes</time>
+        <time datetime="0M">0 minutes</time>
       
         <li><a href="/post/python-debugging-with-pdb/">Python Debugging With Pdb</a>
-        <time datetime="2M">2 minutes</time>
+        <time datetime="0M">0 minutes</time>
       
         <li><a href="/post/tool-picon-python-interactive/">Picon: 在互動的環境下執行 Python 程式碼</a>
-        <time datetime="1M">1 minutes</time>
+        <time datetime="0M">0 minutes</time>
       
         <li><a href="/post/reading-dokusho-issatsu-matomenasai-2013/">Reading 活用一輩子的讀書筆記術【完全攻略版】2013</a>
-        <time datetime="2M">2 minutes</time>
+        <time datetime="0M">0 minutes</time>
       
     </ul>
   </aside>

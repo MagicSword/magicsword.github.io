@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
   <head>
-    <meta name="generator" content="Hugo 0.38.2" />
+    <meta name="generator" content="Hugo 0.40" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reading Version Control With Git 2nd | After Dark</title>
@@ -246,7 +246,7 @@ figure a:hover {
 
 <meta itemprop="datePublished" content="2018-04-01T23:06:34&#43;08:00" />
 <meta itemprop="dateModified" content="2018-04-01T23:06:34&#43;08:00" />
-<meta itemprop="wordCount" content="1224">
+<meta itemprop="wordCount" content="0">
 
   <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
 
@@ -261,7 +261,7 @@ figure a:hover {
   <circle cx="16" cy="16" r="14" />
   <path d="M16 8 L16 16 20 20" />
 </svg>
-<span>6 minute read</span>
+<span>0 minute read</span>
 <svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
   <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
 </svg>
@@ -288,20 +288,22 @@ figure a:hover {
 <li><a href="#ch4-基本概念">Ch4  基本概念</a></li>
 <li><a href="#ch5-檔案管理及索引">Ch5 檔案管理及索引</a></li>
 <li><a href="#ch6-提交">Ch6 提交</a></li>
-<li><a href="#ch7-分支">Ch7 分支</a>
+<li><a href="#ch7-分支">Ch7 分支</a></li>
+<li><a href="#ch9-merge-合併">Ch9 Merge 合併</a></li>
+<li><a href="#ch10-修改送交">Ch10 修改送交</a></li>
+<li><a href="#ch11-stash-and-reflog">Ch11 Stash and Reflog</a></li>
+<li><a href="#ch12-遠端容器">Ch12 遠端容器</a></li>
+<li><a href="#ch13-管理容器">Ch13 管理容器</a></li>
+<li><a href="#ch14-patchs">Ch14 Patchs</a></li>
+<li><a href="#ch15-掛鉤">Ch15 掛鉤</a></li>
+<li><a href="#ch16-結合專案">Ch16 結合專案</a></li>
+<li><a href="#ch17-submodule實務">Ch17 Submodule實務</a></li>
+<li><a href="#ch18-在-svn-容器上用-git">Ch18 在 svn 容器上用 git</a></li>
+<li><a href="#ch19-進階操作">Ch19 進階操作</a></li>
+<li><a href="#ch20-tips">Ch20 Tips</a></li>
+<li><a href="#ch21-git-and-github">Ch21 Git and Github</a></li>
+<li><a href="#參考連結">參考連結</a>
 <ul>
-<li><a href="#目錄">目錄</a></li>
-</ul></li>
-<li><a href="#區塊元素">區塊元素</a>
-<ul>
-<li><a href="#標題">標題</a></li>
-<li><a href="#連結">連結</a></li>
-<li><a href="#圖片-其他-youtube">圖片、其他、youtube</a>
-<ul>
-<li><a href="#markdown-anchor">Markdown Anchor</a></li>
-</ul></li>
-<li><a href="#程式碼">程式碼</a></li>
-<li><a href="#參考連結">參考連結</a></li>
 <li><a href="#site">Site</a></li>
 </ul></li>
 </ul>
@@ -966,188 +968,145 @@ $git branch -d bug/pr-3
 <ul>
 <li><code>git diff</code>: 比較目前目錄狀態，與索引間的差異</li>
 <li><code>git diff commit:</code>比較 <code>commit</code> 與索引</li>
+<li><code>git diff commit1 commit2</code>: 比較兩個 commit 的差異</li>
 <li><code>git diff --staged commit</code>: 比較已進入 <code>staged</code>，與 <code>HEAD</code></li>
+<li><code>git diff --cached</code> 目前狀態，和前一次 commit 比較</li>
 
-<li><p><code>git diff commit1 commit2</code>: 比較兩個 commit 的差異</p></li>
+<li><p><code>staged</code>: 已 <code>git add</code>，還未 <code>commit</code>，用這個會比較直覺</p></li>
 
-<li><p><code>staged</code>: 已 <code>git add</code>，還未 <code>commit</code></p></li>
+<li><p><code>-M</code>: 偵測改名檔案</p></li>
+
+<li><p><code>-w</code>: 忽略空白</p></li>
+
+<li><p><code>--stat</code>: 多顯示一些統計數據</p></li>
+
+<li><p><code>--color</code>: 輸出著色</p></li>
 </ul>
+
+<p>** git diff 範例 **</p>
+
+<p>pass</p>
+
+<p>** git diff 指令、及送交範圍 **</p>
+
+<p>** 使用路徑限制結合 git diff 指令 **</p>
+
+<dl>
+<dt><code>git diff master~5 master Documentation/git-add.txt</code>:</dt>
+<dd><p>可以看單一檔案版本間的差異</p></dd>
+</dl>
+
+<p>** 比較 diffs 在 svn 和 git 差別 **</p>
+
+<ul>
+<li>svn 是 client-server base</li>
+<li>會把差異合成一個檔案，傳送給你，</li>
+<li>git 是運算、檢索出兩個樹狀檔的差別</li>
+<li>git 使用的方式較快</li>
+</ul>
+
+<h1 id="ch9-merge-合併">Ch9 Merge 合併</h1>
+
+<h1 id="ch10-修改送交">Ch10 修改送交</h1>
+
+<h1 id="ch11-stash-and-reflog">Ch11 Stash and Reflog</h1>
+
+<h1 id="ch12-遠端容器">Ch12 遠端容器</h1>
+
+<h1 id="ch13-管理容器">Ch13 管理容器</h1>
+
+<h1 id="ch14-patchs">Ch14 Patchs</h1>
+
+<h1 id="ch15-掛鉤">Ch15 掛鉤</h1>
+
+<h1 id="ch16-結合專案">Ch16 結合專案</h1>
+
+<h1 id="ch17-submodule實務">Ch17 Submodule實務</h1>
+
+<h1 id="ch18-在-svn-容器上用-git">Ch18 在 svn 容器上用 git</h1>
+
+<h1 id="ch19-進階操作">Ch19 進階操作</h1>
+
+<h1 id="ch20-tips">Ch20 Tips</h1>
+
+<h1 id="ch21-git-and-github">Ch21 Git and Github</h1>
 
 <hr />
 
-<p>樣式可以用 星號* 或是 底線_</p>
+<p>Depository n. 貯藏所
+Repository n. 容器；貯藏處</p>
 
-<p>斜體 emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.
-粗體 Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.
-合併 Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.
-刪除線 Strikethrough uses two tildes. <del>Scratch this.</del></p>
+<p>qxnCIg7j</p>
 
-<p>孔子說：</p>
+<p>GitBook 中文解說 - 2.4
+<a href="https://wastemobile.gitbooks.io/gitbook-chinese/content/">https://wastemobile.gitbooks.io/gitbook-chinese/content/</a></p>
 
-<blockquote>
-<p>說什麼</p>
-</blockquote>
+<p>作者：Jon Loeliger 追蹤
+譯者：吳曜撰
+出版社：歐萊禮 出版社追蹤  功能說明
+出版日：2013/1/25
+ISBN：9789862766699
+金石碼：2014713380050
+語言：中文繁體
+適讀年齡：全齡適讀</p>
 
-<dl>
-<dt>定義是：</dt>
-<dd><p>是什麼</p></dd>
-</dl>
+<p>編／譯者：吳曜撰
+語言：中文繁體
+規格：平裝
+分級：普級
+開數：18.5*23
+頁數：452
+出版地：台灣</p>
 
-<h2 id="目錄">目錄</h2>
+<p>版本控制使用Git 第二版－目錄導覽說明</p>
 
-<p>第一種是手工的目錄</p>
+<p><a href="https://github.com/jlord/git-it/blob/master/guide/locale-zhtw.json">git-it/guide/locale-zhtw.json</a></p>
 
-<h3 id="toc">目錄</h3>
+<p>第1 章 簡介
+第2章 安裝Git
+第3章 準備開始
+第4章 基本的Git概念
+第5章 檔案管理以及索引
+第6章 送交
+第7章 分枝
+第8章 Diffs
+第9章 合併
+第10章 修改送交
+第11章 遠端容器
+第12章 管理容器
+第13章 補綴檔案
+第14章 掛鉤
+第15章 結合專案
+第16章 在Subversion容器上使用Git</p>
 
-<ul>
-<li><a href="#overview">概述</a>
+<p>===</p>
 
-<ul>
-<li><a href="#syntax">語法</a></li>
-<li><a href="#toc">目錄</a></li>
-</ul></li>
-<li><a href="#block">區塊元素</a>
+<p>add        (加入) 把檔案內容加入索引 (index，又稱預存區 (stage) 或快取 (cac
+he))
+   bisect     (二分法) 用二分法找出引入 bug 的變改更
+   branch     (分支) 列出、建立或刪除分支
+   checkout   (檢出) 把特定分支或路徑下的檔案檢出到工作樹
+   clone      (克隆) 把版本庫克隆到新目錄
+   commit     (提交) 把變更記錄到版本庫
+   diff       (差異) 顯示兩提交版本之差異、提交版本與工作樹之差異等等
+   fetch      (獲取) 從其他版本庫下載物件和參照
+   grep       從檔案中尋找文字並印出匹配特定型態的行
+   init       (初始化) 建立空的 Git 版本庫或把已存在的版本庫重新初始化
+   log        (日誌) 顯示提交日誌
+   merge      (合併) 把兩段以上的開發歷史合在一起
+   mv         (移動) 把檔案、目錄或符號連結移動或更名
+   pull       (拉收) 從其他版本庫或本地分支獲取及整合資料
+   push       (推送) 更新遠端版本庫的參照及相關物件
+   rebase     (變基) 上游分支更新時，把本地提交向前接到新的頭端
+   reset      (重設) 把目前的 HEAD 重設為指特定狀態
+   rm         (移除) 把檔案從工作樹及索引移除
+   show       (展示) 展示各種類型的物件
+   status     (狀態) 展示工作樹的狀態
+   tag        (標籤) 建立、列出、刪除、或驗證標籤物件及其 GPG 簽字</p>
 
-<ul>
-<li><a href="#caption">標題</a></li>
-<li><a href="#link">連結</a></li>
-<li><a href="#media">圖片、其他、youtube</a></li>
-<li><a href="#code">程式碼</a></li>
-<li><a href="#ref">參考連結</a></li>
-</ul></li>
-</ul>
+<hr />
 
-<p>內文地方加上 <h2 id="overview">概述</h2>的連結</p>
-
-<p>第二種是 <a href="https://comfusion.github.io/after-dark/">After-Dark</a>  內建目錄，在
-標頭上加上  <code>toc: = true</code>，程式會把大的標題生成目錄</p>
-
-<h1 id="區塊元素">區塊元素</h1>
-
-<p>** List **</p>
-
-<ul>
-<li>AAA
-
-<ul>
-<li>BBB</li>
-</ul></li>
-<li>CCC</li>
-</ul>
-
-<ol>
-<li>what</li>
-<li>some</li>
-<li>soso</li>
-</ol>
-
-<h2 id="標題">標題</h2>
-
-<p>Setext 形式是用底線的形式，利用 <code>=</code> （最高階標題）和 <code>-</code> （第二階標題），例如：</p>
-
-<pre><code>This is an H1
-=============
-
-This is an H2
--------------
-</code></pre>
-
-<p>任何數量的 <code>=</code> 和 <code>-</code> 都可以有效果。</p>
-
-<p>Atx 形式則是在行首插入 1 到 6 個 <code>#</code> ，對應到標題 1 到 6 階，例如：</p>
-
-<pre><code># This is an H1
-
-## This is an H2
-
-###### This is an H6
-</code></pre>
-
-<p>行首的井字數量決定標題的階數，行尾的#可不加</p>
-
-<h2 id="連結">連結</h2>
-
-<p>Markdown 支援兩種形式的連結語法： *行內*和*參考*兩種形式。</p>
-
-<pre><code>[連結文字](連結目標)
-</code></pre>
-
-<p>絕對路徑
-<a href="https://www.google.com">Google</a></p>
-
-<p>相對路徑
-<a href="/post/">post</a></p>
-
-<p>連結到文章內的id
-<a href="http://example.com/&gt;" title="Optional Title Here">example</a> 或是空白隔著 <a href="http://example.com/&gt;" title="Optional Title Here">2 example</a></p>
-
-<p>Footer</p>
-
-<p>That&rsquo;s some text with a footnote.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
-
-<pre><code>That's the second paragraph.
-</code></pre>
-
-<h2 id="圖片-其他-youtube">圖片、其他、youtube</h2>
-
-<p>行內和參考</p>
-
-<pre><code class="language-md">    ![Alt text](/path/to/img.jpg)
-
-    ![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
-</code></pre>
-
-<p>參考式的圖片語法則長得像這樣：</p>
-
-<pre><code class="language-md">    ![Alt text][id]
-</code></pre>
-
-<p>「id」是圖片參考的名稱，圖片參考的定義方式則和連結參考一樣：</p>
-
-<pre><code class="language-md">    [id]: url/to/image  &quot;Optional title attribute&quot;
-</code></pre>
-
-<h3 id="markdown-anchor">Markdown Anchor</h3>
-
-<p>markdown預設 H1,H2的 id就是 text</p>
-
-<pre><code class="language-html">&lt;h1 id=&quot;MyAnchorName&quot;&gt;My Title&lt;/h1&gt;
-</code></pre>
-
-<p>自定錨</p>
-
-<pre><code class="language-html">&lt;a id=&quot;MyAnchorName&quot;&gt;My Title&lt;/a&gt;
-</code></pre>
-
-<p>連結語法</p>
-
-<pre><code class="language-html">&lt;a href=&quot;#MyAnchorName&quot;&gt;My Content&lt;/a&gt;
-</code></pre>
-
-<pre><code class="language-markdown">[create an anchor](#MyAnchorName)
-</code></pre>
-
-<p>要指定高度的話，也可以用 <code>&lt;img&gt;</code></p>
-
-<h2 id="程式碼">程式碼</h2>
-
-<p>分兩個，行內，整段
-行內像文中會提到的func name  <code>print()</code> <code>cast</code> <code>def()</code></p>
-
-<p>整段用 三個  ``` 包起，第一個後面放語言的名字</p>
-
-<pre><code class="language-python">    for i in 10:
-        print(&quot;heloo,world&quot;)
-</code></pre>
-
-<p>如果要的syntax highlighting的話，要用hugo內的 <code>shortcode</code></p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">1</span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#66d9ef">string</span>
-<span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">2</span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">b</span> <span style="color:#66d9ef">string</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">3</span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">c</span> <span style="color:#66d9ef">string</span>
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">4</span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">d</span> <span style="color:#66d9ef">string</span></code></pre></div>
-
-<h2 id="參考連結">參考連結</h2>
+<h1 id="參考連結">參考連結</h1>
 
 <ol>
 <li><a href="https://marklodato.github.io/visual-git-guide/index-zh-tw.html?no-svg">圖解Git</a></li>
@@ -1165,15 +1124,6 @@ This is an H2
 <li><a href="https://learngitbranching.js.org/index.html">Learning Git Branching</a></li>
 <li><a href="https://legacy.gitbook.com/book/kingofamani/git-teach/details">新北市教研中心－GIT版本控制</a></li>
 </ul>
-<div class="footnotes">
-
-<hr />
-
-<ol>
-<li id="fn:1">And that&rsquo;s the footnote.
- <a class="footnote-return" href="#fnref:1">↩</a></li>
-</ol>
-</div>
     </div>
     
       <article>
@@ -1217,7 +1167,7 @@ This is an H2
   
     and tagged <a href="/tags/git/">git</a> and <a href="/tags/reading/">reading</a>
   
-  using <span itemprop="wordCount">1224</span> words.
+  using <span itemprop="wordCount">0</span> words.
 </p>
 
       
@@ -1228,7 +1178,7 @@ This is an H2
     <ul>
       
         <li><a href="/post/reading-hackingvim72/">Reading HackingVim 7.2</a>
-        <time datetime="12M">12 minutes</time>
+        <time datetime="0M">0 minutes</time>
       
     </ul>
   </aside>
