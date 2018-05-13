@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
   <head>
-    <meta name="generator" content="Hugo 0.40" />
+    <meta name="generator" content="Hugo 0.40.2" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reading Version Control With Git 2nd | After Dark</title>
@@ -246,7 +246,7 @@ figure a:hover {
 
 <meta itemprop="datePublished" content="2018-04-01T23:06:34&#43;08:00" />
 <meta itemprop="dateModified" content="2018-04-01T23:06:34&#43;08:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="1311">
 
   <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
 
@@ -261,7 +261,7 @@ figure a:hover {
   <circle cx="16" cy="16" r="14" />
   <path d="M16 8 L16 16 20 20" />
 </svg>
-<span>0 minute read</span>
+<span>7 minute read</span>
 <svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
   <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
 </svg>
@@ -289,6 +289,7 @@ figure a:hover {
 <li><a href="#ch5-檔案管理及索引">Ch5 檔案管理及索引</a></li>
 <li><a href="#ch6-提交">Ch6 提交</a></li>
 <li><a href="#ch7-分支">Ch7 分支</a></li>
+<li><a href="#ch8-diffs">Ch8 Diffs</a></li>
 <li><a href="#ch9-merge-合併">Ch9 Merge 合併</a></li>
 <li><a href="#ch10-修改送交">Ch10 修改送交</a></li>
 <li><a href="#ch11-stash-and-reflog">Ch11 Stash and Reflog</a></li>
@@ -768,9 +769,12 @@ Repository n. 容器；貯藏處，
 <li><p><code>master^2</code> 或 <code>master~2</code> 指的就是倒數第三個，</p></li>
 </ul>
 
-<p>常用指令
-* <code>git rev-parse master~3^2^2</code>
-* <code>git show-branch --more=35|tail -10</code></p>
+<p>常用指令</p>
+
+<ul>
+<li><code>git rev-parse master~3^2^2</code></li>
+<li><code>git show-branch --more=35|tail -10</code></li>
+</ul>
 
 <p><strong>送交歷史記錄</strong></p>
 
@@ -939,7 +943,7 @@ $git checkout -b new-branch start-point
 $git branch -d bug/pr-3
 </code></pre>
 
-<p>#Ch8 Diffs</p>
+<h1 id="ch8-diffs">Ch8 Diffs</h1>
 
 <p>Diffs 比較兩個物件的差異。 Unix 有一個指令 <code>diff</code> 也是用來比較檔案間的差異。</p>
 
@@ -963,7 +967,7 @@ $git branch -d bug/pr-3
 <li>: 空白開頭的是 old , new 共有的內容</li>
 </ul>
 
-<p>** <code>git diff</code> 指令形式 **</p>
+<p><strong><code>git diff</code> 指令形式</strong></p>
 
 <ul>
 <li><code>git diff</code>: 比較目前目錄狀態，與索引間的差異</li>
@@ -983,20 +987,20 @@ $git branch -d bug/pr-3
 <li><p><code>--color</code>: 輸出著色</p></li>
 </ul>
 
-<p>** git diff 範例 **</p>
+<p><strong>git diff 範例</strong></p>
 
 <p>pass</p>
 
-<p>** git diff 指令、及送交範圍 **</p>
+<p><strong>git diff 指令、及送交範圍</strong></p>
 
-<p>** 使用路徑限制結合 git diff 指令 **</p>
+<p><strong>使用路徑限制結合 git diff 指令</strong></p>
 
 <dl>
 <dt><code>git diff master~5 master Documentation/git-add.txt</code>:</dt>
 <dd><p>可以看單一檔案版本間的差異</p></dd>
 </dl>
 
-<p>** 比較 diffs 在 svn 和 git 差別 **</p>
+<p><strong>比較 diffs 在 svn 和 git 差別</strong></p>
 
 <ul>
 <li>svn 是 client-server base</li>
@@ -1006,6 +1010,85 @@ $git branch -d bug/pr-3
 </ul>
 
 <h1 id="ch9-merge-合併">Ch9 Merge 合併</h1>
+
+<p>多人合作時，要將各別的成果整合時，就需要合併(Merge)資料。
+合併時，其本上是把兩個分支整合成一個新的 commit 來表示這個合併後的新狀態。
+有衝突的部分，會在 Index 上標示 unmerged ，讓使用者決定。</p>
+
+<p><strong>合併兩個分支</strong></p>
+
+<ul>
+<li><code>git merge alternate</code>: 將 alternate 合併到目前分支</li>
+</ul>
+
+<p><strong>有衝突的合併</strong></p>
+
+<p>如果在合併的過程中，有衝突的檔案，會將兩個版本的內容放在檔案中，
+自行解決衝突的檔案。</p>
+
+<p><strong>處理合併衝突</strong></p>
+
+<p><strong>找到衝突的檔案</strong></p>
+
+<ul>
+<li><code>git status</code>, <code>git ls-files -u</code> 可以用來顯示工作目錄中尚未被合併的檔案集合。</li>
+</ul>
+
+<p><strong>檢查衝突</strong></p>
+
+<p><code>git log --merge --left-right -p</code></p>
+
+<ul>
+<li><code>--merge</code> 只顯示跟衝突檔案相關的提交</li>
+<li><code>--left-right</code> 當次的提交是從左邊來的，(&ndash;ours 我們起始的版本，&ndash;theirs 別人合併進來的版本)</li>
+<li><code>-p</code> 顯示訊息跟修正檔案之間跟每個提交的關係</li>
+</ul>
+
+<p><strong>Git 如何追蹤衝突</strong></p>
+
+<ul>
+<li><code>.git/MERGE\_HEAD</code> : 放了要合併的提交的 SHA1</li>
+<li><code>git/MERGE\_MSG</code> : 放了解決衝突後提交的預設合併訊息</li>
+<li>Git的索引包含了衝突檔案的三個拷貝，分支起點版本，我們的，他們的，編號分別為1,2,3</li>
+<li>衝突的版本存在工作目錄的檔案中，沒有存在索引中。你用 <code>git diff</code> 時，一定是比較索引、和工作目錄檔案</li>
+</ul>
+
+<p><strong>放棄或是重新合併</strong></p>
+
+<ul>
+<li><code>git reset --hard HEAD</code> : 可以回復到執行 <code>git merge</code> 之前</li>
+</ul>
+
+<p><strong>合併的策略</strong></p>
+
+<p>之前的例子是簡單的兩方合併，若是三方以上的情形的話。</p>
+
+<dl>
+<dt>已是最新的</dt>
+<dd>合併時，會以最新的提交為主來合併</dd>
+<dt>快轉(fast-forward)</dt>
+<dd>快轉合併 發生在你目前的分支已有其他分支的內容時，只要移動 HEAD 到最新的提交就好。</dd>
+</dl>
+
+<p><strong>正常的合併</strong></p>
+
+<dl>
+<dt>解決(Resolve)</dt>
+<dd>兩個親屬分支，依兩方特徵，產生一個新的子分支</dd>
+<dt>遞迴(Recursive)</dt>
+<dd>解決多分支合併的策略，一次處理兩個分支，進而將多分支簡化成兩分支的情形</dd>
+<dt>章魚(Octopus)</dt>
+<dd>設計用來處理多分支的狀況，多次呼叫 遞迴策略，每次處理一目標分支，但是遇到衝突時，還是要人工解決。</dd>
+</dl>
+
+<p><strong>特別的合併</strong></p>
+
+<dl>
+<dt>我們的(ours)</dt>
+<dd>我們的</dd>
+<dt>子樹(subtree)</dt>
+<dd>子樹</dd>
+</dl>
 
 <h1 id="ch10-修改送交">Ch10 修改送交</h1>
 
@@ -1167,7 +1250,7 @@ he))
   
     and tagged <a href="/tags/git/">git</a> and <a href="/tags/reading/">reading</a>
   
-  using <span itemprop="wordCount">0</span> words.
+  using <span itemprop="wordCount">1311</span> words.
 </p>
 
       
@@ -1177,8 +1260,11 @@ he))
     <header>Related Content</header>
     <ul>
       
+        <li><a href="/post/learn-language-in-six-months/">Learn Language in Six Months</a>
+        <time datetime="1M">1 minutes</time>
+      
         <li><a href="/post/reading-hackingvim72/">Reading HackingVim 7.2</a>
-        <time datetime="0M">0 minutes</time>
+        <time datetime="12M">12 minutes</time>
       
     </ul>
   </aside>

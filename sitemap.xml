@@ -8,6 +8,16 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/post/tips-vim-copy-paste-and-clipboard/</loc>
+    <lastmod>2018-05-10T22:46:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://magicsword.github.io/post/reading-7habits-for-effective-text-editing-2.0/</loc>
+    <lastmod>2018-05-10T15:17:20+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/post/udemy-python-easily-migrate-excel-files-to-a-database/</loc>
     <lastmod>2018-05-04T16:55:05+08:00</lastmod>
   </url>
@@ -209,6 +219,12 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/tags/editor/</loc>
+    <lastmod>2018-05-10T22:46:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/tags/excel/</loc>
     <lastmod>2018-05-04T16:55:05+08:00</lastmod>
     <priority>0</priority>
@@ -300,7 +316,7 @@
   
   <url>
     <loc>https://magicsword.github.io/post/</loc>
-    <lastmod>2018-05-04T16:55:05+08:00</lastmod>
+    <lastmod>2018-05-10T22:46:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -324,7 +340,7 @@
   
   <url>
     <loc>https://magicsword.github.io/tags/reading/</loc>
-    <lastmod>2018-04-21T18:35:25+08:00</lastmod>
+    <lastmod>2018-05-10T15:17:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -354,7 +370,7 @@
   
   <url>
     <loc>https://magicsword.github.io/categories/technology/</loc>
-    <lastmod>2018-04-24T21:21:05+08:00</lastmod>
+    <lastmod>2018-05-10T22:46:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -377,6 +393,12 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/tags/tips/</loc>
+    <lastmod>2018-05-10T22:46:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/tags/udemy/</loc>
     <lastmod>2018-05-04T16:55:05+08:00</lastmod>
     <priority>0</priority>
@@ -395,6 +417,12 @@
   </url>
   
   <url>
+    <loc>https://magicsword.github.io/tags/video/</loc>
+    <lastmod>2018-05-10T15:17:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://magicsword.github.io/tags/video-editing/</loc>
     <lastmod>2018-04-24T21:21:05+08:00</lastmod>
     <priority>0</priority>
@@ -402,7 +430,7 @@
   
   <url>
     <loc>https://magicsword.github.io/tags/vim/</loc>
-    <lastmod>2018-04-13T02:36:19+08:00</lastmod>
+    <lastmod>2018-05-10T22:46:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
