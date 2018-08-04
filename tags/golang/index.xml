@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Golang on After Dark</title>
-    <link>https://magicsword.github.io/tags/golang/</link>
-    <description>Recent content in Golang on After Dark</description>
+    <title>Golang on After-Dark</title>
+    <link>/tags/golang/</link>
+    <description>Recent content in Golang on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-Hant-TW</language>
+    <language>en-us</language>
     <lastBuildDate>Sat, 23 Sep 2017 22:40:35 +0800</lastBuildDate>
     
-	<atom:link href="https://magicsword.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>This Is New Blog Post</title>
-      <link>https://magicsword.github.io/post/this-is-new-blog-post/</link>
+      <link>/post/this-is-new-blog-post/</link>
       <pubDate>Sat, 23 Sep 2017 22:40:35 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/this-is-new-blog-post/</guid>
+      <guid>/post/this-is-new-blog-post/</guid>
       <description>鳳山房價較高雄市中心便宜，吸引首購自住客前往置產，成為今年高雄上半年不動產交易 量最多的行政區，而交易主力在總價500～700萬外加車位的20年以上透天。 鳳山生活機能完善，房價較高雄市中心便宜，吸引首購族置產
 鳳山生活圈鄰近鳳山捷運站及鳳山火車站，具備雙鐵優勢，加上距國道1號約10分鐘車程 ，交通便利，且商圈林立，吸引家樂福、迪卡儂等大型賣場進駐，區域內還有大東文化藝 術中心、大東濕地公園等公共建設，近期鳳山體育館也規劃將改建成運動中心，生活機能 十分豐富。
-print(&amp;quot;hello,world!&amp;quot;)  print()
+print(&amp;#34;hello,world!&amp;#34;) print()
 1var a string2var b string3var c string4var d string &amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;div&amp;gt;&amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt;{{ range .Data.Pages }}{{ .Render &amp;#34;summary&amp;#34;}}{{ end }}&amp;lt;/div&amp;gt;&amp;lt;/section&amp;gt;</description>
     </item>
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>https://magicsword.github.io/post/goisforlovers/</link>
+      <link>/post/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://magicsword.github.io/post/goisforlovers/</guid>
+      <guid>/post/goisforlovers/</guid>
       <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
 This document is a brief primer on using go templates.</description>
     </item>
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://magicsword.github.io/post/hugoisforlovers/</link>
+      <link>/post/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://magicsword.github.io/post/hugoisforlovers/</guid>
+      <guid>/post/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo

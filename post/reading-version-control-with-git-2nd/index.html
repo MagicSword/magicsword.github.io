@@ -1,284 +1,387 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html>
   <head>
-    <meta name="generator" content="Hugo 0.40.2" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reading Version Control With Git 2nd | After Dark</title>
-    <meta name="description" content="Version Control with Git,2nd  簡單心得">
-    <meta name="keywords" content="reading, git">
+    <title>After-Dark</title>
     
-    
-    
-    
-    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.45" />
 
-  <meta name="author" content="Nero">
+<title>Reading Version Control With Git 2nd :: After-Dark</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
+  <link href="/theme-original/variant-blue.css" rel="stylesheet">
 
-    <meta property="og:title" content="Reading Version Control With Git 2nd" />
-<meta property="og:description" content="Version Control with Git,2nd  簡單心得" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://magicsword.github.io/post/reading-version-control-with-git-2nd/" />
-
-  <meta property="og:image" content="https://source.unsplash.com/category/technology/1600x900" />
-
-
-
-<meta property="article:published_time" content="2018-04-01T23:06:34&#43;08:00"/>
-
-<meta property="article:modified_time" content="2018-04-01T23:06:34&#43;08:00"/>
-
-
-
-
-
-
-
-
-
-
-
-    <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://source.unsplash.com/category/technology/1600x900"/>
-
-<meta name="twitter:title" content="Reading Version Control With Git 2nd"/>
-<meta name="twitter:description" content="Version Control with Git,2nd  簡單心得"/>
-
-    
-
-
-
-
-    <meta name="theme-color" content="#000">
-
-    
-    
-    
-    <link rel="canonical" href="https://magicsword.github.io/post/reading-version-control-with-git-2nd/">
-    
-    
-    
-
-<Link rel="icon" type="image/png" href="/favicon-M-256.png" sizes="256x256">
-
-    <style>
-  html{font-size:12px}*{box-sizing:border-box;text-rendering:geometricPrecision}body{font-size:1rem;line-height:1.5rem;margin:0;font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;word-wrap:break-word}h1,h2,h3,h4,h5,h6{line-height:1.3em}fieldset{border:none;padding:0;margin:0}pre{padding:2rem;margin:1.75rem 0;background-color:#fff;border:1px solid #ccc;overflow:auto}code[class*=language-],pre[class*=language-],pre code{font-weight:100;text-shadow:none;margin:1.75rem 0}a{cursor:pointer;color:#ff2e88;text-decoration:none;border-bottom:1px solid #ff2e88}a:hover{background-color:#ff2e88;color:#fff}.grid{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.grid.\-top{-ms-flex-align:start;-ms-grid-row-align:flex-start;align-items:flex-start}.grid.\-middle{-ms-flex-align:center;-ms-grid-row-align:center;align-items:center}.grid.\-bottom{-ms-flex-align:end;-ms-grid-row-align:flex-end;align-items:flex-end}.grid.\-stretch{-ms-flex-align:stretch;-ms-grid-row-align:stretch;align-items:stretch}.grid.\-baseline{-ms-flex-align:baseline;-ms-grid-row-align:baseline;align-items:baseline}.grid.\-left{-ms-flex-pack:start;justify-content:flex-start}.grid.\-center{-ms-flex-pack:center;justify-content:center}.grid.\-right{-ms-flex-pack:end;justify-content:flex-end}.grid.\-between{-ms-flex-pack:justify;justify-content:space-between}.grid.\-around{-ms-flex-pack:distribute;justify-content:space-around}.cell{-ms-flex:1;flex:1;box-sizing:border-box}@media screen and (min-width:768px){.cell.\-1of12{-ms-flex:0 0 8.33333%;flex:0 0 8.33333%}.cell.\-2of12{-ms-flex:0 0 16.66667%;flex:0 0 16.66667%}.cell.\-3of12{-ms-flex:0 0 25%;flex:0 0 25%}.cell.\-4of12{-ms-flex:0 0 33.33333%;flex:0 0 33.33333%}.cell.\-5of12{-ms-flex:0 0 41.66667%;flex:0 0 41.66667%}.cell.\-6of12{-ms-flex:0 0 50%;flex:0 0 50%}.cell.\-7of12{-ms-flex:0 0 58.33333%;flex:0 0 58.33333%}.cell.\-8of12{-ms-flex:0 0 66.66667%;flex:0 0 66.66667%}.cell.\-9of12{-ms-flex:0 0 75%;flex:0 0 75%}.cell.\-10of12{-ms-flex:0 0 83.33333%;flex:0 0 83.33333%}.cell.\-11of12{-ms-flex:0 0 91.66667%;flex:0 0 91.66667%}}@media screen and (max-width:768px){.grid{-ms-flex-direction:column;flex-direction:column}.cell{-ms-flex:0 0 auto;flex:0 0 auto}}.hack,.hack blockquote,.hack code,.hack em,.hack h1,.hack h2,.hack h3,.hack h4,.hack h5,.hack h6,.hack strong{font-size:1rem;font-style:normal;font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif}.hack blockquote,.hack code,.hack em,.hack strong{line-height:20px}.hack blockquote,.hack code,.hack footer,.hack h1,.hack h2,.hack h3,.hack h4,.hack h5,.hack h6,.hack header,.hack li,.hack ol,.hack p,.hack section,.hack ul{float:none;margin:0;padding:0}.hack blockquote,.hack h1,.hack ol,.hack p,.hack ul{margin-top:20px;margin-bottom:20px}.hack h1{position:relative;display:inline-block;display:table-cell;padding:20px 0 30px;margin:0;overflow:hidden}.hack h1:after{content:"====================================================================================================";position:absolute;bottom:10px;left:0}.hack h1+*{margin-top:0}.hack h2,.hack h3,.hack h4,.hack h5,.hack h6{position:relative;margin-bottom:1.75rem}.hack h2:before,.hack h3:before,.hack h4:before,.hack h5:before,.hack h6:before{display:inline}.hack h2:before{content:"## "}.hack h3:before{content:"### "}.hack h4:before{content:"#### "}.hack h5:before{content:"##### "}.hack h6:before{content:"###### "}.hack li{position:relative;display:block;padding-left:20px}.hack li:after{position:absolute;top:0;left:0}.hack ul>li:after{content:"-"}.hack ol{counter-reset:a}.hack ol>li:after{content:counter(a) ".";counter-increment:a}.hack blockquote{position:relative;padding-left:17px;padding-left:2ch;overflow:hidden}.hack blockquote:after{content:">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";white-space:pre;position:absolute;top:0;left:0;line-height:20px}.hack em:after,.hack em:before{content:"*";display:inline}.hack pre code:after,.hack pre code:before{content:''}.hack code{font-weight:700}.hack code:after,.hack code:before{content:"`";display:inline}.hack hr{position:relative;height:20px;overflow:hidden;border:0;margin:20px 0}.hack hr:after{content:"----------------------------------------------------------------------------------------------------";position:absolute;top:0;left:0;line-height:20px;width:100%;word-wrap:break-word}@-moz-document url-prefix(){.hack h1{display:block}}.hack-ones ol>li:after{content:"1."}p{margin:0 0 1.75rem}.container{max-width:70rem}.container,.container-fluid{margin:0 auto;padding:0 1rem}.inner{padding:1rem}.inner2x{padding:2rem}.pull-left{float:left}.pull-right{float:right}.progress-bar{height:8px;opacity:.8;background-color:#ccc;margin-top:12px}.progress-bar.progress-bar-show-percent{margin-top:38px}.progress-bar-filled{background-color:gray;height:100%;transition:width .3s ease;position:relative;width:0}.progress-bar-filled:before{content:'';border:6px solid transparent;border-top-color:gray;position:absolute;top:-12px;right:-6px}.progress-bar-filled:after{color:gray;content:attr(data-filled);display:block;font-size:12px;white-space:nowrap;position:absolute;border:6px solid transparent;top:-38px;right:0;-ms-transform:translateX(50%);transform:translateX(50%)}table{width:100%;border-collapse:collapse;margin:1.75rem 0;color:#778087}table td,table th{vertical-align:top;border:1px solid #ccc;line-height:15px;padding:10px}table thead th{font-size:10px}table tbody td:first-child{font-weight:700;color:#333}.form{width:30rem}.form-group{margin-bottom:1.75rem;overflow:auto}.form-group label{border-bottom:2px solid #ccc;color:#333;width:10rem;display:inline-block;height:38px;line-height:38px;padding:0;float:left;position:relative}.form-group.form-success label{color:#4caf50!important;border-color:#4caf50!important}.form-group.form-warning label{color:#ff9800!important;border-color:#ff9800!important}.form-group.form-error label{color:#f44336!important;border-color:#f44336!important}.form-control{outline:none;border:none;border-bottom:2px solid #ccc;padding:.5rem 0;width:20rem;height:38px;background-color:transparent}.form-control:focus{border-color:#555}.form-group.form-textarea label:after{position:absolute;content:'';width:2px;background-color:#fff;right:-2px;top:0;bottom:0}textarea.form-control{height:auto;resize:none;padding:1rem 0;border-bottom:2px solid #ccc;border-left:2px solid #ccc;padding:.5rem}select.form-control{border-radius:0;background-color:transparent;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none}.help-block{color:#999;margin-top:.5rem}.form-actions{margin-bottom:1.75rem}.btn{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;cursor:pointer;outline:none;padding:.65rem 2rem;font-size:1rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;z-index:1}.btn:active{box-shadow:inset 0 1px 3px rgba(0,0,0,.12)}.btn.btn-ghost{border-color:#757575;color:#757575;background-color:transparent}.btn.btn-ghost:focus,.btn.btn-ghost:hover{border-color:#424242;color:#424242;z-index:2}.btn.btn-ghost:hover{background-color:transparent}.btn-block{width:100%;display:-ms-flexbox;display:flex}.btn-default{color:#fff;background-color:#e0e0e0;border:1px solid #e0e0e0;color:#333}.btn-default:focus:not(.btn-ghost),.btn-default:hover{background-color:#dcdcdc;border-color:#dcdcdc}.btn-success{color:#fff;background-color:#4caf50;border:1px solid #4caf50}.btn-success:focus:not(.btn-ghost),.btn-success:hover{background-color:#43a047;border-color:#43a047}.btn-success.btn-ghost{border-color:#4caf50;color:#4caf50}.btn-success.btn-ghost:focus,.btn-success.btn-ghost:hover{border-color:#388e3c;color:#388e3c;z-index:2}.btn-error{color:#fff;background-color:#f44336;border:1px solid #f44336}.btn-error:focus:not(.btn-ghost),.btn-error:hover{background-color:#e53935;border-color:#e53935}.btn-error.btn-ghost{border-color:#f44336;color:#f44336}.btn-error.btn-ghost:focus,.btn-error.btn-ghost:hover{border-color:#d32f2f;color:#d32f2f;z-index:2}.btn-warning{color:#fff;background-color:#ff9800;border:1px solid #ff9800}.btn-warning:focus:not(.btn-ghost),.btn-warning:hover{background-color:#fb8c00;border-color:#fb8c00}.btn-warning.btn-ghost{border-color:#ff9800;color:#ff9800}.btn-warning.btn-ghost:focus,.btn-warning.btn-ghost:hover{border-color:#f57c00;color:#f57c00;z-index:2}.btn-info{color:#fff;background-color:#00bcd4;border:1px solid #00bcd4}.btn-info:focus:not(.btn-ghost),.btn-info:hover{background-color:#00acc1;border-color:#00acc1}.btn-info.btn-ghost{border-color:#00bcd4;color:#00bcd4}.btn-info.btn-ghost:focus,.btn-info.btn-ghost:hover{border-color:#0097a7;color:#0097a7;z-index:2}.btn-primary{color:#fff;background-color:#2196f3;border:1px solid #2196f3}.btn-primary:focus:not(.btn-ghost),.btn-primary:hover{background-color:#1e88e5;border-color:#1e88e5}.btn-primary.btn-ghost{border-color:#2196f3;color:#2196f3}.btn-primary.btn-ghost:focus,.btn-primary.btn-ghost:hover{border-color:#1976d2;color:#1976d2;z-index:2}.btn-group{overflow:auto}.btn-group .btn{float:left}.btn-group .btn-ghost:not(:first-child){margin-left:-1px}.card{border:1px solid #ccc}.card .card-header{color:#333;text-align:center;background-color:#ddd;padding:.5rem 0}.alert{color:#ccc;padding:1rem;border:1px solid #ccc;margin-bottom:1.75rem}.alert-success{color:#4caf50;border-color:#4caf50}.alert-error{color:#f44336;border-color:#f44336}.alert-info{color:#00bcd4;border-color:#00bcd4}.alert-warning{color:#ff9800;border-color:#ff9800}.media:not(:last-child){margin-bottom:1.25rem}.media-left{padding-right:1rem}.media-left,.media-right{display:table-cell;vertical-align:top}.media-right{padding-left:1rem}.media-body{display:table-cell;vertical-align:top}.media-heading{font-size:1.16667rem;font-weight:700}.media-content{margin-top:.3rem}.avatarholder,.placeholder{background-color:#f0f0f0;text-align:center;color:#b9b9b9;font-size:1rem;border:1px solid #f0f0f0}.avatarholder{width:48px;height:48px;line-height:46px;font-size:2rem;background-size:cover;background-position:50%;background-repeat:no-repeat}.avatarholder.rounded{border-radius:33px}.loading{display:inline-block;content:'&nbsp;';height:20px;width:20px;margin:0 .5rem;animation:a .6s infinite linear;border:2px solid #e91e63;border-right-color:transparent;border-radius:50%}.btn .loading{margin-bottom:0;width:14px;height:14px}.btn div.loading{float:left}.alert .loading{margin-bottom:-5px}@keyframes a{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}.menu{width:100%}.menu .menu-item{display:block;color:#616161;border-color:#616161}.menu .menu-item.active,.menu .menu-item:hover{color:#000;border-color:#000;background-color:transparent}@media screen and (max-width:768px){.form-group label{display:block;border-bottom:none;width:100%}.form-group.form-textarea label:after{display:none}.form-control{width:100%}textarea.form-control{border-left:none;padding:.5rem 0}pre::-webkit-scrollbar{height:3px}}@media screen and (max-width:480px){.form{width:100%}}.dark{color:#ccc}.dark,.dark pre{background-color:#000}.dark pre{padding:0;border:none}.dark pre code{color:#00bcd4}.dark h1 a,.dark h2 a,.dark h3 a,.dark h4 a,.dark h5 a{color:#ccc}.dark code,.dark strong{color:#fff}.dark code{font-weight:100}.dark table{color:#ccc}.dark table td,.dark table th{border-color:#444}.dark table tbody td:first-child{color:#fff}.dark .form-group label{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .form-group.form-textarea label:after{background-color:#000}.dark .form-control{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .form-control:focus{border-color:#ccc;color:#ccc}.dark textarea.form-control{color:#ccc}.dark .card{border-color:rgba(95,95,95,.78)}.dark .card .card-header{background-color:transparent;color:#ccc;border-bottom:1px solid rgba(95,95,95,.78)}.dark .btn.btn-ghost.btn-default{border-color:#ababab;color:#ababab}.dark .btn.btn-ghost.btn-default:focus,.dark .btn.btn-ghost.btn-default:hover{border-color:#9c9c9c;color:#9c9c9c;z-index:1}.dark .btn.btn-ghost.btn-default:focus,.dark .btn.btn-ghost.btn-default:hover{border-color:#e0e0e0;color:#e0e0e0}.dark .btn.btn-ghost.btn-primary:focus,.dark .btn.btn-ghost.btn-primary:hover{border-color:#64b5f6;color:#64b5f6}.dark .btn.btn-ghost.btn-success:focus,.dark .btn.btn-ghost.btn-success:hover{border-color:#81c784;color:#81c784}.dark .btn.btn-ghost.btn-info:focus,.dark .btn.btn-ghost.btn-info:hover{border-color:#4dd0e1;color:#4dd0e1}.dark .btn.btn-ghost.btn-error:focus,.dark .btn.btn-ghost.btn-error:hover{border-color:#e57373;color:#e57373}.dark .btn.btn-ghost.btn-warning:focus,.dark .btn.btn-ghost.btn-warning:hover{border-color:#ffb74d;color:#ffb74d}.dark .avatarholder,.dark .placeholder{background-color:transparent;border-color:#333}.dark .menu .menu-item{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .menu .menu-item.active,.dark .menu .menu-item:hover{color:#fff;border-color:#ccc}
-  :root {
-  --screen-size-small: 30em; /* breakpoint reference only */
-}
-@keyframes intro {
-  0% {
-    opacity: 0;
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
   }
-  100% {
-    opacity: 1;
-  }
-}
-.blur-up {
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
-  transition: filter 400ms, -webkit-filter 400ms;
-}
-.blur-up.lazyloaded {
-  -webkit-filter: blur(0);
-  filter: blur(0);
-}
-.muted {
-  color: #e0e0e070;
-}
-.hack .readmore {
-  margin-bottom: 2.2em;
-}
-.responsive-iframe {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-.responsive-iframe iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-iframe {
-  border: 0;
-}
-main, footer {
-  animation: intro 0.3s both;
-  animation-delay: 0.15s;
-}
-footer time[datetime$="M"]:before {
-  content: "\2013\0020";
-}
-@media only screen
-  and ( max-width: 30em ) {
-  footer time[datetime$="M"] {
-    display: none;
-  }
-}
-blockquote cite {
-  display: block;
-}
-blockquote cite::before {
-   content: "\2014";
-}
-:target {
-  color: #fff;
-}
-/* hack.css overrides and enhancements */
-.hack li ul {
-  margin: 0;
-}
-.main {
-  padding: 20px 10px;
-}
-nav a.active {
-  background-color: #ff2e88;
-  color: #fff;
-}
-a[itemprop="url"] {
-  color: #ff9800;
-}
-a[itemprop="url"]:hover {
-  color: #fff;
-}
-a[href*="://"]::after,
-a[rel*="external"] {
-  content: " " url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20class='i-external'%20viewBox='0%200%2032%2032'%20width='14'%20height='14'%20fill='none'%20stroke='%23ff9800'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='9.38%'%3E%3Cpath%20d='M14%209%20L3%209%203%2029%2023%2029%2023%2018%20M18%204%20L28%204%2028%2014%20M28%204%20L14%2018'/%3E%3C/svg%3E");
-}
-figure a[href*="://"]::after,
-figure a[rel*="external"] {
-  content: "";
-}
-html {
-  font-size: 13px;
-}
-.hack pre {
-  font-size: 17px;
-}
-article [itemprop="description"] {
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-article header img {
-  width: 100%;
-  border-radius: 3px;
-}
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 1em;
-  }
-  .container {
-    max-width: 50rem;
-  }
-}
-
-  /* override theme defaults */
-.muted {
-  color: rgba(255, 255, 255, 0.5);
-}
-/* custom styles */
-figure {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-figure img {
-  max-width: 80%;
-}
-figure a {
-  border-bottom: none !important;
-}
-figure a:hover {
-  background-color: inherit !important;
-}
-
-  html{font-size:14px}.standard{font-family:-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,Ubuntu,segoe ui,arial,sans-serif}.standard h1{font-size:2em;font-weight:700;margin:.67em 0}.standard h2{font-size:1.5em;font-weight:700;margin:.83em 0}.standard h3{font-size:1.17em;font-weight:700}.standard h3,.standard p{margin:1.75rem 0}.standard ol,.standard ul{display:block;list-style-type:disc;padding-left:20px;margin:1.75rem 0}.standard ol ul,.standard ul ul{margin:.75rem 0;list-style-type:square}.standard ol{list-style-type:decimal}.standard li{display:list-item;padding-left:0}.standard blockquote{margin:1.75rem 0;padding-left:10px;border-left:5px solid #f0f0f0}.standard pre{margin:1.75rem 0;white-space:pre}.standard hr{border:0;height:1px;display:block;background-color:#e2e2e2;margin:1.75rem 0}
-  .dark{color:#ccc}.dark,.dark pre{background-color:#000}.dark pre{padding:0;border:none}.dark pre code{color:#00bcd4}.dark h1 a,.dark h2 a,.dark h3 a,.dark h4 a,.dark h5 a{color:#ccc}.dark code,.dark strong{color:#fff}.dark code{font-weight:100}.dark table{color:#ccc}.dark table td,.dark table th{border-color:#444}.dark table tbody td:first-child{color:#fff}.dark .form-group label{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .form-group.form-textarea label:after{background-color:#000}.dark .form-control{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .form-control:focus{border-color:#ccc;color:#ccc}.dark textarea.form-control{color:#ccc}.dark .card{border-color:rgba(95,95,95,.78)}.dark .card .card-header{background-color:transparent;color:#ccc;border-bottom:1px solid rgba(95,95,95,.78)}.dark .btn.btn-ghost.btn-default{border-color:#ababab;color:#ababab}.dark .btn.btn-ghost.btn-default:focus,.dark .btn.btn-ghost.btn-default:hover{border-color:#9c9c9c;color:#9c9c9c;z-index:1}.dark .btn.btn-ghost.btn-default:focus,.dark .btn.btn-ghost.btn-default:hover{border-color:#e0e0e0;color:#e0e0e0}.dark .btn.btn-ghost.btn-primary:focus,.dark .btn.btn-ghost.btn-primary:hover{border-color:#64b5f6;color:#64b5f6}.dark .btn.btn-ghost.btn-success:focus,.dark .btn.btn-ghost.btn-success:hover{border-color:#81c784;color:#81c784}.dark .btn.btn-ghost.btn-info:focus,.dark .btn.btn-ghost.btn-info:hover{border-color:#4dd0e1;color:#4dd0e1}.dark .btn.btn-ghost.btn-error:focus,.dark .btn.btn-ghost.btn-error:hover{border-color:#e57373;color:#e57373}.dark .btn.btn-ghost.btn-warning:focus,.dark .btn.btn-ghost.btn-warning:hover{border-color:#ffb74d;color:#ffb74d}.dark .avatarholder,.dark .placeholder{background-color:transparent;border-color:#333}.dark .menu .menu-item{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .menu .menu-item.active,.dark .menu .menu-item:hover{color:#fff;border-color:#ccc}
-  .dark-grey{background-color:#181818;color:#ccc}.dark-grey pre{background-color:#181818;padding:0;border:none}.dark-grey pre code{color:#00bcd4}.dark-grey h1 a,.dark-grey h2 a,.dark-grey h3 a,.dark-grey h4 a,.dark-grey h5 a{color:#ccc}.dark-grey code,.dark-grey strong{color:#fff}.dark-grey code{font-weight:100}.dark-grey table{color:#ccc}.dark-grey table td,.dark-grey table th{border-color:#444}.dark-grey table tbody td:first-child{color:#fff}.dark-grey .form-group label{color:#ccc;border-color:rgba(95,95,95,.78)}.dark-grey .form-group.form-textarea label:after{background-color:#181818}.dark-grey .form-control{color:#ccc;border-color:rgba(95,95,95,.78)}.dark-grey .form-control:focus{border-color:#ccc;color:#ccc}.dark-grey textarea.form-control{color:#ccc}.dark-grey .card{border-color:rgba(95,95,95,.78)}.dark-grey .card .card-header{background-color:transparent;color:#ccc;border-bottom:1px solid rgba(95,95,95,.78)}.dark-grey .btn.btn-ghost.btn-default{border-color:#ababab;color:#ababab}.dark-grey .btn.btn-ghost.btn-default:focus,.dark-grey .btn.btn-ghost.btn-default:hover{border-color:#9c9c9c;color:#9c9c9c;z-index:1}.dark-grey .btn.btn-ghost.btn-default:focus,.dark-grey .btn.btn-ghost.btn-default:hover{border-color:#e0e0e0;color:#e0e0e0}.dark-grey .btn.btn-ghost.btn-primary:focus,.dark-grey .btn.btn-ghost.btn-primary:hover{border-color:#64b5f6;color:#64b5f6}.dark-grey .btn.btn-ghost.btn-success:focus,.dark-grey .btn.btn-ghost.btn-success:hover{border-color:#81c784;color:#81c784}.dark-grey .btn.btn-ghost.btn-info:focus,.dark-grey .btn.btn-ghost.btn-info:hover{border-color:#4dd0e1;color:#4dd0e1}.dark-grey .btn.btn-ghost.btn-error:focus,.dark-grey .btn.btn-ghost.btn-error:hover{border-color:#e57373;color:#e57373}.dark-grey .btn.btn-ghost.btn-warning:focus,.dark-grey .btn.btn-ghost.btn-warning:hover{border-color:#ffb74d;color:#ffb74d}.dark-grey .avatarholder,.dark-grey .placeholder{background-color:transparent;border-color:#333}.dark-grey .menu .menu-item{color:#ccc;border-color:rgba(95,95,95,.78)}.dark-grey .menu .menu-item.active,.dark-grey .menu .menu-item:hover{color:#fff;border-color:#ccc}
-  html{font-size:12px}*{box-sizing:border-box;text-rendering:geometricPrecision}body{font-size:1rem;line-height:1.5rem;margin:0;font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;word-wrap:break-word}h1,h2,h3,h4,h5,h6{line-height:1.3em}fieldset{border:none;padding:0;margin:0}pre{padding:2rem;margin:1.75rem 0;background-color:#fff;border:1px solid #ccc;overflow:auto}code[class*=language-],pre[class*=language-],pre code{font-weight:100;text-shadow:none;margin:1.75rem 0}a{cursor:pointer;color:#ff2e88;text-decoration:none;border-bottom:1px solid #ff2e88}a:hover{background-color:#ff2e88;color:#fff}.grid{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.grid.\-top{-ms-flex-align:start;align-items:flex-start}.grid.\-middle{-ms-flex-align:center;align-items:center}.grid.\-bottom{-ms-flex-align:end;align-items:flex-end}.grid.\-stretch{-ms-flex-align:stretch;align-items:stretch}.grid.\-baseline{-ms-flex-align:baseline;align-items:baseline}.grid.\-left{-ms-flex-pack:start;justify-content:flex-start}.grid.\-center{-ms-flex-pack:center;justify-content:center}.grid.\-right{-ms-flex-pack:end;justify-content:flex-end}.grid.\-between{-ms-flex-pack:justify;justify-content:space-between}.grid.\-around{-ms-flex-pack:distribute;justify-content:space-around}.cell{-ms-flex:1;flex:1;box-sizing:border-box}@media screen and (min-width:768px){.cell.\-1of12{-ms-flex:0 0 8.33333%;flex:0 0 8.33333%}.cell.\-2of12{-ms-flex:0 0 16.66667%;flex:0 0 16.66667%}.cell.\-3of12{-ms-flex:0 0 25%;flex:0 0 25%}.cell.\-4of12{-ms-flex:0 0 33.33333%;flex:0 0 33.33333%}.cell.\-5of12{-ms-flex:0 0 41.66667%;flex:0 0 41.66667%}.cell.\-6of12{-ms-flex:0 0 50%;flex:0 0 50%}.cell.\-7of12{-ms-flex:0 0 58.33333%;flex:0 0 58.33333%}.cell.\-8of12{-ms-flex:0 0 66.66667%;flex:0 0 66.66667%}.cell.\-9of12{-ms-flex:0 0 75%;flex:0 0 75%}.cell.\-10of12{-ms-flex:0 0 83.33333%;flex:0 0 83.33333%}.cell.\-11of12{-ms-flex:0 0 91.66667%;flex:0 0 91.66667%}}@media screen and (max-width:768px){.grid{-ms-flex-direction:column;flex-direction:column}.cell{-ms-flex:0 0 auto;flex:0 0 auto}}.hack,.hack blockquote,.hack code,.hack em,.hack h1,.hack h2,.hack h3,.hack h4,.hack h5,.hack h6,.hack strong{font-size:1rem;font-style:normal;font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif}.hack blockquote,.hack code,.hack em,.hack strong{line-height:20px}.hack blockquote,.hack code,.hack footer,.hack h1,.hack h2,.hack h3,.hack h4,.hack h5,.hack h6,.hack header,.hack li,.hack ol,.hack p,.hack section,.hack ul{float:none;margin:0;padding:0}.hack blockquote,.hack h1,.hack ol,.hack p,.hack ul{margin-top:20px;margin-bottom:20px}.hack h1{position:relative;display:inline-block;display:table-cell;padding:20px 0 30px;margin:0;overflow:hidden}.hack h1:after{content:"====================================================================================================";position:absolute;bottom:10px;left:0}.hack h1+*{margin-top:0}.hack h2,.hack h3,.hack h4,.hack h5,.hack h6{position:relative;margin-bottom:1.75rem}.hack h2:before,.hack h3:before,.hack h4:before,.hack h5:before,.hack h6:before{display:inline}.hack h2:before{content:"## "}.hack h3:before{content:"### "}.hack h4:before{content:"#### "}.hack h5:before{content:"##### "}.hack h6:before{content:"###### "}.hack li{position:relative;display:block;padding-left:20px}.hack li:after{position:absolute;top:0;left:0}.hack ul>li:after{content:"-"}.hack ol{counter-reset:a}.hack ol>li:after{content:counter(a) ".";counter-increment:a}.hack ol li:nth-child(n+10):after{left:-7px}.hack blockquote{position:relative;padding-left:17px;padding-left:2ch;overflow:hidden}.hack blockquote:after{content:">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";white-space:pre;position:absolute;top:0;left:0;line-height:20px}.hack em:after,.hack em:before{content:"*";display:inline}.hack pre code:after,.hack pre code:before{content:""}.hack code{font-weight:700}.hack code:after,.hack code:before{content:"`";display:inline}.hack hr{position:relative;height:20px;overflow:hidden;border:0;margin:20px 0}.hack hr:after{content:"----------------------------------------------------------------------------------------------------";position:absolute;top:0;left:0;line-height:20px;width:100%;word-wrap:break-word}@-moz-document url-prefix(){.hack h1{display:block}}.hack-ones ol>li:after{content:"1."}p{margin:0 0 1.75rem}.container{max-width:70rem}.container,.container-fluid{margin:0 auto;padding:0 1rem}.inner{padding:1rem}.inner2x{padding:2rem}.pull-left{float:left}.pull-right{float:right}.progress-bar{height:8px;opacity:.8;background-color:#ccc;margin-top:12px}.progress-bar.progress-bar-show-percent{margin-top:38px}.progress-bar-filled{background-color:gray;height:100%;transition:width .3s ease;position:relative;width:0}.progress-bar-filled:before{content:"";border:6px solid transparent;border-top-color:gray;position:absolute;top:-12px;right:-6px}.progress-bar-filled:after{color:gray;content:attr(data-filled);display:block;font-size:12px;white-space:nowrap;position:absolute;border:6px solid transparent;top:-38px;right:0;-ms-transform:translateX(50%);transform:translateX(50%)}table{width:100%;border-collapse:collapse;margin:1.75rem 0;color:#778087}table td,table th{vertical-align:top;border:1px solid #ccc;line-height:15px;padding:10px}table thead th{font-size:10px}table tbody td:first-child{font-weight:700;color:#333}.form{width:30rem}.form-group{margin-bottom:1.75rem;overflow:auto}.form-group label{border-bottom:2px solid #ccc;color:#333;width:10rem;display:inline-block;height:38px;line-height:38px;padding:0;float:left;position:relative}.form-group.form-success label{color:#4caf50!important;border-color:#4caf50!important}.form-group.form-warning label{color:#ff9800!important;border-color:#ff9800!important}.form-group.form-error label{color:#f44336!important;border-color:#f44336!important}.form-control{outline:none;border:none;border-bottom:2px solid #ccc;padding:.5rem 0;width:20rem;height:38px;background-color:transparent}.form-control:focus{border-color:#555}.form-group.form-textarea label:after{position:absolute;content:"";width:2px;background-color:#fff;right:-2px;top:0;bottom:0}textarea.form-control{height:auto;resize:none;padding:1rem 0;border-bottom:2px solid #ccc;border-left:2px solid #ccc;padding:.5rem}select.form-control{border-radius:0;background-color:transparent;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none}.help-block{color:#999;margin-top:.5rem}.form-actions{margin-bottom:1.75rem}.btn{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;cursor:pointer;outline:none;padding:.65rem 2rem;font-size:1rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;z-index:1}.btn:active{box-shadow:inset 0 1px 3px rgba(0,0,0,.12)}.btn.btn-ghost{border-color:#757575;color:#757575;background-color:transparent}.btn.btn-ghost:focus,.btn.btn-ghost:hover{border-color:#424242;color:#424242;z-index:2}.btn.btn-ghost:hover{background-color:transparent}.btn-block{width:100%;display:-ms-flexbox;display:flex}.btn-default{color:#fff;background-color:#e0e0e0;border:1px solid #e0e0e0;color:#333}.btn-default:focus:not(.btn-ghost),.btn-default:hover{background-color:#dcdcdc;border-color:#dcdcdc}.btn-success{color:#fff;background-color:#4caf50;border:1px solid #4caf50}.btn-success:focus:not(.btn-ghost),.btn-success:hover{background-color:#43a047;border-color:#43a047}.btn-success.btn-ghost{border-color:#4caf50;color:#4caf50}.btn-success.btn-ghost:focus,.btn-success.btn-ghost:hover{border-color:#388e3c;color:#388e3c;z-index:2}.btn-error{color:#fff;background-color:#f44336;border:1px solid #f44336}.btn-error:focus:not(.btn-ghost),.btn-error:hover{background-color:#e53935;border-color:#e53935}.btn-error.btn-ghost{border-color:#f44336;color:#f44336}.btn-error.btn-ghost:focus,.btn-error.btn-ghost:hover{border-color:#d32f2f;color:#d32f2f;z-index:2}.btn-warning{color:#fff;background-color:#ff9800;border:1px solid #ff9800}.btn-warning:focus:not(.btn-ghost),.btn-warning:hover{background-color:#fb8c00;border-color:#fb8c00}.btn-warning.btn-ghost{border-color:#ff9800;color:#ff9800}.btn-warning.btn-ghost:focus,.btn-warning.btn-ghost:hover{border-color:#f57c00;color:#f57c00;z-index:2}.btn-info{color:#fff;background-color:#00bcd4;border:1px solid #00bcd4}.btn-info:focus:not(.btn-ghost),.btn-info:hover{background-color:#00acc1;border-color:#00acc1}.btn-info.btn-ghost{border-color:#00bcd4;color:#00bcd4}.btn-info.btn-ghost:focus,.btn-info.btn-ghost:hover{border-color:#0097a7;color:#0097a7;z-index:2}.btn-primary{color:#fff;background-color:#2196f3;border:1px solid #2196f3}.btn-primary:focus:not(.btn-ghost),.btn-primary:hover{background-color:#1e88e5;border-color:#1e88e5}.btn-primary.btn-ghost{border-color:#2196f3;color:#2196f3}.btn-primary.btn-ghost:focus,.btn-primary.btn-ghost:hover{border-color:#1976d2;color:#1976d2;z-index:2}.btn-group{overflow:auto}.btn-group .btn{float:left}.btn-group .btn-ghost:not(:first-child){margin-left:-1px}.card{border:1px solid #ccc}.card .card-header{color:#333;text-align:center;background-color:#ddd;padding:.5rem 0}.alert{color:#ccc;padding:1rem;border:1px solid #ccc;margin-bottom:1.75rem}.alert-success{color:#4caf50;border-color:#4caf50}.alert-error{color:#f44336;border-color:#f44336}.alert-info{color:#00bcd4;border-color:#00bcd4}.alert-warning{color:#ff9800;border-color:#ff9800}.media:not(:last-child){margin-bottom:1.25rem}.media-left{padding-right:1rem}.media-left,.media-right{display:table-cell;vertical-align:top}.media-right{padding-left:1rem}.media-body{display:table-cell;vertical-align:top}.media-heading{font-size:1.16667rem;font-weight:700}.media-content{margin-top:.3rem}.avatarholder,.placeholder{background-color:#f0f0f0;text-align:center;color:#b9b9b9;font-size:1rem;border:1px solid #f0f0f0}.avatarholder{width:48px;height:48px;line-height:46px;font-size:2rem;background-size:cover;background-position:50%;background-repeat:no-repeat}.avatarholder.rounded{border-radius:33px}.loading{display:inline-block;content:"&nbsp;";height:20px;width:20px;margin:0 .5rem;animation:a .6s infinite linear;border:2px solid #e91e63;border-right-color:transparent;border-radius:50%}.btn .loading{margin-bottom:0;width:14px;height:14px}.btn div.loading{float:left}.alert .loading{margin-bottom:-5px}@keyframes a{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}.menu{width:100%}.menu .menu-item{display:block;color:#616161;border-color:#616161}.menu .menu-item.active,.menu .menu-item:hover{color:#000;border-color:#000;background-color:transparent}@media screen and (max-width:768px){.form-group label{display:block;border-bottom:none;width:100%}.form-group.form-textarea label:after{display:none}.form-control{width:100%}textarea.form-control{border-left:none;padding:.5rem 0}pre::-webkit-scrollbar{height:3px}}@media screen and (max-width:480px){.form{width:100%}}
-  .solarized-dark{background-color:#073642;color:#78909c}.solarized-dark h1,.solarized-dark h2,.solarized-dark h3,.solarized-dark h4,.solarized-dark h5,.solarized-dark h6{color:#1e88e5}.solarized-dark h1 a,.solarized-dark h2 a,.solarized-dark h3 a,.solarized-dark h4 a,.solarized-dark h5 a,.solarized-dark h6 a{color:#1e88e5;border-bottom-color:#1e88e5}.solarized-dark h1 a:hover,.solarized-dark h2 a:hover,.solarized-dark h3 a:hover,.solarized-dark h4 a:hover,.solarized-dark h5 a:hover,.solarized-dark h6 a:hover{background-color:#1e88e5;color:#fff}.solarized-dark pre{background-color:#073642;padding:0;border:none}.solarized-dark pre code{color:#009688}.solarized-dark h1 a,.solarized-dark h2 a,.solarized-dark h3 a,.solarized-dark h4 a,.solarized-dark h5 a{color:#78909c}.solarized-dark code,.solarized-dark strong{color:#90a4ae}.solarized-dark code{font-weight:100}.solarized-dark .progress-bar-filled{background-color:#558b2f}.solarized-dark .progress-bar-filled:after,.solarized-dark .progress-bar-filled:before{color:#90a4ae}.solarized-dark table{color:#78909c}.solarized-dark table td,.solarized-dark table th{border-color:#b0bec5}.solarized-dark table tbody td:first-child{color:#b0bec5}.solarized-dark .form-group label{color:#78909c;border-color:#90a4ae}.solarized-dark .form-group.form-textarea label:after{background-color:#073642}.solarized-dark .form-control{color:#78909c;border-color:#90a4ae}.solarized-dark .form-control:focus{border-color:#cfd8dc;color:#cfd8dc}.solarized-dark textarea.form-control{color:#78909c}.solarized-dark .card{border-color:#90a4ae}.solarized-dark .card .card-header{background-color:transparent;color:#78909c;border-bottom:1px solid #90a4ae}.solarized-dark .btn.btn-ghost.btn-default{border-color:#607d8b;color:#607d8b}.solarized-dark .btn.btn-ghost.btn-default:focus,.solarized-dark .btn.btn-ghost.btn-default:hover{border-color:#90a4ae;color:#90a4ae;z-index:1}.solarized-dark .btn.btn-ghost.btn-default:focus,.solarized-dark .btn.btn-ghost.btn-default:hover{border-color:#e0e0e0;color:#e0e0e0}.solarized-dark .btn.btn-ghost.btn-primary:focus,.solarized-dark .btn.btn-ghost.btn-primary:hover{border-color:#64b5f6;color:#64b5f6}.solarized-dark .btn.btn-ghost.btn-success:focus,.solarized-dark .btn.btn-ghost.btn-success:hover{border-color:#81c784;color:#81c784}.solarized-dark .btn.btn-ghost.btn-info:focus,.solarized-dark .btn.btn-ghost.btn-info:hover{border-color:#4dd0e1;color:#4dd0e1}.solarized-dark .btn.btn-ghost.btn-error:focus,.solarized-dark .btn.btn-ghost.btn-error:hover{border-color:#e57373;color:#e57373}.solarized-dark .btn.btn-ghost.btn-warning:focus,.solarized-dark .btn.btn-ghost.btn-warning:hover{border-color:#ffb74d;color:#ffb74d}.solarized-dark .avatarholder,.solarized-dark .placeholder{background-color:transparent;border-color:#90a4ae}.solarized-dark .menu .menu-item{color:#78909c;border-color:#90a4ae}.solarized-dark .menu .menu-item.active,.solarized-dark .menu .menu-item:hover{color:#fff;border-color:#78909c}
 </style>
+<meta name="description" content="Version Control with Git,2nd  簡單心得">
 
-    <script async src="/js/lazysizes.min.js"></script>
 
-  <script async src="/js/bpgdec8a.js"></script>
-  <script async src="/js/bpgdec8.js"></script>
-  <script async src="/js/bpgdec.js"></script>
-
+    
   </head>
+  <body data-url="/post/reading-version-control-with-git-2nd/">
+    
+      <div id="headermain"></div>
+<nav id="sidebar" class="showVisitedLinks">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
+	
   
-  <body class="dark-grey main container">
-    <header>
+    <a class="baselink" href="/">After-Dark</a>
   
-  <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
+  </div>
+
+      <ul class="topics">
+            <li data-nav-id="/" class="dd-item">
+            <a href="/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+    <li data-nav-id="/post/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/post/">Posts</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/post/vim-plugins-markdown/" class="dd-item">
+        <div>
+          <a href="/post/vim-plugins-markdown/">
+            <i class='fa fa-file'></i> Vim Plugins Markdown
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/hugo-blog-new-theme-docdock/" class="dd-item">
+        <div>
+          <a href="/post/hugo-blog-new-theme-docdock/">
+            <i class='fa fa-file'></i> Hugo Blog New Theme Docdock
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/my-workspace-configuration-2018-may/" class="dd-item">
+        <div>
+          <a href="/post/my-workspace-configuration-2018-may/">
+            My Workspace Configuration 2018 May
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/pycon-usa-2018-may-09-17-cleveland-oh-todolist/" class="dd-item">
+        <div>
+          <a href="/post/pycon-usa-2018-may-09-17-cleveland-oh-todolist/">
+            PYCON USA 2018 May 09-17 Cleveland OH TODO List
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/software-humble-bundle-python-dev-kit/" class="dd-item">
+        <div>
+          <a href="/post/software-humble-bundle-python-dev-kit/">
+            Software Humble Bundle Python Dev Kit
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/tips-vim-copy-paste-and-clipboard/" class="dd-item">
+        <div>
+          <a href="/post/tips-vim-copy-paste-and-clipboard/">
+            Tips Vim Copy Paste and Clipboard
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-7habits-for-effective-text-editing-2.0/" class="dd-item">
+        <div>
+          <a href="/post/reading-7habits-for-effective-text-editing-2.0/">
+            Reading 7 Habits for Effective Text Editing 2.0
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/udemy-python-easily-migrate-excel-files-to-a-database/" class="dd-item">
+        <div>
+          <a href="/post/udemy-python-easily-migrate-excel-files-to-a-database/">
+            Udemy Python Easily Migrate Excel Files to a Database
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/software-intro-magix-vegas-pro-14-edit/" class="dd-item">
+        <div>
+          <a href="/post/software-intro-magix-vegas-pro-14-edit/">
+            簡介 Magix Vegas Pro 14 Edit
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/" class="dd-item">
+        <div>
+          <a href="/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/">
+            Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠]
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-automate-the-boring-stuff-with-python-1st/" class="dd-item">
+        <div>
+          <a href="/post/reading-automate-the-boring-stuff-with-python-1st/">
+            Reading Automate the Boring Stuff With Python 1st Edition
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/15-minute-apps/" class="dd-item">
+        <div>
+          <a href="/post/15-minute-apps/">
+            Reading 15 Minute Apps
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-making-perfect-bread/" class="dd-item">
+        <div>
+          <a href="/post/reading-making-perfect-bread/">
+            Reading 完美麵包製作書
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/python-import-system/" class="dd-item">
+        <div>
+          <a href="/post/python-import-system/">
+            Python Import System
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/python-debugging-with-pdb/" class="dd-item">
+        <div>
+          <a href="/post/python-debugging-with-pdb/">
+            Python Debugging With Pdb
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/tool-picon-python-interactive/" class="dd-item">
+        <div>
+          <a href="/post/tool-picon-python-interactive/">
+            Picon: 在互動的環境下執行 Python 程式碼
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/tool-commandline-autojump/" class="dd-item">
+        <div>
+          <a href="/post/tool-commandline-autojump/">
+            Tool Commandline Autojump
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-dokusho-issatsu-matomenasai-2013/" class="dd-item">
+        <div>
+          <a href="/post/reading-dokusho-issatsu-matomenasai-2013/">
+            Reading 活用一輩子的讀書筆記術【完全攻略版】2013
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-version-control-with-git-2nd/" class="dd-item active">
+        <div>
+          <a href="/post/reading-version-control-with-git-2nd/">
+            Reading Version Control With Git 2nd
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/learn-language-in-six-months/" class="dd-item">
+        <div>
+          <a href="/post/learn-language-in-six-months/">
+            Learn Language in Six Months
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-hackingvim72/" class="dd-item">
+        <div>
+          <a href="/post/reading-hackingvim72/">
+            Reading HackingVim 7.2
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/golang-intro/" class="dd-item">
+        <div>
+          <a href="/post/golang-intro/">
+            Golang Intro
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/markdown-syntax-intro/" class="dd-item">
+        <div>
+          <a href="/post/markdown-syntax-intro/">
+            Markdown Syntax Intro
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/install-hugo/" class="dd-item">
+        <div>
+          <a href="/post/install-hugo/">
+            Install Hugo
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/this-is-new-blog-post/" class="dd-item">
+        <div>
+          <a href="/post/this-is-new-blog-post/">
+            This Is New Blog Post
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/my-first-post/" class="dd-item">
+        <div>
+          <a href="/post/my-first-post/">
+            My First Post
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/what-is-hugo/" class="dd-item">
+        <div>
+          <a href="/post/what-is-hugo/">
+            What is Hugo?
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/introduction/" class="dd-item">
+        <div>
+          <a href="/post/introduction/">
+            Introduction
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/creating-a-new-theme/" class="dd-item">
+        <div>
+          <a href="/post/creating-a-new-theme/">
+            Creating a New Theme
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/goisforlovers/" class="dd-item">
+        <div>
+          <a href="/post/goisforlovers/">
+            (Hu)go Template Primer
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/hugoisforlovers/" class="dd-item">
+        <div>
+          <a href="/post/hugoisforlovers/">
+            Getting Started with Hugo
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/migrate-from-jekyll/" class="dd-item">
+        <div>
+          <a href="/post/migrate-from-jekyll/">
+            Migrating from Jekyll
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/articles/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/articles/">Articles</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/articles/article-test/" class="dd-item">
+        <div>
+          <a href="/articles/article-test/">
+            Article Test
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+        <section id="shortcuts">
+                <li class="" role=""><h3>More</h3><a href="/tags/" target="_blank" rel="noopener"><i class='fa fa-tags'></i> <label>Tags</label></a></li>
+                <li class="" role=""><a href="/categories/" target="_blank" rel="noopener"><i class='fa fa-folder-open'></i> <label>Categories</label></a></li>
+                <li class="" role=""><a href="/about/" target="_blank" rel="noopener"><i class='fa fa-bullhorn'></i> <label>About</label></a></li>
+                <li class="" role=""><a href="https://docdock.netlify.com/shortcodes/icon/" target="_blank" rel="noopener"><i class='fa fa-car'></i> <label>FontAwesome Icon</label></a></li>
+                <li class="" role=""><a href="https://gohugo.io/" target="_blank" rel="noopener"><i class='fa fa-bookmark'></i> <label>Hugo Documentation</label></a></li>
+                <li class="" role=""><a href="https://github.com/MagicSword/" target="_blank" rel="noopener"><i class='fa fa-github'></i> <label>Github repo</label></a></li>
+        </section>
+            <a id="clear-history" class="" href="#" data-clear-history-toggle=""><i class="fa  fa-history"></i> Clear History</a>
+
+    <hr />
+    <li></li>
     
+    </ul>
+
+ <section id="footer">
+    </section>
+  </div>
+</nav>
+
+
+
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
     
-      <a itemprop="url" class="" href="/"><span itemprop="name">Home</span></a>
-    
-      <a itemprop="url" class="active" href="/post/"><span itemprop="name">Posts</span></a>
-    
-      <a itemprop="url" class="" href="/articles/"><span itemprop="name">Articles</span></a>
-    
-      <a itemprop="url" class="" href="/tags/"><span itemprop="name">Tags</span></a>
-    
-      <a itemprop="url" class="" href="/categories/"><span itemprop="name">Categories</span></a>
-    
-      <a itemprop="url" class="" href="/about/"><span itemprop="name">About</span></a>
-    
-  </nav>
-    <link rel="stylesheet" href="/css/monokai.css">
-    <script src="/js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-</header>
-    <main>
-  <article itemscope itemtype="http://schema.org/BlogPosting">
-    
-<meta itemprop="name" content="Reading Version Control With Git 2nd">
-<meta itemprop="description" content="Version Control with Git,2nd  簡單心得">
-
-
-<meta itemprop="datePublished" content="2018-04-01T23:06:34&#43;08:00" />
-<meta itemprop="dateModified" content="2018-04-01T23:06:34&#43;08:00" />
-<meta itemprop="wordCount" content="1311">
-
-  <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
-
-
-
-<meta itemprop="keywords" content="reading,git," />
-
-    <header>
-      <h1 itemprop="headline">Reading Version Control With Git 2nd</h1>
-      <p class="muted">
-        <svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <circle cx="16" cy="16" r="14" />
-  <path d="M16 8 L16 16 20 20" />
-</svg>
-<span>7 minute read</span>
-<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
-</svg>
-
-  Published: <time datetime="2018-04-01T23:06:34&#43;08:00">1 Apr, 2018</time>
-
-
-      </p>
       
-        <blockquote itemprop="description">Version Control with Git,2nd  簡單心得</blockquote>
       
       
-      
-    </header>
+    <div id="top-github-link">
+      <a class="github-link" href="https://github.com/MagicSword/magicsword.github.io-source/edit/master/content/post/reading-version-control-with-git-2nd.md" target="blank">
+        <i class="fa fa-code-fork"></i>
+        Improve this page
+      </a>
+    </div><div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+        <span class="links">
+        
+
+
+
+
+
+
+
+ <a href='/'>HomePage</a> > <a href='/post/'>Posts</a> > Reading Version Control With Git 2nd
+
+ 
+
+ 
+
+   
+        </span>
+    </div>
     
-  <details>
-    <summary>Table of Contents</summary>
+    
+    <div class="progress">
+        <div class="wrapper">
     <nav id="TableOfContents">
 <ul>
 <li><a href="#概述">概述</a></li>
@@ -291,7 +394,10 @@ figure a:hover {
 <li><a href="#ch7-分支">Ch7 分支</a></li>
 <li><a href="#ch8-diffs">Ch8 Diffs</a></li>
 <li><a href="#ch9-merge-合併">Ch9 Merge 合併</a></li>
-<li><a href="#ch10-修改送交">Ch10 修改送交</a></li>
+<li><a href="#ch10-修改送交">Ch10 修改送交</a>
+<ul>
+<li><a href="#使用-git-reset-指令">使用 git reset 指令</a></li>
+</ul></li>
 <li><a href="#ch11-stash-and-reflog">Ch11 Stash and Reflog</a></li>
 <li><a href="#ch12-遠端容器">Ch12 遠端容器</a></li>
 <li><a href="#ch13-管理容器">Ch13 管理容器</a></li>
@@ -309,25 +415,32 @@ figure a:hover {
 </ul></li>
 </ul>
 </nav>
-  </details>
-  <script>
-    const el = document.querySelector('details summary')
-    el.onclick = () => {
-      (function(l,o,a,d,e,r){e=o.createElement(a),r=o.getElementsByTagName(a)[0];e.async=1;e.src=d;r.parentNode.insertBefore(e,r)})(window,document,'script','/js/smoothscroll.js');
-      el.onclick = null
-    }
-    document.querySelectorAll('#TableOfContents a').forEach(link => {
-      link.addEventListener('click', () => {
-        document.querySelector(
-          link.href.slice(link.href.indexOf('#'))
-        ).scrollIntoView({ behavior: 'smooth' })
-      })
-    })
-  </script>
+        </div>
+    </div>
+    
+
+  </div>
 
 
-    <div itemprop="articleBody">
-      <p>Version Control with Git, 2nd Edition 簡單的一些筆記。</p>
+  <div id="tags">
+    
+      <a class="label label-default" href="/tags/reading">reading</a>
+    
+      <a class="label label-default" href="/tags/git">git</a>
+    
+  </div>
+
+<div id="body-inner">
+  
+    <h1>Reading Version Control With Git 2nd</h1>
+  
+
+
+
+    
+    
+    
+    <p>Version Control with Git, 2nd Edition 簡單的一些筆記。</p>
 
 <p></p>
 
@@ -409,32 +522,22 @@ figure a:hover {
 即會產生一個隱形的  <code>.git</code> 目錄，用來存放修改記錄。</p>
 
 <p><strong>加入檔案</strong></p>
-
-<pre><code class="language-bash">$git add somefile.txt 
-$git commit -m &quot;Initial Message&quot; --author=&quot;Jon Doe &lt;jdl@example.com&gt;&quot;
-$git status
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$git add somefile.txt 
+$git commit -m <span style="color:#e6db74">&#34;Initial Message&#34;</span> --author<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Jon Doe &lt;jdl@example.com&gt;&#34;</span>
+$git status</code></pre></div>
 <p>提交後，改動會進到本地的儲存庫中。</p>
 
 <p>預先設定好作者資料</p>
-
-<pre><code class="language-bash">$git config user.name &quot;Joe Due&quot;
-$git config user.email &quot;joe@example&quot;
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$git config user.name <span style="color:#e6db74">&#34;Joe Due&#34;</span>
+$git config user.email <span style="color:#e6db74">&#34;joe@example&#34;</span></code></pre></div>
 <p>如果前面的 <code>somefile.txt</code> 改動過後，只要再 <code>commit</code> 就好，不必  <code>add</code></p>
 
 <p><code>git log</code>: 檢視目前的修改記錄。</p>
-
-<pre><code class="language-bash">commit e62f7fd572775ca2479e3ae4ce64bd73ded6a532 (HEAD -&gt; master)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">commit e62f7fd572775ca2479e3ae4ce64bd73ded6a532 <span style="color:#f92672">(</span>HEAD -&gt; master<span style="color:#f92672">)</span>
 Author: Nero Miller &lt;ming927@spp.url.com.tw&gt;
-Date:   Sun Apr 1 05:22:46 2018 +0800
+Date:   Sun Apr <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">05</span>:22:46 <span style="color:#ae81ff">2018</span> +0800
 
-    readingHackingvim Ch7,first draft
-
-</code></pre>
-
+    readingHackingvim Ch7,first draft</code></pre></div>
 <p>commit 後的是 SHA-1 hash，用來分辨各版本間的不同</p>
 
 <p><strong>See Also</strong></p>
@@ -446,12 +549,9 @@ Date:   Sun Apr 1 05:22:46 2018 +0800
 <p><code>git show</code>: 看詳細資料</p>
 
 <p><code>git diff a-hash b-hash</code></p>
-
-<pre><code class="language-bash">$git mv somefile.txt somefileB.txt
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$git mv somefile.txt somefileB.txt
 $git rm somefileB.txt
-$git commit -m &quot;mv rm some file&quot;
-</code></pre>
-
+$git commit -m <span style="color:#e6db74">&#34;mv rm some file&#34;</span></code></pre></div>
 <p>檔案修改都是要提交後，才會生效。</p>
 
 <p><code>git clone url_to_the_depo</code>: copy depo to local</p>
@@ -565,10 +665,7 @@ Repository n. 容器；貯藏處，
 <p><strong>物件儲存的示意圖</strong></p>
 
 <p><strong><code>.git/</code>目錄內部</strong></p>
-
-<pre><code class="language-bash">$git init
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$git init</code></pre></div>
 <p>建立一個檔案庫後，會有一個 <code>.git</code> 目錄，
 內部儲存變動記錄，和一些資訊。</p>
 
@@ -722,15 +819,12 @@ Repository n. 容器；貯藏處，
 <code>symref</code>(symbolic reference): 用來代表 <code>ref</code> 的別名</p>
 
 <p>基本上 <code>ref</code> 就是存在下面目錄的檔案：</p>
-
-<pre><code class="language-bash">    .git/ref
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    .git/ref
     .git/refs/ref
-    .git/refs/tags/ref      # 標籤
-    .git/refs/heads/ref     # 本地
-    .git/refs/remotes/ref   # 遠端
-    .git/refs/remotes/ref/HEAD
-</code></pre>
-
+    .git/refs/tags/ref      <span style="color:#75715e"># 標籤
+</span><span style="color:#75715e"></span>    .git/refs/heads/ref     <span style="color:#75715e"># 本地
+</span><span style="color:#75715e"></span>    .git/refs/remotes/ref   <span style="color:#75715e"># 遠端
+</span><span style="color:#75715e"></span>    .git/refs/remotes/ref/HEAD</code></pre></div>
 <p>Git 內部已有的 <code>ref</code></p>
 
 <dl>
@@ -784,10 +878,7 @@ Repository n. 容器；貯藏處，
 <code>master</code>: 目前的主分支</p>
 
 <p>主要的指令是 <code>git log</code>，等同於 <code>git log HEAD</code></p>
-
-<pre><code class="language-bash">$ git log --pretty=short --abbrev-commit -p master~12..master~10
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git log --pretty<span style="color:#f92672">=</span>short --abbrev-commit -p master~12..master~10</code></pre></div>
 <p><code>--pretty=short</code>: 列印的格式, (online, short, full)
 <code>--abbrev-commit</code>: SHA1-hash 以縮寫列出
 <code>master~12..master~10</code> 範圍
@@ -878,22 +969,13 @@ Repository n. 容器；貯藏處，
 <p>分支就像目前行駛的路徑，決定你取出哪些檔案，預設是 <code>master</code></p>
 
 <p><strong>建立分支</strong></p>
-
-<pre><code class="language-bash">$git branch  some-branch-name/new-commit
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$git branch  some-branch-name/new-commit</code></pre></div>
 <p><strong>列出分支</strong></p>
-
-<pre><code class="language-bash">$git branch
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$git branch</code></pre></div>
 <p><strong>檢視分支</strong></p>
 
 <p>顯示更詳細的資訊</p>
-
-<pre><code class="language-bash">$git show-branch
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$git show-branch</code></pre></div>
 <p><code>-r</code>: remote
 <code>-a</code>: all</p>
 
@@ -905,19 +987,13 @@ Repository n. 容器；貯藏處，
 <p><strong>合併分支</strong></p>
 
 <p>如果你目前工作的分支、和你想切換的分支有衝突，這時就需要合併分支了。</p>
-
-<pre><code class="language-bash">$git checkout -m dev
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$git checkout -m dev</code></pre></div>
 <p><strong>建立、並取出新的分支</strong></p>
 
 <p>建立新分支後，馬上切換過去</p>
-
-<pre><code class="language-bash">$git checkout -b bug/pr3
-# 若是遇到問題，可以下面的指令
-$git checkout -b new-branch start-point
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$git checkout -b bug/pr3
+<span style="color:#75715e"># 若是遇到問題，可以下面的指令
+</span><span style="color:#75715e"></span>$git checkout -b new-branch start-point</code></pre></div>
 <p><strong>缷載的 HEAD 分支</strong></p>
 
 <dl>
@@ -931,34 +1007,25 @@ $git checkout -b new-branch start-point
 <p><strong>刪除分支</strong></p>
 
 <p>想要刪除的分支，用 <code>-d</code> 選項</p>
-
-<pre><code class="language-bash">$git branch -d bug/pr-3
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$git branch -d bug/pr-3</code></pre></div>
 <p>若想刪的分支上，有一些變動是主要分支沒有的，可能沒辦法刪除，
 這時可以將變動合併到主支線後，這個分支就能刪了。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$git merge bug/pr-3
 
-<pre><code class="language-bash">$git merge bug/pr-3
-
-$git branch -d bug/pr-3
-</code></pre>
-
+$git branch -d bug/pr-3</code></pre></div>
 <h1 id="ch8-diffs">Ch8 Diffs</h1>
 
 <p>Diffs 比較兩個物件的差異。 Unix 有一個指令 <code>diff</code> 也是用來比較檔案間的差異。</p>
-
-<pre><code class="language-bash">$ diff -u initial rewrite
-  --- initial     1867-01-02 11:22:33.000000000 -0500
-  +++ rewrite     2000-01-02 11:23:45.000000000 -0500
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ diff -u initial rewrite
+  --- initial     <span style="color:#ae81ff">1867</span>-01-02 <span style="color:#ae81ff">11</span>:22:33.000000000 -0500
+  +++ rewrite     <span style="color:#ae81ff">2000</span>-01-02 <span style="color:#ae81ff">11</span>:23:45.000000000 -0500
   @@ -1,4 +1,5 @@
   -Now is the time
   +Today is the time
    For all good men
   +And women
    To come to the aid
-   Of their country.
-</code></pre>
-
+   Of their country.</code></pre></div>
 <ul>
 <li><code>-u</code> : 使用 <code>-u</code> 的的顯示格式，<code>+ , -</code> 號</li>
 <li><code>@@</code>: 這行代表差異的行數，<code>-1,4</code> 指 <code>initial</code> 的 1,4 行</li>
@@ -1090,7 +1157,55 @@ $git branch -d bug/pr-3
 <dd>子樹</dd>
 </dl>
 
+<p><strong>翻譯有點…先pass</strong></p>
+
 <h1 id="ch10-修改送交">Ch10 修改送交</h1>
+
+<p><code>Commit</code> 記錄著歷史、和變更記錄。 但是已送交的記錄也是有些工具可以修改。</p>
+
+<p>要注意的是，如果是會出現在別人容器的送交，記得不要修改，以免產生問題。</p>
+
+<h2 id="使用-git-reset-指令">使用 git reset 指令</h2>
+
+<p><code>git reset --soft commit</code></p>
+
+<ul>
+<li><code>git reset</code> 的指令可以讓目前工作目錄的 HEAD, Index, 工作目錄 回到之前的某的狀態。</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>選項</th>
+<th>HEAD</th>
+<th>索引</th>
+<th>工作目錄</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>--soft</code></td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td><code>--mixed</code></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+
+<tr>
+<td><code>--hard</code></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
 
 <h1 id="ch11-stash-and-reflog">Ch11 Stash and Reflog</h1>
 
@@ -1113,6 +1228,41 @@ $git branch -d bug/pr-3
 <h1 id="ch20-tips">Ch20 Tips</h1>
 
 <h1 id="ch21-git-and-github">Ch21 Git and Github</h1>
+
+<p><a href="https://github.com">Github</a> 是有 社交功能的 原始碼分享網站。</p>
+
+<ul>
+<li>有四種帳號形態：個人免費，個人收費，組織免費，組織收費</li>
+<li>建立遠端的容器後，用 <code>git remote add URL</code> ，兩邊連結。</li>
+<li>上傳使用： `git push -u origin master</li>
+</ul>
+
+<p><strong>Github 的 Watch</strong>`</p>
+
+<ul>
+<li><code>Watch</code> 就像 twitter 的 follow ，會在主頁出現追蹤專案的動態</li>
+<li><code>Fork</code> 專案複製，想將專案往不同的方向發展。</li>
+<li><code>Pull Request</code> 對原專案的修改，發出請求，合併至原專案。</li>
+<li><code>Star</code> Favorite 的標記</li>
+<li><code>Wiki</code> 各專案的維基，用來寫文件。</li>
+<li><code>Github Page</code> 可用來放靜態 HTML</li>
+<li><code>GIST</code> 用來貼短篇文章的功能, Pastebin</li>
+</ul>
+
+<p>其他類似 Github 的網站</p>
+
+<ul>
+<li>SourceForge,Google Code</li>
+<li>Bitbucket(Mercirial,hg)</li>
+</ul>
+
+<p>自架 Git</p>
+
+<ul>
+<li><a href="https://about.gitlab.com/">Gitlab</a></li>
+<li><a href="https://github.com/go-gitea/gitea">Gitea</a></li>
+<li><a href="https://github.com/gogits/gogs">Gogs</a></li>
+</ul>
 
 <hr />
 
@@ -1137,7 +1287,7 @@ ISBN：9789862766699
 語言：中文繁體
 規格：平裝
 分級：普級
-開數：18.5*23
+開數：18.5x23
 頁數：452
 出版地：台灣</p>
 
@@ -1207,82 +1357,40 @@ he))
 <li><a href="https://learngitbranching.js.org/index.html">Learning Git Branching</a></li>
 <li><a href="https://legacy.gitbook.com/book/kingofamani/git-teach/details">新北市教研中心－GIT版本控制</a></li>
 </ul>
-    </div>
-    
-      <article>
-        <div id="disqus_thread"></div>
-<script>
-    var disqus_config = function () {
+
     
     
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "neromiller-github" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-      </article>
-    
-    <footer>
-      <hr>
-      <p>
-  Published
-  
-    
-      by <span itemprop="author">Nero</span>
-    
-  
-  <time itemprop="datePublished" datetime="2018-04-01T23:06:34&#43;08:00">
-    1 Apr, 2018
-  </time>
-  
-    in <span itemprop="articleSection"><a href="/categories/technology/">Technology</a></span>
-  
-  
-    and tagged <a href="/tags/git/">git</a> and <a href="/tags/reading/">reading</a>
-  
-  using <span itemprop="wordCount">1311</span> words.
-</p>
-
-      
-
-
-  <aside>
-    <header>Related Content</header>
-    <ul>
-      
-        <li><a href="/post/learn-language-in-six-months/">Learn Language in Six Months</a>
-        <time datetime="1M">1 minutes</time>
-      
-        <li><a href="/post/reading-hackingvim72/">Reading HackingVim 7.2</a>
-        <time datetime="12M">12 minutes</time>
-      
-    </ul>
-  </aside>
-
-
-    </footer>
-  </article>
-</main>
-    <footer>
-  
-  <p class="muted">
-    This page was generated using
-    <a target="_blank" rel="noopener" href="https://comfusion.github.io/after-dark/">After Dark</a>
-    for
-    <a target="_blank" rel="noopener" href="https://gohugo.io/">Hugo</a>.
-  </p>
-
-
+          <footer class=" footline" >
+	
 </footer>
+  </div>
+</div>
+
+<div id="navigation">
+</div>
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
+
+<script src="/js/clipboard.min.js"></script>
+<script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
+
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
+
+
+    
+
+    
+    
+
+    
   </body>
 </html>

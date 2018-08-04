@@ -1,357 +1,528 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html>
   <head>
-    <meta name="generator" content="Hugo 0.40.2" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programming | After Dark</title>
-    <meta name="description" content="programming, writing">
-    <meta name="keywords" content="development, golang, language, life, programming, technology, ">
+    <title>After-Dark</title>
     
-    
-    
-    
-      <meta name="robots" content="noindex">
-    
-    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.45" />
 
-  <meta name="author" content="Nero">
+<title>Programming :: After-Dark</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
+  <link href="/theme-original/variant-blue.css" rel="stylesheet">
 
-    <meta property="og:title" content="Programming" />
-<meta property="og:description" content="programming, writing" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://magicsword.github.io/categories/programming/" />
-
-
-
-<meta property="og:updated_time" content="2018-05-04T16:55:05&#43;08:00"/>
-
-
-
-
-
-
-
-
-
-
-    <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://source.unsplash.com/category/technology/2000x1322"/>
-
-<meta name="twitter:title" content="Programming"/>
-<meta name="twitter:description" content="programming, writing"/>
-
-    
-
-  <meta property="og:image" content="https://source.unsplash.com/category/technology/2000x1322">
-
-
-
-
-    <meta name="theme-color" content="#000">
-
-    
-    
-    
-      <link href="https://magicsword.github.io/categories/programming/index.xml" rel="alternate" type="application/rss+xml" title="After Dark" />
-    
-    <link rel="canonical" href="https://magicsword.github.io/categories/programming/">
-    
-    
-    
-
-<Link rel="icon" type="image/png" href="/favicon-M-256.png" sizes="256x256">
-
-    <style>
-  html{font-size:12px}*{box-sizing:border-box;text-rendering:geometricPrecision}body{font-size:1rem;line-height:1.5rem;margin:0;font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;word-wrap:break-word}h1,h2,h3,h4,h5,h6{line-height:1.3em}fieldset{border:none;padding:0;margin:0}pre{padding:2rem;margin:1.75rem 0;background-color:#fff;border:1px solid #ccc;overflow:auto}code[class*=language-],pre[class*=language-],pre code{font-weight:100;text-shadow:none;margin:1.75rem 0}a{cursor:pointer;color:#ff2e88;text-decoration:none;border-bottom:1px solid #ff2e88}a:hover{background-color:#ff2e88;color:#fff}.grid{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.grid.\-top{-ms-flex-align:start;-ms-grid-row-align:flex-start;align-items:flex-start}.grid.\-middle{-ms-flex-align:center;-ms-grid-row-align:center;align-items:center}.grid.\-bottom{-ms-flex-align:end;-ms-grid-row-align:flex-end;align-items:flex-end}.grid.\-stretch{-ms-flex-align:stretch;-ms-grid-row-align:stretch;align-items:stretch}.grid.\-baseline{-ms-flex-align:baseline;-ms-grid-row-align:baseline;align-items:baseline}.grid.\-left{-ms-flex-pack:start;justify-content:flex-start}.grid.\-center{-ms-flex-pack:center;justify-content:center}.grid.\-right{-ms-flex-pack:end;justify-content:flex-end}.grid.\-between{-ms-flex-pack:justify;justify-content:space-between}.grid.\-around{-ms-flex-pack:distribute;justify-content:space-around}.cell{-ms-flex:1;flex:1;box-sizing:border-box}@media screen and (min-width:768px){.cell.\-1of12{-ms-flex:0 0 8.33333%;flex:0 0 8.33333%}.cell.\-2of12{-ms-flex:0 0 16.66667%;flex:0 0 16.66667%}.cell.\-3of12{-ms-flex:0 0 25%;flex:0 0 25%}.cell.\-4of12{-ms-flex:0 0 33.33333%;flex:0 0 33.33333%}.cell.\-5of12{-ms-flex:0 0 41.66667%;flex:0 0 41.66667%}.cell.\-6of12{-ms-flex:0 0 50%;flex:0 0 50%}.cell.\-7of12{-ms-flex:0 0 58.33333%;flex:0 0 58.33333%}.cell.\-8of12{-ms-flex:0 0 66.66667%;flex:0 0 66.66667%}.cell.\-9of12{-ms-flex:0 0 75%;flex:0 0 75%}.cell.\-10of12{-ms-flex:0 0 83.33333%;flex:0 0 83.33333%}.cell.\-11of12{-ms-flex:0 0 91.66667%;flex:0 0 91.66667%}}@media screen and (max-width:768px){.grid{-ms-flex-direction:column;flex-direction:column}.cell{-ms-flex:0 0 auto;flex:0 0 auto}}.hack,.hack blockquote,.hack code,.hack em,.hack h1,.hack h2,.hack h3,.hack h4,.hack h5,.hack h6,.hack strong{font-size:1rem;font-style:normal;font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif}.hack blockquote,.hack code,.hack em,.hack strong{line-height:20px}.hack blockquote,.hack code,.hack footer,.hack h1,.hack h2,.hack h3,.hack h4,.hack h5,.hack h6,.hack header,.hack li,.hack ol,.hack p,.hack section,.hack ul{float:none;margin:0;padding:0}.hack blockquote,.hack h1,.hack ol,.hack p,.hack ul{margin-top:20px;margin-bottom:20px}.hack h1{position:relative;display:inline-block;display:table-cell;padding:20px 0 30px;margin:0;overflow:hidden}.hack h1:after{content:"====================================================================================================";position:absolute;bottom:10px;left:0}.hack h1+*{margin-top:0}.hack h2,.hack h3,.hack h4,.hack h5,.hack h6{position:relative;margin-bottom:1.75rem}.hack h2:before,.hack h3:before,.hack h4:before,.hack h5:before,.hack h6:before{display:inline}.hack h2:before{content:"## "}.hack h3:before{content:"### "}.hack h4:before{content:"#### "}.hack h5:before{content:"##### "}.hack h6:before{content:"###### "}.hack li{position:relative;display:block;padding-left:20px}.hack li:after{position:absolute;top:0;left:0}.hack ul>li:after{content:"-"}.hack ol{counter-reset:a}.hack ol>li:after{content:counter(a) ".";counter-increment:a}.hack blockquote{position:relative;padding-left:17px;padding-left:2ch;overflow:hidden}.hack blockquote:after{content:">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";white-space:pre;position:absolute;top:0;left:0;line-height:20px}.hack em:after,.hack em:before{content:"*";display:inline}.hack pre code:after,.hack pre code:before{content:''}.hack code{font-weight:700}.hack code:after,.hack code:before{content:"`";display:inline}.hack hr{position:relative;height:20px;overflow:hidden;border:0;margin:20px 0}.hack hr:after{content:"----------------------------------------------------------------------------------------------------";position:absolute;top:0;left:0;line-height:20px;width:100%;word-wrap:break-word}@-moz-document url-prefix(){.hack h1{display:block}}.hack-ones ol>li:after{content:"1."}p{margin:0 0 1.75rem}.container{max-width:70rem}.container,.container-fluid{margin:0 auto;padding:0 1rem}.inner{padding:1rem}.inner2x{padding:2rem}.pull-left{float:left}.pull-right{float:right}.progress-bar{height:8px;opacity:.8;background-color:#ccc;margin-top:12px}.progress-bar.progress-bar-show-percent{margin-top:38px}.progress-bar-filled{background-color:gray;height:100%;transition:width .3s ease;position:relative;width:0}.progress-bar-filled:before{content:'';border:6px solid transparent;border-top-color:gray;position:absolute;top:-12px;right:-6px}.progress-bar-filled:after{color:gray;content:attr(data-filled);display:block;font-size:12px;white-space:nowrap;position:absolute;border:6px solid transparent;top:-38px;right:0;-ms-transform:translateX(50%);transform:translateX(50%)}table{width:100%;border-collapse:collapse;margin:1.75rem 0;color:#778087}table td,table th{vertical-align:top;border:1px solid #ccc;line-height:15px;padding:10px}table thead th{font-size:10px}table tbody td:first-child{font-weight:700;color:#333}.form{width:30rem}.form-group{margin-bottom:1.75rem;overflow:auto}.form-group label{border-bottom:2px solid #ccc;color:#333;width:10rem;display:inline-block;height:38px;line-height:38px;padding:0;float:left;position:relative}.form-group.form-success label{color:#4caf50!important;border-color:#4caf50!important}.form-group.form-warning label{color:#ff9800!important;border-color:#ff9800!important}.form-group.form-error label{color:#f44336!important;border-color:#f44336!important}.form-control{outline:none;border:none;border-bottom:2px solid #ccc;padding:.5rem 0;width:20rem;height:38px;background-color:transparent}.form-control:focus{border-color:#555}.form-group.form-textarea label:after{position:absolute;content:'';width:2px;background-color:#fff;right:-2px;top:0;bottom:0}textarea.form-control{height:auto;resize:none;padding:1rem 0;border-bottom:2px solid #ccc;border-left:2px solid #ccc;padding:.5rem}select.form-control{border-radius:0;background-color:transparent;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none}.help-block{color:#999;margin-top:.5rem}.form-actions{margin-bottom:1.75rem}.btn{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;cursor:pointer;outline:none;padding:.65rem 2rem;font-size:1rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;z-index:1}.btn:active{box-shadow:inset 0 1px 3px rgba(0,0,0,.12)}.btn.btn-ghost{border-color:#757575;color:#757575;background-color:transparent}.btn.btn-ghost:focus,.btn.btn-ghost:hover{border-color:#424242;color:#424242;z-index:2}.btn.btn-ghost:hover{background-color:transparent}.btn-block{width:100%;display:-ms-flexbox;display:flex}.btn-default{color:#fff;background-color:#e0e0e0;border:1px solid #e0e0e0;color:#333}.btn-default:focus:not(.btn-ghost),.btn-default:hover{background-color:#dcdcdc;border-color:#dcdcdc}.btn-success{color:#fff;background-color:#4caf50;border:1px solid #4caf50}.btn-success:focus:not(.btn-ghost),.btn-success:hover{background-color:#43a047;border-color:#43a047}.btn-success.btn-ghost{border-color:#4caf50;color:#4caf50}.btn-success.btn-ghost:focus,.btn-success.btn-ghost:hover{border-color:#388e3c;color:#388e3c;z-index:2}.btn-error{color:#fff;background-color:#f44336;border:1px solid #f44336}.btn-error:focus:not(.btn-ghost),.btn-error:hover{background-color:#e53935;border-color:#e53935}.btn-error.btn-ghost{border-color:#f44336;color:#f44336}.btn-error.btn-ghost:focus,.btn-error.btn-ghost:hover{border-color:#d32f2f;color:#d32f2f;z-index:2}.btn-warning{color:#fff;background-color:#ff9800;border:1px solid #ff9800}.btn-warning:focus:not(.btn-ghost),.btn-warning:hover{background-color:#fb8c00;border-color:#fb8c00}.btn-warning.btn-ghost{border-color:#ff9800;color:#ff9800}.btn-warning.btn-ghost:focus,.btn-warning.btn-ghost:hover{border-color:#f57c00;color:#f57c00;z-index:2}.btn-info{color:#fff;background-color:#00bcd4;border:1px solid #00bcd4}.btn-info:focus:not(.btn-ghost),.btn-info:hover{background-color:#00acc1;border-color:#00acc1}.btn-info.btn-ghost{border-color:#00bcd4;color:#00bcd4}.btn-info.btn-ghost:focus,.btn-info.btn-ghost:hover{border-color:#0097a7;color:#0097a7;z-index:2}.btn-primary{color:#fff;background-color:#2196f3;border:1px solid #2196f3}.btn-primary:focus:not(.btn-ghost),.btn-primary:hover{background-color:#1e88e5;border-color:#1e88e5}.btn-primary.btn-ghost{border-color:#2196f3;color:#2196f3}.btn-primary.btn-ghost:focus,.btn-primary.btn-ghost:hover{border-color:#1976d2;color:#1976d2;z-index:2}.btn-group{overflow:auto}.btn-group .btn{float:left}.btn-group .btn-ghost:not(:first-child){margin-left:-1px}.card{border:1px solid #ccc}.card .card-header{color:#333;text-align:center;background-color:#ddd;padding:.5rem 0}.alert{color:#ccc;padding:1rem;border:1px solid #ccc;margin-bottom:1.75rem}.alert-success{color:#4caf50;border-color:#4caf50}.alert-error{color:#f44336;border-color:#f44336}.alert-info{color:#00bcd4;border-color:#00bcd4}.alert-warning{color:#ff9800;border-color:#ff9800}.media:not(:last-child){margin-bottom:1.25rem}.media-left{padding-right:1rem}.media-left,.media-right{display:table-cell;vertical-align:top}.media-right{padding-left:1rem}.media-body{display:table-cell;vertical-align:top}.media-heading{font-size:1.16667rem;font-weight:700}.media-content{margin-top:.3rem}.avatarholder,.placeholder{background-color:#f0f0f0;text-align:center;color:#b9b9b9;font-size:1rem;border:1px solid #f0f0f0}.avatarholder{width:48px;height:48px;line-height:46px;font-size:2rem;background-size:cover;background-position:50%;background-repeat:no-repeat}.avatarholder.rounded{border-radius:33px}.loading{display:inline-block;content:'&nbsp;';height:20px;width:20px;margin:0 .5rem;animation:a .6s infinite linear;border:2px solid #e91e63;border-right-color:transparent;border-radius:50%}.btn .loading{margin-bottom:0;width:14px;height:14px}.btn div.loading{float:left}.alert .loading{margin-bottom:-5px}@keyframes a{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}.menu{width:100%}.menu .menu-item{display:block;color:#616161;border-color:#616161}.menu .menu-item.active,.menu .menu-item:hover{color:#000;border-color:#000;background-color:transparent}@media screen and (max-width:768px){.form-group label{display:block;border-bottom:none;width:100%}.form-group.form-textarea label:after{display:none}.form-control{width:100%}textarea.form-control{border-left:none;padding:.5rem 0}pre::-webkit-scrollbar{height:3px}}@media screen and (max-width:480px){.form{width:100%}}.dark{color:#ccc}.dark,.dark pre{background-color:#000}.dark pre{padding:0;border:none}.dark pre code{color:#00bcd4}.dark h1 a,.dark h2 a,.dark h3 a,.dark h4 a,.dark h5 a{color:#ccc}.dark code,.dark strong{color:#fff}.dark code{font-weight:100}.dark table{color:#ccc}.dark table td,.dark table th{border-color:#444}.dark table tbody td:first-child{color:#fff}.dark .form-group label{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .form-group.form-textarea label:after{background-color:#000}.dark .form-control{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .form-control:focus{border-color:#ccc;color:#ccc}.dark textarea.form-control{color:#ccc}.dark .card{border-color:rgba(95,95,95,.78)}.dark .card .card-header{background-color:transparent;color:#ccc;border-bottom:1px solid rgba(95,95,95,.78)}.dark .btn.btn-ghost.btn-default{border-color:#ababab;color:#ababab}.dark .btn.btn-ghost.btn-default:focus,.dark .btn.btn-ghost.btn-default:hover{border-color:#9c9c9c;color:#9c9c9c;z-index:1}.dark .btn.btn-ghost.btn-default:focus,.dark .btn.btn-ghost.btn-default:hover{border-color:#e0e0e0;color:#e0e0e0}.dark .btn.btn-ghost.btn-primary:focus,.dark .btn.btn-ghost.btn-primary:hover{border-color:#64b5f6;color:#64b5f6}.dark .btn.btn-ghost.btn-success:focus,.dark .btn.btn-ghost.btn-success:hover{border-color:#81c784;color:#81c784}.dark .btn.btn-ghost.btn-info:focus,.dark .btn.btn-ghost.btn-info:hover{border-color:#4dd0e1;color:#4dd0e1}.dark .btn.btn-ghost.btn-error:focus,.dark .btn.btn-ghost.btn-error:hover{border-color:#e57373;color:#e57373}.dark .btn.btn-ghost.btn-warning:focus,.dark .btn.btn-ghost.btn-warning:hover{border-color:#ffb74d;color:#ffb74d}.dark .avatarholder,.dark .placeholder{background-color:transparent;border-color:#333}.dark .menu .menu-item{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .menu .menu-item.active,.dark .menu .menu-item:hover{color:#fff;border-color:#ccc}
-  :root {
-  --screen-size-small: 30em; /* breakpoint reference only */
-}
-@keyframes intro {
-  0% {
-    opacity: 0;
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
   }
-  100% {
-    opacity: 1;
-  }
-}
-.blur-up {
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
-  transition: filter 400ms, -webkit-filter 400ms;
-}
-.blur-up.lazyloaded {
-  -webkit-filter: blur(0);
-  filter: blur(0);
-}
-.muted {
-  color: #e0e0e070;
-}
-.hack .readmore {
-  margin-bottom: 2.2em;
-}
-.responsive-iframe {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-.responsive-iframe iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-iframe {
-  border: 0;
-}
-main, footer {
-  animation: intro 0.3s both;
-  animation-delay: 0.15s;
-}
-footer time[datetime$="M"]:before {
-  content: "\2013\0020";
-}
-@media only screen
-  and ( max-width: 30em ) {
-  footer time[datetime$="M"] {
-    display: none;
-  }
-}
-blockquote cite {
-  display: block;
-}
-blockquote cite::before {
-   content: "\2014";
-}
-:target {
-  color: #fff;
-}
-/* hack.css overrides and enhancements */
-.hack li ul {
-  margin: 0;
-}
-.main {
-  padding: 20px 10px;
-}
-nav a.active {
-  background-color: #ff2e88;
-  color: #fff;
-}
-a[itemprop="url"] {
-  color: #ff9800;
-}
-a[itemprop="url"]:hover {
-  color: #fff;
-}
-a[href*="://"]::after,
-a[rel*="external"] {
-  content: " " url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20class='i-external'%20viewBox='0%200%2032%2032'%20width='14'%20height='14'%20fill='none'%20stroke='%23ff9800'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='9.38%'%3E%3Cpath%20d='M14%209%20L3%209%203%2029%2023%2029%2023%2018%20M18%204%20L28%204%2028%2014%20M28%204%20L14%2018'/%3E%3C/svg%3E");
-}
-figure a[href*="://"]::after,
-figure a[rel*="external"] {
-  content: "";
-}
-html {
-  font-size: 13px;
-}
-.hack pre {
-  font-size: 17px;
-}
-article [itemprop="description"] {
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-article header img {
-  width: 100%;
-  border-radius: 3px;
-}
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 1em;
-  }
-  .container {
-    max-width: 50rem;
-  }
-}
-
-  /* override theme defaults */
-.muted {
-  color: rgba(255, 255, 255, 0.5);
-}
-/* custom styles */
-figure {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-figure img {
-  max-width: 80%;
-}
-figure a {
-  border-bottom: none !important;
-}
-figure a:hover {
-  background-color: inherit !important;
-}
-
-  html{font-size:14px}.standard{font-family:-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,Ubuntu,segoe ui,arial,sans-serif}.standard h1{font-size:2em;font-weight:700;margin:.67em 0}.standard h2{font-size:1.5em;font-weight:700;margin:.83em 0}.standard h3{font-size:1.17em;font-weight:700}.standard h3,.standard p{margin:1.75rem 0}.standard ol,.standard ul{display:block;list-style-type:disc;padding-left:20px;margin:1.75rem 0}.standard ol ul,.standard ul ul{margin:.75rem 0;list-style-type:square}.standard ol{list-style-type:decimal}.standard li{display:list-item;padding-left:0}.standard blockquote{margin:1.75rem 0;padding-left:10px;border-left:5px solid #f0f0f0}.standard pre{margin:1.75rem 0;white-space:pre}.standard hr{border:0;height:1px;display:block;background-color:#e2e2e2;margin:1.75rem 0}
-  .dark{color:#ccc}.dark,.dark pre{background-color:#000}.dark pre{padding:0;border:none}.dark pre code{color:#00bcd4}.dark h1 a,.dark h2 a,.dark h3 a,.dark h4 a,.dark h5 a{color:#ccc}.dark code,.dark strong{color:#fff}.dark code{font-weight:100}.dark table{color:#ccc}.dark table td,.dark table th{border-color:#444}.dark table tbody td:first-child{color:#fff}.dark .form-group label{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .form-group.form-textarea label:after{background-color:#000}.dark .form-control{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .form-control:focus{border-color:#ccc;color:#ccc}.dark textarea.form-control{color:#ccc}.dark .card{border-color:rgba(95,95,95,.78)}.dark .card .card-header{background-color:transparent;color:#ccc;border-bottom:1px solid rgba(95,95,95,.78)}.dark .btn.btn-ghost.btn-default{border-color:#ababab;color:#ababab}.dark .btn.btn-ghost.btn-default:focus,.dark .btn.btn-ghost.btn-default:hover{border-color:#9c9c9c;color:#9c9c9c;z-index:1}.dark .btn.btn-ghost.btn-default:focus,.dark .btn.btn-ghost.btn-default:hover{border-color:#e0e0e0;color:#e0e0e0}.dark .btn.btn-ghost.btn-primary:focus,.dark .btn.btn-ghost.btn-primary:hover{border-color:#64b5f6;color:#64b5f6}.dark .btn.btn-ghost.btn-success:focus,.dark .btn.btn-ghost.btn-success:hover{border-color:#81c784;color:#81c784}.dark .btn.btn-ghost.btn-info:focus,.dark .btn.btn-ghost.btn-info:hover{border-color:#4dd0e1;color:#4dd0e1}.dark .btn.btn-ghost.btn-error:focus,.dark .btn.btn-ghost.btn-error:hover{border-color:#e57373;color:#e57373}.dark .btn.btn-ghost.btn-warning:focus,.dark .btn.btn-ghost.btn-warning:hover{border-color:#ffb74d;color:#ffb74d}.dark .avatarholder,.dark .placeholder{background-color:transparent;border-color:#333}.dark .menu .menu-item{color:#ccc;border-color:rgba(95,95,95,.78)}.dark .menu .menu-item.active,.dark .menu .menu-item:hover{color:#fff;border-color:#ccc}
-  .dark-grey{background-color:#181818;color:#ccc}.dark-grey pre{background-color:#181818;padding:0;border:none}.dark-grey pre code{color:#00bcd4}.dark-grey h1 a,.dark-grey h2 a,.dark-grey h3 a,.dark-grey h4 a,.dark-grey h5 a{color:#ccc}.dark-grey code,.dark-grey strong{color:#fff}.dark-grey code{font-weight:100}.dark-grey table{color:#ccc}.dark-grey table td,.dark-grey table th{border-color:#444}.dark-grey table tbody td:first-child{color:#fff}.dark-grey .form-group label{color:#ccc;border-color:rgba(95,95,95,.78)}.dark-grey .form-group.form-textarea label:after{background-color:#181818}.dark-grey .form-control{color:#ccc;border-color:rgba(95,95,95,.78)}.dark-grey .form-control:focus{border-color:#ccc;color:#ccc}.dark-grey textarea.form-control{color:#ccc}.dark-grey .card{border-color:rgba(95,95,95,.78)}.dark-grey .card .card-header{background-color:transparent;color:#ccc;border-bottom:1px solid rgba(95,95,95,.78)}.dark-grey .btn.btn-ghost.btn-default{border-color:#ababab;color:#ababab}.dark-grey .btn.btn-ghost.btn-default:focus,.dark-grey .btn.btn-ghost.btn-default:hover{border-color:#9c9c9c;color:#9c9c9c;z-index:1}.dark-grey .btn.btn-ghost.btn-default:focus,.dark-grey .btn.btn-ghost.btn-default:hover{border-color:#e0e0e0;color:#e0e0e0}.dark-grey .btn.btn-ghost.btn-primary:focus,.dark-grey .btn.btn-ghost.btn-primary:hover{border-color:#64b5f6;color:#64b5f6}.dark-grey .btn.btn-ghost.btn-success:focus,.dark-grey .btn.btn-ghost.btn-success:hover{border-color:#81c784;color:#81c784}.dark-grey .btn.btn-ghost.btn-info:focus,.dark-grey .btn.btn-ghost.btn-info:hover{border-color:#4dd0e1;color:#4dd0e1}.dark-grey .btn.btn-ghost.btn-error:focus,.dark-grey .btn.btn-ghost.btn-error:hover{border-color:#e57373;color:#e57373}.dark-grey .btn.btn-ghost.btn-warning:focus,.dark-grey .btn.btn-ghost.btn-warning:hover{border-color:#ffb74d;color:#ffb74d}.dark-grey .avatarholder,.dark-grey .placeholder{background-color:transparent;border-color:#333}.dark-grey .menu .menu-item{color:#ccc;border-color:rgba(95,95,95,.78)}.dark-grey .menu .menu-item.active,.dark-grey .menu .menu-item:hover{color:#fff;border-color:#ccc}
-  html{font-size:12px}*{box-sizing:border-box;text-rendering:geometricPrecision}body{font-size:1rem;line-height:1.5rem;margin:0;font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;word-wrap:break-word}h1,h2,h3,h4,h5,h6{line-height:1.3em}fieldset{border:none;padding:0;margin:0}pre{padding:2rem;margin:1.75rem 0;background-color:#fff;border:1px solid #ccc;overflow:auto}code[class*=language-],pre[class*=language-],pre code{font-weight:100;text-shadow:none;margin:1.75rem 0}a{cursor:pointer;color:#ff2e88;text-decoration:none;border-bottom:1px solid #ff2e88}a:hover{background-color:#ff2e88;color:#fff}.grid{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.grid.\-top{-ms-flex-align:start;align-items:flex-start}.grid.\-middle{-ms-flex-align:center;align-items:center}.grid.\-bottom{-ms-flex-align:end;align-items:flex-end}.grid.\-stretch{-ms-flex-align:stretch;align-items:stretch}.grid.\-baseline{-ms-flex-align:baseline;align-items:baseline}.grid.\-left{-ms-flex-pack:start;justify-content:flex-start}.grid.\-center{-ms-flex-pack:center;justify-content:center}.grid.\-right{-ms-flex-pack:end;justify-content:flex-end}.grid.\-between{-ms-flex-pack:justify;justify-content:space-between}.grid.\-around{-ms-flex-pack:distribute;justify-content:space-around}.cell{-ms-flex:1;flex:1;box-sizing:border-box}@media screen and (min-width:768px){.cell.\-1of12{-ms-flex:0 0 8.33333%;flex:0 0 8.33333%}.cell.\-2of12{-ms-flex:0 0 16.66667%;flex:0 0 16.66667%}.cell.\-3of12{-ms-flex:0 0 25%;flex:0 0 25%}.cell.\-4of12{-ms-flex:0 0 33.33333%;flex:0 0 33.33333%}.cell.\-5of12{-ms-flex:0 0 41.66667%;flex:0 0 41.66667%}.cell.\-6of12{-ms-flex:0 0 50%;flex:0 0 50%}.cell.\-7of12{-ms-flex:0 0 58.33333%;flex:0 0 58.33333%}.cell.\-8of12{-ms-flex:0 0 66.66667%;flex:0 0 66.66667%}.cell.\-9of12{-ms-flex:0 0 75%;flex:0 0 75%}.cell.\-10of12{-ms-flex:0 0 83.33333%;flex:0 0 83.33333%}.cell.\-11of12{-ms-flex:0 0 91.66667%;flex:0 0 91.66667%}}@media screen and (max-width:768px){.grid{-ms-flex-direction:column;flex-direction:column}.cell{-ms-flex:0 0 auto;flex:0 0 auto}}.hack,.hack blockquote,.hack code,.hack em,.hack h1,.hack h2,.hack h3,.hack h4,.hack h5,.hack h6,.hack strong{font-size:1rem;font-style:normal;font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif}.hack blockquote,.hack code,.hack em,.hack strong{line-height:20px}.hack blockquote,.hack code,.hack footer,.hack h1,.hack h2,.hack h3,.hack h4,.hack h5,.hack h6,.hack header,.hack li,.hack ol,.hack p,.hack section,.hack ul{float:none;margin:0;padding:0}.hack blockquote,.hack h1,.hack ol,.hack p,.hack ul{margin-top:20px;margin-bottom:20px}.hack h1{position:relative;display:inline-block;display:table-cell;padding:20px 0 30px;margin:0;overflow:hidden}.hack h1:after{content:"====================================================================================================";position:absolute;bottom:10px;left:0}.hack h1+*{margin-top:0}.hack h2,.hack h3,.hack h4,.hack h5,.hack h6{position:relative;margin-bottom:1.75rem}.hack h2:before,.hack h3:before,.hack h4:before,.hack h5:before,.hack h6:before{display:inline}.hack h2:before{content:"## "}.hack h3:before{content:"### "}.hack h4:before{content:"#### "}.hack h5:before{content:"##### "}.hack h6:before{content:"###### "}.hack li{position:relative;display:block;padding-left:20px}.hack li:after{position:absolute;top:0;left:0}.hack ul>li:after{content:"-"}.hack ol{counter-reset:a}.hack ol>li:after{content:counter(a) ".";counter-increment:a}.hack ol li:nth-child(n+10):after{left:-7px}.hack blockquote{position:relative;padding-left:17px;padding-left:2ch;overflow:hidden}.hack blockquote:after{content:">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";white-space:pre;position:absolute;top:0;left:0;line-height:20px}.hack em:after,.hack em:before{content:"*";display:inline}.hack pre code:after,.hack pre code:before{content:""}.hack code{font-weight:700}.hack code:after,.hack code:before{content:"`";display:inline}.hack hr{position:relative;height:20px;overflow:hidden;border:0;margin:20px 0}.hack hr:after{content:"----------------------------------------------------------------------------------------------------";position:absolute;top:0;left:0;line-height:20px;width:100%;word-wrap:break-word}@-moz-document url-prefix(){.hack h1{display:block}}.hack-ones ol>li:after{content:"1."}p{margin:0 0 1.75rem}.container{max-width:70rem}.container,.container-fluid{margin:0 auto;padding:0 1rem}.inner{padding:1rem}.inner2x{padding:2rem}.pull-left{float:left}.pull-right{float:right}.progress-bar{height:8px;opacity:.8;background-color:#ccc;margin-top:12px}.progress-bar.progress-bar-show-percent{margin-top:38px}.progress-bar-filled{background-color:gray;height:100%;transition:width .3s ease;position:relative;width:0}.progress-bar-filled:before{content:"";border:6px solid transparent;border-top-color:gray;position:absolute;top:-12px;right:-6px}.progress-bar-filled:after{color:gray;content:attr(data-filled);display:block;font-size:12px;white-space:nowrap;position:absolute;border:6px solid transparent;top:-38px;right:0;-ms-transform:translateX(50%);transform:translateX(50%)}table{width:100%;border-collapse:collapse;margin:1.75rem 0;color:#778087}table td,table th{vertical-align:top;border:1px solid #ccc;line-height:15px;padding:10px}table thead th{font-size:10px}table tbody td:first-child{font-weight:700;color:#333}.form{width:30rem}.form-group{margin-bottom:1.75rem;overflow:auto}.form-group label{border-bottom:2px solid #ccc;color:#333;width:10rem;display:inline-block;height:38px;line-height:38px;padding:0;float:left;position:relative}.form-group.form-success label{color:#4caf50!important;border-color:#4caf50!important}.form-group.form-warning label{color:#ff9800!important;border-color:#ff9800!important}.form-group.form-error label{color:#f44336!important;border-color:#f44336!important}.form-control{outline:none;border:none;border-bottom:2px solid #ccc;padding:.5rem 0;width:20rem;height:38px;background-color:transparent}.form-control:focus{border-color:#555}.form-group.form-textarea label:after{position:absolute;content:"";width:2px;background-color:#fff;right:-2px;top:0;bottom:0}textarea.form-control{height:auto;resize:none;padding:1rem 0;border-bottom:2px solid #ccc;border-left:2px solid #ccc;padding:.5rem}select.form-control{border-radius:0;background-color:transparent;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none}.help-block{color:#999;margin-top:.5rem}.form-actions{margin-bottom:1.75rem}.btn{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;cursor:pointer;outline:none;padding:.65rem 2rem;font-size:1rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;z-index:1}.btn:active{box-shadow:inset 0 1px 3px rgba(0,0,0,.12)}.btn.btn-ghost{border-color:#757575;color:#757575;background-color:transparent}.btn.btn-ghost:focus,.btn.btn-ghost:hover{border-color:#424242;color:#424242;z-index:2}.btn.btn-ghost:hover{background-color:transparent}.btn-block{width:100%;display:-ms-flexbox;display:flex}.btn-default{color:#fff;background-color:#e0e0e0;border:1px solid #e0e0e0;color:#333}.btn-default:focus:not(.btn-ghost),.btn-default:hover{background-color:#dcdcdc;border-color:#dcdcdc}.btn-success{color:#fff;background-color:#4caf50;border:1px solid #4caf50}.btn-success:focus:not(.btn-ghost),.btn-success:hover{background-color:#43a047;border-color:#43a047}.btn-success.btn-ghost{border-color:#4caf50;color:#4caf50}.btn-success.btn-ghost:focus,.btn-success.btn-ghost:hover{border-color:#388e3c;color:#388e3c;z-index:2}.btn-error{color:#fff;background-color:#f44336;border:1px solid #f44336}.btn-error:focus:not(.btn-ghost),.btn-error:hover{background-color:#e53935;border-color:#e53935}.btn-error.btn-ghost{border-color:#f44336;color:#f44336}.btn-error.btn-ghost:focus,.btn-error.btn-ghost:hover{border-color:#d32f2f;color:#d32f2f;z-index:2}.btn-warning{color:#fff;background-color:#ff9800;border:1px solid #ff9800}.btn-warning:focus:not(.btn-ghost),.btn-warning:hover{background-color:#fb8c00;border-color:#fb8c00}.btn-warning.btn-ghost{border-color:#ff9800;color:#ff9800}.btn-warning.btn-ghost:focus,.btn-warning.btn-ghost:hover{border-color:#f57c00;color:#f57c00;z-index:2}.btn-info{color:#fff;background-color:#00bcd4;border:1px solid #00bcd4}.btn-info:focus:not(.btn-ghost),.btn-info:hover{background-color:#00acc1;border-color:#00acc1}.btn-info.btn-ghost{border-color:#00bcd4;color:#00bcd4}.btn-info.btn-ghost:focus,.btn-info.btn-ghost:hover{border-color:#0097a7;color:#0097a7;z-index:2}.btn-primary{color:#fff;background-color:#2196f3;border:1px solid #2196f3}.btn-primary:focus:not(.btn-ghost),.btn-primary:hover{background-color:#1e88e5;border-color:#1e88e5}.btn-primary.btn-ghost{border-color:#2196f3;color:#2196f3}.btn-primary.btn-ghost:focus,.btn-primary.btn-ghost:hover{border-color:#1976d2;color:#1976d2;z-index:2}.btn-group{overflow:auto}.btn-group .btn{float:left}.btn-group .btn-ghost:not(:first-child){margin-left:-1px}.card{border:1px solid #ccc}.card .card-header{color:#333;text-align:center;background-color:#ddd;padding:.5rem 0}.alert{color:#ccc;padding:1rem;border:1px solid #ccc;margin-bottom:1.75rem}.alert-success{color:#4caf50;border-color:#4caf50}.alert-error{color:#f44336;border-color:#f44336}.alert-info{color:#00bcd4;border-color:#00bcd4}.alert-warning{color:#ff9800;border-color:#ff9800}.media:not(:last-child){margin-bottom:1.25rem}.media-left{padding-right:1rem}.media-left,.media-right{display:table-cell;vertical-align:top}.media-right{padding-left:1rem}.media-body{display:table-cell;vertical-align:top}.media-heading{font-size:1.16667rem;font-weight:700}.media-content{margin-top:.3rem}.avatarholder,.placeholder{background-color:#f0f0f0;text-align:center;color:#b9b9b9;font-size:1rem;border:1px solid #f0f0f0}.avatarholder{width:48px;height:48px;line-height:46px;font-size:2rem;background-size:cover;background-position:50%;background-repeat:no-repeat}.avatarholder.rounded{border-radius:33px}.loading{display:inline-block;content:"&nbsp;";height:20px;width:20px;margin:0 .5rem;animation:a .6s infinite linear;border:2px solid #e91e63;border-right-color:transparent;border-radius:50%}.btn .loading{margin-bottom:0;width:14px;height:14px}.btn div.loading{float:left}.alert .loading{margin-bottom:-5px}@keyframes a{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}.menu{width:100%}.menu .menu-item{display:block;color:#616161;border-color:#616161}.menu .menu-item.active,.menu .menu-item:hover{color:#000;border-color:#000;background-color:transparent}@media screen and (max-width:768px){.form-group label{display:block;border-bottom:none;width:100%}.form-group.form-textarea label:after{display:none}.form-control{width:100%}textarea.form-control{border-left:none;padding:.5rem 0}pre::-webkit-scrollbar{height:3px}}@media screen and (max-width:480px){.form{width:100%}}
-  .solarized-dark{background-color:#073642;color:#78909c}.solarized-dark h1,.solarized-dark h2,.solarized-dark h3,.solarized-dark h4,.solarized-dark h5,.solarized-dark h6{color:#1e88e5}.solarized-dark h1 a,.solarized-dark h2 a,.solarized-dark h3 a,.solarized-dark h4 a,.solarized-dark h5 a,.solarized-dark h6 a{color:#1e88e5;border-bottom-color:#1e88e5}.solarized-dark h1 a:hover,.solarized-dark h2 a:hover,.solarized-dark h3 a:hover,.solarized-dark h4 a:hover,.solarized-dark h5 a:hover,.solarized-dark h6 a:hover{background-color:#1e88e5;color:#fff}.solarized-dark pre{background-color:#073642;padding:0;border:none}.solarized-dark pre code{color:#009688}.solarized-dark h1 a,.solarized-dark h2 a,.solarized-dark h3 a,.solarized-dark h4 a,.solarized-dark h5 a{color:#78909c}.solarized-dark code,.solarized-dark strong{color:#90a4ae}.solarized-dark code{font-weight:100}.solarized-dark .progress-bar-filled{background-color:#558b2f}.solarized-dark .progress-bar-filled:after,.solarized-dark .progress-bar-filled:before{color:#90a4ae}.solarized-dark table{color:#78909c}.solarized-dark table td,.solarized-dark table th{border-color:#b0bec5}.solarized-dark table tbody td:first-child{color:#b0bec5}.solarized-dark .form-group label{color:#78909c;border-color:#90a4ae}.solarized-dark .form-group.form-textarea label:after{background-color:#073642}.solarized-dark .form-control{color:#78909c;border-color:#90a4ae}.solarized-dark .form-control:focus{border-color:#cfd8dc;color:#cfd8dc}.solarized-dark textarea.form-control{color:#78909c}.solarized-dark .card{border-color:#90a4ae}.solarized-dark .card .card-header{background-color:transparent;color:#78909c;border-bottom:1px solid #90a4ae}.solarized-dark .btn.btn-ghost.btn-default{border-color:#607d8b;color:#607d8b}.solarized-dark .btn.btn-ghost.btn-default:focus,.solarized-dark .btn.btn-ghost.btn-default:hover{border-color:#90a4ae;color:#90a4ae;z-index:1}.solarized-dark .btn.btn-ghost.btn-default:focus,.solarized-dark .btn.btn-ghost.btn-default:hover{border-color:#e0e0e0;color:#e0e0e0}.solarized-dark .btn.btn-ghost.btn-primary:focus,.solarized-dark .btn.btn-ghost.btn-primary:hover{border-color:#64b5f6;color:#64b5f6}.solarized-dark .btn.btn-ghost.btn-success:focus,.solarized-dark .btn.btn-ghost.btn-success:hover{border-color:#81c784;color:#81c784}.solarized-dark .btn.btn-ghost.btn-info:focus,.solarized-dark .btn.btn-ghost.btn-info:hover{border-color:#4dd0e1;color:#4dd0e1}.solarized-dark .btn.btn-ghost.btn-error:focus,.solarized-dark .btn.btn-ghost.btn-error:hover{border-color:#e57373;color:#e57373}.solarized-dark .btn.btn-ghost.btn-warning:focus,.solarized-dark .btn.btn-ghost.btn-warning:hover{border-color:#ffb74d;color:#ffb74d}.solarized-dark .avatarholder,.solarized-dark .placeholder{background-color:transparent;border-color:#90a4ae}.solarized-dark .menu .menu-item{color:#78909c;border-color:#90a4ae}.solarized-dark .menu .menu-item.active,.solarized-dark .menu .menu-item:hover{color:#fff;border-color:#78909c}
 </style>
+<meta name="description" content="">
 
-    <script async src="/js/lazysizes.min.js"></script>
 
-  <script async src="/js/bpgdec8a.js"></script>
-  <script async src="/js/bpgdec8.js"></script>
-  <script async src="/js/bpgdec.js"></script>
-
+    
   </head>
+  <body data-url="/categories/programming/">
+    
+      <div id="headermain"></div>
+<nav id="sidebar" class="showVisitedLinks">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
+	
   
-  <body class="dark-grey main container">
-    <header>
+    <a class="baselink" href="/">After-Dark</a>
   
-  <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
-    
-    
-      <a itemprop="url" class="" href="/"><span itemprop="name">Home</span></a>
-    
-      <a itemprop="url" class="" href="/post/"><span itemprop="name">Posts</span></a>
-    
-      <a itemprop="url" class="" href="/articles/"><span itemprop="name">Articles</span></a>
-    
-      <a itemprop="url" class="" href="/tags/"><span itemprop="name">Tags</span></a>
-    
-      <a itemprop="url" class="active" href="/categories/"><span itemprop="name">Categories</span></a>
-    
-      <a itemprop="url" class="" href="/about/"><span itemprop="name">About</span></a>
-    
-  </nav>
-    <link rel="stylesheet" href="/css/monokai.css">
-    <script src="/js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
+  </div>
+
+      <ul class="topics">
+            <li data-nav-id="/" class="dd-item">
+            <a href="/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+    <li data-nav-id="/post/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/post/">Posts</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/post/vim-plugins-markdown/" class="dd-item">
+        <div>
+          <a href="/post/vim-plugins-markdown/">
+            <i class='fa fa-file'></i> Vim Plugins Markdown
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/hugo-blog-new-theme-docdock/" class="dd-item">
+        <div>
+          <a href="/post/hugo-blog-new-theme-docdock/">
+            <i class='fa fa-file'></i> Hugo Blog New Theme Docdock
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/my-workspace-configuration-2018-may/" class="dd-item">
+        <div>
+          <a href="/post/my-workspace-configuration-2018-may/">
+            My Workspace Configuration 2018 May
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/pycon-usa-2018-may-09-17-cleveland-oh-todolist/" class="dd-item">
+        <div>
+          <a href="/post/pycon-usa-2018-may-09-17-cleveland-oh-todolist/">
+            PYCON USA 2018 May 09-17 Cleveland OH TODO List
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/software-humble-bundle-python-dev-kit/" class="dd-item">
+        <div>
+          <a href="/post/software-humble-bundle-python-dev-kit/">
+            Software Humble Bundle Python Dev Kit
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/tips-vim-copy-paste-and-clipboard/" class="dd-item">
+        <div>
+          <a href="/post/tips-vim-copy-paste-and-clipboard/">
+            Tips Vim Copy Paste and Clipboard
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-7habits-for-effective-text-editing-2.0/" class="dd-item">
+        <div>
+          <a href="/post/reading-7habits-for-effective-text-editing-2.0/">
+            Reading 7 Habits for Effective Text Editing 2.0
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/udemy-python-easily-migrate-excel-files-to-a-database/" class="dd-item">
+        <div>
+          <a href="/post/udemy-python-easily-migrate-excel-files-to-a-database/">
+            Udemy Python Easily Migrate Excel Files to a Database
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/software-intro-magix-vegas-pro-14-edit/" class="dd-item">
+        <div>
+          <a href="/post/software-intro-magix-vegas-pro-14-edit/">
+            簡介 Magix Vegas Pro 14 Edit
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/" class="dd-item">
+        <div>
+          <a href="/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/">
+            Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠]
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-automate-the-boring-stuff-with-python-1st/" class="dd-item">
+        <div>
+          <a href="/post/reading-automate-the-boring-stuff-with-python-1st/">
+            Reading Automate the Boring Stuff With Python 1st Edition
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/15-minute-apps/" class="dd-item">
+        <div>
+          <a href="/post/15-minute-apps/">
+            Reading 15 Minute Apps
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-making-perfect-bread/" class="dd-item">
+        <div>
+          <a href="/post/reading-making-perfect-bread/">
+            Reading 完美麵包製作書
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/python-import-system/" class="dd-item">
+        <div>
+          <a href="/post/python-import-system/">
+            Python Import System
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/python-debugging-with-pdb/" class="dd-item">
+        <div>
+          <a href="/post/python-debugging-with-pdb/">
+            Python Debugging With Pdb
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/tool-picon-python-interactive/" class="dd-item">
+        <div>
+          <a href="/post/tool-picon-python-interactive/">
+            Picon: 在互動的環境下執行 Python 程式碼
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/tool-commandline-autojump/" class="dd-item">
+        <div>
+          <a href="/post/tool-commandline-autojump/">
+            Tool Commandline Autojump
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-dokusho-issatsu-matomenasai-2013/" class="dd-item">
+        <div>
+          <a href="/post/reading-dokusho-issatsu-matomenasai-2013/">
+            Reading 活用一輩子的讀書筆記術【完全攻略版】2013
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-version-control-with-git-2nd/" class="dd-item">
+        <div>
+          <a href="/post/reading-version-control-with-git-2nd/">
+            Reading Version Control With Git 2nd
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/learn-language-in-six-months/" class="dd-item">
+        <div>
+          <a href="/post/learn-language-in-six-months/">
+            Learn Language in Six Months
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-hackingvim72/" class="dd-item">
+        <div>
+          <a href="/post/reading-hackingvim72/">
+            Reading HackingVim 7.2
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/golang-intro/" class="dd-item">
+        <div>
+          <a href="/post/golang-intro/">
+            Golang Intro
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/markdown-syntax-intro/" class="dd-item">
+        <div>
+          <a href="/post/markdown-syntax-intro/">
+            Markdown Syntax Intro
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/install-hugo/" class="dd-item">
+        <div>
+          <a href="/post/install-hugo/">
+            Install Hugo
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/this-is-new-blog-post/" class="dd-item">
+        <div>
+          <a href="/post/this-is-new-blog-post/">
+            This Is New Blog Post
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/my-first-post/" class="dd-item">
+        <div>
+          <a href="/post/my-first-post/">
+            My First Post
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/what-is-hugo/" class="dd-item">
+        <div>
+          <a href="/post/what-is-hugo/">
+            What is Hugo?
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/introduction/" class="dd-item">
+        <div>
+          <a href="/post/introduction/">
+            Introduction
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/creating-a-new-theme/" class="dd-item">
+        <div>
+          <a href="/post/creating-a-new-theme/">
+            Creating a New Theme
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/goisforlovers/" class="dd-item">
+        <div>
+          <a href="/post/goisforlovers/">
+            (Hu)go Template Primer
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/hugoisforlovers/" class="dd-item">
+        <div>
+          <a href="/post/hugoisforlovers/">
+            Getting Started with Hugo
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/migrate-from-jekyll/" class="dd-item">
+        <div>
+          <a href="/post/migrate-from-jekyll/">
+            Migrating from Jekyll
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/articles/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/articles/">Articles</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/articles/article-test/" class="dd-item">
+        <div>
+          <a href="/articles/article-test/">
+            Article Test
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
 
 
 
-</header>
-    <main>
-  <header>
+        <section id="shortcuts">
+                <li class="" role=""><h3>More</h3><a href="/tags/" target="_blank" rel="noopener"><i class='fa fa-tags'></i> <label>Tags</label></a></li>
+                <li class="" role=""><a href="/categories/" target="_blank" rel="noopener"><i class='fa fa-folder-open'></i> <label>Categories</label></a></li>
+                <li class="" role=""><a href="/about/" target="_blank" rel="noopener"><i class='fa fa-bullhorn'></i> <label>About</label></a></li>
+                <li class="" role=""><a href="https://docdock.netlify.com/shortcodes/icon/" target="_blank" rel="noopener"><i class='fa fa-car'></i> <label>FontAwesome Icon</label></a></li>
+                <li class="" role=""><a href="https://gohugo.io/" target="_blank" rel="noopener"><i class='fa fa-bookmark'></i> <label>Hugo Documentation</label></a></li>
+                <li class="" role=""><a href="https://github.com/MagicSword/" target="_blank" rel="noopener"><i class='fa fa-github'></i> <label>Github repo</label></a></li>
+        </section>
+            <a id="clear-history" class="" href="#" data-clear-history-toggle=""><i class="fa  fa-history"></i> Clear History</a>
+
+    <hr />
+    <li></li>
+    
+    </ul>
+
+ <section id="footer">
+    </section>
+  </div>
+</nav>
+
+
+
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+        <span class="links">
+        
+
+ Programming
+
+   
+        </span>
+    </div>
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
+        </div>
+    </div>
+    
+
+  </div>
+
+
+<div id="body-inner">
+  
     <h1>Programming</h1>
-  </header>
   
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h2 itemprop="name">
-      <a href="/post/udemy-python-easily-migrate-excel-files-to-a-database/">Udemy Python Easily Migrate Excel Files to a Database</a>
-    </h2>
-    
-      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <circle cx="16" cy="16" r="14" />
-  <path d="M16 8 L16 16 20 20" />
-</svg>
-<span>2 minute read</span>
-<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
-</svg>
 
-  Published: <time datetime="2018-05-04T16:55:05&#43;08:00">4 May, 2018</time>
 
-</p>
+
     
-  </header>
-  
-    <blockquote itemprop="headline">用 openpyxl 來讀取 Excel 檔案 </blockquote>
-  
-  <div itemprop="description">
-    <p><a href="https://www.udemy.com/python-easily-migrate-excel-files-to-a-database/learn/v4/overview">Python: Easily migrate Excel files to a database</a></p>
+    
+    
+
+
+
+<div class="extra-pagination inner">
+<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
+</div>
+
+
+   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/post/pycon-usa-2018-may-09-17-cleveland-oh-todolist/">PYCON USA 2018 May 09-17 Cleveland OH TODO List</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p><p>今年的 <a href="https://us.pycon.org/2018/" title="PYCON 2018 Official Site">PYCON 2018</a> ,USA 在 May  09-17,Cleveland,OH 結束了。
+筆記一下有什麼有趣的主題。</p>
+
+<ul>
+<li><a href="https://www.youtube.com/channel/UCsX05-2sVSH7Nx3zuk3NYuQ" title="PYCON 2018 Official Youtube Channel">PYCON 2018 的 Youtube 頻道</a></li>
+<li><a href="https://us.pycon.org/2018/schedule/tutorials/">PyCon 2018 Tutorials Schedule</a></li>
+<li><a href="https://us.pycon.org/2018/schedule/talks/#!">PyCon 2018 Talks Schedule</a></li>
+</ul>
+
+<p></p> <a class="read-more" href="/post/pycon-usa-2018-may-09-17-cleveland-oh-todolist/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+          
+            
+                <a class="label label-default" href="/tags/python/">python</a>
+            
+                <a class="label label-default" href="/tags/pycon/">pycon</a>
+            
+                <a class="label label-default" href="/tags/video/">video</a>
+            
+        
+
+    </footer>
+</article>
+
+   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/post/software-humble-bundle-python-dev-kit/">Software Humble Bundle Python Dev Kit</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p><p><a href="http://geekisphere.com/2018/05/02/humble-software-bundle-python-dev-kit-live/">Humble Software Bundle: Python Dev Kit</a>
+買了這個，記錄一下。</p>
+
+<p></p> <a class="read-more" href="/post/software-humble-bundle-python-dev-kit/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+          
+            
+                <a class="label label-default" href="/tags/software/">software</a>
+            
+                <a class="label label-default" href="/tags/python/">python</a>
+            
+                <a class="label label-default" href="/tags/humble-bundle/">Humble Bundle</a>
+            
+        
+
+    </footer>
+</article>
+
+   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/post/udemy-python-easily-migrate-excel-files-to-a-database/">Udemy Python Easily Migrate Excel Files to a Database</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p><p><a href="https://www.udemy.com/python-easily-migrate-excel-files-to-a-database/learn/v4/overview">Python: Easily migrate Excel files to a database</a></p>
 
 <p>是個 約35 min的免費課程，花點時間來看看。</p>
 
-<p></p>
-  </div>
-  
-    <nav class="readmore"><a itemprop="url" href="/post/udemy-python-easily-migrate-excel-files-to-a-database/">Read More&nbsp;&raquo;</a></nav>
-  
-  <meta itemprop="inLanguage" content="zh-Hant-TW">
-  <meta itemprop="datePublished" content="2018-05-04T16:55:05&#43;08:00">
-  <meta itemprop="dateModified" content="2018-05-04T16:55:05&#43;08:00">
-  
-    <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
-  
+<p></p> <a class="read-more" href="/post/udemy-python-easily-migrate-excel-files-to-a-database/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+          
+            
+                <a class="label label-default" href="/tags/udemy/">udemy</a>
+            
+                <a class="label label-default" href="/tags/python/">python</a>
+            
+                <a class="label label-default" href="/tags/excel/">excel</a>
+            
+                <a class="label label-default" href="/tags/openpyxl/">openpyxl</a>
+            
+        
+
+    </footer>
 </article>
 
-  
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h2 itemprop="name">
-      <a href="/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/">Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠]</a>
-    </h2>
-    
-      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <circle cx="16" cy="16" r="14" />
-  <path d="M16 8 L16 16 20 20" />
-</svg>
-<span>5 minute read</span>
-<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
-</svg>
-
-  Published: <time datetime="2018-04-21T18:35:25&#43;08:00">21 Apr, 2018</time>
-
-</p>
-    
-  </header>
-  
-    <blockquote itemprop="headline">pyautogui 控制 keyboard, mouse</blockquote>
-  
-  <div itemprop="description">
-    <ul>
+   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/">Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠]</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p><ul>
 <li>沒有相應的程式庫時，可以模擬鍵盤、或滑鼠動作，直接操作 GUI 的得到相對的功能。</li>
 </ul>
 
-<p></p>
-  </div>
-  
-    <nav class="readmore"><a itemprop="url" href="/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/">Read More&nbsp;&raquo;</a></nav>
-  
-  <meta itemprop="inLanguage" content="zh-Hant-TW">
-  <meta itemprop="datePublished" content="2018-04-21T18:35:25&#43;08:00">
-  <meta itemprop="dateModified" content="2018-04-21T18:35:25&#43;08:00">
-  
-    <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
-  
+<p></p> <a class="read-more" href="/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+          
+            
+                <a class="label label-default" href="/tags/reading/">reading</a>
+            
+                <a class="label label-default" href="/tags/python/">python</a>
+            
+                <a class="label label-default" href="/tags/automation/">automation</a>
+            
+                <a class="label label-default" href="/tags/automatestuff/">automatestuff</a>
+            
+        
+
+    </footer>
 </article>
 
-  
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h2 itemprop="name">
-      <a href="/post/reading-automate-the-boring-stuff-with-python-1st/">Reading Automate the Boring Stuff With Python 1st Edition</a>
-    </h2>
-    
-      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <circle cx="16" cy="16" r="14" />
-  <path d="M16 8 L16 16 20 20" />
-</svg>
-<span>2 minute read</span>
-<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
-</svg>
-
-  Published: <time datetime="2018-04-19T14:37:58&#43;08:00">19 Apr, 2018</time>
-
-</p>
-    
-  </header>
-  
-    <blockquote itemprop="headline">Python 自動化的樂趣 心得</blockquote>
-  
-  <div itemprop="description">
-    <p>心得筆記</p>
+   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/post/reading-automate-the-boring-stuff-with-python-1st/">Reading Automate the Boring Stuff With Python 1st Edition</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p><p>心得筆記</p>
 
 <ul>
 <li>Automate the Boring Stuff with Python</li>
@@ -359,121 +530,129 @@ figure a:hover {
 <li>by Al Sweigart</li>
 </ul>
 
-<p></p>
-  </div>
-  
-    <nav class="readmore"><a itemprop="url" href="/post/reading-automate-the-boring-stuff-with-python-1st/">Read More&nbsp;&raquo;</a></nav>
-  
-  <meta itemprop="inLanguage" content="zh-Hant-TW">
-  <meta itemprop="datePublished" content="2018-04-19T14:37:58&#43;08:00">
-  <meta itemprop="dateModified" content="2018-04-19T14:37:58&#43;08:00">
-  
-    <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
-  
+<p></p> <a class="read-more" href="/post/reading-automate-the-boring-stuff-with-python-1st/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+          
+            
+                <a class="label label-default" href="/tags/reading/">reading</a>
+            
+                <a class="label label-default" href="/tags/python/">python</a>
+            
+                <a class="label label-default" href="/tags/automation/">automation</a>
+            
+                <a class="label label-default" href="/tags/automatestuff/">automatestuff</a>
+            
+        
+
+    </footer>
 </article>
 
-  
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h2 itemprop="name">
-      <a href="/post/15-minute-apps/">Reading 15 Minute Apps</a>
-    </h2>
-    
-      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <circle cx="16" cy="16" r="14" />
-  <path d="M16 8 L16 16 20 20" />
-</svg>
-<span>1 minute read</span>
-<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
-</svg>
-
-  Published: <time datetime="2018-04-17T02:47:36&#43;08:00">17 Apr, 2018</time>
-
-</p>
-    
-  </header>
-  
-    <blockquote itemprop="headline">心得 15 Minute Apps | Common desktop apps in Python, using PyQt</blockquote>
-  
-  <div itemprop="description">
-    <p>&rdquo; <a href="https://martinfitzpatrick.name/article/15-minute-apps/" title="Common desktop apps in Python, using PyQt">15 Minute Apps</a>  | Common desktop apps in Python, using PyQt&rdquo;
+   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/post/15-minute-apps/">Reading 15 Minute Apps</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p><p>&rdquo; <a href="https://martinfitzpatrick.name/article/15-minute-apps/" title="Common desktop apps in Python, using PyQt">15 Minute Apps</a>  | Common desktop apps in Python, using PyQt&rdquo;
 簡單筆記</p>
 
-<p></p>
-  </div>
-  
-    <nav class="readmore"><a itemprop="url" href="/post/15-minute-apps/">Read More&nbsp;&raquo;</a></nav>
-  
-  <meta itemprop="inLanguage" content="zh-Hant-TW">
-  <meta itemprop="datePublished" content="2018-04-17T02:47:36&#43;08:00">
-  <meta itemprop="dateModified" content="2018-04-17T02:47:36&#43;08:00">
-  
-    <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
-  
+<p></p> <a class="read-more" href="/post/15-minute-apps/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+          
+            
+                <a class="label label-default" href="/tags/reading/">reading</a>
+            
+                <a class="label label-default" href="/tags/python/">python</a>
+            
+                <a class="label label-default" href="/tags/pyqt/">pyqt</a>
+            
+                <a class="label label-default" href="/tags/gui/">gui</a>
+            
+        
+
+    </footer>
 </article>
 
-  
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h2 itemprop="name">
-      <a href="/post/python-import-system/">Python Import System</a>
-    </h2>
-    
-      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <circle cx="16" cy="16" r="14" />
-  <path d="M16 8 L16 16 20 20" />
-</svg>
-<span>1 minute read</span>
-<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
-</svg>
-
-  Published: <time datetime="2018-04-14T14:44:03&#43;08:00">14 Apr, 2018</time>
-
-</p>
-    
-  </header>
-  
-    <blockquote itemprop="headline">Note for Python Import System</blockquote>
-  
-  <div itemprop="description">
-    <p><a href="(https://manikos.github.io/how-pythons-import-machinery-works)">How python&rsquo;s import machinery works</a> 簡單的筆記，
+   <article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/post/python-import-system/">Python Import System</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p><p><a href="(https://manikos.github.io/how-pythons-import-machinery-works)">How python&rsquo;s import machinery works</a> 簡單的筆記，
 順便整理一下 <a href="https://docs.python.org/3/reference/import.html" title="access to the code in another module">import</a> 的資料。</p>
 
-<p></p>
-  </div>
-  
-    <nav class="readmore"><a itemprop="url" href="/post/python-import-system/">Read More&nbsp;&raquo;</a></nav>
-  
-  <meta itemprop="inLanguage" content="zh-Hant-TW">
-  <meta itemprop="datePublished" content="2018-04-14T14:44:03&#43;08:00">
-  <meta itemprop="dateModified" content="2018-04-14T14:44:03&#43;08:00">
-  
-    <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
-  
+<p></p> <a class="read-more" href="/post/python-import-system/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+          
+            
+                <a class="label label-default" href="/tags/python/">python</a>
+            
+                <a class="label label-default" href="/tags/module/">module</a>
+            
+        
+
+    </footer>
 </article>
 
-  
-</main>
-    <footer>
-  <nav>
-  <p>
-    
-    <span>Page 1 of 1</span>
-    
-  </p>
+
+<div style="margin-bottom:2rem"></div>
+
+<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
 </nav>
 
-  
-  <p class="muted">
-    This page was generated using
-    <a target="_blank" rel="noopener" href="https://comfusion.github.io/after-dark/">After Dark</a>
-    for
-    <a target="_blank" rel="noopener" href="https://gohugo.io/">Hugo</a>.
-  </p>
 
 
+
+    
+    
+          <footer class=" footline" >
+	
 </footer>
+  </div>
+</div>
+
+<div id="navigation">
+</div>
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
+
+<script src="/js/clipboard.min.js"></script>
+<script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
+
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
+
+
+    
+
+    
+    
+
+    
   </body>
 </html>

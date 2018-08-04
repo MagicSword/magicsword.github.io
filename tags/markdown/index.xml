@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Markdown on After Dark</title>
-    <link>https://magicsword.github.io/tags/markdown/</link>
-    <description>Recent content in Markdown on After Dark</description>
+    <title>Markdown on After-Dark</title>
+    <link>/tags/markdown/</link>
+    <description>Recent content in Markdown on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-Hant-TW</language>
-    <lastBuildDate>Sun, 24 Sep 2017 03:53:39 +0800</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jun 2018 21:07:12 +0800</lastBuildDate>
     
-	<atom:link href="https://magicsword.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Vim Plugins Markdown</title>
+      <link>/post/vim-plugins-markdown/</link>
+      <pubDate>Tue, 05 Jun 2018 21:07:12 +0800</pubDate>
+      
+      <guid>/post/vim-plugins-markdown/</guid>
+      <description>&lt;p&gt;加一些幫助 Markdown 編輯的 plugins.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Markdown Syntax Intro</title>
-      <link>https://magicsword.github.io/post/markdown-syntax-intro/</link>
+      <link>/post/markdown-syntax-intro/</link>
       <pubDate>Sun, 24 Sep 2017 03:53:39 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/markdown-syntax-intro/</guid>
+      <guid>/post/markdown-syntax-intro/</guid>
       <description>Markdown 文件 NOTE: This is Traditional Chinese Edition Document of Markdown Syntax. If you are seeking for English Edition Document. Please refer to Markdown: Syntax.
  Markdown: Syntax  概述  哲學 行內 HTML 特殊字元自動轉換  區塊元素  段落和換行 標題 區塊引言 清單 程式碼區塊 分隔線  區段元素  連結 強調 程式碼 圖片  其它  跳脫字元 自動連結  感謝  注意：這份文件是用 Markdown 寫的，你可以看看它的原始檔 。
 概述 哲學 Markdown 的目標是實現「易讀易寫」。

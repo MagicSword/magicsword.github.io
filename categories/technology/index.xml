@@ -1,22 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Technology on After Dark</title>
-    <link>https://magicsword.github.io/categories/technology/</link>
-    <description>Recent content in Technology on After Dark</description>
+    <title>Technology on After-Dark</title>
+    <link>/categories/technology/</link>
+    <description>Recent content in Technology on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-Hant-TW</language>
-    <lastBuildDate>Thu, 10 May 2018 22:46:18 +0800</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jun 2018 21:07:12 +0800</lastBuildDate>
     
-	<atom:link href="https://magicsword.github.io/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Vim Plugins Markdown</title>
+      <link>/post/vim-plugins-markdown/</link>
+      <pubDate>Tue, 05 Jun 2018 21:07:12 +0800</pubDate>
+      
+      <guid>/post/vim-plugins-markdown/</guid>
+      <description>&lt;p&gt;加一些幫助 Markdown 編輯的 plugins.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HomePage</title>
+      <link>/</link>
+      <pubDate>Fri, 01 Jun 2018 16:12:30 +0800</pubDate>
+      
+      <guid>/</guid>
+      <description>this page for placeholder.</description>
+    </item>
+    
+    <item>
+      <title>Hugo Blog New Theme Docdock</title>
+      <link>/post/hugo-blog-new-theme-docdock/</link>
+      <pubDate>Fri, 01 Jun 2018 14:53:57 +0800</pubDate>
+      
+      <guid>/post/hugo-blog-new-theme-docdock/</guid>
+      <description>&lt;p&gt;Hugo 換新的 theme  &lt;a href=&#34;https://github.com/vjeantet/hugo-theme-docdock&#34;&gt;docdock&lt;/a&gt; , 會多 search, &lt;a href=&#34;https://mermaidjs.github.io/&#34; title=&#34;流程圖.js&#34;&gt;mermaid&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Workspace Configuration 2018 May</title>
+      <link>/post/my-workspace-configuration-2018-may/</link>
+      <pubDate>Fri, 25 May 2018 20:26:37 +0800</pubDate>
+      
+      <guid>/post/my-workspace-configuration-2018-may/</guid>
+      <description>&lt;p&gt;電腦設備、工作環境記錄 2018 May&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Tips Vim Copy Paste and Clipboard</title>
-      <link>https://magicsword.github.io/post/tips-vim-copy-paste-and-clipboard/</link>
+      <link>/post/tips-vim-copy-paste-and-clipboard/</link>
       <pubDate>Thu, 10 May 2018 22:46:18 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/tips-vim-copy-paste-and-clipboard/</guid>
+      <guid>/post/tips-vim-copy-paste-and-clipboard/</guid>
       <description>&lt;p&gt;Vim 複製、貼上，及使用系統的剪貼簿。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +66,10 @@
     
     <item>
       <title>Reading 7 Habits for Effective Text Editing 2.0</title>
-      <link>https://magicsword.github.io/post/reading-7habits-for-effective-text-editing-2.0/</link>
+      <link>/post/reading-7habits-for-effective-text-editing-2.0/</link>
       <pubDate>Thu, 10 May 2018 15:17:20 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/reading-7habits-for-effective-text-editing-2.0/</guid>
+      <guid>/post/reading-7habits-for-effective-text-editing-2.0/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=p6K4iIMlouI&#34;&gt;7 Habits For Effective Text Editing 2.0 - YouTube&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;by &lt;a href=&#34;http://www.moolenaar.net/&#34;&gt;Bram Moolenaar&lt;/a&gt; , Vim的作者談有效率的編輯 , &lt;a href=&#34;http://www.moolenaar.net/habits_2007.pdf&#34;&gt;Slide Here&lt;/a&gt;&lt;/p&gt;
@@ -37,10 +79,10 @@
     
     <item>
       <title>簡介 Magix Vegas Pro 14 Edit</title>
-      <link>https://magicsword.github.io/post/software-intro-magix-vegas-pro-14-edit/</link>
+      <link>/post/software-intro-magix-vegas-pro-14-edit/</link>
       <pubDate>Tue, 24 Apr 2018 21:21:05 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/software-intro-magix-vegas-pro-14-edit/</guid>
+      <guid>/post/software-intro-magix-vegas-pro-14-edit/</guid>
       <description>&lt;dl&gt;
 &lt;dt&gt;Vegas Pro是：&lt;/dt&gt;
 &lt;dd&gt;&lt;p&gt;VEGAS Pro 曾是索尼推出的一款非線性編輯軟體，現在由MAGIX開發及推出。最初由 Sonic Foundry開發，2003年至2016年間由索尼旗下子公司Sony Creative Software 負責開發維護工作。 &lt;a href=&#34;https://en.wikipedia.org/wiki/Vegas_Pro&#34; title=&#34;之前為Sony產品， 2016年Sony 出售予MAGIX&#34;&gt;維基百科&lt;/a&gt;&lt;/p&gt;&lt;/dd&gt;
@@ -51,10 +93,10 @@
     
     <item>
       <title>Python Debugging With Pdb</title>
-      <link>https://magicsword.github.io/post/python-debugging-with-pdb/</link>
+      <link>/post/python-debugging-with-pdb/</link>
       <pubDate>Fri, 13 Apr 2018 21:03:50 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/python-debugging-with-pdb/</guid>
+      <guid>/post/python-debugging-with-pdb/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://realpython.com/python-debugging-pdb/&#34;&gt;Python Debugging With Pdb&lt;/a&gt;
 簡單心得&lt;/p&gt;
 
@@ -63,10 +105,10 @@
     
     <item>
       <title>Picon: 在互動的環境下執行 Python 程式碼</title>
-      <link>https://magicsword.github.io/post/tool-picon-python-interactive/</link>
+      <link>/post/tool-picon-python-interactive/</link>
       <pubDate>Fri, 13 Apr 2018 02:36:19 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/tool-picon-python-interactive/</guid>
+      <guid>/post/tool-picon-python-interactive/</guid>
       <description>&lt;p&gt;可以在即時在編輯器看到程式碼執行的結果。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -74,10 +116,10 @@
     
     <item>
       <title>Tool Commandline Autojump</title>
-      <link>https://magicsword.github.io/post/tool-commandline-autojump/</link>
+      <link>/post/tool-commandline-autojump/</link>
       <pubDate>Wed, 11 Apr 2018 23:30:18 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/tool-commandline-autojump/</guid>
+      <guid>/post/tool-commandline-autojump/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34; title=&#34;easily navigate directories from the command line&#34;&gt;autojump&lt;/a&gt; 能快速的切換資料夾。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -85,10 +127,10 @@
     
     <item>
       <title>Reading Version Control With Git 2nd</title>
-      <link>https://magicsword.github.io/post/reading-version-control-with-git-2nd/</link>
+      <link>/post/reading-version-control-with-git-2nd/</link>
       <pubDate>Sun, 01 Apr 2018 23:06:34 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/reading-version-control-with-git-2nd/</guid>
+      <guid>/post/reading-version-control-with-git-2nd/</guid>
       <description>&lt;p&gt;Version Control with Git, 2nd Edition 簡單的一些筆記。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -96,10 +138,10 @@
     
     <item>
       <title>Reading HackingVim 7.2</title>
-      <link>https://magicsword.github.io/post/reading-hackingvim72/</link>
+      <link>/post/reading-hackingvim72/</link>
       <pubDate>Sat, 24 Mar 2018 01:00:23 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/reading-hackingvim72/</guid>
+      <guid>/post/reading-hackingvim72/</guid>
       <description>&lt;p&gt;Hacking Vim 7.2 讀後心得。&lt;/p&gt;
 
 &lt;p&gt;以及一些簡單的筆記、和心得記錄。&lt;/p&gt;
@@ -109,10 +151,10 @@
     
     <item>
       <title>Golang Intro</title>
-      <link>https://magicsword.github.io/post/golang-intro/</link>
+      <link>/post/golang-intro/</link>
       <pubDate>Sun, 24 Sep 2017 04:21:50 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/golang-intro/</guid>
+      <guid>/post/golang-intro/</guid>
       <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;
 
 &lt;p&gt;Archetypes are located in the &lt;code&gt;archetypes&lt;/code&gt; directory in the source of your site. To learn more about archetypes, visit &lt;a href=&#34;https://gohugo.io/content-management/archetypes/&#34;&gt;Archetypes&lt;/a&gt; on the Hugo website. And when you&amp;rsquo;re ready, check out the &lt;a href=&#34;https://comfusion.github.io/after-dark/#customizing&#34;&gt;Customizing&lt;/a&gt; section of the After Dark documentation for additional options.&lt;/p&gt;</description>
@@ -120,19 +162,19 @@
     
     <item>
       <title>Article Test</title>
-      <link>https://magicsword.github.io/articles/article-test/</link>
+      <link>/articles/article-test/</link>
       <pubDate>Sun, 24 Sep 2017 04:04:34 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/articles/article-test/</guid>
+      <guid>/articles/article-test/</guid>
       <description>Article tesete</description>
     </item>
     
     <item>
       <title>Markdown Syntax Intro</title>
-      <link>https://magicsword.github.io/post/markdown-syntax-intro/</link>
+      <link>/post/markdown-syntax-intro/</link>
       <pubDate>Sun, 24 Sep 2017 03:53:39 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/markdown-syntax-intro/</guid>
+      <guid>/post/markdown-syntax-intro/</guid>
       <description>Markdown 文件 NOTE: This is Traditional Chinese Edition Document of Markdown Syntax. If you are seeking for English Edition Document. Please refer to Markdown: Syntax.
  Markdown: Syntax  概述  哲學 行內 HTML 特殊字元自動轉換  區塊元素  段落和換行 標題 區塊引言 清單 程式碼區塊 分隔線  區段元素  連結 強調 程式碼 圖片  其它  跳脫字元 自動連結  感謝  注意：這份文件是用 Markdown 寫的，你可以看看它的原始檔 。
 概述 哲學 Markdown 的目標是實現「易讀易寫」。
@@ -141,10 +183,10 @@
     
     <item>
       <title>Install Hugo</title>
-      <link>https://magicsword.github.io/post/install-hugo/</link>
+      <link>/post/install-hugo/</link>
       <pubDate>Sun, 24 Sep 2017 03:06:33 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/install-hugo/</guid>
+      <guid>/post/install-hugo/</guid>
       <description>&lt;p&gt;之前有用過 Pelican + Restructured Text，考慮過 &lt;a href=&#34;https://gohugo.io/&#34; title=&#34;Hugo by golang&#34;&gt;Hugo&lt;/a&gt;, &lt;a href=&#34;https://hexo.io/&#34; title=&#34;Hexo by nodejs&#34;&gt;Hexo&lt;/a&gt;, &lt;a href=&#34;https://getnikola.com/&#34; title=&#34;Nikola by python&#34;&gt;Nikola&lt;/a&gt;後，
 決定試試Hugo。 Hugo的速度、方便性來說算是滿不錯，而且在 github上追蹤的人數也滿多的，就試
 試，順便試一下&lt;a href=&#34;https://golang.org/&#34; title=&#34;Go Programming Language&#34;&gt;golang&lt;/a&gt;。&lt;/p&gt;

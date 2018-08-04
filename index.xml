@@ -1,36 +1,111 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>After Dark</title>
-    <link>https://magicsword.github.io/</link>
-    <description>Recent content on After Dark</description>
+    <title>HomePage on After-Dark</title>
+    <link>/</link>
+    <description>Recent content in HomePage on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-Hant-TW</language>
-    <lastBuildDate>Fri, 30 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jun 2018 16:12:30 +0800</lastBuildDate>
     
-	<atom:link href="https://magicsword.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://magicsword.github.io/about/</link>
+      <link>/about/</link>
       <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://magicsword.github.io/about/</guid>
+      <guid>/about/</guid>
       <description> 個人筆記收集整理
 之前用 Pelican
 後來有用過 Nikola, Hexo
 目前用 Hugo
 Blog commit log
-Ref:  StaticGen 靜態網站生成工具比較  </description>
+Netlify Hugo: After-dark
+CheatSheet emoji cheat sheet
+LOG 20180601
+ 加入 Netlify.com 的設定 netlify.toml，hugo設定 把 theme 改成用 submodule , git submodule add git://github.com/chneukirchen/rack.git rack 把 theme 換成 docdock  Ref:  StaticGen 靜態網站生成工具比較  </description>
+    </item>
+    
+    <item>
+      <title>Vim Plugins Markdown</title>
+      <link>/post/vim-plugins-markdown/</link>
+      <pubDate>Tue, 05 Jun 2018 21:07:12 +0800</pubDate>
+      
+      <guid>/post/vim-plugins-markdown/</guid>
+      <description>&lt;p&gt;加一些幫助 Markdown 編輯的 plugins.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s Footer</title>
+      <link>/_footer/</link>
+      <pubDate>Fri, 01 Jun 2018 21:35:33 +0800</pubDate>
+      
+      <guid>/_footer/</guid>
+      <description>hello Hello, This is footer.</description>
+    </item>
+    
+    <item>
+      <title>Hugo Blog New Theme Docdock</title>
+      <link>/post/hugo-blog-new-theme-docdock/</link>
+      <pubDate>Fri, 01 Jun 2018 14:53:57 +0800</pubDate>
+      
+      <guid>/post/hugo-blog-new-theme-docdock/</guid>
+      <description>&lt;p&gt;Hugo 換新的 theme  &lt;a href=&#34;https://github.com/vjeantet/hugo-theme-docdock&#34;&gt;docdock&lt;/a&gt; , 會多 search, &lt;a href=&#34;https://mermaidjs.github.io/&#34; title=&#34;流程圖.js&#34;&gt;mermaid&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Workspace Configuration 2018 May</title>
+      <link>/post/my-workspace-configuration-2018-may/</link>
+      <pubDate>Fri, 25 May 2018 20:26:37 +0800</pubDate>
+      
+      <guid>/post/my-workspace-configuration-2018-may/</guid>
+      <description>&lt;p&gt;電腦設備、工作環境記錄 2018 May&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PYCON USA 2018 May 09-17 Cleveland OH TODO List</title>
+      <link>/post/pycon-usa-2018-may-09-17-cleveland-oh-todolist/</link>
+      <pubDate>Fri, 18 May 2018 01:16:25 +0800</pubDate>
+      
+      <guid>/post/pycon-usa-2018-may-09-17-cleveland-oh-todolist/</guid>
+      <description>&lt;p&gt;今年的 &lt;a href=&#34;https://us.pycon.org/2018/&#34; title=&#34;PYCON 2018 Official Site&#34;&gt;PYCON 2018&lt;/a&gt; ,USA 在 May  09-17,Cleveland,OH 結束了。
+筆記一下有什麼有趣的主題。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCsX05-2sVSH7Nx3zuk3NYuQ&#34; title=&#34;PYCON 2018 Official Youtube Channel&#34;&gt;PYCON 2018 的 Youtube 頻道&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://us.pycon.org/2018/schedule/tutorials/&#34;&gt;PyCon 2018 Tutorials Schedule&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://us.pycon.org/2018/schedule/talks/#!&#34;&gt;PyCon 2018 Talks Schedule&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Software Humble Bundle Python Dev Kit</title>
+      <link>/post/software-humble-bundle-python-dev-kit/</link>
+      <pubDate>Thu, 17 May 2018 14:05:07 +0800</pubDate>
+      
+      <guid>/post/software-humble-bundle-python-dev-kit/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://geekisphere.com/2018/05/02/humble-software-bundle-python-dev-kit-live/&#34;&gt;Humble Software Bundle: Python Dev Kit&lt;/a&gt;
+買了這個，記錄一下。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tips Vim Copy Paste and Clipboard</title>
-      <link>https://magicsword.github.io/post/tips-vim-copy-paste-and-clipboard/</link>
+      <link>/post/tips-vim-copy-paste-and-clipboard/</link>
       <pubDate>Thu, 10 May 2018 22:46:18 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/tips-vim-copy-paste-and-clipboard/</guid>
+      <guid>/post/tips-vim-copy-paste-and-clipboard/</guid>
       <description>&lt;p&gt;Vim 複製、貼上，及使用系統的剪貼簿。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -38,10 +113,10 @@ Ref:  StaticGen 靜態網站生成工具比較  </description>
     
     <item>
       <title>Reading 7 Habits for Effective Text Editing 2.0</title>
-      <link>https://magicsword.github.io/post/reading-7habits-for-effective-text-editing-2.0/</link>
+      <link>/post/reading-7habits-for-effective-text-editing-2.0/</link>
       <pubDate>Thu, 10 May 2018 15:17:20 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/reading-7habits-for-effective-text-editing-2.0/</guid>
+      <guid>/post/reading-7habits-for-effective-text-editing-2.0/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=p6K4iIMlouI&#34;&gt;7 Habits For Effective Text Editing 2.0 - YouTube&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;by &lt;a href=&#34;http://www.moolenaar.net/&#34;&gt;Bram Moolenaar&lt;/a&gt; , Vim的作者談有效率的編輯 , &lt;a href=&#34;http://www.moolenaar.net/habits_2007.pdf&#34;&gt;Slide Here&lt;/a&gt;&lt;/p&gt;
@@ -51,10 +126,10 @@ Ref:  StaticGen 靜態網站生成工具比較  </description>
     
     <item>
       <title>Udemy Python Easily Migrate Excel Files to a Database</title>
-      <link>https://magicsword.github.io/post/udemy-python-easily-migrate-excel-files-to-a-database/</link>
+      <link>/post/udemy-python-easily-migrate-excel-files-to-a-database/</link>
       <pubDate>Fri, 04 May 2018 16:55:05 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/udemy-python-easily-migrate-excel-files-to-a-database/</guid>
+      <guid>/post/udemy-python-easily-migrate-excel-files-to-a-database/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.udemy.com/python-easily-migrate-excel-files-to-a-database/learn/v4/overview&#34;&gt;Python: Easily migrate Excel files to a database&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;是個 約35 min的免費課程，花點時間來看看。&lt;/p&gt;
@@ -64,10 +139,10 @@ Ref:  StaticGen 靜態網站生成工具比較  </description>
     
     <item>
       <title>簡介 Magix Vegas Pro 14 Edit</title>
-      <link>https://magicsword.github.io/post/software-intro-magix-vegas-pro-14-edit/</link>
+      <link>/post/software-intro-magix-vegas-pro-14-edit/</link>
       <pubDate>Tue, 24 Apr 2018 21:21:05 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/software-intro-magix-vegas-pro-14-edit/</guid>
+      <guid>/post/software-intro-magix-vegas-pro-14-edit/</guid>
       <description>&lt;dl&gt;
 &lt;dt&gt;Vegas Pro是：&lt;/dt&gt;
 &lt;dd&gt;&lt;p&gt;VEGAS Pro 曾是索尼推出的一款非線性編輯軟體，現在由MAGIX開發及推出。最初由 Sonic Foundry開發，2003年至2016年間由索尼旗下子公司Sony Creative Software 負責開發維護工作。 &lt;a href=&#34;https://en.wikipedia.org/wiki/Vegas_Pro&#34; title=&#34;之前為Sony產品， 2016年Sony 出售予MAGIX&#34;&gt;維基百科&lt;/a&gt;&lt;/p&gt;&lt;/dd&gt;
@@ -78,10 +153,10 @@ Ref:  StaticGen 靜態網站生成工具比較  </description>
     
     <item>
       <title>Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠]</title>
-      <link>https://magicsword.github.io/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/</link>
+      <link>/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/</link>
       <pubDate>Sat, 21 Apr 2018 18:35:25 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/</guid>
+      <guid>/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;沒有相應的程式庫時，可以模擬鍵盤、或滑鼠動作，直接操作 GUI 的得到相對的功能。&lt;/li&gt;
 &lt;/ul&gt;
@@ -91,10 +166,10 @@ Ref:  StaticGen 靜態網站生成工具比較  </description>
     
     <item>
       <title>Reading Automate the Boring Stuff With Python 1st Edition</title>
-      <link>https://magicsword.github.io/post/reading-automate-the-boring-stuff-with-python-1st/</link>
+      <link>/post/reading-automate-the-boring-stuff-with-python-1st/</link>
       <pubDate>Thu, 19 Apr 2018 14:37:58 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/reading-automate-the-boring-stuff-with-python-1st/</guid>
+      <guid>/post/reading-automate-the-boring-stuff-with-python-1st/</guid>
       <description>&lt;p&gt;心得筆記&lt;/p&gt;
 
 &lt;ul&gt;
@@ -108,10 +183,10 @@ Ref:  StaticGen 靜態網站生成工具比較  </description>
     
     <item>
       <title>Reading 15 Minute Apps</title>
-      <link>https://magicsword.github.io/post/15-minute-apps/</link>
+      <link>/post/15-minute-apps/</link>
       <pubDate>Tue, 17 Apr 2018 02:47:36 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/15-minute-apps/</guid>
+      <guid>/post/15-minute-apps/</guid>
       <description>&lt;p&gt;&amp;rdquo; &lt;a href=&#34;https://martinfitzpatrick.name/article/15-minute-apps/&#34; title=&#34;Common desktop apps in Python, using PyQt&#34;&gt;15 Minute Apps&lt;/a&gt;  | Common desktop apps in Python, using PyQt&amp;rdquo;
 簡單筆記&lt;/p&gt;
 
@@ -120,10 +195,10 @@ Ref:  StaticGen 靜態網站生成工具比較  </description>
     
     <item>
       <title>Reading 完美麵包製作書</title>
-      <link>https://magicsword.github.io/post/reading-making-perfect-bread/</link>
+      <link>/post/reading-making-perfect-bread/</link>
       <pubDate>Mon, 16 Apr 2018 03:52:12 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/reading-making-perfect-bread/</guid>
+      <guid>/post/reading-making-perfect-bread/</guid>
       <description>&lt;p&gt;「成功VS.失敗，完美麵包製作書：配料、發酵、分割、滾圓、整形到烘烤，搞懂關鍵步驟，抓出失敗問題，解決製作疑惑！」 簡單筆記&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -131,10 +206,10 @@ Ref:  StaticGen 靜態網站生成工具比較  </description>
     
     <item>
       <title>Python Import System</title>
-      <link>https://magicsword.github.io/post/python-import-system/</link>
+      <link>/post/python-import-system/</link>
       <pubDate>Sat, 14 Apr 2018 14:44:03 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/python-import-system/</guid>
+      <guid>/post/python-import-system/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;(https://manikos.github.io/how-pythons-import-machinery-works)&#34;&gt;How python&amp;rsquo;s import machinery works&lt;/a&gt; 簡單的筆記，
 順便整理一下 &lt;a href=&#34;https://docs.python.org/3/reference/import.html&#34; title=&#34;access to the code in another module&#34;&gt;import&lt;/a&gt; 的資料。&lt;/p&gt;
 
@@ -143,10 +218,10 @@ Ref:  StaticGen 靜態網站生成工具比較  </description>
     
     <item>
       <title>Python Debugging With Pdb</title>
-      <link>https://magicsword.github.io/post/python-debugging-with-pdb/</link>
+      <link>/post/python-debugging-with-pdb/</link>
       <pubDate>Fri, 13 Apr 2018 21:03:50 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/python-debugging-with-pdb/</guid>
+      <guid>/post/python-debugging-with-pdb/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://realpython.com/python-debugging-pdb/&#34;&gt;Python Debugging With Pdb&lt;/a&gt;
 簡單心得&lt;/p&gt;
 
@@ -155,10 +230,10 @@ Ref:  StaticGen 靜態網站生成工具比較  </description>
     
     <item>
       <title>Picon: 在互動的環境下執行 Python 程式碼</title>
-      <link>https://magicsword.github.io/post/tool-picon-python-interactive/</link>
+      <link>/post/tool-picon-python-interactive/</link>
       <pubDate>Fri, 13 Apr 2018 02:36:19 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/tool-picon-python-interactive/</guid>
+      <guid>/post/tool-picon-python-interactive/</guid>
       <description>&lt;p&gt;可以在即時在編輯器看到程式碼執行的結果。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -166,10 +241,10 @@ Ref:  StaticGen 靜態網站生成工具比較  </description>
     
     <item>
       <title>Tool Commandline Autojump</title>
-      <link>https://magicsword.github.io/post/tool-commandline-autojump/</link>
+      <link>/post/tool-commandline-autojump/</link>
       <pubDate>Wed, 11 Apr 2018 23:30:18 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/tool-commandline-autojump/</guid>
+      <guid>/post/tool-commandline-autojump/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34; title=&#34;easily navigate directories from the command line&#34;&gt;autojump&lt;/a&gt; 能快速的切換資料夾。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -177,10 +252,10 @@ Ref:  StaticGen 靜態網站生成工具比較  </description>
     
     <item>
       <title>Reading 活用一輩子的讀書筆記術【完全攻略版】2013</title>
-      <link>https://magicsword.github.io/post/reading-dokusho-issatsu-matomenasai-2013/</link>
+      <link>/post/reading-dokusho-issatsu-matomenasai-2013/</link>
       <pubDate>Wed, 11 Apr 2018 18:24:44 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/reading-dokusho-issatsu-matomenasai-2013/</guid>
+      <guid>/post/reading-dokusho-issatsu-matomenasai-2013/</guid>
       <description>&lt;p&gt;活用一輩子的讀書筆記術【完全攻略版】 2013
    作者： 奧野宣之 簡單筆記心得。&lt;/p&gt;
 
@@ -189,10 +264,10 @@ Ref:  StaticGen 靜態網站生成工具比較  </description>
     
     <item>
       <title>Reading Version Control With Git 2nd</title>
-      <link>https://magicsword.github.io/post/reading-version-control-with-git-2nd/</link>
+      <link>/post/reading-version-control-with-git-2nd/</link>
       <pubDate>Sun, 01 Apr 2018 23:06:34 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/reading-version-control-with-git-2nd/</guid>
+      <guid>/post/reading-version-control-with-git-2nd/</guid>
       <description>&lt;p&gt;Version Control with Git, 2nd Edition 簡單的一些筆記。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -200,10 +275,10 @@ Ref:  StaticGen 靜態網站生成工具比較  </description>
     
     <item>
       <title>Learn Language in Six Months</title>
-      <link>https://magicsword.github.io/post/learn-language-in-six-months/</link>
+      <link>/post/learn-language-in-six-months/</link>
       <pubDate>Fri, 30 Mar 2018 18:22:45 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/learn-language-in-six-months/</guid>
+      <guid>/post/learn-language-in-six-months/</guid>
       <description>&lt;p&gt;TED 影片簡單心得筆記。&lt;/p&gt;
 
 &lt;p&gt;【TED】6個月掌握流利的外語學習方法
@@ -215,10 +290,10 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;
     
     <item>
       <title>Reading HackingVim 7.2</title>
-      <link>https://magicsword.github.io/post/reading-hackingvim72/</link>
+      <link>/post/reading-hackingvim72/</link>
       <pubDate>Sat, 24 Mar 2018 01:00:23 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/reading-hackingvim72/</guid>
+      <guid>/post/reading-hackingvim72/</guid>
       <description>&lt;p&gt;Hacking Vim 7.2 讀後心得。&lt;/p&gt;
 
 &lt;p&gt;以及一些簡單的筆記、和心得記錄。&lt;/p&gt;
@@ -228,10 +303,10 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;
     
     <item>
       <title>Golang Intro</title>
-      <link>https://magicsword.github.io/post/golang-intro/</link>
+      <link>/post/golang-intro/</link>
       <pubDate>Sun, 24 Sep 2017 04:21:50 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/golang-intro/</guid>
+      <guid>/post/golang-intro/</guid>
       <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;
 
 &lt;p&gt;Archetypes are located in the &lt;code&gt;archetypes&lt;/code&gt; directory in the source of your site. To learn more about archetypes, visit &lt;a href=&#34;https://gohugo.io/content-management/archetypes/&#34;&gt;Archetypes&lt;/a&gt; on the Hugo website. And when you&amp;rsquo;re ready, check out the &lt;a href=&#34;https://comfusion.github.io/after-dark/#customizing&#34;&gt;Customizing&lt;/a&gt; section of the After Dark documentation for additional options.&lt;/p&gt;</description>
@@ -239,19 +314,19 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;
     
     <item>
       <title>Article Test</title>
-      <link>https://magicsword.github.io/articles/article-test/</link>
+      <link>/articles/article-test/</link>
       <pubDate>Sun, 24 Sep 2017 04:04:34 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/articles/article-test/</guid>
+      <guid>/articles/article-test/</guid>
       <description>Article tesete</description>
     </item>
     
     <item>
       <title>Markdown Syntax Intro</title>
-      <link>https://magicsword.github.io/post/markdown-syntax-intro/</link>
+      <link>/post/markdown-syntax-intro/</link>
       <pubDate>Sun, 24 Sep 2017 03:53:39 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/markdown-syntax-intro/</guid>
+      <guid>/post/markdown-syntax-intro/</guid>
       <description>Markdown 文件 NOTE: This is Traditional Chinese Edition Document of Markdown Syntax. If you are seeking for English Edition Document. Please refer to Markdown: Syntax.
  Markdown: Syntax  概述  哲學 行內 HTML 特殊字元自動轉換  區塊元素  段落和換行 標題 區塊引言 清單 程式碼區塊 分隔線  區段元素  連結 強調 程式碼 圖片  其它  跳脫字元 自動連結  感謝  注意：這份文件是用 Markdown 寫的，你可以看看它的原始檔 。
 概述 哲學 Markdown 的目標是實現「易讀易寫」。
@@ -260,10 +335,10 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;
     
     <item>
       <title>Install Hugo</title>
-      <link>https://magicsword.github.io/post/install-hugo/</link>
+      <link>/post/install-hugo/</link>
       <pubDate>Sun, 24 Sep 2017 03:06:33 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/install-hugo/</guid>
+      <guid>/post/install-hugo/</guid>
       <description>&lt;p&gt;之前有用過 Pelican + Restructured Text，考慮過 &lt;a href=&#34;https://gohugo.io/&#34; title=&#34;Hugo by golang&#34;&gt;Hugo&lt;/a&gt;, &lt;a href=&#34;https://hexo.io/&#34; title=&#34;Hexo by nodejs&#34;&gt;Hexo&lt;/a&gt;, &lt;a href=&#34;https://getnikola.com/&#34; title=&#34;Nikola by python&#34;&gt;Nikola&lt;/a&gt;後，
 決定試試Hugo。 Hugo的速度、方便性來說算是滿不錯，而且在 github上追蹤的人數也滿多的，就試
 試，順便試一下&lt;a href=&#34;https://golang.org/&#34; title=&#34;Go Programming Language&#34;&gt;golang&lt;/a&gt;。&lt;/p&gt;
@@ -273,22 +348,22 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;
     
     <item>
       <title>This Is New Blog Post</title>
-      <link>https://magicsword.github.io/post/this-is-new-blog-post/</link>
+      <link>/post/this-is-new-blog-post/</link>
       <pubDate>Sat, 23 Sep 2017 22:40:35 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/this-is-new-blog-post/</guid>
+      <guid>/post/this-is-new-blog-post/</guid>
       <description>鳳山房價較高雄市中心便宜，吸引首購自住客前往置產，成為今年高雄上半年不動產交易 量最多的行政區，而交易主力在總價500～700萬外加車位的20年以上透天。 鳳山生活機能完善，房價較高雄市中心便宜，吸引首購族置產
 鳳山生活圈鄰近鳳山捷運站及鳳山火車站，具備雙鐵優勢，加上距國道1號約10分鐘車程 ，交通便利，且商圈林立，吸引家樂福、迪卡儂等大型賣場進駐，區域內還有大東文化藝 術中心、大東濕地公園等公共建設，近期鳳山體育館也規劃將改建成運動中心，生活機能 十分豐富。
-print(&amp;quot;hello,world!&amp;quot;)  print()
+print(&amp;#34;hello,world!&amp;#34;) print()
 1var a string2var b string3var c string4var d string &amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;div&amp;gt;&amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt;{{ range .Data.Pages }}{{ .Render &amp;#34;summary&amp;#34;}}{{ end }}&amp;lt;/div&amp;gt;&amp;lt;/section&amp;gt;</description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>https://magicsword.github.io/post/my-first-post/</link>
+      <link>/post/my-first-post/</link>
       <pubDate>Thu, 21 Sep 2017 16:55:03 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/my-first-post/</guid>
+      <guid>/post/my-first-post/</guid>
       <description>I think , therefore I am. Cogito ergo sum by René Descartes
  H1 中文測試
 H2 中文測試中文測試 中文測試中文測試中文測試中文測試
@@ -308,20 +383,20 @@ http://img.ltn.com.tw/Upload/liveNews/BigPic/600_php014Tpo.jpg
     
     <item>
       <title>What is Hugo?</title>
-      <link>https://magicsword.github.io/post/what-is-hugo/</link>
+      <link>/post/what-is-hugo/</link>
       <pubDate>Sun, 24 Apr 2016 02:50:28 +0200</pubDate>
       
-      <guid>https://magicsword.github.io/post/what-is-hugo/</guid>
+      <guid>/post/what-is-hugo/</guid>
       <description>Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike other systems which dynamically build a page every time a visitor requests one, Hugo does the building when you create your content. Since websites are viewed far more often than they are edited, Hugo is optimized for website viewing while providing a great writing experience.
 Sites built with Hugo are extremely fast and very secure.</description>
     </item>
     
     <item>
       <title>Introduction</title>
-      <link>https://magicsword.github.io/post/introduction/</link>
+      <link>/post/introduction/</link>
       <pubDate>Thu, 21 Apr 2016 02:50:28 +0200</pubDate>
       
-      <guid>https://magicsword.github.io/post/introduction/</guid>
+      <guid>/post/introduction/</guid>
       <description>Hugo is written in Go with support for multiple platforms.
 The latest release can be found at Hugo Releases. We currently provide pre-built binaries for &amp;nbsp;Windows, &amp;nbsp;Linux, &amp;nbsp;FreeBSD and &amp;nbsp;OS&amp;nbsp;X (Darwin) for x64, i386 and ARM architectures.
 Hugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan&amp;nbsp;9 and Solaris. See http://golang.org/doc/install/source for the full set of supported combinations of target operating systems and compilation architectures.</description>
@@ -329,30 +404,30 @@ Hugo may also be compiled from source wherever the Go compiler tool chain can ru
     
     <item>
       <title>Creating a New Theme</title>
-      <link>https://magicsword.github.io/post/creating-a-new-theme/</link>
+      <link>/post/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://magicsword.github.io/post/creating-a-new-theme/</guid>
+      <guid>/post/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>https://magicsword.github.io/post/goisforlovers/</link>
+      <link>/post/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://magicsword.github.io/post/goisforlovers/</guid>
+      <guid>/post/goisforlovers/</guid>
       <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
 This document is a brief primer on using go templates.</description>
     </item>
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://magicsword.github.io/post/hugoisforlovers/</link>
+      <link>/post/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://magicsword.github.io/post/hugoisforlovers/</guid>
+      <guid>/post/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
@@ -363,10 +438,10 @@ Follow the following steps:
     
     <item>
       <title>Migrate to Hugo from Jekyll</title>
-      <link>https://magicsword.github.io/post/migrate-from-jekyll/</link>
+      <link>/post/migrate-from-jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://magicsword.github.io/post/migrate-from-jekyll/</guid>
+      <guid>/post/migrate-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tips on After Dark</title>
-    <link>https://magicsword.github.io/tags/tips/</link>
-    <description>Recent content in Tips on After Dark</description>
+    <title>Tips on After-Dark</title>
+    <link>/tags/tips/</link>
+    <description>Recent content in Tips on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-Hant-TW</language>
+    <language>en-us</language>
     <lastBuildDate>Thu, 10 May 2018 22:46:18 +0800</lastBuildDate>
     
-	<atom:link href="https://magicsword.github.io/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/tips/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tips Vim Copy Paste and Clipboard</title>
-      <link>https://magicsword.github.io/post/tips-vim-copy-paste-and-clipboard/</link>
+      <link>/post/tips-vim-copy-paste-and-clipboard/</link>
       <pubDate>Thu, 10 May 2018 22:46:18 +0800</pubDate>
       
-      <guid>https://magicsword.github.io/post/tips-vim-copy-paste-and-clipboard/</guid>
+      <guid>/post/tips-vim-copy-paste-and-clipboard/</guid>
       <description>&lt;p&gt;Vim 複製、貼上，及使用系統的剪貼簿。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
