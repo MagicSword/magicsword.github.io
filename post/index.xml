@@ -6,10 +6,46 @@
     <description>Recent content in Posts on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Jun 2018 21:07:12 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 18 May 2019 19:35:09 +0800</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reading Code Complete 2nd</title>
+      <link>/post/reading-code-complete2nd/</link>
+      <pubDate>Sat, 18 May 2019 19:35:09 +0800</pubDate>
+      
+      <guid>/post/reading-code-complete2nd/</guid>
+      <description>&lt;p&gt;Code Complete 2nd 主要是講軟體工程方面的內容。通常簡寫為 &lt;code&gt;cc2e&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python How to Work With PDF in Python</title>
+      <link>/post/python-how-to-work-with-pdf-in-python/</link>
+      <pubDate>Wed, 08 May 2019 00:01:48 +0800</pubDate>
+      
+      <guid>/post/python-how-to-work-with-pdf-in-python/</guid>
+      <description>&lt;p&gt;閱讀利用 &lt;a href=&#34;&amp;quot;https://zh.wikipedia.org/wiki/Python&amp;quot;&#34; title=&#34;Programming Language&#34;&gt;Python&lt;/a&gt; 來處理 &lt;a href=&#34;&amp;quot;https://zh.wikipedia.org/wiki/pdf&amp;quot;&#34; title=&#34;Portable Document Format&#34;&gt;PDF&lt;/a&gt; 的文章，並作簡單的筆記。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading Stephen King on Writing</title>
+      <link>/post/reading-stephen-king-on-writing/</link>
+      <pubDate>Wed, 08 Aug 2018 20:48:59 +0800</pubDate>
+      
+      <guid>/post/reading-stephen-king-on-writing/</guid>
+      <description>&lt;p&gt;史蒂芬．金談寫作, 簡單讀後心得&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Minecraft With Python</title>
+      <link>/post/minecraft-with-python/</link>
+      <pubDate>Mon, 06 Aug 2018 01:31:04 +0800</pubDate>
+      
+      <guid>/post/minecraft-with-python/</guid>
+      <description>&lt;p&gt;Getting Started with Minecraft Pi with Python&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Vim Plugins Markdown</title>
@@ -17,9 +53,43 @@
       <pubDate>Tue, 05 Jun 2018 21:07:12 +0800</pubDate>
       
       <guid>/post/vim-plugins-markdown/</guid>
-      <description>&lt;p&gt;加一些幫助 Markdown 編輯的 plugins.&lt;/p&gt;
+      <description>&lt;p&gt;加一些幫助 Markdown 編輯的 plugins.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Learning Google Spreadsheet Functions</title>
+      <link>/post/learning-google-spreadsheet-functions/</link>
+      <pubDate>Sun, 03 Jun 2018 23:30:28 +0800</pubDate>
+      
+      <guid>/post/learning-google-spreadsheet-functions/</guid>
+      <description>&lt;p&gt;使用 &lt;a href=&#34;&amp;quot;https://support.google.com/docs/answer/3093342&amp;quot;&#34; title=&#34;匯入多種結構化資料類型的資料，包括 XML、HTML、CSV、TSV 和 RSS 以及 ATOM XML 資訊提供。&#34;&gt;IMPORTXML&lt;/a&gt; 讀 HTML 的資料進 Google 試算表。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;以下節錄 Google 試算表使用說明，或許改天再加一些使用記錄。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Collection Books Organized</title>
+      <link>/post/collection-books-organized/</link>
+      <pubDate>Sun, 03 Jun 2018 17:51:53 +0800</pubDate>
+      
+      <guid>/post/collection-books-organized/</guid>
+      <description>&lt;p&gt;為了避免再重複買到一樣的書，應該是要整理一下目前有的書。
+另外其他也需要整理的有，game(Pc,PS4)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PYCON TW 2018 June 01 02 Taipei Todolist</title>
+      <link>/post/pycon-tw-2018-june-01-02-taipei-todolist/</link>
+      <pubDate>Sat, 02 Jun 2018 18:50:15 +0800</pubDate>
+      
+      <guid>/post/pycon-tw-2018-june-01-02-taipei-todolist/</guid>
+      <description>&lt;p&gt;今年的 &lt;a href=&#34;https://tw.pycon.org/2018/zh-hant/&#34; title=&#34;PYCON TW 2018 Official Site&#34;&gt;PYCON TW 2018&lt;/a&gt; ,Taipei June  01-02，
+筆記一下有什麼有趣的主題。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCHLnNgRnfGYDzPCCH8qGbQw&#34; title=&#34;PYCON TW 2018 Official Youtube Channel&#34;&gt;PYCON TW 2018 Youtube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tw.pycon.org/2018/zh-hant/events/schedule/&#34;&gt;PyCon TW 2018 Talks Schedule&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -28,9 +98,7 @@
       <pubDate>Fri, 01 Jun 2018 14:53:57 +0800</pubDate>
       
       <guid>/post/hugo-blog-new-theme-docdock/</guid>
-      <description>&lt;p&gt;Hugo 換新的 theme  &lt;a href=&#34;https://github.com/vjeantet/hugo-theme-docdock&#34;&gt;docdock&lt;/a&gt; , 會多 search, &lt;a href=&#34;https://mermaidjs.github.io/&#34; title=&#34;流程圖.js&#34;&gt;mermaid&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hugo 換新的 theme  &lt;a href=&#34;https://github.com/vjeantet/hugo-theme-docdock&#34;&gt;docdock&lt;/a&gt; , 會多 search, &lt;a href=&#34;https://mermaidjs.github.io/&#34; title=&#34;流程圖.js&#34;&gt;mermaid&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,9 +107,7 @@
       <pubDate>Fri, 25 May 2018 20:26:37 +0800</pubDate>
       
       <guid>/post/my-workspace-configuration-2018-may/</guid>
-      <description>&lt;p&gt;電腦設備、工作環境記錄 2018 May&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;電腦設備、工作環境記錄 2018 May&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -57,9 +123,7 @@
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCsX05-2sVSH7Nx3zuk3NYuQ&#34; title=&#34;PYCON 2018 Official Youtube Channel&#34;&gt;PYCON 2018 的 Youtube 頻道&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://us.pycon.org/2018/schedule/tutorials/&#34;&gt;PyCon 2018 Tutorials Schedule&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://us.pycon.org/2018/schedule/talks/#!&#34;&gt;PyCon 2018 Talks Schedule&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -69,9 +133,7 @@
       
       <guid>/post/software-humble-bundle-python-dev-kit/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://geekisphere.com/2018/05/02/humble-software-bundle-python-dev-kit-live/&#34;&gt;Humble Software Bundle: Python Dev Kit&lt;/a&gt;
-買了這個，記錄一下。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+買了這個，記錄一下。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -80,9 +142,7 @@
       <pubDate>Thu, 10 May 2018 22:46:18 +0800</pubDate>
       
       <guid>/post/tips-vim-copy-paste-and-clipboard/</guid>
-      <description>&lt;p&gt;Vim 複製、貼上，及使用系統的剪貼簿。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Vim 複製、貼上，及使用系統的剪貼簿。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -93,9 +153,7 @@
       <guid>/post/reading-7habits-for-effective-text-editing-2.0/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=p6K4iIMlouI&#34;&gt;7 Habits For Effective Text Editing 2.0 - YouTube&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;by &lt;a href=&#34;http://www.moolenaar.net/&#34;&gt;Bram Moolenaar&lt;/a&gt; , Vim的作者談有效率的編輯 , &lt;a href=&#34;http://www.moolenaar.net/habits_2007.pdf&#34;&gt;Slide Here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;by &lt;a href=&#34;http://www.moolenaar.net/&#34;&gt;Bram Moolenaar&lt;/a&gt; , Vim的作者談有效率的編輯 , &lt;a href=&#34;http://www.moolenaar.net/habits_2007.pdf&#34;&gt;Slide Here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -106,9 +164,7 @@
       <guid>/post/udemy-python-easily-migrate-excel-files-to-a-database/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.udemy.com/python-easily-migrate-excel-files-to-a-database/learn/v4/overview&#34;&gt;Python: Easily migrate Excel files to a database&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;是個 約35 min的免費課程，花點時間來看看。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;是個 約35 min的免費課程，花點時間來看看。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -120,9 +176,7 @@
       <description>&lt;dl&gt;
 &lt;dt&gt;Vegas Pro是：&lt;/dt&gt;
 &lt;dd&gt;&lt;p&gt;VEGAS Pro 曾是索尼推出的一款非線性編輯軟體，現在由MAGIX開發及推出。最初由 Sonic Foundry開發，2003年至2016年間由索尼旗下子公司Sony Creative Software 負責開發維護工作。 &lt;a href=&#34;https://en.wikipedia.org/wiki/Vegas_Pro&#34; title=&#34;之前為Sony產品， 2016年Sony 出售予MAGIX&#34;&gt;維基百科&lt;/a&gt;&lt;/p&gt;&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/dl&gt;</description>
     </item>
     
     <item>
@@ -133,9 +187,7 @@
       <guid>/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;沒有相應的程式庫時，可以模擬鍵盤、或滑鼠動作，直接操作 GUI 的得到相對的功能。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -150,9 +202,7 @@
 &lt;li&gt;Automate the Boring Stuff with Python&lt;/li&gt;
 &lt;li&gt;Practical Programming for Total Beginners&lt;/li&gt;
 &lt;li&gt;by Al Sweigart&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -162,9 +212,7 @@
       
       <guid>/post/15-minute-apps/</guid>
       <description>&lt;p&gt;&amp;rdquo; &lt;a href=&#34;https://martinfitzpatrick.name/article/15-minute-apps/&#34; title=&#34;Common desktop apps in Python, using PyQt&#34;&gt;15 Minute Apps&lt;/a&gt;  | Common desktop apps in Python, using PyQt&amp;rdquo;
-簡單筆記&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+簡單筆記&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -173,9 +221,7 @@
       <pubDate>Mon, 16 Apr 2018 03:52:12 +0800</pubDate>
       
       <guid>/post/reading-making-perfect-bread/</guid>
-      <description>&lt;p&gt;「成功VS.失敗，完美麵包製作書：配料、發酵、分割、滾圓、整形到烘烤，搞懂關鍵步驟，抓出失敗問題，解決製作疑惑！」 簡單筆記&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;「成功VS.失敗，完美麵包製作書：配料、發酵、分割、滾圓、整形到烘烤，搞懂關鍵步驟，抓出失敗問題，解決製作疑惑！」 簡單筆記&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -185,9 +231,7 @@
       
       <guid>/post/python-import-system/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;(https://manikos.github.io/how-pythons-import-machinery-works)&#34;&gt;How python&amp;rsquo;s import machinery works&lt;/a&gt; 簡單的筆記，
-順便整理一下 &lt;a href=&#34;https://docs.python.org/3/reference/import.html&#34; title=&#34;access to the code in another module&#34;&gt;import&lt;/a&gt; 的資料。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+順便整理一下 &lt;a href=&#34;https://docs.python.org/3/reference/import.html&#34; title=&#34;access to the code in another module&#34;&gt;import&lt;/a&gt; 的資料。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -197,9 +241,7 @@
       
       <guid>/post/python-debugging-with-pdb/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://realpython.com/python-debugging-pdb/&#34;&gt;Python Debugging With Pdb&lt;/a&gt;
-簡單心得&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+簡單心得&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -208,9 +250,7 @@
       <pubDate>Fri, 13 Apr 2018 02:36:19 +0800</pubDate>
       
       <guid>/post/tool-picon-python-interactive/</guid>
-      <description>&lt;p&gt;可以在即時在編輯器看到程式碼執行的結果。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;可以在即時在編輯器看到程式碼執行的結果。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -219,9 +259,7 @@
       <pubDate>Wed, 11 Apr 2018 23:30:18 +0800</pubDate>
       
       <guid>/post/tool-commandline-autojump/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34; title=&#34;easily navigate directories from the command line&#34;&gt;autojump&lt;/a&gt; 能快速的切換資料夾。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34; title=&#34;easily navigate directories from the command line&#34;&gt;autojump&lt;/a&gt; 能快速的切換資料夾。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -231,9 +269,7 @@
       
       <guid>/post/reading-dokusho-issatsu-matomenasai-2013/</guid>
       <description>&lt;p&gt;活用一輩子的讀書筆記術【完全攻略版】 2013
-   作者： 奧野宣之 簡單筆記心得。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+   作者： 奧野宣之 簡單筆記心得。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -242,9 +278,7 @@
       <pubDate>Sun, 01 Apr 2018 23:06:34 +0800</pubDate>
       
       <guid>/post/reading-version-control-with-git-2nd/</guid>
-      <description>&lt;p&gt;Version Control with Git, 2nd Edition 簡單的一些筆記。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Version Control with Git, 2nd Edition 簡單的一些筆記。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -257,9 +291,7 @@
 
 &lt;p&gt;【TED】6個月掌握流利的外語學習方法
 How to learn any language in six months
-by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -270,9 +302,7 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;
       <guid>/post/reading-hackingvim72/</guid>
       <description>&lt;p&gt;Hacking Vim 7.2 讀後心得。&lt;/p&gt;
 
-&lt;p&gt;以及一些簡單的筆記、和心得記錄。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;以及一些簡單的筆記、和心得記錄。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -306,9 +336,7 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;
       <guid>/post/install-hugo/</guid>
       <description>&lt;p&gt;之前有用過 Pelican + Restructured Text，考慮過 &lt;a href=&#34;https://gohugo.io/&#34; title=&#34;Hugo by golang&#34;&gt;Hugo&lt;/a&gt;, &lt;a href=&#34;https://hexo.io/&#34; title=&#34;Hexo by nodejs&#34;&gt;Hexo&lt;/a&gt;, &lt;a href=&#34;https://getnikola.com/&#34; title=&#34;Nikola by python&#34;&gt;Nikola&lt;/a&gt;後，
 決定試試Hugo。 Hugo的速度、方便性來說算是滿不錯，而且在 github上追蹤的人數也滿多的，就試
-試，順便試一下&lt;a href=&#34;https://golang.org/&#34; title=&#34;Go Programming Language&#34;&gt;golang&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+試，順便試一下&lt;a href=&#34;https://golang.org/&#34; title=&#34;Go Programming Language&#34;&gt;golang&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -320,7 +348,7 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;
       <description>鳳山房價較高雄市中心便宜，吸引首購自住客前往置產，成為今年高雄上半年不動產交易 量最多的行政區，而交易主力在總價500～700萬外加車位的20年以上透天。 鳳山生活機能完善，房價較高雄市中心便宜，吸引首購族置產
 鳳山生活圈鄰近鳳山捷運站及鳳山火車站，具備雙鐵優勢，加上距國道1號約10分鐘車程 ，交通便利，且商圈林立，吸引家樂福、迪卡儂等大型賣場進駐，區域內還有大東文化藝 術中心、大東濕地公園等公共建設，近期鳳山體育館也規劃將改建成運動中心，生活機能 十分豐富。
 print(&amp;#34;hello,world!&amp;#34;) print()
-1var a string2var b string3var c string4var d string &amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;div&amp;gt;&amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt;{{ range .Data.Pages }}{{ .Render &amp;#34;summary&amp;#34;}}{{ end }}&amp;lt;/div&amp;gt;&amp;lt;/section&amp;gt;</description>
+1var a string2var b string3var c string4var d string &amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;div&amp;gt;&amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt;{{ range .Data.Pages }}{{ .Render &amp;#34;summary&amp;#34;}}{{ end }}&amp;lt;/div&amp;gt;&amp;lt;/section&amp;gt; </description>
     </item>
     
     <item>

@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Reading on After-Dark</title>
+    <title>reading on After-Dark</title>
     <link>/tags/reading/</link>
-    <description>Recent content in Reading on After-Dark</description>
+    <description>Recent content in reading on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 May 2018 15:17:20 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 18 May 2019 19:35:09 +0800</lastBuildDate>
     
 	<atom:link href="/tags/reading/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reading Code Complete 2nd</title>
+      <link>/post/reading-code-complete2nd/</link>
+      <pubDate>Sat, 18 May 2019 19:35:09 +0800</pubDate>
+      
+      <guid>/post/reading-code-complete2nd/</guid>
+      <description>&lt;p&gt;Code Complete 2nd 主要是講軟體工程方面的內容。通常簡寫為 &lt;code&gt;cc2e&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading Stephen King on Writing</title>
+      <link>/post/reading-stephen-king-on-writing/</link>
+      <pubDate>Wed, 08 Aug 2018 20:48:59 +0800</pubDate>
+      
+      <guid>/post/reading-stephen-king-on-writing/</guid>
+      <description>&lt;p&gt;史蒂芬．金談寫作, 簡單讀後心得&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Reading 7 Habits for Effective Text Editing 2.0</title>
@@ -19,9 +37,7 @@
       <guid>/post/reading-7habits-for-effective-text-editing-2.0/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=p6K4iIMlouI&#34;&gt;7 Habits For Effective Text Editing 2.0 - YouTube&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;by &lt;a href=&#34;http://www.moolenaar.net/&#34;&gt;Bram Moolenaar&lt;/a&gt; , Vim的作者談有效率的編輯 , &lt;a href=&#34;http://www.moolenaar.net/habits_2007.pdf&#34;&gt;Slide Here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;by &lt;a href=&#34;http://www.moolenaar.net/&#34;&gt;Bram Moolenaar&lt;/a&gt; , Vim的作者談有效率的編輯 , &lt;a href=&#34;http://www.moolenaar.net/habits_2007.pdf&#34;&gt;Slide Here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,9 +48,7 @@
       <guid>/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;沒有相應的程式庫時，可以模擬鍵盤、或滑鼠動作，直接操作 GUI 的得到相對的功能。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -49,9 +63,7 @@
 &lt;li&gt;Automate the Boring Stuff with Python&lt;/li&gt;
 &lt;li&gt;Practical Programming for Total Beginners&lt;/li&gt;
 &lt;li&gt;by Al Sweigart&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -61,9 +73,7 @@
       
       <guid>/post/15-minute-apps/</guid>
       <description>&lt;p&gt;&amp;rdquo; &lt;a href=&#34;https://martinfitzpatrick.name/article/15-minute-apps/&#34; title=&#34;Common desktop apps in Python, using PyQt&#34;&gt;15 Minute Apps&lt;/a&gt;  | Common desktop apps in Python, using PyQt&amp;rdquo;
-簡單筆記&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+簡單筆記&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -72,9 +82,7 @@
       <pubDate>Mon, 16 Apr 2018 03:52:12 +0800</pubDate>
       
       <guid>/post/reading-making-perfect-bread/</guid>
-      <description>&lt;p&gt;「成功VS.失敗，完美麵包製作書：配料、發酵、分割、滾圓、整形到烘烤，搞懂關鍵步驟，抓出失敗問題，解決製作疑惑！」 簡單筆記&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;「成功VS.失敗，完美麵包製作書：配料、發酵、分割、滾圓、整形到烘烤，搞懂關鍵步驟，抓出失敗問題，解決製作疑惑！」 簡單筆記&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -84,9 +92,7 @@
       
       <guid>/post/reading-dokusho-issatsu-matomenasai-2013/</guid>
       <description>&lt;p&gt;活用一輩子的讀書筆記術【完全攻略版】 2013
-   作者： 奧野宣之 簡單筆記心得。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+   作者： 奧野宣之 簡單筆記心得。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -95,9 +101,7 @@
       <pubDate>Sun, 01 Apr 2018 23:06:34 +0800</pubDate>
       
       <guid>/post/reading-version-control-with-git-2nd/</guid>
-      <description>&lt;p&gt;Version Control with Git, 2nd Edition 簡單的一些筆記。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Version Control with Git, 2nd Edition 簡單的一些筆記。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -110,9 +114,7 @@
 
 &lt;p&gt;【TED】6個月掌握流利的外語學習方法
 How to learn any language in six months
-by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -123,9 +125,7 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;
       <guid>/post/reading-hackingvim72/</guid>
       <description>&lt;p&gt;Hacking Vim 7.2 讀後心得。&lt;/p&gt;
 
-&lt;p&gt;以及一些簡單的筆記、和心得記錄。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;以及一些簡單的筆記、和心得記錄。&lt;/p&gt;</description>
     </item>
     
   </channel>

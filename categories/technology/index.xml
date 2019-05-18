@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Technology on After-Dark</title>
+    <title>technology on After-Dark</title>
     <link>/categories/technology/</link>
-    <description>Recent content in Technology on After-Dark</description>
+    <description>Recent content in technology on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Jun 2018 21:07:12 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 May 2019 00:01:48 +0800</lastBuildDate>
     
 	<atom:link href="/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python How to Work With PDF in Python</title>
+      <link>/post/python-how-to-work-with-pdf-in-python/</link>
+      <pubDate>Wed, 08 May 2019 00:01:48 +0800</pubDate>
+      
+      <guid>/post/python-how-to-work-with-pdf-in-python/</guid>
+      <description>&lt;p&gt;閱讀利用 &lt;a href=&#34;&amp;quot;https://zh.wikipedia.org/wiki/Python&amp;quot;&#34; title=&#34;Programming Language&#34;&gt;Python&lt;/a&gt; 來處理 &lt;a href=&#34;&amp;quot;https://zh.wikipedia.org/wiki/pdf&amp;quot;&#34; title=&#34;Portable Document Format&#34;&gt;PDF&lt;/a&gt; 的文章，並作簡單的筆記。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Minecraft With Python</title>
+      <link>/post/minecraft-with-python/</link>
+      <pubDate>Mon, 06 Aug 2018 01:31:04 +0800</pubDate>
+      
+      <guid>/post/minecraft-with-python/</guid>
+      <description>&lt;p&gt;Getting Started with Minecraft Pi with Python&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Vim Plugins Markdown</title>
@@ -17,9 +35,18 @@
       <pubDate>Tue, 05 Jun 2018 21:07:12 +0800</pubDate>
       
       <guid>/post/vim-plugins-markdown/</guid>
-      <description>&lt;p&gt;加一些幫助 Markdown 編輯的 plugins.&lt;/p&gt;
+      <description>&lt;p&gt;加一些幫助 Markdown 編輯的 plugins.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Learning Google Spreadsheet Functions</title>
+      <link>/post/learning-google-spreadsheet-functions/</link>
+      <pubDate>Sun, 03 Jun 2018 23:30:28 +0800</pubDate>
+      
+      <guid>/post/learning-google-spreadsheet-functions/</guid>
+      <description>&lt;p&gt;使用 &lt;a href=&#34;&amp;quot;https://support.google.com/docs/answer/3093342&amp;quot;&#34; title=&#34;匯入多種結構化資料類型的資料，包括 XML、HTML、CSV、TSV 和 RSS 以及 ATOM XML 資訊提供。&#34;&gt;IMPORTXML&lt;/a&gt; 讀 HTML 的資料進 Google 試算表。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;以下節錄 Google 試算表使用說明，或許改天再加一些使用記錄。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -37,9 +64,7 @@
       <pubDate>Fri, 01 Jun 2018 14:53:57 +0800</pubDate>
       
       <guid>/post/hugo-blog-new-theme-docdock/</guid>
-      <description>&lt;p&gt;Hugo 換新的 theme  &lt;a href=&#34;https://github.com/vjeantet/hugo-theme-docdock&#34;&gt;docdock&lt;/a&gt; , 會多 search, &lt;a href=&#34;https://mermaidjs.github.io/&#34; title=&#34;流程圖.js&#34;&gt;mermaid&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hugo 換新的 theme  &lt;a href=&#34;https://github.com/vjeantet/hugo-theme-docdock&#34;&gt;docdock&lt;/a&gt; , 會多 search, &lt;a href=&#34;https://mermaidjs.github.io/&#34; title=&#34;流程圖.js&#34;&gt;mermaid&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,9 +73,7 @@
       <pubDate>Fri, 25 May 2018 20:26:37 +0800</pubDate>
       
       <guid>/post/my-workspace-configuration-2018-may/</guid>
-      <description>&lt;p&gt;電腦設備、工作環境記錄 2018 May&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;電腦設備、工作環境記錄 2018 May&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -59,9 +82,7 @@
       <pubDate>Thu, 10 May 2018 22:46:18 +0800</pubDate>
       
       <guid>/post/tips-vim-copy-paste-and-clipboard/</guid>
-      <description>&lt;p&gt;Vim 複製、貼上，及使用系統的剪貼簿。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Vim 複製、貼上，及使用系統的剪貼簿。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -72,9 +93,7 @@
       <guid>/post/reading-7habits-for-effective-text-editing-2.0/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=p6K4iIMlouI&#34;&gt;7 Habits For Effective Text Editing 2.0 - YouTube&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;by &lt;a href=&#34;http://www.moolenaar.net/&#34;&gt;Bram Moolenaar&lt;/a&gt; , Vim的作者談有效率的編輯 , &lt;a href=&#34;http://www.moolenaar.net/habits_2007.pdf&#34;&gt;Slide Here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;by &lt;a href=&#34;http://www.moolenaar.net/&#34;&gt;Bram Moolenaar&lt;/a&gt; , Vim的作者談有效率的編輯 , &lt;a href=&#34;http://www.moolenaar.net/habits_2007.pdf&#34;&gt;Slide Here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -86,9 +105,7 @@
       <description>&lt;dl&gt;
 &lt;dt&gt;Vegas Pro是：&lt;/dt&gt;
 &lt;dd&gt;&lt;p&gt;VEGAS Pro 曾是索尼推出的一款非線性編輯軟體，現在由MAGIX開發及推出。最初由 Sonic Foundry開發，2003年至2016年間由索尼旗下子公司Sony Creative Software 負責開發維護工作。 &lt;a href=&#34;https://en.wikipedia.org/wiki/Vegas_Pro&#34; title=&#34;之前為Sony產品， 2016年Sony 出售予MAGIX&#34;&gt;維基百科&lt;/a&gt;&lt;/p&gt;&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/dl&gt;</description>
     </item>
     
     <item>
@@ -98,9 +115,7 @@
       
       <guid>/post/python-debugging-with-pdb/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://realpython.com/python-debugging-pdb/&#34;&gt;Python Debugging With Pdb&lt;/a&gt;
-簡單心得&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+簡單心得&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -109,9 +124,7 @@
       <pubDate>Fri, 13 Apr 2018 02:36:19 +0800</pubDate>
       
       <guid>/post/tool-picon-python-interactive/</guid>
-      <description>&lt;p&gt;可以在即時在編輯器看到程式碼執行的結果。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;可以在即時在編輯器看到程式碼執行的結果。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -120,9 +133,7 @@
       <pubDate>Wed, 11 Apr 2018 23:30:18 +0800</pubDate>
       
       <guid>/post/tool-commandline-autojump/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34; title=&#34;easily navigate directories from the command line&#34;&gt;autojump&lt;/a&gt; 能快速的切換資料夾。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34; title=&#34;easily navigate directories from the command line&#34;&gt;autojump&lt;/a&gt; 能快速的切換資料夾。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -131,9 +142,7 @@
       <pubDate>Sun, 01 Apr 2018 23:06:34 +0800</pubDate>
       
       <guid>/post/reading-version-control-with-git-2nd/</guid>
-      <description>&lt;p&gt;Version Control with Git, 2nd Edition 簡單的一些筆記。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Version Control with Git, 2nd Edition 簡單的一些筆記。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -144,9 +153,7 @@
       <guid>/post/reading-hackingvim72/</guid>
       <description>&lt;p&gt;Hacking Vim 7.2 讀後心得。&lt;/p&gt;
 
-&lt;p&gt;以及一些簡單的筆記、和心得記錄。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;以及一些簡單的筆記、和心得記錄。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -189,9 +196,7 @@
       <guid>/post/install-hugo/</guid>
       <description>&lt;p&gt;之前有用過 Pelican + Restructured Text，考慮過 &lt;a href=&#34;https://gohugo.io/&#34; title=&#34;Hugo by golang&#34;&gt;Hugo&lt;/a&gt;, &lt;a href=&#34;https://hexo.io/&#34; title=&#34;Hexo by nodejs&#34;&gt;Hexo&lt;/a&gt;, &lt;a href=&#34;https://getnikola.com/&#34; title=&#34;Nikola by python&#34;&gt;Nikola&lt;/a&gt;後，
 決定試試Hugo。 Hugo的速度、方便性來說算是滿不錯，而且在 github上追蹤的人數也滿多的，就試
-試，順便試一下&lt;a href=&#34;https://golang.org/&#34; title=&#34;Go Programming Language&#34;&gt;golang&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+試，順便試一下&lt;a href=&#34;https://golang.org/&#34; title=&#34;Go Programming Language&#34;&gt;golang&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
     
   </channel>

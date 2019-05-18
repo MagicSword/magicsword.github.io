@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ted on After-Dark</title>
+    <title>TED on After-Dark</title>
     <link>/tags/ted/</link>
-    <description>Recent content in Ted on After-Dark</description>
+    <description>Recent content in TED on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Mar 2018 18:22:45 +0800</lastBuildDate>
@@ -21,9 +21,7 @@
 
 &lt;p&gt;【TED】6個月掌握流利的外語學習方法
 How to learn any language in six months
-by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;</description>
     </item>
     
   </channel>

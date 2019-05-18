@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Life on After-Dark</title>
+    <title>life on After-Dark</title>
     <link>/categories/life/</link>
-    <description>Recent content in Life on After-Dark</description>
+    <description>Recent content in life on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Apr 2018 03:52:12 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Aug 2018 20:48:59 +0800</lastBuildDate>
     
 	<atom:link href="/categories/life/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reading Stephen King on Writing</title>
+      <link>/post/reading-stephen-king-on-writing/</link>
+      <pubDate>Wed, 08 Aug 2018 20:48:59 +0800</pubDate>
+      
+      <guid>/post/reading-stephen-king-on-writing/</guid>
+      <description>&lt;p&gt;史蒂芬．金談寫作, 簡單讀後心得&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Collection Books Organized</title>
+      <link>/post/collection-books-organized/</link>
+      <pubDate>Sun, 03 Jun 2018 17:51:53 +0800</pubDate>
+      
+      <guid>/post/collection-books-organized/</guid>
+      <description>&lt;p&gt;為了避免再重複買到一樣的書，應該是要整理一下目前有的書。
+另外其他也需要整理的有，game(Pc,PS4)&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Reading 完美麵包製作書</title>
@@ -17,9 +36,7 @@
       <pubDate>Mon, 16 Apr 2018 03:52:12 +0800</pubDate>
       
       <guid>/post/reading-making-perfect-bread/</guid>
-      <description>&lt;p&gt;「成功VS.失敗，完美麵包製作書：配料、發酵、分割、滾圓、整形到烘烤，搞懂關鍵步驟，抓出失敗問題，解決製作疑惑！」 簡單筆記&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;「成功VS.失敗，完美麵包製作書：配料、發酵、分割、滾圓、整形到烘烤，搞懂關鍵步驟，抓出失敗問題，解決製作疑惑！」 簡單筆記&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -29,9 +46,7 @@
       
       <guid>/post/reading-dokusho-issatsu-matomenasai-2013/</guid>
       <description>&lt;p&gt;活用一輩子的讀書筆記術【完全攻略版】 2013
-   作者： 奧野宣之 簡單筆記心得。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+   作者： 奧野宣之 簡單筆記心得。&lt;/p&gt;</description>
     </item>
     
   </channel>

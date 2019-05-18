@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on After-Dark</title>
+    <link>/tags/programming/</link>
+    <description>Recent content in programming on After-Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 May 2019 19:35:09 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reading Code Complete 2nd</title>
+      <link>/post/reading-code-complete2nd/</link>
+      <pubDate>Sat, 18 May 2019 19:35:09 +0800</pubDate>
+      
+      <guid>/post/reading-code-complete2nd/</guid>
+      <description>&lt;p&gt;Code Complete 2nd 主要是講軟體工程方面的內容。通常簡寫為 &lt;code&gt;cc2e&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

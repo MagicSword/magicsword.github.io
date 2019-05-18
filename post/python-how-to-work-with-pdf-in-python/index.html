@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>After-Dark</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2019-05-19T03:07:50 CST">
+<title>Python How to Work With PDF in Python :: After-Dark</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
+
+  <link href="/theme-original/variant-blue.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
+<meta name="description" content="Reading article, python deals with PDF">
+
+
+    
+  </head>
+  <body data-url="/post/python-how-to-work-with-pdf-in-python/">
+    
+      <div id="headermain"></div>
+<nav id="sidebar" class="showVisitedLinks">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
+	
+  
+    <a class="baselink" href="/">After-Dark</a>
+  
+
+
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
+  </div>
+
+      <ul class="topics">
+            <li data-nav-id="/" class="dd-item">
+            <a href="/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+    <li data-nav-id="/post/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/post/">Posts</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/post/reading-code-complete2nd/" class="dd-item">
+        <div>
+          <a href="/post/reading-code-complete2nd/">
+            <i class='fa fa-file'></i> Reading Code Complete 2nd
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/python-how-to-work-with-pdf-in-python/" class="dd-item active">
+        <div>
+          <a href="/post/python-how-to-work-with-pdf-in-python/">
+            <i class='fa fa-file'></i> Python How to Work With PDF in Python
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-stephen-king-on-writing/" class="dd-item">
+        <div>
+          <a href="/post/reading-stephen-king-on-writing/">
+            <i class='fa fa-file'></i> Reading Stephen King on Writing
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/minecraft-with-python/" class="dd-item">
+        <div>
+          <a href="/post/minecraft-with-python/">
+            <i class='fa fa-file'></i> Minecraft With Python
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/vim-plugins-markdown/" class="dd-item">
+        <div>
+          <a href="/post/vim-plugins-markdown/">
+            <i class='fa fa-file'></i> Vim Plugins Markdown
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/learning-google-spreadsheet-functions/" class="dd-item">
+        <div>
+          <a href="/post/learning-google-spreadsheet-functions/">
+            <i class='fa fa-file'></i> Learning Google Spreadsheet Functions
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/collection-books-organized/" class="dd-item">
+        <div>
+          <a href="/post/collection-books-organized/">
+            <i class='fa fa-file'></i> Collection Books Organized
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/pycon-tw-2018-june-01-02-taipei-todolist/" class="dd-item">
+        <div>
+          <a href="/post/pycon-tw-2018-june-01-02-taipei-todolist/">
+            <i class='fa fa-file'></i> PYCON TW 2018 June 01 02 Taipei Todolist
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/hugo-blog-new-theme-docdock/" class="dd-item">
+        <div>
+          <a href="/post/hugo-blog-new-theme-docdock/">
+            <i class='fa fa-file'></i> Hugo Blog New Theme Docdock
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/my-workspace-configuration-2018-may/" class="dd-item">
+        <div>
+          <a href="/post/my-workspace-configuration-2018-may/">
+            My Workspace Configuration 2018 May
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/pycon-usa-2018-may-09-17-cleveland-oh-todolist/" class="dd-item">
+        <div>
+          <a href="/post/pycon-usa-2018-may-09-17-cleveland-oh-todolist/">
+            PYCON USA 2018 May 09-17 Cleveland OH TODO List
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/software-humble-bundle-python-dev-kit/" class="dd-item">
+        <div>
+          <a href="/post/software-humble-bundle-python-dev-kit/">
+            Software Humble Bundle Python Dev Kit
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/tips-vim-copy-paste-and-clipboard/" class="dd-item">
+        <div>
+          <a href="/post/tips-vim-copy-paste-and-clipboard/">
+            Tips Vim Copy Paste and Clipboard
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-7habits-for-effective-text-editing-2.0/" class="dd-item">
+        <div>
+          <a href="/post/reading-7habits-for-effective-text-editing-2.0/">
+            Reading 7 Habits for Effective Text Editing 2.0
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/udemy-python-easily-migrate-excel-files-to-a-database/" class="dd-item">
+        <div>
+          <a href="/post/udemy-python-easily-migrate-excel-files-to-a-database/">
+            Udemy Python Easily Migrate Excel Files to a Database
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/software-intro-magix-vegas-pro-14-edit/" class="dd-item">
+        <div>
+          <a href="/post/software-intro-magix-vegas-pro-14-edit/">
+            簡介 Magix Vegas Pro 14 Edit
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/" class="dd-item">
+        <div>
+          <a href="/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/">
+            Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠]
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-automate-the-boring-stuff-with-python-1st/" class="dd-item">
+        <div>
+          <a href="/post/reading-automate-the-boring-stuff-with-python-1st/">
+            Reading Automate the Boring Stuff With Python 1st Edition
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/15-minute-apps/" class="dd-item">
+        <div>
+          <a href="/post/15-minute-apps/">
+            Reading 15 Minute Apps
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-making-perfect-bread/" class="dd-item">
+        <div>
+          <a href="/post/reading-making-perfect-bread/">
+            Reading 完美麵包製作書
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/python-import-system/" class="dd-item">
+        <div>
+          <a href="/post/python-import-system/">
+            Python Import System
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/python-debugging-with-pdb/" class="dd-item">
+        <div>
+          <a href="/post/python-debugging-with-pdb/">
+            Python Debugging With Pdb
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/tool-picon-python-interactive/" class="dd-item">
+        <div>
+          <a href="/post/tool-picon-python-interactive/">
+            Picon: 在互動的環境下執行 Python 程式碼
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/tool-commandline-autojump/" class="dd-item">
+        <div>
+          <a href="/post/tool-commandline-autojump/">
+            Tool Commandline Autojump
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-dokusho-issatsu-matomenasai-2013/" class="dd-item">
+        <div>
+          <a href="/post/reading-dokusho-issatsu-matomenasai-2013/">
+            Reading 活用一輩子的讀書筆記術【完全攻略版】2013
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-version-control-with-git-2nd/" class="dd-item">
+        <div>
+          <a href="/post/reading-version-control-with-git-2nd/">
+            Reading Version Control With Git 2nd
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/learn-language-in-six-months/" class="dd-item">
+        <div>
+          <a href="/post/learn-language-in-six-months/">
+            Learn Language in Six Months
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-hackingvim72/" class="dd-item">
+        <div>
+          <a href="/post/reading-hackingvim72/">
+            Reading HackingVim 7.2
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/golang-intro/" class="dd-item">
+        <div>
+          <a href="/post/golang-intro/">
+            Golang Intro
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/markdown-syntax-intro/" class="dd-item">
+        <div>
+          <a href="/post/markdown-syntax-intro/">
+            Markdown Syntax Intro
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/install-hugo/" class="dd-item">
+        <div>
+          <a href="/post/install-hugo/">
+            Install Hugo
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/this-is-new-blog-post/" class="dd-item">
+        <div>
+          <a href="/post/this-is-new-blog-post/">
+            This Is New Blog Post
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/my-first-post/" class="dd-item">
+        <div>
+          <a href="/post/my-first-post/">
+            My First Post
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/what-is-hugo/" class="dd-item">
+        <div>
+          <a href="/post/what-is-hugo/">
+            What is Hugo?
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/introduction/" class="dd-item">
+        <div>
+          <a href="/post/introduction/">
+            Introduction
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/creating-a-new-theme/" class="dd-item">
+        <div>
+          <a href="/post/creating-a-new-theme/">
+            Creating a New Theme
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/goisforlovers/" class="dd-item">
+        <div>
+          <a href="/post/goisforlovers/">
+            (Hu)go Template Primer
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/hugoisforlovers/" class="dd-item">
+        <div>
+          <a href="/post/hugoisforlovers/">
+            Getting Started with Hugo
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/migrate-from-jekyll/" class="dd-item">
+        <div>
+          <a href="/post/migrate-from-jekyll/">
+            Migrating from Jekyll
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/articles/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/articles/">Articles</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/articles/article-test/" class="dd-item">
+        <div>
+          <a href="/articles/article-test/">
+            Article Test
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+        <section id="shortcuts">
+                <li class="" role=""><h3>More</h3><a href="/tags/" target="_blank" rel="noopener"><i class='fa fa-tags'></i> <label>Tags</label></a></li>
+                <li class="" role=""><a href="/categories/" target="_blank" rel="noopener"><i class='fa fa-folder-open'></i> <label>Categories</label></a></li>
+                <li class="" role=""><a href="/about/" target="_blank" rel="noopener"><i class='fa fa-bullhorn'></i> <label>About</label></a></li>
+                <li class="" role=""><a href="https://docdock.netlify.com/shortcodes/icon/" target="_blank" rel="noopener"><i class='fa fa-car'></i> <label>FontAwesome Icon</label></a></li>
+                <li class="" role=""><a href="https://gohugo.io/" target="_blank" rel="noopener"><i class='fa fa-bookmark'></i> <label>Hugo Documentation</label></a></li>
+                <li class="" role=""><a href="https://github.com/MagicSword/" target="_blank" rel="noopener"><i class='fa fa-github'></i> <label>Github repo</label></a></li>
+        </section>
+            <a id="clear-history" class="" href="#" data-clear-history-toggle=""><i class="fa  fa-history"></i> Clear History</a>
+
+    <hr />
+    <li></li>
+    
+    </ul>
+
+ <section id="footer">
+    </section>
+  </div>
+</nav>
+
+
+
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    
+      
+      
+      
+    <div id="top-github-link">
+      <a class="github-link" href="https://github.com/MagicSword/magicsword.github.io-source/edit/master/content/post/python-how-to-work-with-PDF-in-python.md" target="blank">
+        <i class="fa fa-code-fork"></i>
+        Improve this page
+      </a>
+    </div><div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+        <span class="links">
+        
+
+
+
+
+
+
+
+ <a href='/'>HomePage</a> > <a href='/post/'>Posts</a> > Python How to Work With PDF in Python
+
+ 
+
+ 
+
+   
+        </span>
+    </div>
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#概述">概述</a></li>
+<li><a href="#前言">前言</a></li>
+<li><a href="#pypdf-演進">pyPDF 演進</a></li>
+<li><a href="#安裝">安裝</a></li>
+<li><a href="#提取">提取</a></li>
+<li><a href="#旋轉">旋轉</a></li>
+<li><a href="#合併">合併</a></li>
+<li><a href="#分拆">分拆</a></li>
+<li><a href="#加浮水印">加浮水印</a></li>
+<li><a href="#加密">加密</a></li>
+<li><a href="#結論">結論</a></li>
+<li><a href="#進階閱讀">進階閱讀</a></li>
+<li><a href="#參考連結">參考連結</a></li>
+</ul>
+</nav>
+        </div>
+    </div>
+    
+
+  </div>
+
+
+  <div id="tags">
+    
+      <a class="label label-default" href="/tags/python">python</a>
+    
+      <a class="label label-default" href="/tags/pdf">pdf</a>
+    
+  </div>
+
+<div id="body-inner">
+  
+    <h1>Python How to Work With PDF in Python</h1>
+  
+
+
+
+    
+    
+    
+    <p>閱讀利用 <a href="&quot;https://zh.wikipedia.org/wiki/Python&quot;" title="Programming Language">Python</a> 來處理 <a href="&quot;https://zh.wikipedia.org/wiki/pdf&quot;" title="Portable Document Format">PDF</a> 的文章，並作簡單的筆記。</p>
+
+<p>Task list: 😄</p>
+
+<ul class="task-list">
+<li><label><input type="checkbox" checked disabled class="task-list-item"> 初稿</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> 再讀</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> 筆記</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> 完成</label></li>
+</ul>
+
+<h1 id="概述">概述</h1>
+
+<p>原文 <a href="https://realpython.com/pdf-python/">How to Work With a PDF in Python</a></p>
+
+<p>文章大概分為幾個部分</p>
+
+<ul>
+<li>簡介 python 內用來處理 PDF 的程式庫，及演進
+
+<ul>
+<li>pyPDF,pyPDF2,pyPDF4</li>
+<li>pdfrw</li>
+</ul></li>
+<li>安裝</li>
+<li>提取</li>
+<li>合併</li>
+<li>分拆</li>
+<li>加浮水印</li>
+<li>加密</li>
+<li>結論</li>
+<li>進階閱讀</li>
+</ul>
+
+<p>這篇文章大概就原文內容作摘要，加上一些心得筆記。或許之後有空來考慮翻譯？</p>
+
+<h1 id="前言">前言</h1>
+
+<p><a href="&quot;https://zh.wikipedia.org/wiki/pdf&quot;" title="Portable Document Format">PDF</a> 可攜式文件格式, 是 Adobe 公司的文件規格，常見的文件交換格式。目前是
+ISO 下的開放文件格式。</p>
+
+<p>python 下用來處理 PDF 的程式庫除了 pyPDFx 外，還有：</p>
+
+<ul>
+<li>pdfminer</li>
+<li>pdfquery</li>
+<li>PDFlib&rsquo;s TET library with python binding</li>
+<li>Reportlab</li>
+<li>pdfrw</li>
+</ul>
+
+<p>本文主要是以 pyPDFx 為主。</p>
+
+<h1 id="pypdf-演進">pyPDF 演進</h1>
+
+<ul>
+<li>最初的 pyPDF 是在2005</li>
+<li><a href="&quot;https://github.com/mstamy2/PyPDF2&quot;" title="A utility to read and write PDFs with Python">pyPDF2</a> 最近失去維護，而 <a href="&quot;https://github.com/claird/PyPDF4&quot;" title="A utility to read and write PDFs with Python">pyPDF4</a> 跟 <a href="&quot;https://github.com/mstamy2/PyPDF2&quot;" title="A utility to read and write PDFs with Python">pyPDF2</a> 不完全相容</li>
+<li>本文主要以 <a href="&quot;https://github.com/mstamy2/PyPDF2&quot;" title="A utility to read and write PDFs with Python">pyPDF2</a> 為主</li>
+<li><a href="&quot;https://github.com/pmaupin/pdfrw&quot;" title="pdfrw is a pure Python library that reads and writes PDFs">pdfrw</a> : 和 ReportLab 整合，有不少功能</li>
+</ul>
+
+<h1 id="安裝">安裝</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">    $ pip install pypdf2
+    <span style="color:#75715e"># 或是用 Anaconda</span>
+    $ conda install pypdf2</code></pre></div>
+<h1 id="提取">提取</h1>
+
+<ul>
+<li>可以用 pyPDF2 萃取出 metadata, 包括 Author,Creator,Producer,Subject
+,Title,Number of Pages。</li>
+<li><code>PyPDF2.PdfFileReader.getDocumentInfo()</code> 來讀 pdf metadata</li>
+<li><code>PyPDF2.PdfFileReader.getNumPages()</code> 來讀頁數</li>
+<li>例子中  <a href="&quot;https://realpython.com/python-f-strings/&quot;" title="f-string">f-string</a>   ，可以參考文章</li>
+<li>PyPDF2 中還有 <code>.extractText()</code> 用來讀內文，不過效果不好</li>
+<li>要讀內文的話，建議用 <a href="&quot;https://github.com/euske/pdfminer&quot;" title="PDFMiner">PDFMiner</a></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># extract_doc_info.py</span>
+
+<span style="color:#f92672">from</span> PyPDF2 <span style="color:#f92672">import</span> PdfFileReader
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">extract_information</span>(pdf_path):
+    <span style="color:#66d9ef">with</span> open(pdf_path, <span style="color:#e6db74">&#39;rb&#39;</span>) <span style="color:#66d9ef">as</span> f:
+        pdf <span style="color:#f92672">=</span> PdfFileReader(f)
+        information <span style="color:#f92672">=</span> pdf<span style="color:#f92672">.</span>getDocumentInfo()
+        number_of_pages <span style="color:#f92672">=</span> pdf<span style="color:#f92672">.</span>getNumPages()
+
+    txt <span style="color:#f92672">=</span> f<span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">    Information about {pdf_path}: 
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">    Author: {information.author}
+</span><span style="color:#e6db74">    Creator: {information.creator}
+</span><span style="color:#e6db74">    Producer: {information.producer}
+</span><span style="color:#e6db74">    Subject: {information.subject}
+</span><span style="color:#e6db74">    Title: {information.title}
+</span><span style="color:#e6db74">    Number of pages: {number_of_pages}
+</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+
+    <span style="color:#66d9ef">print</span>(txt)
+    <span style="color:#66d9ef">return</span> information
+
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+    path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;reportlab-sample.pdf&#39;</span>
+    extract_information(path)</code></pre></div>
+<h1 id="旋轉">旋轉</h1>
+
+<p><code>PdfFileWriter.rotateClockwise(90)</code> 寫入時，可以旋轉頁面。
+<code>.getPage() addPage()</code></p>
+
+<p>Note
+<div class="notices note" >
+PyPDF2 只能以90度的倍數旋轉，其他的角度會得到 <code>AssertionError</code>
+</div></p>
+
+<h1 id="合併">合併</h1>
+
+<p>將兩個 pdf 文件合成一個檔案，像是把本文、加上封面、和封底。</p>
+
+<p>方式：讀進兩個文件的每一頁，一頁一頁寫進新的 pdf ，產生合併的新文檔。</p>
+
+<h1 id="分拆">分拆</h1>
+
+<p>讀進各頁，把想分出去的頁數寫到新檔</p>
+
+<h1 id="加浮水印">加浮水印</h1>
+
+<p><code>PdfFileReader.mergePage(浮水印pdf檔)</code> 加上浮水印</p>
+
+<h1 id="加密">加密</h1>
+
+<ul>
+<li>PyPDF2 目前只能加密碼鎖上文件。</li>
+<li>admin 有 read/write 的權限。user 只有 read 的權限</li>
+<li>加密長度預設是 40bit</li>
+</ul>
+
+<p><code>PdfFileWriter.encrypt(user_pwd=password, owner_pwd=None, 
+                       use_128bit=True)</code></p>
+
+<h1 id="結論">結論</h1>
+
+<p>PyPDF2 功能不少，不過 取出文字的功能好像不太完美，
+或許要看看其他程式庫。像是 <a href="&quot;https://github.com/euske/pdfminer&quot;" title="PDFMiner">PDFMiner</a></p>
+
+<h1 id="進階閱讀">進階閱讀</h1>
+
+<h1 id="參考連結">參考連結</h1>
+
+<ol>
+<li><a href="https://realpython.com/pdf-python/">How to Work With a PDF in Python</a></li>
+<li><a href="https://realpython.com/python-f-strings/">f-string</a></li>
+</ol>
+
+    
+    
+          <footer class=" footline" >
+	
+</footer>
+  </div>
+</div>
+
+<div id="navigation">
+</div>
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
+
+<script src="/js/clipboard.min.js"></script>
+<script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
+
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pycon on After-Dark</title>
+    <title>pycon on After-Dark</title>
     <link>/tags/pycon/</link>
-    <description>Recent content in Pycon on After-Dark</description>
+    <description>Recent content in pycon on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 May 2018 01:16:25 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 02 Jun 2018 18:50:15 +0800</lastBuildDate>
     
 	<atom:link href="/tags/pycon/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PYCON TW 2018 June 01 02 Taipei Todolist</title>
+      <link>/post/pycon-tw-2018-june-01-02-taipei-todolist/</link>
+      <pubDate>Sat, 02 Jun 2018 18:50:15 +0800</pubDate>
+      
+      <guid>/post/pycon-tw-2018-june-01-02-taipei-todolist/</guid>
+      <description>&lt;p&gt;今年的 &lt;a href=&#34;https://tw.pycon.org/2018/zh-hant/&#34; title=&#34;PYCON TW 2018 Official Site&#34;&gt;PYCON TW 2018&lt;/a&gt; ,Taipei June  01-02，
+筆記一下有什麼有趣的主題。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCHLnNgRnfGYDzPCCH8qGbQw&#34; title=&#34;PYCON TW 2018 Official Youtube Channel&#34;&gt;PYCON TW 2018 Youtube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tw.pycon.org/2018/zh-hant/events/schedule/&#34;&gt;PyCon TW 2018 Talks Schedule&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>PYCON USA 2018 May 09-17 Cleveland OH TODO List</title>
@@ -24,9 +39,7 @@
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCsX05-2sVSH7Nx3zuk3NYuQ&#34; title=&#34;PYCON 2018 Official Youtube Channel&#34;&gt;PYCON 2018 的 Youtube 頻道&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://us.pycon.org/2018/schedule/tutorials/&#34;&gt;PyCon 2018 Tutorials Schedule&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://us.pycon.org/2018/schedule/talks/#!&#34;&gt;PyCon 2018 Talks Schedule&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Unix on After-Dark</title>
+    <title>unix on After-Dark</title>
     <link>/tags/unix/</link>
-    <description>Recent content in Unix on After-Dark</description>
+    <description>Recent content in unix on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Apr 2018 23:30:18 +0800</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Wed, 11 Apr 2018 23:30:18 +0800</pubDate>
       
       <guid>/post/tool-commandline-autojump/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34; title=&#34;easily navigate directories from the command line&#34;&gt;autojump&lt;/a&gt; 能快速的切換資料夾。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34; title=&#34;easily navigate directories from the command line&#34;&gt;autojump&lt;/a&gt; 能快速的切換資料夾。&lt;/p&gt;</description>
     </item>
     
   </channel>

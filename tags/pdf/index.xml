@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pdf on After-Dark</title>
+    <link>/tags/pdf/</link>
+    <description>Recent content in pdf on After-Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 May 2019 00:01:48 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/pdf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python How to Work With PDF in Python</title>
+      <link>/post/python-how-to-work-with-pdf-in-python/</link>
+      <pubDate>Wed, 08 May 2019 00:01:48 +0800</pubDate>
+      
+      <guid>/post/python-how-to-work-with-pdf-in-python/</guid>
+      <description>&lt;p&gt;閱讀利用 &lt;a href=&#34;&amp;quot;https://zh.wikipedia.org/wiki/Python&amp;quot;&#34; title=&#34;Programming Language&#34;&gt;Python&lt;/a&gt; 來處理 &lt;a href=&#34;&amp;quot;https://zh.wikipedia.org/wiki/pdf&amp;quot;&#34; title=&#34;Portable Document Format&#34;&gt;PDF&lt;/a&gt; 的文章，並作簡單的筆記。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Automatestuff on After-Dark</title>
+    <title>automatestuff on After-Dark</title>
     <link>/tags/automatestuff/</link>
-    <description>Recent content in Automatestuff on After-Dark</description>
+    <description>Recent content in automatestuff on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Apr 2018 18:35:25 +0800</lastBuildDate>
@@ -19,9 +19,7 @@
       <guid>/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;沒有相應的程式庫時，可以模擬鍵盤、或滑鼠動作，直接操作 GUI 的得到相對的功能。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -36,9 +34,7 @@
 &lt;li&gt;Automate the Boring Stuff with Python&lt;/li&gt;
 &lt;li&gt;Practical Programming for Total Beginners&lt;/li&gt;
 &lt;li&gt;by Al Sweigart&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

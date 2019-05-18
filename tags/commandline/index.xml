@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Commandline on After-Dark</title>
+    <title>commandline on After-Dark</title>
     <link>/tags/commandline/</link>
-    <description>Recent content in Commandline on After-Dark</description>
+    <description>Recent content in commandline on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 13 Apr 2018 02:36:19 +0800</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Fri, 13 Apr 2018 02:36:19 +0800</pubDate>
       
       <guid>/post/tool-picon-python-interactive/</guid>
-      <description>&lt;p&gt;可以在即時在編輯器看到程式碼執行的結果。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;可以在即時在編輯器看到程式碼執行的結果。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,9 +26,7 @@
       <pubDate>Wed, 11 Apr 2018 23:30:18 +0800</pubDate>
       
       <guid>/post/tool-commandline-autojump/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34; title=&#34;easily navigate directories from the command line&#34;&gt;autojump&lt;/a&gt; 能快速的切換資料夾。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34; title=&#34;easily navigate directories from the command line&#34;&gt;autojump&lt;/a&gt; 能快速的切換資料夾。&lt;/p&gt;</description>
     </item>
     
   </channel>

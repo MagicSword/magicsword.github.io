@@ -8,8 +8,193 @@
   </url>
   
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2019-05-18T19:35:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-05-18T19:35:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/reading-code-complete2nd/</loc>
+    <lastmod>2019-05-18T19:35:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-05-18T19:35:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/programming/</loc>
+    <lastmod>2019-05-18T19:35:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/programming/</loc>
+    <lastmod>2019-05-18T19:35:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/reading/</loc>
+    <lastmod>2019-05-18T19:35:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/python-how-to-work-with-pdf-in-python/</loc>
+    <lastmod>2019-05-08T00:01:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/pdf/</loc>
+    <lastmod>2019-05-08T00:01:48+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/python/</loc>
+    <lastmod>2019-05-08T00:01:48+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/technology/</loc>
+    <lastmod>2019-05-08T00:01:48+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/reading-stephen-king-on-writing/</loc>
+    <lastmod>2018-08-08T20:48:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/stephenking/</loc>
+    <lastmod>2018-08-08T20:48:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/life/</loc>
+    <lastmod>2018-08-08T20:48:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/writing/</loc>
+    <lastmod>2018-08-08T20:48:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/minecraft-with-python/</loc>
+    <lastmod>2018-08-06T01:31:04+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/game/</loc>
+    <lastmod>2018-08-06T01:31:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/minecraft/</loc>
+    <lastmod>2018-08-06T01:31:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/vim-plugins-markdown/</loc>
     <lastmod>2018-06-05T21:07:12+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/markdown/</loc>
+    <lastmod>2018-06-05T21:07:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/plugins/</loc>
+    <lastmod>2018-06-05T21:07:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/vim/</loc>
+    <lastmod>2018-06-05T21:07:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/learning-google-spreadsheet-functions/</loc>
+    <lastmod>2018-06-03T23:30:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/google/</loc>
+    <lastmod>2018-06-03T23:30:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/office/</loc>
+    <lastmod>2018-06-03T23:30:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/spreadsheet/</loc>
+    <lastmod>2018-06-03T23:30:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/collection-books-organized/</loc>
+    <lastmod>2018-06-03T17:51:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gtd/</loc>
+    <lastmod>2018-06-03T17:51:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/book/</loc>
+    <lastmod>2018-06-03T17:51:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/collection/</loc>
+    <lastmod>2018-06-03T17:51:53+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/pycon-tw-2018-june-01-02-taipei-todolist/</loc>
+    <lastmod>2018-06-02T18:50:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/pycon/</loc>
+    <lastmod>2018-06-02T18:50:15+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/video/</loc>
+    <lastmod>2018-06-02T18:50:15+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -23,8 +208,26 @@
   </url>
   
   <url>
+    <loc>/tags/blog/</loc>
+    <lastmod>2018-06-01T16:12:30+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2018-06-01T16:12:30+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/hugo-blog-new-theme-docdock/</loc>
     <lastmod>2018-06-01T14:53:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/theme/</loc>
+    <lastmod>2018-06-01T14:53:57+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -33,8 +236,32 @@
   </url>
   
   <url>
+    <loc>/tags/hardware/</loc>
+    <lastmod>2018-05-25T20:26:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/life/</loc>
+    <lastmod>2018-05-25T20:26:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/log/</loc>
+    <lastmod>2018-05-25T20:26:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/pycon-usa-2018-may-09-17-cleveland-oh-todolist/</loc>
     <lastmod>2018-05-18T01:16:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/humble-bundle/</loc>
+    <lastmod>2018-05-17T14:05:07+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -43,8 +270,26 @@
   </url>
   
   <url>
+    <loc>/tags/software/</loc>
+    <lastmod>2018-05-17T14:05:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/tips-vim-copy-paste-and-clipboard/</loc>
     <lastmod>2018-05-10T22:46:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/editor/</loc>
+    <lastmod>2018-05-10T22:46:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/tips/</loc>
+    <lastmod>2018-05-10T22:46:18+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -58,6 +303,36 @@
   </url>
   
   <url>
+    <loc>/tags/excel/</loc>
+    <lastmod>2018-05-04T16:55:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/openpyxl/</loc>
+    <lastmod>2018-05-04T16:55:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/udemy/</loc>
+    <lastmod>2018-05-04T16:55:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/vegas-pro/</loc>
+    <lastmod>2018-04-24T21:21:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/video-editing/</loc>
+    <lastmod>2018-04-24T21:21:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/software-intro-magix-vegas-pro-14-edit/</loc>
     <lastmod>2018-04-24T21:21:05+08:00</lastmod>
   </url>
@@ -65,6 +340,18 @@
   <url>
     <loc>/post/reading-automate-the-boring-stuff-with-python-1st/18_keyboard_mouse/</loc>
     <lastmod>2018-04-21T18:35:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/automatestuff/</loc>
+    <lastmod>2018-04-21T18:35:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/automation/</loc>
+    <lastmod>2018-04-21T18:35:25+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -78,8 +365,38 @@
   </url>
   
   <url>
+    <loc>/tags/gui/</loc>
+    <lastmod>2018-04-17T02:47:36+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/pyqt/</loc>
+    <lastmod>2018-04-17T02:47:36+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/reading-making-perfect-bread/</loc>
     <lastmod>2018-04-16T03:52:12+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bread/</loc>
+    <lastmod>2018-04-16T03:52:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/cooking/</loc>
+    <lastmod>2018-04-16T03:52:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/food/</loc>
+    <lastmod>2018-04-16T03:52:12+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -88,8 +405,20 @@
   </url>
   
   <url>
+    <loc>/tags/module/</loc>
+    <lastmod>2018-04-14T14:44:03+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/python-debugging-with-pdb/</loc>
     <lastmod>2018-04-13T21:03:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/debug/</loc>
+    <lastmod>2018-04-13T21:03:50+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -98,8 +427,20 @@
   </url>
   
   <url>
+    <loc>/tags/commandline/</loc>
+    <lastmod>2018-04-13T02:36:19+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/tool-commandline-autojump/</loc>
     <lastmod>2018-04-11T23:30:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/unix/</loc>
+    <lastmod>2018-04-11T23:30:18+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -108,13 +449,43 @@
   </url>
   
   <url>
+    <loc>/tags/study/</loc>
+    <lastmod>2018-04-11T18:24:44+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/reading-version-control-with-git-2nd/</loc>
     <lastmod>2018-04-01T23:06:34+08:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/git/</loc>
+    <lastmod>2018-04-01T23:06:34+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/language/</loc>
+    <lastmod>2018-03-30T18:22:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/learn-language-in-six-months/</loc>
     <lastmod>2018-03-30T18:22:45+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ted/</loc>
+    <lastmod>2018-03-30T18:22:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/learning/</loc>
+    <lastmod>2018-03-30T18:22:45+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -128,13 +499,37 @@
   </url>
   
   <url>
+    <loc>/tags/hello/</loc>
+    <lastmod>2017-09-24T04:21:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/world/</loc>
+    <lastmod>2017-09-24T04:21:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/articles/article-test/</loc>
     <lastmod>2017-09-24T04:04:34+08:00</lastmod>
   </url>
   
   <url>
+    <loc>/articles/</loc>
+    <lastmod>2017-09-24T04:04:34+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/markdown-syntax-intro/</loc>
     <lastmod>2017-09-24T03:53:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/syntax/</loc>
+    <lastmod>2017-09-24T03:53:39+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -145,6 +540,12 @@
   <url>
     <loc>/post/this-is-new-blog-post/</loc>
     <lastmod>2017-09-23T22:40:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/golang/</loc>
+    <lastmod>2017-09-23T22:40:35+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -173,101 +574,19 @@
   </url>
   
   <url>
-    <loc>/post/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/articles/</loc>
-    <lastmod>2017-09-24T04:04:34+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/automatestuff/</loc>
-    <lastmod>2018-04-21T18:35:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/automation/</loc>
-    <lastmod>2018-04-21T18:35:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/blog/</loc>
-    <lastmod>2018-06-01T16:12:30+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/bread/</loc>
-    <lastmod>2018-04-16T03:52:12+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/commandline/</loc>
-    <lastmod>2018-04-13T02:36:19+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/cooking/</loc>
-    <lastmod>2018-04-16T03:52:12+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/debug/</loc>
-    <lastmod>2018-04-13T21:03:50+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>/post/hugoisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/editor/</loc>
-    <lastmod>2018-05-10T22:46:18+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/excel/</loc>
-    <lastmod>2018-05-04T16:55:05+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/food/</loc>
-    <lastmod>2018-04-16T03:52:12+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/git/</loc>
-    <lastmod>2018-04-01T23:06:34+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -284,176 +603,8 @@
   </url>
   
   <url>
-    <loc>/tags/golang/</loc>
-    <lastmod>2017-09-23T22:40:35+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/gui/</loc>
-    <lastmod>2018-04-17T02:47:36+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/hardware/</loc>
-    <lastmod>2018-05-25T20:26:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/hello/</loc>
-    <lastmod>2017-09-24T04:21:50+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/hugo/</loc>
-    <lastmod>2018-06-01T16:12:30+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/humble-bundle/</loc>
-    <lastmod>2018-05-17T14:05:07+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/language/</loc>
-    <lastmod>2018-03-30T18:22:45+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/learning/</loc>
-    <lastmod>2018-03-30T18:22:45+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/life/</loc>
-    <lastmod>2018-04-16T03:52:12+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/life/</loc>
-    <lastmod>2018-05-25T20:26:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/log/</loc>
-    <lastmod>2018-05-25T20:26:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/markdown/</loc>
-    <lastmod>2018-06-05T21:07:12+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/module/</loc>
-    <lastmod>2018-04-14T14:44:03+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/openpyxl/</loc>
-    <lastmod>2018-05-04T16:55:05+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/plugins/</loc>
-    <lastmod>2018-06-05T21:07:12+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2018-06-05T21:07:12+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/programming/</loc>
-    <lastmod>2018-05-18T01:16:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/pycon/</loc>
-    <lastmod>2018-05-18T01:16:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/pyqt/</loc>
-    <lastmod>2018-04-17T02:47:36+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/python/</loc>
-    <lastmod>2018-05-18T01:16:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/reading/</loc>
-    <lastmod>2018-05-10T15:17:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/software/</loc>
-    <lastmod>2018-05-17T14:05:07+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/study/</loc>
-    <lastmod>2018-04-11T18:24:44+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/syntax/</loc>
-    <lastmod>2017-09-24T03:53:39+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2018-04-21T18:35:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/technology/</loc>
-    <lastmod>2018-06-05T21:07:12+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ted/</loc>
-    <lastmod>2018-03-30T18:22:45+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/templates/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/theme/</loc>
-    <lastmod>2018-06-01T14:53:57+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -464,51 +615,8 @@
   </url>
   
   <url>
-    <loc>/tags/tips/</loc>
-    <lastmod>2018-05-10T22:46:18+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/udemy/</loc>
-    <lastmod>2018-05-04T16:55:05+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/unix/</loc>
-    <lastmod>2018-04-11T23:30:18+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/vegas-pro/</loc>
-    <lastmod>2018-04-24T21:21:05+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/video/</loc>
-    <lastmod>2018-05-18T01:16:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/video-editing/</loc>
-    <lastmod>2018-04-24T21:21:05+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/vim/</loc>
-    <lastmod>2018-06-05T21:07:12+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/world/</loc>
-    <lastmod>2017-09-24T04:21:50+08:00</lastmod>
-    <priority>0</priority>
+    <loc>/post/migrate-from-jekyll/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

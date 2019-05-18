@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Plugins on After-Dark</title>
+    <title>plugins on After-Dark</title>
     <link>/tags/plugins/</link>
-    <description>Recent content in Plugins on After-Dark</description>
+    <description>Recent content in plugins on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Jun 2018 21:07:12 +0800</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Tue, 05 Jun 2018 21:07:12 +0800</pubDate>
       
       <guid>/post/vim-plugins-markdown/</guid>
-      <description>&lt;p&gt;加一些幫助 Markdown 編輯的 plugins.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;加一些幫助 Markdown 編輯的 plugins.&lt;/p&gt;</description>
     </item>
     
   </channel>

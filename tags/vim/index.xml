@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vim on After-Dark</title>
+    <title>vim on After-Dark</title>
     <link>/tags/vim/</link>
-    <description>Recent content in Vim on After-Dark</description>
+    <description>Recent content in vim on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Jun 2018 21:07:12 +0800</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Tue, 05 Jun 2018 21:07:12 +0800</pubDate>
       
       <guid>/post/vim-plugins-markdown/</guid>
-      <description>&lt;p&gt;加一些幫助 Markdown 編輯的 plugins.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;加一些幫助 Markdown 編輯的 plugins.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,9 +26,7 @@
       <pubDate>Thu, 10 May 2018 22:46:18 +0800</pubDate>
       
       <guid>/post/tips-vim-copy-paste-and-clipboard/</guid>
-      <description>&lt;p&gt;Vim 複製、貼上，及使用系統的剪貼簿。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Vim 複製、貼上，及使用系統的剪貼簿。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -41,9 +37,7 @@
       <guid>/post/reading-7habits-for-effective-text-editing-2.0/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=p6K4iIMlouI&#34;&gt;7 Habits For Effective Text Editing 2.0 - YouTube&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;by &lt;a href=&#34;http://www.moolenaar.net/&#34;&gt;Bram Moolenaar&lt;/a&gt; , Vim的作者談有效率的編輯 , &lt;a href=&#34;http://www.moolenaar.net/habits_2007.pdf&#34;&gt;Slide Here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;by &lt;a href=&#34;http://www.moolenaar.net/&#34;&gt;Bram Moolenaar&lt;/a&gt; , Vim的作者談有效率的編輯 , &lt;a href=&#34;http://www.moolenaar.net/habits_2007.pdf&#34;&gt;Slide Here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -52,9 +46,7 @@
       <pubDate>Fri, 13 Apr 2018 02:36:19 +0800</pubDate>
       
       <guid>/post/tool-picon-python-interactive/</guid>
-      <description>&lt;p&gt;可以在即時在編輯器看到程式碼執行的結果。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;可以在即時在編輯器看到程式碼執行的結果。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -65,9 +57,7 @@
       <guid>/post/reading-hackingvim72/</guid>
       <description>&lt;p&gt;Hacking Vim 7.2 讀後心得。&lt;/p&gt;
 
-&lt;p&gt;以及一些簡單的筆記、和心得記錄。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;以及一些簡單的筆記、和心得記錄。&lt;/p&gt;</description>
     </item>
     
   </channel>

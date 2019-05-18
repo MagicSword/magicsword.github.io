@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>google on After-Dark</title>
+    <link>/tags/google/</link>
+    <description>Recent content in google on After-Dark</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Jun 2018 23:30:28 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning Google Spreadsheet Functions</title>
+      <link>/post/learning-google-spreadsheet-functions/</link>
+      <pubDate>Sun, 03 Jun 2018 23:30:28 +0800</pubDate>
+      
+      <guid>/post/learning-google-spreadsheet-functions/</guid>
+      <description>&lt;p&gt;使用 &lt;a href=&#34;&amp;quot;https://support.google.com/docs/answer/3093342&amp;quot;&#34; title=&#34;匯入多種結構化資料類型的資料，包括 XML、HTML、CSV、TSV 和 RSS 以及 ATOM XML 資訊提供。&#34;&gt;IMPORTXML&lt;/a&gt; 讀 HTML 的資料進 Google 試算表。&lt;/p&gt;
+
+&lt;p&gt;以下節錄 Google 試算表使用說明，或許改天再加一些使用記錄。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

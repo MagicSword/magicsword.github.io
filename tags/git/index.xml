@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Git on After-Dark</title>
+    <title>git on After-Dark</title>
     <link>/tags/git/</link>
-    <description>Recent content in Git on After-Dark</description>
+    <description>Recent content in git on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Apr 2018 23:06:34 +0800</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Sun, 01 Apr 2018 23:06:34 +0800</pubDate>
       
       <guid>/post/reading-version-control-with-git-2nd/</guid>
-      <description>&lt;p&gt;Version Control with Git, 2nd Edition 簡單的一些筆記。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Version Control with Git, 2nd Edition 簡單的一些筆記。&lt;/p&gt;</description>
     </item>
     
   </channel>

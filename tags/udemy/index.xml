@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Udemy on After-Dark</title>
+    <title>udemy on After-Dark</title>
     <link>/tags/udemy/</link>
-    <description>Recent content in Udemy on After-Dark</description>
+    <description>Recent content in udemy on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 May 2018 16:55:05 +0800</lastBuildDate>
@@ -19,9 +19,7 @@
       <guid>/post/udemy-python-easily-migrate-excel-files-to-a-database/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.udemy.com/python-easily-migrate-excel-files-to-a-database/learn/v4/overview&#34;&gt;Python: Easily migrate Excel files to a database&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;是個 約35 min的免費課程，花點時間來看看。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;是個 約35 min的免費課程，花點時間來看看。&lt;/p&gt;</description>
     </item>
     
   </channel>

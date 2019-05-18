@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hardware on After-Dark</title>
+    <title>hardware on After-Dark</title>
     <link>/tags/hardware/</link>
-    <description>Recent content in Hardware on After-Dark</description>
+    <description>Recent content in hardware on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 May 2018 20:26:37 +0800</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Fri, 25 May 2018 20:26:37 +0800</pubDate>
       
       <guid>/post/my-workspace-configuration-2018-may/</guid>
-      <description>&lt;p&gt;電腦設備、工作環境記錄 2018 May&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;電腦設備、工作環境記錄 2018 May&lt;/p&gt;</description>
     </item>
     
   </channel>

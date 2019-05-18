@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Module on After-Dark</title>
+    <title>module on After-Dark</title>
     <link>/tags/module/</link>
-    <description>Recent content in Module on After-Dark</description>
+    <description>Recent content in module on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 14 Apr 2018 14:44:03 +0800</lastBuildDate>
@@ -18,9 +18,7 @@
       
       <guid>/post/python-import-system/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;(https://manikos.github.io/how-pythons-import-machinery-works)&#34;&gt;How python&amp;rsquo;s import machinery works&lt;/a&gt; 簡單的筆記，
-順便整理一下 &lt;a href=&#34;https://docs.python.org/3/reference/import.html&#34; title=&#34;access to the code in another module&#34;&gt;import&lt;/a&gt; 的資料。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+順便整理一下 &lt;a href=&#34;https://docs.python.org/3/reference/import.html&#34; title=&#34;access to the code in another module&#34;&gt;import&lt;/a&gt; 的資料。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,9 +28,7 @@
       
       <guid>/post/python-debugging-with-pdb/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://realpython.com/python-debugging-pdb/&#34;&gt;Python Debugging With Pdb&lt;/a&gt;
-簡單心得&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+簡單心得&lt;/p&gt;</description>
     </item>
     
   </channel>
