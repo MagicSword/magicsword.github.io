@@ -6,10 +6,21 @@
     <description>Recent content in technology on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 May 2019 00:01:48 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 May 2019 20:23:00 +0800</lastBuildDate>
     
 	<atom:link href="/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reading Python Scraping Analysis Book</title>
+      <link>/post/reading-py-scraping-analysis-book/</link>
+      <pubDate>Sun, 19 May 2019 20:23:00 +0800</pubDate>
+      
+      <guid>/post/reading-py-scraping-analysis-book/</guid>
+      <description>&lt;p&gt;Python：網路爬蟲與資料分析入門實戰 簡單筆記&lt;/p&gt;
+
+&lt;p&gt;python, beautifulsoup, api, scrapy,&amp;hellip;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Python How to Work With PDF in Python</title>

@@ -21,11 +21,11 @@
 	"content": ""
 },
 {
-	"uri": "/post/reading-code-complete2nd/",
-	"title": "Reading Code Complete 2nd",
-	"tags": ["reading", "programming"],
-	"description": "Code Complete 2nd reading",
-	"content": "Code Complete 2nd 主要是講軟體工程方面的內容。通常簡寫為 cc2e\n 書名：CODE COMPLETE 2中文版：軟體開發實務指南（第二版）  原名：Code Complete: A Practical Handbook of Software Construction, Second Edition 博客來 Amazon 作者： Steve McConnell\n 譯者： 金戈, 湯凌, 陳碩, 張菲 出版社：博碩\n 出版日期：2018/11/23 語言：繁體中文 定價：1280元 ISBN：9789864341313 規格：平裝 / 912頁 / 18.5 x 23 cm / 普通級 / 單色印刷 / 二版 出版地：英國 本書分類：電腦資訊\u0026gt; 程式設計/APP開發\u0026gt; 軟體工程/遊戲開發   Task list: 😄\n初稿 再讀 筆記 完成  簡介 本書分為幾個部分：\n 第一部分 打好基礎 第二部分 建立高品質的程式碼 第三部分 變數 第四部分 語句 第五部分 程式碼改善 第六部分 系統考慮 第七部分 軟體工藝   主要是在軟體工程的內容，如何寫出好的程式碼。 而什麼是好的程式碼？易於維護、讓人容易理解的就是好的程式碼。 書中的例子，主要是用C++, Java 跟 VB.NET寫的。 多達約900頁的內容，可以先從有興趣的地方開始看。 本書還有準備了 Checklist 核對表，方便你在適用的場合，用來評估 自已專案的表現。 本書寫在時間是 2004 年，不過概念的東西不會差太多。  第一部分 打好基礎 1~4 章\n寫程式、蓋房子，本質上都是在建造一個東西。建築學中的概念也常常使用在軟體工程學中。 工程開始前，需要有的一些步驟：討論需求、建築藍圖、架構確認、資源管理、本地化、國際化， 使用者界面、效能、輸入輸出、容錯性。在真正動手前，考慮周到，之後才不會多走了錯路。 算是在 孫子兵法 中廟算的階段。\n第二部分 建立高品質的程式碼 5 Design in Construction\n軟體設計，在動手寫程式碼前，規劃軟體的架構，像是設計模式、使用者介面、資料庫存取、 耦合標準、高內聚力\n6 Working Classes\nClass 類別，很多物件導向的程式中常用到的。 抽象資料類別 ADTs，類別介面、為何要用 Class?，超越類別 Packages\n7 High-Quality Routines\nRoutines(子程式)：為了完成特別的功能而寫的方法， 可被呼叫。 程式中，一定有些動作會重複的做，把它分出來，需要時再呼叫，程式可以變的比較易讀，且有效率。 好的子程式名稱：描述子程式的功能，簡潔，對傳回值有所描述，動詞+受詞？命名要有一致性。 子程式要多長？200行以下會比較好。 如何使用子程式參數(傳入值)？\n8 Defensive Programming\n撰寫程式時，錯誤難免，但事前的一些規範，能有效的防止產出錯誤。 輸入資料檢查、斷言、錯誤處理、例外、隔離程式、輸助除錯的程式碼…\n9 The Pseudocode Programming Process\n Pseudocode(虛擬碼)，可以想作是思考的步驟。 Pseudocode Programming Process(PPP)有助於減少設計、編寫文件所需的工作。 如何寫好虛擬碼？ PPP的替代方案？重構，契約式設計，測式導行設計(TDD)  #第三部分 變數\n10 General Issues in Using Variables\n變數型態、作用範圍、持續時間…\n11 The Power of Variable Names\n 好的變數命名，可以增加易讀性。變數的資料型態、功能、作用範圍、前綴 命名要有一致性，避免和保留字太相近  12 Fundamental Data Types\n數值、整數、浮點數、字元字串、布林、列舉、具名常數、陣列\n13 Unusual Data Types\n 結構體：structin C++, Structure in Visual Basic ， 基本上是多種資料型態結合的自訂資料型態。 指標：直接操作記憶體的工具，Java, C#, 和 Visual Basic 都沒有提供指標。 指標強大，但也容易造成錯誤。 全域資料：程式中任何人都可以取用這個資料，所以容易被不對的子程式、不對的時間被 取用，錯誤就會常發生，不好管理。  #第四部分 語句\n14 Organizing Straight-Line Code\nStraight-Line Code(直線碼) : 指程式中不含任何循環或迴圈者。若需要重複某程式段，則依順序直接寫出其程式碼，而不用循環指令。\n15 Using Conditionals\nif-else, switch-case,\u0026hellip;\n16 Controlling Loops\nfor loop, while,\u0026hellip;\n17 Unusual Control Structures\nrecursive structure, goto clause, \u0026hellip;\n18 Table-Driven Methods\n用查表，來代替 if-else之類的設計模式。簡單的情境，或許 邏輯子句較方便。但是情境越複雜，查表法的好處也越大。\n19 General Control Issues\n布林運算、巢狀結構、結構化設計…\n#第五部分 程式碼改善\n程式寫作中、寫完後除錯，debug的過程\n20 The Software-Quality Landscape\n產品有要正確性(運作結果正常)，可用性(易學易用)，效率(運行速度可用)，… 測試方法，Alpha, Beta 測試，…\n21 Collaborative Construction\n 通常是團隊來完成一個產品， 所以人員協同合作分配，   Pair-Programming(結對程式設計)： 兩個程式設計師在一個電腦上共同工作。一個人輸入程式碼，而另一個人審查他輸入的每一行程式碼。\n 輸入程式碼的人稱作駕駛員，審查程式碼的人稱作觀察員（或導航員）。兩個程式設計師經常互換角色。\n  22 Developer Testing\nUnit-Test, Component Test, Intergration Test,Regression Test, System Test,\u0026hellip;\n23 Debugging\n除錯方式、方法，…\n24 Refactoring\n 重構(Refactoring): 指對軟體程式碼做任何更動以增加可讀性或者簡化結構而不影響輸出結果。\n  程式不可能一寫出來就是最完美的，常要經過多次修改，追加功能，減少功能， 除錯…\n25 Code-Tuning Strategies\nCode-Tuning 程式碼調整，和重構不同的是，通常為了增加程式的效率而作。 改寫程式邏輯、用新的運算法，…。為了快，而重寫。\n26 Code-Tuning Techniques\n本章著重在程式碼範圍的調整，較細節的部分。\n#第六部分 系統考慮\n27 How Program Size Affects Construction\n專案管理，團隊協調\n28 Managing Construction\n 需求變更，設計變更 程式碼變更：版本控制，備份 進度評估：甘特圖… 專業的專案管理人才  29 Integration\n整合，不同專案間的整合，不同團隊間的整合，不同公司間的整合，\n30 Programming Tools\n 設計工具：UML 原始碼工具：IDE, Editor,Compare tool, Merge tool, Code Formatter, Document, Refactor 可執行碼工具：Compiler, Builder, Libraries,Debug, Testing 工具導向的環境：OS 自行設計的工具：DRY, 自已寫工具 工具夢想世界：  #第七部分 軟體工藝\n31 Layout and Style\nCoding Style: 程式寫出來，要讓人看的懂。斷行、段落，註解…\n**32 Self-Documenting Code **\n 內部文件：通常是寫在程式碼內的註解。外部文件：另外寫的軟體操作說明書。 註解或不註解：註解是為了方便人了解程式，但是如果程式碼本身易於了解，註解或許就不是必要，反而增加閱讀量。 參考其他人的註解標準  **33 Personal Character **\n性格影響結果\n34 Themes in Software Craftsmanship\n以人為本\n35 Where to Find More Information\n 其他書、期刊、參考書目  筆記 900多頁這樣大略翻了一下，說的東西還真的是很多。軟體工程真的是教你如何寫程式走向架構軟體、 建造一個新的東西的學問。細讀可能還要很多時間，有空再來慢慢讀。\n參考連結  SteveMcConnell作者網站 【Code Complete 2nd Edition：軟體開發實務指南】怎麼讀這本 1.7 kg 重的經典磚塊書 "
+	"uri": "/post/reading-py-scraping-analysis-book/",
+	"title": "Reading Python Scraping Analysis Book",
+	"tags": ["python", "scraping", "spider"],
+	"description": " Python：網路爬蟲與資料分析入門實戰 ",
+	"content": "Python：網路爬蟲與資料分析入門實戰 簡單筆記\npython, beautifulsoup, api, scrapy,\u0026hellip;\n 書名：Python：網路爬蟲與資料分析入門實戰  博客來 作者： 林俊瑋, 林修博\n 出版社：博碩\n 出版日期：2018/10/04 語言：繁體中文 定價：450元 ISBN：9789864343386 規格：平裝 / 256頁 / 17 x 23 x 1.28 cm / 普通級 / 單色印刷 / 初版 出版地：台灣 本書分類：電腦資訊\u0026gt; 資料庫/大數據\u0026gt; 資料處理/大數據 本書分類：電腦資訊\u0026gt; 程式設計/APP開發\u0026gt; Python   Task list: 😄\n初稿 再讀 筆記 完成 05/19 到 2-3  概述 邊讀邊做個筆記心得。\nChapter 01 環境設定與網頁爬蟲初探  1-1 環境設定及套件安裝：Anaconda 1-2 使用IDE：PyCharm 1-3 使用Jupyter Notebook 1-4 網頁文件解構與網頁爬蟲初探  Anaconda 在 Windows 上算是個滿不錯的 Python 整合套件。 Editor: Vim , Visual Studio Code IDE: PyCharm Jupyter Notebook 算是個 Ipython Web App，滿好用的。 網頁文件有幾個部分： Html 內容，CSS 樣式，JS 動態 書中用來讀網頁的程式庫是 requests，算是外部程式庫中簡單好用的。 Python 中內建的也是有 urllib 。   Chapter 02 Beautiful Soup 講解與網頁解構 2-1 不要重複造輪子：寫爬蟲之前 不過當你想要自已動手打造輪子前，可能要先研究一下：\n API：是不是有已經整理好資料了？ 分析網址連結規則：可以少花一些力氣 AJAX ： 用 JavaScript 傳送的資料，沒辦法直接取得  Chrome 下按 F12 開發者工具 ，可以了解 Browser 和 Server 間到底聊什麼？\n2-2 Beautiful Soup 重要功能 (find(), find_all(), .text, .stripped_strings) BeautifulSoup :\n 是 Python 程式庫，用來解析 HTML/XML 文件 把 文本 轉成樹狀結構(？) bs4 可以用的 Parser(解析器) : html.parser(Python內建), html5lib, lxml(最快) 之後用 bs4 簡寫\n 也就是把糊成一團的文件，整理成程式可以拿來用的資料。\nrequests : 讀入網頁, 並處理網路協定的問題，登入，session, cookie, \u0026hellip;.\nimport requests from bs4 import BeautifulSoup resp = requests.get(\u0026#39;https://jwlin.github.io/py-scraping-analysis-book/ch1/connect.html\u0026#39;) soup = BeautifulSoup(resp.text, \u0026#39;html.parser\u0026#39;) print(soup.find(\u0026#39;h1\u0026#39;).text) 讀進網頁，分析完後，重要的是要如何定位想要的東西。\n 方法一：從頭到尾爬一遍： find(), find_all() 方法二：直接選出樹狀結構中的位置：  CSS Selector : .select() XPath (XML Path Language，XML 路徑語言) : 效能上 CSS Selector 大於 XPath 一些    .text: Tag 所夾的文字 stripped_strings: bs4 的方法，會把物件內容的所有 Tag 清除，留下文字，移除前後空白換行，要注意的是。這個是 generator 物件  2-3 網頁結構巡覽（parent, children, siblings） 除了用暴力法找以外，也可以從已找到的元素的 親層(parent)、子層(children)、兄弟層(siblings) 移動\n2-4 正規表示式 (Regular Expression) Chapter 03 網頁爬蟲範例實戰 3-1 PTT 八卦板今日熱門文章 3-2 Yahoo 奇摩電影本週新片 3-3 兩大報當日焦點新聞 3-4 Google 搜尋股價資訊 3-5 Dcard 今日熱門文章\nChapter 04 使用 API 4-1 API 簡介 4-2 PTT 八卦板眾來源分佈 (ipstack.com) 4-3 IMDB API 4-4 Google Maps APIs (Google Geocoding/Places API) 4-5 Dcard API\nChapter0 5 資料儲存 5-1 儲存圖片與多媒體檔案 5-2 儲存資料到 CSV 檔 5-3 儲存資料到資料庫 SQLite\nChapter 06 不同編碼與類型的文件 6-1 非 UTF-8 編碼的文件 6-2 XML 文件\nChapter 07 進階爬蟲議題 7-1 處理表單及登入頁 ：台灣高鐵時刻查詢 7-2 處理表單及登入頁 ：Yelp 登入 7-3 使用WebDriver：台銀法拍屋資訊查詢 7-4 爬蟲程式經驗談：被封鎖的常見原因、常用 Header 欄位、網站隱藏欄位、使用代理伺服器\nChapter 08 資料分析實戰 8-1 台股每日盤後資訊爬蟲及策略回測（量化投資） 8-2 電影評論情緒分析（中文自然語言處理與機器學習） 8-3 商品特價 Gmail 通知：Costco 商品網頁\n附表 本書範例目標網站列表 附錄A 在 Mac 安裝Anaconda 開發環境\n附錄B Python 爬蟲框架Scrapy 入門教學 B-1 Scrapy 環境安裝 B-2 簡易部落格爬蟲 B-3 Scrapy 系統架構 B-4 博客來網路書店爬蟲\nDocdock Alert **this** is a text **Yeahhh !** is a text **Be carefull** is a text **Beware !** is a text attachments 建 page 同名的 page.file 目錄，下面可以放檔案\nbutton  go to google  Success  Info  Warning  Danger !  Danger !  children 例出下屬的 children 頁面列表，可以作出卡片式的 列表。\nexcerpt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n　excerpt-include 從檔案引用內容\nexpand 可收起隱藏內容\n  Is this docdock theme rocks ?   Yes !.   icon  Mermaid mermaid.initialize({startOnLoad:true}); graph LR;\rA[Hard edge] --|Link text| B(Round edge)\rB -- C{Decision}\rC --|One| D[Result one]\rC --|Two| E[Result two]\r Notice Note A notice disclaimer \nInfo An information disclaimer \nTip A tip disclaimer \nWarning An warning disclaimer \npanel 可以把一些內容加框\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. panel footer  revealjs reveal.js Slide\n語法 樣式可以用 星號* 或是 底線_\n斜體 emphasis, aka italics, with asterisks or underscores. 粗體 Strong emphasis, aka bold, with asterisks or underscores. 合併 Combined emphasis with asterisks and underscores. 刪除線 Strikethrough uses two tildes. Scratch this.\n孔子說：\n 說什麼\n  定義是： 是什麼\n  目錄 第一種是手工的目錄\n目錄  概述  語法 目錄  區塊元素  標題 連結 圖片、其他、youtube 程式碼 參考連結   內文地方加上 概述的連結\n第二種是 After-Dark 內建目錄，在 標頭上加上 toc: = true，程式會把大的標題生成目錄\n區塊元素 ** List **\n AAA  BBB  CCC   what some soso  標題 Setext 形式是用底線的形式，利用 = （最高階標題）和 - （第二階標題），例如：\nThis is an H1 ============= This is an H2 -------------  任何數量的 = 和 - 都可以有效果。\nAtx 形式則是在行首插入 1 到 6 個 # ，對應到標題 1 到 6 階，例如：\n# This is an H1 ## This is an H2 ###### This is an H6  行首的井字數量決定標題的階數，行尾的#可不加\n連結 Markdown 支援兩種形式的連結語法： *行內*和*參考*兩種形式。\n[連結文字](連結目標)  絕對路徑 Google\n相對路徑 post\n連結到文章內的id example 或是空白隔著 2 example\nFooter\nThat\u0026rsquo;s some text with a footnote.1\nThat's the second paragraph.  圖片、其他、youtube 行內和參考\n![Alt text](/path/to/img.jpg) ![Alt text](/path/to/img.jpg \u0026#34;Optional title\u0026#34;) 參考式的圖片語法則長得像這樣：\n![Alt text][id] 「id」是圖片參考的名稱，圖片參考的定義方式則和連結參考一樣：\n[id]: url/to/image \u0026#34;Optional title attribute\u0026#34; Markdown Anchor markdown預設 H1,H2的 id就是 text\n\u0026lt;h1 id=\u0026#34;MyAnchorName\u0026#34;\u0026gt;My Title\u0026lt;/h1\u0026gt; 自定錨\n\u0026lt;a id=\u0026#34;MyAnchorName\u0026#34;\u0026gt;My Title\u0026lt;/a\u0026gt; 連結語法\n\u0026lt;a href=\u0026#34;#MyAnchorName\u0026#34;\u0026gt;My Content\u0026lt;/a\u0026gt;[create an anchor](#MyAnchorName) 要指定高度的話，也可以用 \u0026lt;img\u0026gt;\n程式碼 分兩個，行內，整段 行內像文中會提到的func name print() cast def()\n整段用 三個 ``` 包起，第一個後面放語言的名字\nfor i in 10: print(\u0026#34;heloo,world\u0026#34;) 如果要的syntax highlighting的話，要用hugo內的 shortcode\n1var a string\r2var b string\r3var c string\r4var d string https://www.crummy.com/software/BeautifulSoup/bs4/doc/\n參考連結  作書網站 本書Github BeautifulSoup 文件 R 語言使用者的 Python 學習筆記系列 第 16 篇:[第 16 天] 網頁解析 Nightwatch101 #5：使用 CSS Selector 定位網頁元素 Nightwatch101 #6：使用 Xpath 定位網頁元素 CSS selector vs XPath   And that\u0026rsquo;s the footnote.\r[return]  "
 },
 {
 	"uri": "/tags/",
@@ -33,6 +33,41 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "/tags/python/",
+	"title": "python",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/scraping/",
+	"title": "scraping",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/spider/",
+	"title": "spider",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/categories/technology/",
+	"title": "technology",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/post/reading-code-complete2nd/",
+	"title": "Reading Code Complete 2nd",
+	"tags": ["reading", "programming"],
+	"description": "Code Complete 2nd reading",
+	"content": "Code Complete 2nd 主要是講軟體工程方面的內容。通常簡寫為 cc2e\n 書名：CODE COMPLETE 2中文版：軟體開發實務指南（第二版）  原名：Code Complete: A Practical Handbook of Software Construction, Second Edition 博客來 Amazon 作者： Steve McConnell\n 譯者： 金戈, 湯凌, 陳碩, 張菲 出版社：博碩\n 出版日期：2018/11/23 語言：繁體中文 定價：1280元 ISBN：9789864341313 規格：平裝 / 912頁 / 18.5 x 23 cm / 普通級 / 單色印刷 / 二版 出版地：英國 本書分類：電腦資訊\u0026gt; 程式設計/APP開發\u0026gt; 軟體工程/遊戲開發   Task list: 😄\n初稿 再讀 筆記 完成  簡介 本書分為幾個部分：\n 第一部分 打好基礎 第二部分 建立高品質的程式碼 第三部分 變數 第四部分 語句 第五部分 程式碼改善 第六部分 系統考慮 第七部分 軟體工藝   主要是在軟體工程的內容，如何寫出好的程式碼。 而什麼是好的程式碼？易於維護、讓人容易理解的就是好的程式碼。 書中的例子，主要是用C++, Java 跟 VB.NET寫的。 多達約900頁的內容，可以先從有興趣的地方開始看。 本書還有準備了 Checklist 核對表，方便你在適用的場合，用來評估 自已專案的表現。 本書寫在時間是 2004 年，不過概念的東西不會差太多。  第一部分 打好基礎 1~4 章\n寫程式、蓋房子，本質上都是在建造一個東西。建築學中的概念也常常使用在軟體工程學中。 工程開始前，需要有的一些步驟：討論需求、建築藍圖、架構確認、資源管理、本地化、國際化， 使用者界面、效能、輸入輸出、容錯性。在真正動手前，考慮周到，之後才不會多走了錯路。 算是在 孫子兵法 中廟算的階段。\n第二部分 建立高品質的程式碼 5 Design in Construction\n軟體設計，在動手寫程式碼前，規劃軟體的架構，像是設計模式、使用者介面、資料庫存取、 耦合標準、高內聚力\n6 Working Classes\nClass 類別，很多物件導向的程式中常用到的。 抽象資料類別 ADTs，類別介面、為何要用 Class?，超越類別 Packages\n7 High-Quality Routines\nRoutines(子程式)：為了完成特別的功能而寫的方法， 可被呼叫。 程式中，一定有些動作會重複的做，把它分出來，需要時再呼叫，程式可以變的比較易讀，且有效率。 好的子程式名稱：描述子程式的功能，簡潔，對傳回值有所描述，動詞+受詞？命名要有一致性。 子程式要多長？200行以下會比較好。 如何使用子程式參數(傳入值)？\n8 Defensive Programming\n撰寫程式時，錯誤難免，但事前的一些規範，能有效的防止產出錯誤。 輸入資料檢查、斷言、錯誤處理、例外、隔離程式、輸助除錯的程式碼…\n9 The Pseudocode Programming Process\n Pseudocode(虛擬碼)，可以想作是思考的步驟。 Pseudocode Programming Process(PPP)有助於減少設計、編寫文件所需的工作。 如何寫好虛擬碼？ PPP的替代方案？重構，契約式設計，測式導行設計(TDD)  #第三部分 變數\n10 General Issues in Using Variables\n變數型態、作用範圍、持續時間…\n11 The Power of Variable Names\n 好的變數命名，可以增加易讀性。變數的資料型態、功能、作用範圍、前綴 命名要有一致性，避免和保留字太相近  12 Fundamental Data Types\n數值、整數、浮點數、字元字串、布林、列舉、具名常數、陣列\n13 Unusual Data Types\n 結構體：structin C++, Structure in Visual Basic ， 基本上是多種資料型態結合的自訂資料型態。 指標：直接操作記憶體的工具，Java, C#, 和 Visual Basic 都沒有提供指標。 指標強大，但也容易造成錯誤。 全域資料：程式中任何人都可以取用這個資料，所以容易被不對的子程式、不對的時間被 取用，錯誤就會常發生，不好管理。  #第四部分 語句\n14 Organizing Straight-Line Code\nStraight-Line Code(直線碼) : 指程式中不含任何循環或迴圈者。若需要重複某程式段，則依順序直接寫出其程式碼，而不用循環指令。\n15 Using Conditionals\nif-else, switch-case,\u0026hellip;\n16 Controlling Loops\nfor loop, while,\u0026hellip;\n17 Unusual Control Structures\nrecursive structure, goto clause, \u0026hellip;\n18 Table-Driven Methods\n用查表，來代替 if-else之類的設計模式。簡單的情境，或許 邏輯子句較方便。但是情境越複雜，查表法的好處也越大。\n19 General Control Issues\n布林運算、巢狀結構、結構化設計…\n#第五部分 程式碼改善\n程式寫作中、寫完後除錯，debug的過程\n20 The Software-Quality Landscape\n產品有要正確性(運作結果正常)，可用性(易學易用)，效率(運行速度可用)，… 測試方法，Alpha, Beta 測試，…\n21 Collaborative Construction\n 通常是團隊來完成一個產品， 所以人員協同合作分配，   Pair-Programming(結對程式設計)： 兩個程式設計師在一個電腦上共同工作。一個人輸入程式碼，而另一個人審查他輸入的每一行程式碼。\n 輸入程式碼的人稱作駕駛員，審查程式碼的人稱作觀察員（或導航員）。兩個程式設計師經常互換角色。\n  22 Developer Testing\nUnit-Test, Component Test, Intergration Test,Regression Test, System Test,\u0026hellip;\n23 Debugging\n除錯方式、方法，…\n24 Refactoring\n 重構(Refactoring): 指對軟體程式碼做任何更動以增加可讀性或者簡化結構而不影響輸出結果。\n  程式不可能一寫出來就是最完美的，常要經過多次修改，追加功能，減少功能， 除錯…\n25 Code-Tuning Strategies\nCode-Tuning 程式碼調整，和重構不同的是，通常為了增加程式的效率而作。 改寫程式邏輯、用新的運算法，…。為了快，而重寫。\n26 Code-Tuning Techniques\n本章著重在程式碼範圍的調整，較細節的部分。\n#第六部分 系統考慮\n27 How Program Size Affects Construction\n專案管理，團隊協調\n28 Managing Construction\n 需求變更，設計變更 程式碼變更：版本控制，備份 進度評估：甘特圖… 專業的專案管理人才  29 Integration\n整合，不同專案間的整合，不同團隊間的整合，不同公司間的整合，\n30 Programming Tools\n 設計工具：UML 原始碼工具：IDE, Editor,Compare tool, Merge tool, Code Formatter, Document, Refactor 可執行碼工具：Compiler, Builder, Libraries,Debug, Testing 工具導向的環境：OS 自行設計的工具：DRY, 自已寫工具 工具夢想世界：  #第七部分 軟體工藝\n31 Layout and Style\nCoding Style: 程式寫出來，要讓人看的懂。斷行、段落，註解…\n**32 Self-Documenting Code **\n 內部文件：通常是寫在程式碼內的註解。外部文件：另外寫的軟體操作說明書。 註解或不註解：註解是為了方便人了解程式，但是如果程式碼本身易於了解，註解或許就不是必要，反而增加閱讀量。 參考其他人的註解標準  **33 Personal Character **\n性格影響結果\n34 Themes in Software Craftsmanship\n以人為本\n35 Where to Find More Information\n 其他書、期刊、參考書目  筆記 900多頁這樣大略翻了一下，說的東西還真的是很多。軟體工程真的是教你如何寫程式走向架構軟體、 建造一個新的東西的學問。細讀可能還要很多時間，有空再來慢慢讀。\n參考連結  SteveMcConnell作者網站 【Code Complete 2nd Edition：軟體開發實務指南】怎麼讀這本 1.7 kg 重的經典磚塊書 "
 },
 {
 	"uri": "/tags/programming/",
@@ -65,20 +100,6 @@
 {
 	"uri": "/tags/pdf/",
 	"title": "pdf",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/tags/python/",
-	"title": "python",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/categories/technology/",
-	"title": "technology",
 	"tags": [],
 	"description": "",
 	"content": ""

@@ -6,10 +6,37 @@
     <description>Recent content in Tags on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 May 2019 19:35:09 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 May 2019 20:23:00 +0800</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>python</title>
+      <link>/tags/python/</link>
+      <pubDate>Sun, 19 May 2019 20:23:00 +0800</pubDate>
+      
+      <guid>/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scraping</title>
+      <link>/tags/scraping/</link>
+      <pubDate>Sun, 19 May 2019 20:23:00 +0800</pubDate>
+      
+      <guid>/tags/scraping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spider</title>
+      <link>/tags/spider/</link>
+      <pubDate>Sun, 19 May 2019 20:23:00 +0800</pubDate>
+      
+      <guid>/tags/spider/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>programming</title>
@@ -35,15 +62,6 @@
       <pubDate>Wed, 08 May 2019 00:01:48 +0800</pubDate>
       
       <guid>/tags/pdf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>/tags/python/</link>
-      <pubDate>Wed, 08 May 2019 00:01:48 +0800</pubDate>
-      
-      <guid>/tags/python/</guid>
       <description></description>
     </item>
     
