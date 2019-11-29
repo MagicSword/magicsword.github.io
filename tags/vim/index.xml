@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vim on After-Dark</title>
@@ -6,10 +6,19 @@
     <description>Recent content in vim on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Jun 2018 21:07:12 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 May 2019 16:44:11 +0800</lastBuildDate>
     
 	<atom:link href="/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reading Vim Text Objects the Definitive Guide</title>
+      <link>/post/reading-vim-text-objects-the-definitive-guide/</link>
+      <pubDate>Mon, 20 May 2019 16:44:11 +0800</pubDate>
+      
+      <guid>/post/reading-vim-text-objects-the-definitive-guide/</guid>
+      <description>&lt;p&gt;Vim Text Object，vim 裡的文字物件，操作方式。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Vim Plugins Markdown</title>

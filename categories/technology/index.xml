@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>technology on After-Dark</title>
@@ -6,10 +6,19 @@
     <description>Recent content in technology on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 May 2019 20:23:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 May 2019 16:44:11 +0800</lastBuildDate>
     
 	<atom:link href="/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reading Vim Text Objects the Definitive Guide</title>
+      <link>/post/reading-vim-text-objects-the-definitive-guide/</link>
+      <pubDate>Mon, 20 May 2019 16:44:11 +0800</pubDate>
+      
+      <guid>/post/reading-vim-text-objects-the-definitive-guide/</guid>
+      <description>&lt;p&gt;Vim Text Object，vim 裡的文字物件，操作方式。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Reading Python Scraping Analysis Book</title>
@@ -58,15 +67,6 @@
       <description>&lt;p&gt;使用 &lt;a href=&#34;&amp;quot;https://support.google.com/docs/answer/3093342&amp;quot;&#34; title=&#34;匯入多種結構化資料類型的資料，包括 XML、HTML、CSV、TSV 和 RSS 以及 ATOM XML 資訊提供。&#34;&gt;IMPORTXML&lt;/a&gt; 讀 HTML 的資料進 Google 試算表。&lt;/p&gt;
 
 &lt;p&gt;以下節錄 Google 試算表使用說明，或許改天再加一些使用記錄。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>HomePage</title>
-      <link>/</link>
-      <pubDate>Fri, 01 Jun 2018 16:12:30 +0800</pubDate>
-      
-      <guid>/</guid>
-      <description>this page for placeholder.</description>
     </item>
     
     <item>

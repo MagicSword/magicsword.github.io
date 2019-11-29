@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blog on After-Dark</title>
@@ -6,19 +6,10 @@
     <description>Recent content in blog on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jun 2018 16:12:30 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 Jun 2018 14:53:57 +0800</lastBuildDate>
     
 	<atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>HomePage</title>
-      <link>/</link>
-      <pubDate>Fri, 01 Jun 2018 16:12:30 +0800</pubDate>
-      
-      <guid>/</guid>
-      <description>this page for placeholder.</description>
-    </item>
     
     <item>
       <title>Hugo Blog New Theme Docdock</title>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>reading on After-Dark</title>
@@ -6,10 +6,84 @@
     <description>Recent content in reading on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 May 2019 19:35:09 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 Nov 2019 21:05:53 +0800</lastBuildDate>
     
 	<atom:link href="/tags/reading/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reading 20191129 Record</title>
+      <link>/post/reading-20191129-record/</link>
+      <pubDate>Fri, 29 Nov 2019 21:05:53 +0800</pubDate>
+      
+      <guid>/post/reading-20191129-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading 20191123 Record</title>
+      <link>/post/reading-20191123-record/</link>
+      <pubDate>Sat, 23 Nov 2019 18:37:42 +0800</pubDate>
+      
+      <guid>/post/reading-20191123-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading 20191121 Record</title>
+      <link>/post/reading-20191121-record/</link>
+      <pubDate>Fri, 22 Nov 2019 01:09:51 +0800</pubDate>
+      
+      <guid>/post/reading-20191121-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading 20191115 Record</title>
+      <link>/post/reading-20191115-record/</link>
+      <pubDate>Fri, 15 Nov 2019 20:41:39 +0800</pubDate>
+      
+      <guid>/post/reading-20191115-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading 201911008 Record</title>
+      <link>/post/reading-20191108-record/</link>
+      <pubDate>Fri, 08 Nov 2019 20:04:20 +0800</pubDate>
+      
+      <guid>/post/reading-20191108-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading 20191030 Record</title>
+      <link>/post/reading-20191030-record/</link>
+      <pubDate>Thu, 31 Oct 2019 07:55:42 +0800</pubDate>
+      
+      <guid>/post/reading-20191030-record/</guid>
+      <description>&lt;p&gt;借還書：2019-10-30 to 2019-11-30&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading Vim Text Objects the Definitive Guide</title>
+      <link>/post/reading-vim-text-objects-the-definitive-guide/</link>
+      <pubDate>Mon, 20 May 2019 16:44:11 +0800</pubDate>
+      
+      <guid>/post/reading-vim-text-objects-the-definitive-guide/</guid>
+      <description>&lt;p&gt;Vim Text Object，vim 裡的文字物件，操作方式。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading Python Scraping Analysis Book</title>
+      <link>/post/reading-py-scraping-analysis-book/</link>
+      <pubDate>Sun, 19 May 2019 20:23:00 +0800</pubDate>
+      
+      <guid>/post/reading-py-scraping-analysis-book/</guid>
+      <description>&lt;p&gt;Python：網路爬蟲與資料分析入門實戰 簡單筆記&lt;/p&gt;
+
+&lt;p&gt;python, beautifulsoup, api, scrapy,&amp;hellip;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Reading Code Complete 2nd</title>

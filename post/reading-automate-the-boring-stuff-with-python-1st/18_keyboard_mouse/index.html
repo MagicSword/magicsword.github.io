@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-20T02:37:01 CST">
+<meta name="revised" content="2019-11-29T21:29:53 CST">
 <title>Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠] :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -73,6 +73,55 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/reading-20191129-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191129-record/">
+            <i class='fa fa-file'></i> Reading 20191129 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191123-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191123-record/">
+            <i class='fa fa-file'></i> Reading 20191123 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191121-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191121-record/">
+            <i class='fa fa-file'></i> Reading 20191121 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191115-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191115-record/">
+            <i class='fa fa-file'></i> Reading 20191115 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191108-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191108-record/">
+            <i class='fa fa-file'></i> Reading 201911008 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191030-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191030-record/">
+            <i class='fa fa-file'></i> Reading 20191030 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-vim-text-objects-the-definitive-guide/" class="dd-item">
+        <div>
+          <a href="/post/reading-vim-text-objects-the-definitive-guide/">
+            <i class='fa fa-file'></i> Reading Vim Text Objects the Definitive Guide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/reading-py-scraping-analysis-book/" class="dd-item">
         <div>
           <a href="/post/reading-py-scraping-analysis-book/">
@@ -632,23 +681,24 @@
 <p><strong>Click</strong></p>
 
 <ul>
-<li>Click : mosueDown, mouseUp</li>
-</ul>
+<li><p>Click : mosueDown, mouseUp</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pyautogui<span style="color:#f92672">.</span>click(xpos,ypos,button<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;left&#39;</span>) <span style="color:#75715e"># right,middle,left</span>
 pyautogui<span style="color:#f92672">.</span>click(xpos,ypos)
 pyautogui<span style="color:#f92672">.</span>mouseUp()
 pyautogui<span style="color:#f92672">.</span>mouseDown()
 pyautogui<span style="color:#f92672">.</span>doubleClick()
 pyautogui<span style="color:#f92672">.</span>rightClick()
-pyautogui<span style="color:#f92672">.</span>middleClick()</code></pre></div>
+pyautogui<span style="color:#f92672">.</span>middleClick()</code></pre></div></li>
+</ul>
+
 <p><strong>Drag  and Drop</strong></p>
 
 <ul>
 <li>Drag : mouseDown()(一般是左鍵) -&gt; 移動游標</li>
 <li>Drop : (在 Drag狀態下)移動游標  -&gt; mouseUp()</li>
 <li>pyautogui.dragTo(xpos,ypos) : 絕對座標</li>
-<li>pyautogui.dragRel(xpos,ypos): 相對座標</li>
-</ul>
+
+<li><p>pyautogui.dragRel(xpos,ypos): 相對座標</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># spiralDraw.py</span>
 <span style="color:#f92672">import</span> pyautogui<span style="color:#f92672">,</span> time
 time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</span>)   <span style="color:#75715e"># 給緩衝時間</span>
@@ -656,18 +706,19 @@ pyautogui<span style="color:#f92672">.</span>click() <span style="color:#75715e"
 distance <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>
 
 <span style="color:#66d9ef">while</span> distance <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
-    pyautogui<span style="color:#f92672">.</span>dragRel(distance, <span style="color:#ae81ff">0</span>, duration <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>) <span style="color:#75715e"># move right</span>
-    distance <span style="color:#f92672">=</span> distance <span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>
-    pyautogui<span style="color:#f92672">.</span>dragRel(<span style="color:#ae81ff">0</span>,distance, duration <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>) <span style="color:#75715e"># move down</span>
-    pyautogui<span style="color:#f92672">.</span>dragRel(<span style="color:#f92672">-</span>distance,<span style="color:#ae81ff">0</span>, duration <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>) <span style="color:#75715e"># move left</span>
-    distance <span style="color:#f92672">=</span> distance <span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>
-    pyautogui<span style="color:#f92672">.</span>dragRel(<span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span>distance, duration <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>) <span style="color:#75715e"># move up</span></code></pre></div>
+pyautogui<span style="color:#f92672">.</span>dragRel(distance, <span style="color:#ae81ff">0</span>, duration <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>) <span style="color:#75715e"># move right</span>
+distance <span style="color:#f92672">=</span> distance <span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>
+pyautogui<span style="color:#f92672">.</span>dragRel(<span style="color:#ae81ff">0</span>,distance, duration <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>) <span style="color:#75715e"># move down</span>
+pyautogui<span style="color:#f92672">.</span>dragRel(<span style="color:#f92672">-</span>distance,<span style="color:#ae81ff">0</span>, duration <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>) <span style="color:#75715e"># move left</span>
+distance <span style="color:#f92672">=</span> distance <span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>
+pyautogui<span style="color:#f92672">.</span>dragRel(<span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span>distance, duration <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>) <span style="color:#75715e"># move up</span></code></pre></div></li>
+</ul>
+
 <h2 id="滑鼠游標的捲動">滑鼠游標的捲動</h2>
 
 <dl>
 <dt><code>pyautogui.scroll(xdistance)</code>:</dt>
-<dd>傳入整數引數，向上(正數)、或向下(負數)捲動，這個單位在不同作業系統可能會不同，可能要先試看看。</dd>
-</dl>
+<dd><p>傳入整數引數，向上(正數)、或向下(負數)捲動，這個單位在不同作業系統可能會不同，可能要先試看看。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> pyautogui<span style="color:#f92672">.</span>scroll(<span style="color:#ae81ff">10</span>)   <span style="color:#75715e"># scroll up 10 &#34;clicks&#34;</span>
 <span style="color:#f92672">&gt;&gt;&gt;</span> pyautogui<span style="color:#f92672">.</span>scroll(<span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>)  <span style="color:#75715e"># scroll down 10 &#34;clicks&#34;</span>
 <span style="color:#f92672">&gt;&gt;&gt;</span> pyautogui<span style="color:#f92672">.</span>scroll(<span style="color:#ae81ff">10</span>, x<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>, y<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>)  <span style="color:#75715e"># 游標先移到 x, y 後，再移動 10 &#34;步&#34;</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># pyperclip.py</span>
@@ -675,14 +726,16 @@ distance <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</s
 numbers <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
 
 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">200</span>):
-    numbers <span style="color:#f92672">=</span> numbers <span style="color:#f92672">+</span> str(i) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>
+numbers <span style="color:#f92672">=</span> numbers <span style="color:#f92672">+</span> str(i) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>
     
 pyperclip<span style="color:#f92672">.</span>copy(numbers)
 
 <span style="color:#75715e"># 開個 notepad ，把東西貼上去</span>
 
 <span style="color:#f92672">import</span> time<span style="color:#f92672">,</span> pyautogui
-time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</span>); pyautogui<span style="color:#f92672">.</span>scroll(<span style="color:#ae81ff">100</span>)</code></pre></div>
+time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</span>); pyautogui<span style="color:#f92672">.</span>scroll(<span style="color:#ae81ff">100</span>)</code></pre></div></dd>
+</dl>
+
 <h1 id="螢幕操作的函式">螢幕操作的函式</h1>
 
 <ul>

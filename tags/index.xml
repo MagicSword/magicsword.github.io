@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on After-Dark</title>
@@ -6,10 +6,46 @@
     <description>Recent content in Tags on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 May 2019 20:23:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 Nov 2019 21:05:53 +0800</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>library</title>
+      <link>/tags/library/</link>
+      <pubDate>Fri, 29 Nov 2019 21:05:53 +0800</pubDate>
+      
+      <guid>/tags/library/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reading</title>
+      <link>/tags/reading/</link>
+      <pubDate>Fri, 29 Nov 2019 21:05:53 +0800</pubDate>
+      
+      <guid>/tags/reading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>editor</title>
+      <link>/tags/editor/</link>
+      <pubDate>Mon, 20 May 2019 16:44:11 +0800</pubDate>
+      
+      <guid>/tags/editor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>/tags/vim/</link>
+      <pubDate>Mon, 20 May 2019 16:44:11 +0800</pubDate>
+      
+      <guid>/tags/vim/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>python</title>
@@ -44,15 +80,6 @@
       <pubDate>Sat, 18 May 2019 19:35:09 +0800</pubDate>
       
       <guid>/tags/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reading</title>
-      <link>/tags/reading/</link>
-      <pubDate>Sat, 18 May 2019 19:35:09 +0800</pubDate>
-      
-      <guid>/tags/reading/</guid>
       <description></description>
     </item>
     
@@ -120,15 +147,6 @@
     </item>
     
     <item>
-      <title>vim</title>
-      <link>/tags/vim/</link>
-      <pubDate>Tue, 05 Jun 2018 21:07:12 +0800</pubDate>
-      
-      <guid>/tags/vim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>google</title>
       <link>/tags/google/</link>
       <pubDate>Sun, 03 Jun 2018 23:30:28 +0800</pubDate>
@@ -156,15 +174,6 @@
     </item>
     
     <item>
-      <title>GTD</title>
-      <link>/tags/gtd/</link>
-      <pubDate>Sun, 03 Jun 2018 17:51:53 +0800</pubDate>
-      
-      <guid>/tags/gtd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>book</title>
       <link>/tags/book/</link>
       <pubDate>Sun, 03 Jun 2018 17:51:53 +0800</pubDate>
@@ -179,6 +188,15 @@
       <pubDate>Sun, 03 Jun 2018 17:51:53 +0800</pubDate>
       
       <guid>/tags/collection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GTD</title>
+      <link>/tags/gtd/</link>
+      <pubDate>Sun, 03 Jun 2018 17:51:53 +0800</pubDate>
+      
+      <guid>/tags/gtd/</guid>
       <description></description>
     </item>
     
@@ -203,7 +221,7 @@
     <item>
       <title>blog</title>
       <link>/tags/blog/</link>
-      <pubDate>Fri, 01 Jun 2018 16:12:30 +0800</pubDate>
+      <pubDate>Fri, 01 Jun 2018 14:53:57 +0800</pubDate>
       
       <guid>/tags/blog/</guid>
       <description></description>
@@ -212,7 +230,7 @@
     <item>
       <title>hugo</title>
       <link>/tags/hugo/</link>
-      <pubDate>Fri, 01 Jun 2018 16:12:30 +0800</pubDate>
+      <pubDate>Fri, 01 Jun 2018 14:53:57 +0800</pubDate>
       
       <guid>/tags/hugo/</guid>
       <description></description>
@@ -269,15 +287,6 @@
       <pubDate>Thu, 17 May 2018 14:05:07 +0800</pubDate>
       
       <guid>/tags/software/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>editor</title>
-      <link>/tags/editor/</link>
-      <pubDate>Thu, 10 May 2018 22:46:18 +0800</pubDate>
-      
-      <guid>/tags/editor/</guid>
       <description></description>
     </item>
     
@@ -453,20 +462,20 @@
     </item>
     
     <item>
-      <title>TED</title>
-      <link>/tags/ted/</link>
-      <pubDate>Fri, 30 Mar 2018 18:22:45 +0800</pubDate>
-      
-      <guid>/tags/ted/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>learning</title>
       <link>/tags/learning/</link>
       <pubDate>Fri, 30 Mar 2018 18:22:45 +0800</pubDate>
       
       <guid>/tags/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TED</title>
+      <link>/tags/ted/</link>
+      <pubDate>Fri, 30 Mar 2018 18:22:45 +0800</pubDate>
+      
+      <guid>/tags/ted/</guid>
       <description></description>
     </item>
     

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-20T02:37:01 CST">
+<meta name="revised" content="2019-11-29T21:29:54 CST">
 <title>Creating a New Theme :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -73,6 +73,55 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/reading-20191129-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191129-record/">
+            <i class='fa fa-file'></i> Reading 20191129 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191123-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191123-record/">
+            <i class='fa fa-file'></i> Reading 20191123 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191121-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191121-record/">
+            <i class='fa fa-file'></i> Reading 20191121 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191115-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191115-record/">
+            <i class='fa fa-file'></i> Reading 20191115 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191108-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191108-record/">
+            <i class='fa fa-file'></i> Reading 201911008 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191030-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191030-record/">
+            <i class='fa fa-file'></i> Reading 20191030 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-vim-text-objects-the-definitive-guide/" class="dd-item">
+        <div>
+          <a href="/post/reading-vim-text-objects-the-definitive-guide/">
+            <i class='fa fa-file'></i> Reading Vim Text Objects the Definitive Guide
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/reading-py-scraping-analysis-book/" class="dd-item">
         <div>
           <a href="/post/reading-py-scraping-analysis-book/">
@@ -1433,7 +1482,7 @@ i'm speechless
     &lt;h1&gt;&lt;a href=&quot;http://localhost:1313/post/first-post/&quot;&gt;first&lt;/a&gt;&lt;/h1&gt;
 &lt;script&gt;document.write('&lt;script src=&quot;http://'
         + (location.host || 'localhost').split(':')[0]
-        + ':1313/livereload.js?mindelay=10&quot;&gt;&lt;/'
+		+ ':1313/livereload.js?mindelay=10&quot;&gt;&lt;/'
         + 'script&gt;')&lt;/script&gt;&lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -1478,8 +1527,8 @@ i'm speechless
 
 <pre><code>$ vi config.toml
 [permalinks]
-    page = &quot;/:title/&quot;
-    about = &quot;/:filename/&quot;
+	page = &quot;/:title/&quot;
+	about = &quot;/:filename/&quot;
 </code></pre>
 
 <p>Generate the web site and verify that this didn&rsquo;t work. Hugo lets &ldquo;slug&rdquo; or &ldquo;URL&rdquo; override the permalinks setting in the configuration file. Go ahead and comment out the slug in content/about.md, then generate the web site to get it to be created in the right place.</p>
@@ -1498,7 +1547,7 @@ i'm speechless
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;title&gt;{{ .Title }}&lt;/title&gt;
+	&lt;title&gt;{{ .Title }}&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
 :wq
