@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-11-29T21:29:53 CST">
+<meta name="revised" content="2019-12-06T23:21:24 CST">
 <title>Vim Plugins Markdown :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -488,14 +488,9 @@
     <div class="progress">
         <div class="wrapper">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#概述">概述</a></li>
-<li><a href="#plugins">Plugins</a>
-<ul>
-<li><a href="#vim-markdown">vim-markdown</a></li>
-</ul></li>
-<li><a href="#參考連結">參考連結</a></li>
-</ul>
+  <ul>
+    <li><a href="#vimmarkdown">vim-markdown</a></li>
+  </ul>
 </nav>
         </div>
     </div>
@@ -525,61 +520,56 @@
     
     
     <p>加一些幫助 Markdown 編輯的 plugins.</p>
-
 <p>Task list: 😄</p>
-
-<ul class="task-list">
-<li><label><input type="checkbox" checked disabled class="task-list-item"> 初稿</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 再讀</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 筆記</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 完成</label></li>
-</ul>
-
-<h1 id="概述">概述</h1>
-
-<h1 id="plugins">Plugins</h1>
-
-<p>用 VimPlug ，有 lazyLoad ，裝多一些 plugin ，應該比較不會 lag</p>
-
-<h2 id="vim-markdown">vim-markdown</h2>
-
-<p><a href="https://github.com/plasticboy/vim-markdown">vim-markdown</a></p>
-
-<p>Syntax highlighting, matching rules and mappings for the original Markdown and extensions.</p>
-
-<p>主要功能是 語法高亮，標題間快快速移動功能鍵，Toc，打開檔頭 toml 的語法標示</p>
-
-<p>其他功能看原始文件的 github.</p>
-
-<p>文件預覽的話，可能就直接用 <code>Hugo server -D</code></p>
-
-<p><strong>快速鍵</strong></p>
-
 <ul>
-<li><p><code>gx</code>: open in browser</p></li>
-
-<li><p><code>ge</code>: open in editor</p></li>
-
-<li><p><code>]]</code>: go to next header. <code>&lt;Plug&gt;Markdown_MoveToNextHeader</code></p></li>
-
-<li><p><code>[[</code>: go to previous header. Contrast with <code>]c</code>. <code>&lt;Plug&gt;Markdown_MoveToPreviousHeader</code></p></li>
-
-<li><p><code>][</code>: go to next sibling header if any. <code>&lt;Plug&gt;Markdown_MoveToNextSiblingHeader</code></p></li>
-
-<li><p><code>[]</code>: go to previous sibling header if any. <code>&lt;Plug&gt;Markdown_MoveToPreviousSiblingHeader</code></p></li>
-
-<li><p><code>]c</code>: go to Current header. <code>&lt;Plug&gt;Markdown_MoveToCurHeader</code></p></li>
-
-<li><p><code>]u</code>: go to parent header (Up). <code>&lt;Plug&gt;Markdown_MoveToParentHeader</code></p></li>
-
-<li><p><code>Toc</code>, <code>Toch</code>,<code>Tocv</code>, <code>Toct</code>   TableofContent</p></li>
+<li><input checked="" disabled="" type="checkbox">初稿</li>
+<li><input disabled="" type="checkbox">再讀</li>
+<li><input disabled="" type="checkbox">筆記</li>
+<li><input disabled="" type="checkbox">完成</li>
 </ul>
-
-<h1 id="參考連結">參考連結</h1>
-
+<h1 id="heading">概述</h1>
+<h1 id="plugins">Plugins</h1>
+<p>用 VimPlug ，有 lazyLoad ，裝多一些 plugin ，應該比較不會 lag</p>
+<h2 id="vimmarkdown">vim-markdown</h2>
+<p><a href="https://github.com/plasticboy/vim-markdown">vim-markdown</a></p>
+<p>Syntax highlighting, matching rules and mappings for the original Markdown and extensions.</p>
+<p>主要功能是 語法高亮，標題間快快速移動功能鍵，Toc，打開檔頭 toml 的語法標示</p>
+<p>其他功能看原始文件的 github.</p>
+<p>文件預覽的話，可能就直接用 <code>Hugo server -D</code></p>
+<p><strong>快速鍵</strong></p>
+<ul>
+<li>
+<p><code>gx</code>: open in browser</p>
+</li>
+<li>
+<p><code>ge</code>: open in editor</p>
+</li>
+<li>
+<p><code>]]</code>: go to next header. <code>&lt;Plug&gt;Markdown_MoveToNextHeader</code></p>
+</li>
+<li>
+<p><code>[[</code>: go to previous header. Contrast with <code>]c</code>. <code>&lt;Plug&gt;Markdown_MoveToPreviousHeader</code></p>
+</li>
+<li>
+<p><code>][</code>: go to next sibling header if any. <code>&lt;Plug&gt;Markdown_MoveToNextSiblingHeader</code></p>
+</li>
+<li>
+<p><code>[]</code>: go to previous sibling header if any. <code>&lt;Plug&gt;Markdown_MoveToPreviousSiblingHeader</code></p>
+</li>
+<li>
+<p><code>]c</code>: go to Current header. <code>&lt;Plug&gt;Markdown_MoveToCurHeader</code></p>
+</li>
+<li>
+<p><code>]u</code>: go to parent header (Up). <code>&lt;Plug&gt;Markdown_MoveToParentHeader</code></p>
+</li>
+<li>
+<p><code>Toc</code>, <code>Toch`,</code>Tocv<code>, </code>Toct`   TableofContent</p>
+</li>
+</ul>
+<h1 id="heading1">參考連結</h1>
 <ol>
 <li><a href="https://5xruby.tw/ja/posts/markdown-extension-on-vim">絕世好 Vim：舒爽地編輯 Markdown 文件</a></li>
-<li><a href="https://github.com/kaochenlong/eddie-vim2">Yet another vimrc http://kaochenlong.com</a></li>
+<li><a href="https://github.com/kaochenlong/eddie-vim2">Yet another vimrc <a href="http://kaochenlong.com">http://kaochenlong.com</a></a></li>
 <li><a href="https://github.com/pi314/ime.vim">A Vim input method engine</a></li>
 </ol>
 

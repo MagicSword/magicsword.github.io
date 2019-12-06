@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-11-29T21:29:53 CST">
+<meta name="revised" content="2019-12-06T23:21:24 CST">
 <title>Reading 7 Habits for Effective Text Editing 2.0 :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -488,29 +488,22 @@
     <div class="progress">
         <div class="wrapper">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#概述">概述</a></li>
-<li><a href="#slides">Slides</a>
-<ul>
-<li>
-<ul>
-<li><a href="#the-problem">The problem</a></li>
-<li><a href="#the-tool">The Tool</a></li>
-<li><a href="#三個基本步驟">三個基本步驟</a></li>
-<li><a href="#habit-1-moving-around-quickly">Habit 1: Moving around quickly</a></li>
-<li><a href="#habit-2-don-t-type-it-twice">Habit 2: Don&rsquo;t type it twice</a></li>
-<li><a href="#habit-3-fix-it-when-it-s-wrong">Habit 3: Fix it when it&rsquo;s wrong</a></li>
-<li><a href="#habit-4-a-file-seldom-comes-alone">Habit 4: A file seldom comes alone</a></li>
-<li><a href="#habit-5-let-s-work-together">Habit 5: Let&rsquo;s work together</a></li>
-<li><a href="#habit-6-text-is-structured">Habit 6: Text is structured</a></li>
-<li><a href="#habit-7-sharpen-the-saw">Habit 7: Sharpen the saw</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#and">And</a></li>
-<li><a href="#q-and-a">Q and A</a></li>
-<li><a href="#參考連結">參考連結</a></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#the-problem">The problem</a></li>
+        <li><a href="#the-tool">The Tool</a></li>
+        <li><a href="#heading1">三個基本步驟</a></li>
+        <li><a href="#habit-1-moving-around-quickly">Habit 1: Moving around quickly</a></li>
+        <li><a href="#habit-2-dont-type-it-twice">Habit 2: Don't type it twice</a></li>
+        <li><a href="#habit-3-fix-it-when-its-wrong">Habit 3: Fix it when it's wrong</a></li>
+        <li><a href="#habit-4-a-file-seldom-comes-alone">Habit 4: A file seldom comes alone</a></li>
+        <li><a href="#habit-5-lets-work-together">Habit 5: Let's work together</a></li>
+        <li><a href="#habit-6-text-is-structured">Habit 6: Text is structured</a></li>
+        <li><a href="#habit-7-sharpen-the-saw">Habit 7: Sharpen the saw</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
         </div>
     </div>
@@ -540,145 +533,104 @@
     
     
     <p><a href="https://www.youtube.com/watch?v=p6K4iIMlouI">7 Habits For Effective Text Editing 2.0 - YouTube</a></p>
-
 <p>by <a href="http://www.moolenaar.net/">Bram Moolenaar</a> , Vim的作者談有效率的編輯 , <a href="http://www.moolenaar.net/habits_2007.pdf">Slide Here</a></p>
-
 <p>Task list: 😄</p>
-
-<ul class="task-list">
-<li><label><input type="checkbox" checked disabled class="task-list-item"> 初稿</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 再讀</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 筆記</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 完成</label></li>
+<ul>
+<li><input checked="" disabled="" type="checkbox">初稿</li>
+<li><input disabled="" type="checkbox">再讀</li>
+<li><input disabled="" type="checkbox">筆記</li>
+<li><input disabled="" type="checkbox">完成</li>
 </ul>
-
-<h1 id="概述">概述</h1>
-
+<h1 id="heading">概述</h1>
 <p>7 個增進文字處理效率的好習慣</p>
-
 <h1 id="slides">Slides</h1>
-
 <h3 id="the-problem">The problem</h3>
-
 <ul>
 <li>好的文字編輯器，可以幫助你有效率的處理日常事務。</li>
 </ul>
-
 <h3 id="the-tool">The Tool</h3>
-
 <ul>
 <li>好的工具是你能熟練使用的程式，能發揮它 100% 的功用比什麼都重要。</li>
-<li>Don&rsquo;t try to learn everything , just learn what you need.</li>
+<li>Don't try to learn everything , just learn what you need.</li>
 </ul>
-
-<h3 id="三個基本步驟">三個基本步驟</h3>
-
+<h3 id="heading1">三個基本步驟</h3>
 <p>發現問題之後，精進的頻驟可以是：</p>
-
 <ol>
 <li>Find inefficiency 找到沒效率的地方</li>
 <li>Find a quicker way 研究快捷的方法</li>
 <li>Make it a habbit 養成習慣</li>
 </ol>
-
 <p><strong>See Also</strong></p>
-
 <ol>
 <li>“The 7 habits of highly effective people” - Stephen R. Covey</li>
 </ol>
-
 <h3 id="habit-1-moving-around-quickly">Habit 1: Moving around quickly</h3>
-
 <p>search</p>
-
 <ul>
 <li>設定 <code>set hlsearch</code> : 找到的關鍵字高亮度</li>
 <li><code>*</code> : 直接找遊標上的字</li>
 <li>設定 Folding 可以把用不到的資訊先隱藏起來</li>
 </ul>
-
-<h3 id="habit-2-don-t-type-it-twice">Habit 2: Don&rsquo;t type it twice</h3>
-
+<h3 id="habit-2-dont-type-it-twice">Habit 2: Don't type it twice</h3>
 <p>auto complete:</p>
-
 <ul>
 <li><code>Ctrl-N,Ctrl-P</code> : 可以快速完成有輸入過的字</li>
 <li><code>omni-colpletion</code> : complete from language references</li>
 </ul>
-
-<h3 id="habit-3-fix-it-when-it-s-wrong">Habit 3: Fix it when it&rsquo;s wrong</h3>
-
+<h3 id="habit-3-fix-it-when-its-wrong">Habit 3: Fix it when it's wrong</h3>
 <p>自動修正，spell correction:</p>
-
 <ul>
 <li>打開拼字檢查</li>
 <li><code>iabbrev teh the</code>: 可以把容易打錯的，設為自動修正</li>
 </ul>
-
 <h3 id="habit-4-a-file-seldom-comes-alone">Habit 4: A file seldom comes alone</h3>
-
 <p>使用 ctags 之類的軟體，查語言的manual</p>
-
 <ul>
 <li><code>quickfix</code> window</li>
 <li><code>gf</code> Goto file</li>
 <li><code>[I</code> to search keyword in include files</li>
 </ul>
-
-<h3 id="habit-5-let-s-work-together">Habit 5: Let&rsquo;s work together</h3>
-
+<h3 id="habit-5-lets-work-together">Habit 5: Let's work together</h3>
 <p>整合功能程式?  email, office , pdf  document</p>
-
 <h3 id="habit-6-text-is-structured">Habit 6: Text is structured</h3>
-
 <p>寫簡單的程式，整理有規則的文件，如： log</p>
-
 <h3 id="habit-7-sharpen-the-saw">Habit 7: Sharpen the saw</h3>
-
 <ul>
 <li>時常整理你常用到的指令</li>
 <li>Learn from what you did 從作中學</li>
 <li>其他內容：
-
 <ul>
 <li>folding</li>
 <li>automatic indenting</li>
 <li>Plugins (generic and filetype specific)</li>
 <li>edit files over a network</li>
-<li>advanced scripting
-
-<br /></li>
-</ul></li>
+<li>advanced scripting</li>
 </ul>
-
+</li>
+</ul>
 <h1 id="summary">Summary</h1>
-
-<p>Step 1: Detect inefficiency
-- Find out what you waste time on
-Step 2: Find a quicker way
-- read the on-line help
-- read the quick reference, books, etc.
-- ask friends and colleagues
-- search the internet
-- do it yourself
-Step 3: Make it a habit
-- do it
-- keep on improving</p>
-
+<p>Step 1: Detect inefficiency</p>
+<ul>
+<li>Find out what you waste time on
+Step 2: Find a quicker way</li>
+<li>read the on-line help</li>
+<li>read the quick reference, books, etc.</li>
+<li>ask friends and colleagues</li>
+<li>search the internet</li>
+<li>do it yourself
+Step 3: Make it a habit</li>
+<li>do it</li>
+<li>keep on improving</li>
+</ul>
 <h1 id="and">And</h1>
-
 <ul>
 <li>不要只用最基本的功能，也不需要細讀使用手冊，</li>
 <li>能在日常的使用中，熟悉編輯器的功能最好。</li>
-<li>Don&rsquo;t try to learn everything , just learn what you need.</li>
+<li>Don't try to learn everything , just learn what you need.</li>
 </ul>
-
 <h1 id="q-and-a">Q and A</h1>
-
 <p>pass</p>
-
-<h1 id="參考連結">參考連結</h1>
-
+<h1 id="heading2">參考連結</h1>
 <ol>
 <li><a href="https://www.youtube.com/watch?v=p6K4iIMlouI">7 Habits For Effective Text Editing 2.0 - YouTube</a></li>
 </ol>

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-11-29T21:29:53 CST">
+<meta name="revised" content="2019-12-06T23:21:24 CST">
 <title>Tool Commandline Autojump :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -488,15 +488,9 @@
     <div class="progress">
         <div class="wrapper">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#簡述">簡述</a></li>
-<li><a href="#安裝設定">安裝設定</a></li>
-<li><a href="#使用">使用</a></li>
-<li><a href="#其他">其他</a>
-<ul>
-<li><a href="#參考連結">參考連結</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#heading4">參考連結</a></li>
+  </ul>
 </nav>
         </div>
     </div>
@@ -524,58 +518,44 @@
     
     
     <p><a href="https://github.com/wting/autojump" title="easily navigate directories from the command line">autojump</a> 能快速的切換資料夾。</p>
-
-<h1 id="簡述">簡述</h1>
-
+<h1 id="heading">簡述</h1>
 <pre><code># 一個很長的目錄
 cd \a\b\c\d\e\f\g\h\i\j\k
 # 之後要再去同一個目錄
 j k
-</code></pre>
-
-<h1 id="安裝設定">安裝設定</h1>
-
+</code></pre><h1 id="heading1">安裝設定</h1>
 <p><strong>REQUIREMENTS</strong></p>
-
 <ul>
 <li>Python v2.6+ except v3.2</li>
 <li>Supported shells:
-
 <ul>
 <li>bash v4.0+</li>
 <li>zsh</li>
 <li>fish</li>
 <li>tcsh (experimental)</li>
 <li>clink (Windows, experimental)</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p><strong>Debian下</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$sudo apt install autojump</code></pre></div>
-<p>在 <code>.bashrc</code> 中加入</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">source /usr/share/autojump/autojump.bash</code></pre></div>
-<p>或是參考 <code>/usr/share/doc/autojump/README.Debian</code></p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$sudo apt install autojump
+</code></pre></div><p>在 <code>.bashrc</code> 中加入</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">source /usr/share/autojump/autojump.bash
+</code></pre></div><p>或是參考 <code>/usr/share/doc/autojump/README.Debian</code></p>
 <p><strong>Windows下</strong></p>
-
 <p><a href="https://github.com/wting/autojump" title="easily navigate directories from the command line">autojump</a> 在 windows 下要配合 <a href="https://mridgers.github.io/clink/" title="在Windows下提到自動完成,Ctrl-V貼上…功能">clink</a> 使用。</p>
-
 <p>下載原始碼</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$git clone git://github.com/joelthelion/autojump.git</code></pre></div>
-<p>照指示安裝</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$git clone git://github.com/joelthelion/autojump.git
+</code></pre></div><p>照指示安裝</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$cd autojump
-$./install.py or ./uninstall.py</code></pre></div>
-<h1 id="使用">使用</h1>
-
+$./install.py or ./uninstall.py
+</code></pre></div><h1 id="heading2">使用</h1>
 <p><code>autojump</code> 或是更簡化的指令 <code>j</code></p>
-
 <p>說明</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$autojump --help</code></pre></div>
-<p>autojump 會記得你去過的目錄，之後要再切換到之前去過的目錄，
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$autojump --help
+</code></pre></div><p>autojump 會記得你去過的目錄，之後要再切換到之前去過的目錄，
 只要直接打目錄名稱就可以，若有同名的目錄，多換幾次 tab</p>
-
 <p>指令說明</p>
-
 <pre><code>usage: autojump [-h] [-a DIRECTORY] [-i [WEIGHT]] [-d [WEIGHT]] [--complete]
                 [--purge] [-s] [-v]
                 [DIRECTORY [DIRECTORY ...]]
@@ -597,23 +577,16 @@ optional arguments:
   --purge               remove non-existent paths from database
   -s, --stat            show database entries and their key weights
   -v, --version         show version information
-</code></pre>
-
-<p>autojump 會有個文件記錄每個目錄的權重。</p>
+</code></pre><p>autojump 會有個文件記錄每個目錄的權重。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$autojump -s  <span style="color:#75715e">#看目前的目錄資料</span>
 
 /home/xxx/.local/share/autojump/autojump.txt
-C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\X</span>XX<span style="color:#ae81ff">\A</span>ppData<span style="color:#ae81ff">\R</span>oaming<span style="color:#ae81ff">\a</span>utojump<span style="color:#ae81ff">\a</span>utojump.txt</code></pre></div>
-<h1 id="其他">其他</h1>
-
+C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\X</span>XX<span style="color:#ae81ff">\A</span>ppData<span style="color:#ae81ff">\R</span>oaming<span style="color:#ae81ff">\a</span>utojump<span style="color:#ae81ff">\a</span>utojump.txt
+</code></pre></div><h1 id="heading3">其他</h1>
 <p>目前在 Windows 下的環境是 <a href="http://cmder.net/" title="Packages  Conemu + clink + git">cmder</a>  +  <a href="https://mridgers.github.io/clink/" title="在Windows下提到自動完成,Ctrl-V貼上…功能">clink</a></p>
-
 <p>執行的問題不少， Python 是用 Anaconda3 ，</p>
-
 <p>改天再來調整看看。</p>
-
-<h2 id="參考連結">參考連結</h2>
-
+<h2 id="heading4">參考連結</h2>
 <ol>
 <li><a href="https://olivierlacan.com/posts/cd-is-wasting-your-time/?utm_source=wanqu.co&amp;utm_campaign=Wanqu+Daily&amp;utm_medium=email">cd is Wasting Your Time by Olivier Lacan </a></li>
 <li><a href="https://ianwu.tw/2013/05/21/linux-tool-autojump/">Autojump</a></li>

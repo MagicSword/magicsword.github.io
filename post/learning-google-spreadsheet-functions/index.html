@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-11-29T21:29:53 CST">
+<meta name="revised" content="2019-12-06T23:21:24 CST">
 <title>Learning Google Spreadsheet Functions :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -488,18 +488,14 @@
     <div class="progress">
         <div class="wrapper">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#使用函數">使用函數</a>
-<ul>
-<li><a href="#importxml"><a href="&quot;https://support.google.com/docs/answer/3093342&quot;" title="匯入多種結構化資料類型的資料，包括 XML、HTML、CSV、TSV 和 RSS 以及 ATOM XML 資訊提供。">IMPORTXML</a></a>
-<ul>
-<li><a href="#xpath">XPath</a></li>
-</ul></li>
-<li><a href="#regexextract"><a href="https://support.google.com/docs/answer/3098244" title="根據規則運算式擷取符合規則的子字串。">REGEXEXTRACT</a></a></li>
-</ul></li>
-<li><a href="#後記">後記</a></li>
-<li><a href="#參考連結">參考連結</a></li>
-</ul>
+  <ul>
+    <li><a href="#importxml">IMPORTXML</a>
+      <ul>
+        <li><a href="#xpath">XPath</a></li>
+      </ul>
+    </li>
+    <li><a href="#regexextract">REGEXEXTRACT</a></li>
+  </ul>
 </nav>
         </div>
     </div>
@@ -528,98 +524,54 @@
     
     
     
-    <p>使用 <a href="&quot;https://support.google.com/docs/answer/3093342&quot;" title="匯入多種結構化資料類型的資料，包括 XML、HTML、CSV、TSV 和 RSS 以及 ATOM XML 資訊提供。">IMPORTXML</a> 讀 HTML 的資料進 Google 試算表。</p>
-
+    <p>使用 <a href="%22https://support.google.com/docs/answer/3093342%22" title="匯入多種結構化資料類型的資料，包括 XML、HTML、CSV、TSV 和 RSS 以及 ATOM XML 資訊提供。">IMPORTXML</a> 讀 HTML 的資料進 Google 試算表。</p>
 <p>以下節錄 Google 試算表使用說明，或許改天再加一些使用記錄。</p>
-
 <p>Task list: 😄</p>
-
-<ul class="task-list">
-<li><label><input type="checkbox" checked disabled class="task-list-item"> 初稿</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 再讀</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 筆記</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 完成</label></li>
+<ul>
+<li><input checked="" disabled="" type="checkbox">初稿</li>
+<li><input disabled="" type="checkbox">再讀</li>
+<li><input disabled="" type="checkbox">筆記</li>
+<li><input disabled="" type="checkbox">完成</li>
 </ul>
-
-<h1 id="使用函數">使用函數</h1>
-
+<h1 id="heading">使用函數</h1>
 <p>在儲存格中輸入等號 (=) 及您要使用的函式</p>
-
-<div class="alert 
-alert-info"
- 
-role="alert">注意：系統可能會根據您的資料提供建議的公式和範圍。</div>
-
-<h2 id="importxml"><a href="&quot;https://support.google.com/docs/answer/3093342&quot;" title="匯入多種結構化資料類型的資料，包括 XML、HTML、CSV、TSV 和 RSS 以及 ATOM XML 資訊提供。">IMPORTXML</a></h2>
-
+<!-- raw HTML omitted -->
+<p>role=&quot;alert&quot;&gt;注意：系統可能會根據您的資料提供建議的公式和範圍。<!-- raw HTML omitted --></p>
+<h2 id="importxml"><a href="%22https://support.google.com/docs/answer/3093342%22" title="匯入多種結構化資料類型的資料，包括 XML、HTML、CSV、TSV 和 RSS 以及 ATOM XML 資訊提供。">IMPORTXML</a></h2>
 <p>用法範例</p>
-
 <pre><code>IMPORTXML(&quot;https://en.wikipedia.org/wiki/Moon_landing&quot;, &quot;//a/@href&quot;)
 
 IMPORTXML(A2,B2)
-</code></pre>
-
-<p>語法</p>
-
+</code></pre><p>語法</p>
 <pre><code>IMPORTXML(網址, XPath_查詢)
-</code></pre>
-
-<dl>
-<dt>網址 - 要檢查的網頁所在網址，包括通訊協定名稱 (例如 http://)。</dt>
-<dt>:網址的值必須放置在引號內，或者是一個含有適當文字的儲存格參照。
-:XPath 查詢 - 要對結構化資料執行的 XPath 查詢。</dt>
-</dl>
-
-<p>如要進一步瞭解 XPath，請造訪 <a href="http://www.w3schools.com/xml/xpath_intro.asp。">http://www.w3schools.com/xml/xpath_intro.asp。</a></p>
-
+</code></pre><p>網址 - 要檢查的網頁所在網址，包括通訊協定名稱 (例如 http://)。</p>
+<p>:網址的值必須放置在引號內，或者是一個含有適當文字的儲存格參照。
+:XPath 查詢 - 要對結構化資料執行的 XPath 查詢。</p>
+<p>如要進一步瞭解 XPath，請造訪 <a href="http://www.w3schools.com/xml/xpath_intro.asp">http://www.w3schools.com/xml/xpath_intro.asp</a>。</p>
 <h3 id="xpath">XPath</h3>
-
 <p>XPath 可以 用 Chrome -&gt; 檢視網頁原始碼 -&gt; Copy -&gt; Copy XPath</p>
-
 <p>例子，要讀 Web Ptt 版的文章標題 ，</p>
-
 <p>原始的 XPath <code>//*[@id=&quot;main-container&quot;]/div[2]/div[1]/div[3]/a</code></p>
-
 <p>要改成 <code>//*/div[2]/div/div/a</code> , 把 方括號去掉才能作用。</p>
-
 <pre><code>=importXML(&quot;https://www.ptt.cc/bbs/Baseball/index.html&quot;,&quot;//*/div[2]/div/div/a&quot;)
-</code></pre>
-
-<h2 id="regexextract"><a href="https://support.google.com/docs/answer/3098244" title="根據規則運算式擷取符合規則的子字串。">REGEXEXTRACT</a></h2>
-
+</code></pre><h2 id="regexextract"><a href="https://support.google.com/docs/answer/3098244" title="根據規則運算式擷取符合規則的子字串。">REGEXEXTRACT</a></h2>
 <p>根據規則運算式擷取符合規則的子字串。</p>
-
 <p>用法示範</p>
-
 <pre><code>REGEXEXTRACT(&quot;Needle in a haystack&quot;, &quot;.e{2}dle&quot;)
-</code></pre>
-
-<p>語法</p>
-
+</code></pre><p>語法</p>
 <pre><code>REGEXEXTRACT(text, regular_expression)
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>text - 輸入文字。</li>
 <li>regular_expression - 此函式將傳回 text 中符合此運算式的第一個字串。</li>
 </ul>
-
 <p><strong>附註</strong></p>
-
 <p>Google 產品使用 RE2 來處理<a href="https://support.google.com/docs/answer/62754#regular_expression">規則運算式</a>。Google 試算表支援 RE2，但不支援符合規則的 Unicode 字元類別。進一步瞭解<a href="https://github.com/google/re2/blob/master/doc/syntax.txt">如何使用 RE2 運算式</a>
 此函式僅接受輸入文字 (而非數字)，並傳回文字做為輸出結果。如果您希望系統傳回數字，請在使用此函式時一併使用 VALUE 函式。如果要以數字做為輸入值，請先使用 TEXT 函式將其轉換為文字。</p>
-
 <p>使用例子：</p>
-
 <pre><code>=regexextract(A1,&quot;\[[^\]]+\]&quot;)
-</code></pre>
-
-<h1 id="後記">後記</h1>
-
+</code></pre><h1 id="heading1">後記</h1>
 <p>Google Spreadsheet 只能對 &ldquo;靜態&rdquo; 網頁，其他的網頁可能還是需要爬蟲程式</p>
-
-<h1 id="參考連結">參考連結</h1>
-
+<h1 id="heading2">參考連結</h1>
 <ol>
 <li><a href="http://ccckmit.wikidot.com/regularexpression">正規表示式 Regular Expression</a></li>
 <li><a href="http://blog.infographics.tw/2016/11/google-spreadsheet-data-scraping/">無痛爬梳自己來，用 Google Spreadsheet 爬取網頁資料</a></li>

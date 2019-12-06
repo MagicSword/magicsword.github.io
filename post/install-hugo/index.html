@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-11-29T21:29:54 CST">
+<meta name="revised" content="2019-12-06T23:21:24 CST">
 <title>Install Hugo :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -488,16 +488,13 @@
     <div class="progress">
         <div class="wrapper">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#概述">概述</a>
-<ul>
-<li><a href="#安裝">安裝</a></li>
-<li><a href="#基本用法">基本用法</a></li>
-<li><a href="#markdown">Markdown</a></li>
-<li><a href="#其他">其他</a></li>
-<li><a href="#參考連結">參考連結</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#heading1">安裝</a></li>
+    <li><a href="#heading2">基本用法</a></li>
+    <li><a href="#markdown">Markdown</a></li>
+    <li><a href="#heading3">其他</a></li>
+    <li><a href="#heading4">參考連結</a></li>
+  </ul>
 </nav>
         </div>
     </div>
@@ -527,35 +524,24 @@
     <p>之前有用過 Pelican + Restructured Text，考慮過 <a href="https://gohugo.io/" title="Hugo by golang">Hugo</a>, <a href="https://hexo.io/" title="Hexo by nodejs">Hexo</a>, <a href="https://getnikola.com/" title="Nikola by python">Nikola</a>後，
 決定試試Hugo。 Hugo的速度、方便性來說算是滿不錯，而且在 github上追蹤的人數也滿多的，就試
 試，順便試一下<a href="https://golang.org/" title="Go Programming Language">golang</a>。</p>
-
-<h1 id="概述">概述</h1>
-
+<h1 id="heading">概述</h1>
 <p>Hugo的優點大概有：</p>
-
 <ol>
 <li>生成速度快</li>
 <li>安裝方便</li>
 <li>使用的人數不少</li>
 </ol>
-
 <p>不過最主要還是速度的問題，順便試一下golang</p>
-
-<h2 id="安裝">安裝</h2>
-
+<h2 id="heading1">安裝</h2>
 <p>安裝的文件，參考<a href="https://gohugo.io/getting-started/installing/">Hugo官方的文件</a></p>
-
 <p>這邊的例子是在打算在Windows10上安裝，所以先用 <a href="https://chocolatey.org/" title="類似apt的工具">Chocolatey</a> 這個類似apt的工具來安裝
-golang，另外直接用 Chocolatey來安裝 Hugo，另外在Windows上的終端機程式也可以改用
+golang，另外直接用 Chocolatey來安裝 Hugo，另外在Windows上的終端機程式也可以改用 
 <a href="http://cmder.net/" title="Console Emulator">Cmder</a></p>
-
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>	choco install golang
 <span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>	choco install hugo
 </span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>	choco install cmder</span></code></pre></div>
-
-<h2 id="基本用法">基本用法</h2>
-
+<h2 id="heading2">基本用法</h2>
 <p>產生新的hugo目錄</p>
-
 <pre><code>$hugo new site quickstart
 $tree
 .
@@ -567,9 +553,7 @@ $tree
     ├── layouts
     └── static
 </code></pre>
-
 <p>安裝新的theme</p>
-
 <pre><code>cd quickstart
 git init
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
@@ -578,17 +562,12 @@ git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/anan
 # and add the Ananke theme.
 echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
 </code></pre>
-
 <p>基本上就是把theme的目錄放到 <code>themes\</code> 下，然後在 <code>quickstart\confit.toml</code>下
 設定 <code>theme = \&quot;ananke\&quot;</code></p>
-
 <p>新增新文章</p>
-
 <pre><code>hugo new posts/my-first-post.md
 </code></pre>
-
 <p>編輯完新文章後，</p>
-
 <pre><code>▶ hugo server -D
 
 Started building sites ...
@@ -608,42 +587,26 @@ Serving pages from memory
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 </code></pre>
-
-<p>可以在 <a href="http://localhost:1313/">http://localhost:1313/</a> 下面看到文章</p>
-
+<p>可以在 http://localhost:1313/ 下面看到文章</p>
 <p><code>config.toml</code>設定檔裡有很多東西還需要調整，看不同的 theme， 設定可能也會不同。</p>
-
 <p>Hugo Help指令</p>
-
 <pre><code>hugo help
 </code></pre>
-
 <p>直接在 hugo文件目錄下執行 <code>hugo</code>，會生成 html到 <code>\public\</code> 的預設目錄下。</p>
-
 <h2 id="markdown">Markdown</h2>
-
 <p>Markdown的文件寫法，和 Restructured Text類似，不過 Rst在python社群中較多人
 使用，而Markdown使用的社群比較多。語法的話，可以參考 <a href="/post/markdown-syntax-intro/">Markdown語法</a></p>
-
-<h2 id="其他">其他</h2>
-
+<h2 id="heading3">其他</h2>
 <p>目前用的theme</p>
-
 <ol>
 <li><a href="http://themes.gohugo.io/after-dark/">http://themes.gohugo.io/after-dark/</a></li>
 <li><a href="https://github.com/comfusion/after-dark">https://github.com/comfusion/after-dark</a></li>
 </ol>
-
 <p>Shortcodes</p>
-
 <p><a href="https://gohugo.io/content-management/shortcodes/">https://gohugo.io/content-management/shortcodes/</a></p>
-
 <p>程式碼語法 highlight</p>
-
 <p><a href="https://gohugo.io/tools/syntax-highlighting/#pygments">https://gohugo.io/tools/syntax-highlighting/#pygments</a></p>
-
-<h2 id="參考連結">參考連結</h2>
-
+<h2 id="heading4">參考連結</h2>
 <ol>
 <li><a href="https://greyby.github.io/2017/07/24/create-a-blog-with-hugo/">用 Hugo 搭建个人 Blog</a></li>
 <li><a href="http://tonybai.com/2015/09/23/intro-of-gohugo/">使用Hugo搭建静态站点</a></li>

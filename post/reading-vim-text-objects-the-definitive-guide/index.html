@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-11-29T21:29:53 CST">
+<meta name="revised" content="2019-12-06T23:21:23 CST">
 <title>Reading Vim Text Objects the Definitive Guide :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -488,26 +488,21 @@
     <div class="progress">
         <div class="wrapper">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#概述">概述</a></li>
-<li><a href="#語法結構">語法結構</a></li>
-<li><a href="#文字物件">文字物件</a>
-<ul>
-<li><a href="#純文字文字物件">純文字文字物件</a>
-<ul>
-<li><a href="#word">Word</a></li>
-</ul></li>
-<li><a href="#自訂文字物件">自訂文字物件</a>
-<ul>
-<li><a href="#camelcasemotion">CamelCaseMotion</a></li>
-<li><a href="#function-auguments">function auguments</a></li>
-<li><a href="#ident-object">Ident Object</a></li>
-<li><a href="#ruby-block">Ruby Block</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#結語">結語</a></li>
-<li><a href="#參考連結">參考連結</a></li>
-</ul>
+  <ul>
+    <li><a href="#heading3">純文字文字物件</a>
+      <ul>
+        <li><a href="#word">Word</a></li>
+      </ul>
+    </li>
+    <li><a href="#heading4">自訂文字物件</a>
+      <ul>
+        <li><a href="#camelcasemotion">CamelCaseMotion</a></li>
+        <li><a href="#function-auguments">function auguments</a></li>
+        <li><a href="#ident-object">Ident Object</a></li>
+        <li><a href="#ruby-block">Ruby Block</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
         </div>
     </div>
@@ -537,74 +532,54 @@
     
     
     <p>Vim Text Object，vim 裡的文字物件，操作方式。</p>
-
 <p>Task list: 😄</p>
-
-<ul class="task-list">
-<li><label><input type="checkbox" checked disabled class="task-list-item"> 初稿</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 再讀</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 筆記</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 完成</label></li>
-</ul>
-
-<h1 id="概述">概述</h1>
-
-<p><a href="https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/" title="Vim Text Objects: The Definitive Guide">Vim Text Objects: The Definitive Guide</a></p>
-
-<p>本文讀完上面的文章後，一些心得筆記。</p>
-
-<p>Vim 裡文字可分為一些單位來操作： character, word, sentence, paragraph,
-(或是程式中的 function, class,&hellip;，又或者用 plugin 自定義結構)</p>
-
-<h1 id="語法結構">語法結構</h1>
-
 <ul>
-<li><p>[number] &lt; command &gt;[text object or motion]</p>
-
+<li><input checked="" disabled="" type="checkbox">初稿</li>
+<li><input disabled="" type="checkbox">再讀</li>
+<li><input disabled="" type="checkbox">筆記</li>
+<li><input disabled="" type="checkbox">完成</li>
+</ul>
+<h1 id="heading">概述</h1>
+<p><a href="https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/" title="Vim Text Objects: The Definitive Guide">Vim Text Objects: The Definitive Guide</a></p>
+<p>本文讀完上面的文章後，一些心得筆記。</p>
+<p>Vim 裡文字可分為一些單位來操作： character, word, sentence, paragraph, 
+(或是程式中的 function, class,&hellip;，又或者用 plugin 自定義結構)</p>
+<h1 id="heading1">語法結構</h1>
+<ul>
+<li>
+<p>[number] &lt; command &gt;[text object or motion]</p>
 <ul>
 <li><strong>number</strong> 是用來描述動作的次數，像是： <code>3dd</code>, 作 <code>dd</code> 這個動作3次，可以省略，前置、或後置</li>
 <li><strong>command</strong> 動作，像是：change, delete(cut), copy(yank)，主要是編輯動作</li>
 <li><strong>text object</strong>，文字單位，像是：word, setence, paragraph</li>
 <li><strong>motion</strong> 移動，不改變內容， foward, backward, end of the line</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>一般的編輯命令，主要的結構就是上述的 編輯命令 + 文字物件 ，或是移動動作，
 像是：刪除一行，移到文章末。</p>
-
-<h1 id="文字物件">文字物件</h1>
-
+<h1 id="heading2">文字物件</h1>
 <p>上面有提到的文字物件，就是 Vim 中編輯動作操作的對象，一個字，一句，一段，整篇文章，…</p>
-
 <p>大概可以分成幾種討論：</p>
-
 <ol>
 <li>plaintext text object 純文字文字物件： word,  setence, paragraph</li>
 <li>motion 移動動作：移動遊標，內容不變</li>
 <li>程式語言的文字物件： function, class</li>
 <li>自定義的文字物件：&hellip;</li>
 </ol>
-
-<h2 id="純文字文字物件">純文字文字物件</h2>
-
+<h2 id="heading3">純文字文字物件</h2>
 <h3 id="word">Word</h3>
-
 <p><strong>範圍選擇</strong>：i(inner ) 和 a(around)</p>
-
 <ul>
 <li>inner，不包括兩邊的空白</li>
 <li>around，除了內容外，還有兩邊的空白</li>
 </ul>
-
 <p>例子：The quick brown fox jumps over the lazy dog , 如果遊標在 brown</p>
-
 <ul>
 <li><code>diw</code> : 刪掉 brown</li>
 <li><code>daw</code> : 刪掉 brown ，和 兩邊的空白</li>
 </ul>
-
 <p><strong>文字物件</strong></p>
-
 <ul>
 <li>w (word)</li>
 <li>s (sentence)</li>
@@ -612,75 +587,49 @@
 <li>t (tag)</li>
 <li>引號、括號包住的內容 。</li>
 </ul>
-
 <p><strong>動作指令</strong></p>
-
 <ul>
 <li>c (change)</li>
 <li>d (delete)</li>
 <li>y (yank)</li>
-
-<li><p>v (visual block)</p>
-
+<li>v (visual block)</li>
+</ul>
 <pre><code>
 [VimText](http:://vim.org)
 
-</code></pre></li>
-</ul>
-
-<p>在 VimText 處，輸入 <code>ci[</code>，就可以改變 括號的內容。</p>
-
+</code></pre><p>在 VimText 處，輸入 <code>ci[</code>，就可以改變 括號的內容。</p>
 <pre><code>
 &lt;div id=&quot;content&quot;&gt;what a name&lt;/div&gt;
 
-</code></pre>
-
-<ul>
+</code></pre><ul>
 <li>dit : 會刪除 what a name</li>
 <li>di&gt; : 會刪除 角括號 內的內容</li>
 </ul>
-
-<h2 id="自訂文字物件">自訂文字物件</h2>
-
+<h2 id="heading4">自訂文字物件</h2>
 <h3 id="camelcasemotion">CamelCaseMotion</h3>
-
 <p><a href="https://github.com/bkad/CamelCaseMotion" title="A vim script to provide CamelCase motion through words">CamelCaseMotion</a></p>
-
 <p><a href="https://zh.wikipedia.org/wiki/%E9%A7%9D%E5%B3%B0%E5%BC%8F%E5%A4%A7%E5%B0%8F%E5%AF%AB" title="駝峰式大小寫">CamelCase</a> :</p>
-
 <blockquote>
 <p>駝峰式大小寫，多個單字連結新識別名稱，每個單字的第一字母大寫。
 出自 Larry Wall等人所著的暢銷書《Programming Perl》</p>
 </blockquote>
-
 <ul>
 <li>小駝峰式命名法（lower camel case）：
 第一個單字以小寫字母開始；第二個單字的首字母大寫，例如：firstName、lastName。</li>
 <li>大駝峰式命名法（upper camel case）：
 每一個單字的首字母都採用大寫字母，例如：FirstName、LastName、CamelCase，也被稱為 <strong>Pascal命名法</strong>（英語：Pascal Case）。</li>
 </ul>
-
 <p>而上面的 plugin 就是用來處理 CamleCase</p>
-
 <h3 id="function-auguments">function auguments</h3>
-
 <p><a href="https://github.com/vim-scripts/argtextobj.vim">https://github.com/vim-scripts/argtextobj.vim</a></p>
-
 <h3 id="ident-object">Ident Object</h3>
-
 <p><a href="https://github.com/michaeljsmith/vim-indent-object">https://github.com/michaeljsmith/vim-indent-object</a></p>
-
 <h3 id="ruby-block">Ruby Block</h3>
-
 <p>Ruby Block <a href="https://github.com/nelstrom/vim-textobj-rubyblock">https://github.com/nelstrom/vim-textobj-rubyblock</a></p>
-
-<h1 id="結語">結語</h1>
-
+<h1 id="heading5">結語</h1>
 <p>Vim Text Object 可以精確的指出動作的目標。
 熟悉使用，可以讓Vim的編輯動作變快。</p>
-
-<h1 id="參考連結">參考連結</h1>
-
+<h1 id="heading6">參考連結</h1>
 <ol>
 <li><a href="https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/" title="Vim Text Objects: The Definitive Guide">Vim Text Objects: The Definitive Guide</a></li>
 <li><a href="http://yyq123.blogspot.com/2016/12/vim-text-objects.html">VIM学习笔记 文本对象（Text Objects）</a></li>

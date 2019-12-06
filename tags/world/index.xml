@@ -18,8 +18,7 @@
       
       <guid>/post/golang-intro/</guid>
       <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;
-
-&lt;p&gt;Archetypes are located in the &lt;code&gt;archetypes&lt;/code&gt; directory in the source of your site. To learn more about archetypes, visit &lt;a href=&#34;https://gohugo.io/content-management/archetypes/&#34;&gt;Archetypes&lt;/a&gt; on the Hugo website. And when you&amp;rsquo;re ready, check out the &lt;a href=&#34;https://comfusion.github.io/after-dark/#customizing&#34;&gt;Customizing&lt;/a&gt; section of the After Dark documentation for additional options.&lt;/p&gt;</description>
+&lt;p&gt;Archetypes are located in the &lt;code&gt;archetypes&lt;/code&gt; directory in the source of your site. To learn more about archetypes, visit &lt;a href=&#34;https://gohugo.io/content-management/archetypes/&#34;&gt;Archetypes&lt;/a&gt; on the Hugo website. And when you&#39;re ready, check out the &lt;a href=&#34;https://comfusion.github.io/after-dark/#customizing&#34;&gt;Customizing&lt;/a&gt; section of the After Dark documentation for additional options.&lt;/p&gt;</description>
     </item>
     
     <item>

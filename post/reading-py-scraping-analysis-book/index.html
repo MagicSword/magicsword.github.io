@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-11-29T21:29:53 CST">
+<meta name="revised" content="2019-12-06T23:21:23 CST">
 <title>Reading Python Scraping Analysis Book :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -488,28 +488,16 @@
     <div class="progress">
         <div class="wrapper">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#概述">概述</a></li>
-<li><a href="#chapter-01-環境設定與網頁爬蟲初探">Chapter 01 環境設定與網頁爬蟲初探</a></li>
-<li><a href="#chapter-02-beautiful-soup-講解與網頁解構">Chapter 02 Beautiful Soup 講解與網頁解構</a>
-<ul>
-<li><a href="#2-1-不要重複造輪子-寫爬蟲之前">2-1 不要重複造輪子：寫爬蟲之前</a></li>
-<li><a href="#2-2-beautiful-soup-重要功能-find-find-all-text-stripped-strings">2-2 Beautiful Soup 重要功能 (find(), find_all(), .text, .stripped_strings)</a></li>
-<li><a href="#2-3-網頁結構巡覽-parent-children-siblings">2-3 網頁結構巡覽（parent, children, siblings）</a></li>
-<li><a href="#2-4-正規表示式-regular-expression">2-4 正規表示式 (Regular Expression)</a></li>
-</ul></li>
-<li><a href="#chapter-03-網頁爬蟲範例實戰">Chapter 03 網頁爬蟲範例實戰</a></li>
-<li><a href="#chapter-04-使用-api">Chapter 04 使用 API</a>
-<ul>
-<li><a href="#4-1-api-簡介">4-1 API 簡介</a></li>
-</ul></li>
-<li><a href="#chapter0-5-資料儲存">Chapter0 5 資料儲存</a></li>
-<li><a href="#chapter-06-不同編碼與類型的文件">Chapter 06 不同編碼與類型的文件</a></li>
-<li><a href="#chapter-07-進階爬蟲議題">Chapter 07 進階爬蟲議題</a></li>
-<li><a href="#chapter-08-資料分析實戰">Chapter 08 資料分析實戰</a></li>
-<li><a href="#附錄">附錄</a></li>
-<li><a href="#參考連結">參考連結</a></li>
-</ul>
+  <ul>
+    <li><a href="#21-">2-1 不要重複造輪子：寫爬蟲之前</a></li>
+    <li><a href="#22-beautiful-soup--find-findall-text-strippedstrings">2-2 Beautiful Soup 重要功能 (find(), find_all(), .text, .stripped_strings)</a></li>
+    <li><a href="#23-parent-children-siblings">2-3 網頁結構巡覽（parent, children, siblings）</a></li>
+    <li><a href="#24--regular-expression">2-4 正規表示式 (Regular Expression)</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#41-api-">4-1 API 簡介</a></li>
+  </ul>
 </nav>
         </div>
     </div>
@@ -541,16 +529,12 @@
     
     
     <p>Python：網路爬蟲與資料分析入門實戰 簡單筆記</p>
-
 <p>python, beautifulsoup, api, scrapy,&hellip;</p>
-
 <ul>
-<li>書名：Python：網路爬蟲與資料分析入門實戰
-
-<ul>
-<li><a href="https://www.books.com.tw/products/0010800867">博客來</a></li>
-<li>作者： 林俊瑋, 林修博<br /></li>
-<li>出版社：博碩<br /></li>
+<li>書名：Python：網路爬蟲與資料分析入門實戰</li>
+<li>[博客來] (<a href="https://www.books.com.tw/products/0010800867">https://www.books.com.tw/products/0010800867</a>)</li>
+<li>作者： 林俊瑋, 林修博</li>
+<li>出版社：博碩</li>
 <li>出版日期：2018/10/04</li>
 <li>語言：繁體中文</li>
 <li>定價：450元</li>
@@ -559,31 +543,23 @@
 <li>出版地：台灣</li>
 <li>本書分類：電腦資訊&gt; 資料庫/大數據&gt; 資料處理/大數據</li>
 <li>本書分類：電腦資訊&gt; 程式設計/APP開發&gt; Python</li>
-</ul></li>
 </ul>
-
 <p>Task list: 😄</p>
-
-<ul class="task-list">
-<li><label><input type="checkbox" checked disabled class="task-list-item"> 初稿</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 再讀</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 筆記</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 完成</label></li>
+<ul>
+<li><input checked="" disabled="" type="checkbox">初稿</li>
+<li><input disabled="" type="checkbox">再讀</li>
+<li><input disabled="" type="checkbox">筆記</li>
+<li><input disabled="" type="checkbox">完成</li>
 <li>05/19 到 2-3</li>
 </ul>
-
-<h1 id="概述">概述</h1>
-
+<h1 id="heading">概述</h1>
 <p>邊讀邊做個筆記心得。</p>
-
-<h1 id="chapter-01-環境設定與網頁爬蟲初探">Chapter 01 環境設定與網頁爬蟲初探</h1>
-
+<h1 id="chapter-01-">Chapter 01 環境設定與網頁爬蟲初探</h1>
 <ul>
 <li>1-1 環境設定及套件安裝：Anaconda</li>
 <li>1-2 使用IDE：PyCharm</li>
 <li>1-3 使用Jupyter Notebook</li>
 <li>1-4 網頁文件解構與網頁爬蟲初探
-
 <ul>
 <li>Anaconda 在 Windows 上算是個滿不錯的 Python 整合套件。</li>
 <li>Editor: Vim , Visual Studio Code</li>
@@ -591,172 +567,123 @@
 <li>Jupyter Notebook 算是個 Ipython Web App，滿好用的。</li>
 <li>網頁文件有幾個部分： Html 內容，CSS 樣式，JS 動態</li>
 <li>書中用來讀網頁的程式庫是 requests，算是外部程式庫中簡單好用的。
-Python 中內建的也是有 <a href="https://docs.python.org/3/library/urllib.html">urllib</a> 。</li>
-</ul></li>
+Python 中內建的也是有 [urllib] (<a href="https://docs.python.org/3/library/urllib.html">https://docs.python.org/3/library/urllib.html</a>) 。</li>
 </ul>
-
-<h1 id="chapter-02-beautiful-soup-講解與網頁解構">Chapter 02 Beautiful Soup 講解與網頁解構</h1>
-
-<h2 id="2-1-不要重複造輪子-寫爬蟲之前">2-1 不要重複造輪子：寫爬蟲之前</h2>
-
+</li>
+</ul>
+<h1 id="chapter-02-beautiful-soup-">Chapter 02 Beautiful Soup 講解與網頁解構</h1>
+<h2 id="21-">2-1 不要重複造輪子：寫爬蟲之前</h2>
 <p>不過當你想要自已動手打造輪子前，可能要先研究一下：</p>
-
 <ul>
 <li>API：是不是有已經整理好資料了？</li>
 <li>分析網址連結規則：可以少花一些力氣</li>
 <li>AJAX ： 用 JavaScript  傳送的資料，沒辦法直接取得</li>
 </ul>
-
 <p>Chrome 下按 <code>F12</code> 開發者工具 ，可以了解  Browser 和 Server 間到底聊什麼？</p>
-
-<h2 id="2-2-beautiful-soup-重要功能-find-find-all-text-stripped-strings">2-2 Beautiful Soup 重要功能 (find(), find_all(), .text, .stripped_strings)</h2>
-
+<h2 id="22-beautiful-soup--find-findall-text-strippedstrings">2-2 Beautiful Soup 重要功能 (find(), find_all(), .text, .stripped_strings)</h2>
 <p><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" title="解析 HTML/XML">BeautifulSoup</a> :</p>
-
 <blockquote>
 <p>是 Python 程式庫，用來解析 HTML/XML 文件
 把 文本 轉成樹狀結構(？)
-bs4 可以用的 Parser(解析器) : html.parser(Python內建), html5lib, lxml(最快)
+bs4 可以用的 Parser(解析器) : html.parser(Python內建), html5lib, lxml(最快) 
 之後用 <code>bs4</code> 簡寫</p>
 </blockquote>
-
 <p>也就是把糊成一團的文件，整理成程式可以拿來用的資料。</p>
-
 <p><code>requests</code> : 讀入網頁, 並處理網路協定的問題，登入，session, cookie, &hellip;.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> requests
 <span style="color:#f92672">from</span> bs4 <span style="color:#f92672">import</span> BeautifulSoup
 
-resp <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;https://jwlin.github.io/py-scraping-analysis-book/ch1/connect.html&#39;</span>)
-soup <span style="color:#f92672">=</span> BeautifulSoup(resp<span style="color:#f92672">.</span>text, <span style="color:#e6db74">&#39;html.parser&#39;</span>)
-<span style="color:#66d9ef">print</span>(soup<span style="color:#f92672">.</span>find(<span style="color:#e6db74">&#39;h1&#39;</span>)<span style="color:#f92672">.</span>text)</code></pre></div>
-<p>讀進網頁，分析完後，重要的是要如何定位想要的東西。</p>
+resp <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">https://jwlin.github.io/py-scraping-analysis-book/ch1/connect.html</span><span style="color:#e6db74">&#39;</span>)
+soup <span style="color:#f92672">=</span> BeautifulSoup(resp<span style="color:#f92672">.</span>text, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">html.parser</span><span style="color:#e6db74">&#39;</span>)
+<span style="color:#66d9ef">print</span>(soup<span style="color:#f92672">.</span>find(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">h1</span><span style="color:#e6db74">&#39;</span>)<span style="color:#f92672">.</span>text)
 
+</code></pre></div><p>讀進網頁，分析完後，重要的是要如何定位想要的東西。</p>
 <ol>
 <li>方法一：從頭到尾爬一遍： <code>find()</code>, <code>find_all()</code></li>
 <li>方法二：直接選出樹狀結構中的位置：
-
 <ol>
 <li>CSS Selector : <code>.select()</code></li>
 <li>XPath (XML Path Language，XML 路徑語言) :</li>
 <li>效能上 <a href="http://elementalselenium.com/tips/34-xpath-vs-css-revisited-2" title="Css Vs. X Path, Under a Microscope">CSS Selector 大於 XPath 一些</a></li>
-</ol></li>
 </ol>
-
+</li>
+</ol>
 <ul>
 <li><code>.text</code>: Tag 所夾的文字</li>
 <li><code>stripped_strings</code>: bs4 的方法，會把物件內容的所有 Tag 清除，留下文字，移除前後空白換行，要注意的是。這個是 generator 物件</li>
 </ul>
-
-<h2 id="2-3-網頁結構巡覽-parent-children-siblings">2-3 網頁結構巡覽（parent, children, siblings）</h2>
-
+<h2 id="23-parent-children-siblings">2-3 網頁結構巡覽（parent, children, siblings）</h2>
 <p>除了用暴力法找以外，也可以從已找到的元素的 親層(parent)、子層(children)、兄弟層(siblings) 移動</p>
-
 <p>BeautifulSoup 文件中相關的部分</p>
-
 <ul>
 <li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/#going-up">向上</a> : <code>.parent</code>, <code>.parents</code></li>
 <li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/#going-back-and-forth">向下</a> : <code>.next_sibling</code> ,  <code>.previous_sibling</code></li>
 <li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/#going-sideways">左右</a> : <code>.next_element</code> and <code>.previous_element</code></li>
 </ul>
-
-<h2 id="2-4-正規表示式-regular-expression">2-4 正規表示式 (Regular Expression)</h2>
-
-<p>&rdquo;&ldquo;&ldquo;python
+<h2 id="24--regular-expression">2-4 正規表示式 (Regular Expression)</h2>
+<p>&ldquo;&ldquo;&ldquo;python
 import  re</p>
-
-<p>for title in soup.find_all(re.compile(&lsquo;h[1-6]&lsquo;)):
-    print(title.text.strip())</p>
-
-<p>&rdquo;&ldquo;&rdquo;</p>
-
-<h1 id="chapter-03-網頁爬蟲範例實戰">Chapter 03 網頁爬蟲範例實戰</h1>
-
+<p>for title in soup.find_all(re.compile(&lsquo;h[1-6]')):
+print(title.text.strip())</p>
+<p>&quot;&rdquo;&rdquo;</p>
+<h1 id="chapter-03-">Chapter 03 網頁爬蟲範例實戰</h1>
 <p>3-1 PTT 八卦板今日熱門文章
 3-2 Yahoo 奇摩電影本週新片
 3-3 兩大報當日焦點新聞
 3-4 Google 搜尋股價資訊
 3-5 Dcard 今日熱門文章</p>
-
 <p>從實例中學習抓取資料、分析。</p>
-
-<h1 id="chapter-04-使用-api">Chapter 04 使用 API</h1>
-
-<h2 id="4-1-api-簡介">4-1 API 簡介</h2>
-
+<h1 id="chapter-04--api">Chapter 04 使用 API</h1>
+<h2 id="41-api-">4-1 API 簡介</h2>
 <p>API(Application Programming Interface)：在網站來說，就是取用站方整理好的資料的介面。</p>
-
 <p>HTTP request 的方法 :</p>
-
 <ol>
 <li><code>GET</code> : 參數寫在網址</li>
 <li><code>POST</code> : 表單資料打包後，送出</li>
 <li><code>PUT</code> : 背景送出資料</li>
 <li><code>DELETE</code> : 背景刪除資料</li>
 </ol>
-
 <p>API 送回的資料，通常會以幾種形式送回 :</p>
-
 <ol>
 <li>JSON : key, value 成對的資料</li>
 <li>XML : tag 標記的資料</li>
 </ol>
-
 <p>4-2 PTT 八卦板眾來源分佈 (ipstack.com)
 4-3 IMDB API
 4-4 Google Maps APIs (Google Geocoding/Places API)
 4-5 Dcard API</p>
-
-<h1 id="chapter0-5-資料儲存">Chapter0 5 資料儲存</h1>
-
+<h1 id="chapter0-5-">Chapter0 5 資料儲存</h1>
 <p>5-1 儲存圖片與多媒體檔案</p>
-
 <p>file system</p>
-
 <p>5-2 儲存資料到 CSV 檔</p>
-
 <p>save to  CSV</p>
-
 <p>5-3 儲存資料到資料庫 SQLite</p>
-
 <p>Save SQlite</p>
-
-<h1 id="chapter-06-不同編碼與類型的文件">Chapter 06 不同編碼與類型的文件</h1>
-
+<h1 id="chapter-06-">Chapter 06 不同編碼與類型的文件</h1>
 <p>6-1 非 UTF-8 編碼的文件</p>
-
 <p>6-2 XML 文件</p>
-
-<h1 id="chapter-07-進階爬蟲議題">Chapter 07 進階爬蟲議題</h1>
-
+<h1 id="chapter-07-">Chapter 07 進階爬蟲議題</h1>
 <p>7-1 處理表單及登入頁 ：台灣高鐵時刻查詢
 7-2 處理表單及登入頁 ：Yelp 登入
 7-3 使用WebDriver：台銀法拍屋資訊查詢
 7-4 爬蟲程式經驗談：被封鎖的常見原因、常用 Header 欄位、網站隱藏欄位、使用代理伺服器</p>
-
-<h1 id="chapter-08-資料分析實戰">Chapter 08 資料分析實戰</h1>
-
+<h1 id="chapter-08-">Chapter 08 資料分析實戰</h1>
 <p>8-1 台股每日盤後資訊爬蟲及策略回測（量化投資）
 8-2 電影評論情緒分析（中文自然語言處理與機器學習）
 8-3 商品特價 Gmail 通知：Costco 商品網頁</p>
-
-<h1 id="附錄">附錄</h1>
-
+<h1 id="heading1">附錄</h1>
 <p>附表 本書範例目標網站列表</p>
-
 <p>附錄A 在 Mac 安裝Anaconda 開發環境</p>
-
 <p>附錄B Python 爬蟲框架Scrapy 入門教學
 B-1 Scrapy 環境安裝
 B-2 簡易部落格爬蟲
 B-3 Scrapy 系統架構
 B-4 博客來網路書店爬蟲</p>
-
-<h1 id="參考連結">參考連結</h1>
-
+<h1 id="heading2">參考連結</h1>
 <ol>
 <li><a href="https://jwlin.github.com/py-scraping-analysis-book/ch2/blog/blog.html">本書網站</a></li>
 <li><a href="https://github.com/jwlin/py-scraping-analysis-book">本書Github</a></li>
-<li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" title="解析 HTML/XML">BeautifulSoup 文件</a></li>
+<li>[BeautifulSoup 文件] <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" title="解析 HTML/XML">BeautifulSoup</a></li>
 <li><a href="https://ithelp.ithome.com.tw/articles/10186119">R 語言使用者的 Python 學習筆記系列 第 16 篇:[第 16 天] 網頁解析</a></li>
 <li><a href="https://cythilya.github.io/2017/12/15/nightwatch-css-selector/">Nightwatch101 #5：使用 CSS Selector 定位網頁元素</a></li>
 <li><a href="https://cythilya.github.io/2017/12/16/nightwatch-xpath/">Nightwatch101 #6：使用 Xpath 定位網頁元素</a></li>

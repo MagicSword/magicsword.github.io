@@ -17,7 +17,7 @@
       <pubDate>Sat, 14 Apr 2018 14:44:03 +0800</pubDate>
       
       <guid>/post/python-import-system/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;(https://manikos.github.io/how-pythons-import-machinery-works)&#34;&gt;How python&amp;rsquo;s import machinery works&lt;/a&gt; 簡單的筆記，
+      <description>&lt;p&gt;&lt;a href=&#34;(https://manikos.github.io/how-pythons-import-machinery-works)&#34;&gt;How python&#39;s import machinery works&lt;/a&gt; 簡單的筆記，
 順便整理一下 &lt;a href=&#34;https://docs.python.org/3/reference/import.html&#34; title=&#34;access to the code in another module&#34;&gt;import&lt;/a&gt; 的資料。&lt;/p&gt;</description>
     </item>
     

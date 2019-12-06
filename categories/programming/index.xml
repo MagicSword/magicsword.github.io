@@ -26,9 +26,8 @@
       <pubDate>Sat, 02 Jun 2018 18:50:15 +0800</pubDate>
       
       <guid>/post/pycon-tw-2018-june-01-02-taipei-todolist/</guid>
-      <description>&lt;p&gt;今年的 &lt;a href=&#34;https://tw.pycon.org/2018/zh-hant/&#34; title=&#34;PYCON TW 2018 Official Site&#34;&gt;PYCON TW 2018&lt;/a&gt; ,Taipei June  01-02，
+      <description>&lt;p&gt;今年的 &lt;a href=&#34;https://tw.pycon.org/2018/zh-hant/&#34; title=&#34;PYCON TW 2018 Official Site&#34;&gt;PYCON TW 2018&lt;/a&gt; ,Taipei June  01-02， 
 筆記一下有什麼有趣的主題。&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCHLnNgRnfGYDzPCCH8qGbQw&#34; title=&#34;PYCON TW 2018 Official Youtube Channel&#34;&gt;PYCON TW 2018 Youtube&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://tw.pycon.org/2018/zh-hant/events/schedule/&#34;&gt;PyCon TW 2018 Talks Schedule&lt;/a&gt;&lt;/li&gt;
@@ -43,7 +42,6 @@
       <guid>/post/pycon-usa-2018-may-09-17-cleveland-oh-todolist/</guid>
       <description>&lt;p&gt;今年的 &lt;a href=&#34;https://us.pycon.org/2018/&#34; title=&#34;PYCON 2018 Official Site&#34;&gt;PYCON 2018&lt;/a&gt; ,USA 在 May  09-17,Cleveland,OH 結束了。
 筆記一下有什麼有趣的主題。&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCsX05-2sVSH7Nx3zuk3NYuQ&#34; title=&#34;PYCON 2018 Official Youtube Channel&#34;&gt;PYCON 2018 的 Youtube 頻道&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://us.pycon.org/2018/schedule/tutorials/&#34;&gt;PyCon 2018 Tutorials Schedule&lt;/a&gt;&lt;/li&gt;
@@ -68,7 +66,6 @@
       
       <guid>/post/udemy-python-easily-migrate-excel-files-to-a-database/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.udemy.com/python-easily-migrate-excel-files-to-a-database/learn/v4/overview&#34;&gt;Python: Easily migrate Excel files to a database&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;是個 約35 min的免費課程，花點時間來看看。&lt;/p&gt;</description>
     </item>
     
@@ -90,7 +87,6 @@
       
       <guid>/post/reading-automate-the-boring-stuff-with-python-1st/</guid>
       <description>&lt;p&gt;心得筆記&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Automate the Boring Stuff with Python&lt;/li&gt;
 &lt;li&gt;Practical Programming for Total Beginners&lt;/li&gt;
@@ -104,7 +100,7 @@
       <pubDate>Tue, 17 Apr 2018 02:47:36 +0800</pubDate>
       
       <guid>/post/15-minute-apps/</guid>
-      <description>&lt;p&gt;&amp;rdquo; &lt;a href=&#34;https://martinfitzpatrick.name/article/15-minute-apps/&#34; title=&#34;Common desktop apps in Python, using PyQt&#34;&gt;15 Minute Apps&lt;/a&gt;  | Common desktop apps in Python, using PyQt&amp;rdquo;
+      <description>&lt;p&gt;&amp;quot; &lt;a href=&#34;https://martinfitzpatrick.name/article/15-minute-apps/&#34; title=&#34;Common desktop apps in Python, using PyQt&#34;&gt;15 Minute Apps&lt;/a&gt;  | Common desktop apps in Python, using PyQt&amp;rdquo;
 簡單筆記&lt;/p&gt;</description>
     </item>
     
@@ -114,7 +110,7 @@
       <pubDate>Sat, 14 Apr 2018 14:44:03 +0800</pubDate>
       
       <guid>/post/python-import-system/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;(https://manikos.github.io/how-pythons-import-machinery-works)&#34;&gt;How python&amp;rsquo;s import machinery works&lt;/a&gt; 簡單的筆記，
+      <description>&lt;p&gt;&lt;a href=&#34;(https://manikos.github.io/how-pythons-import-machinery-works)&#34;&gt;How python&#39;s import machinery works&lt;/a&gt; 簡單的筆記，
 順便整理一下 &lt;a href=&#34;https://docs.python.org/3/reference/import.html&#34; title=&#34;access to the code in another module&#34;&gt;import&lt;/a&gt; 的資料。&lt;/p&gt;</description>
     </item>
     

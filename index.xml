@@ -17,17 +17,17 @@
       <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description> 個人筆記收集整理
+      <description>個人筆記收集整理
 之前用 Pelican Pelican
 後來有用過 Nikola, Hexo
 目前用 Hugo
 Blog commit log
 Netlify Hugo: After-dark
 CheatSheet emoji cheat sheet
-LOG 20180601
+ LOG 20180601
  加入 Netlify.com 的設定 netlify.toml，hugo設定 把 theme 改成用 submodule , git submodule add git://github.com/chneukirchen/rack.git rack 把 theme 換成 docdock forestry.io(線上寫作工具) ,netlify(compile,net hosting) test  20191021
  Hugo 0.59 release 新功能，影像處理 {{ $image.Resize &amp;quot;600x jpg #b31280&amp;quot; }} PageMethod : 上下頁，上下段  20191029
- [Hugo 0.49 加入了 Archtype bundle ，可以用整個目錄的範本[() 改完 theme 以後，記得要更新 theme\docdock\archtypes 裡的範本  Ref:  StaticGen 靜態網站生成工具比較  </description>
+ [Hugo 0.49 加入了 Archtype bundle ，可以用整個目錄的範本[() 改完 theme 以後，記得要更新 theme\docdock\archtypes 裡的範本   Ref:  StaticGen 靜態網站生成工具比較  </description>
     </item>
     
     <item>
@@ -100,7 +100,6 @@ LOG 20180601
       
       <guid>/post/reading-py-scraping-analysis-book/</guid>
       <description>&lt;p&gt;Python：網路爬蟲與資料分析入門實戰 簡單筆記&lt;/p&gt;
-
 &lt;p&gt;python, beautifulsoup, api, scrapy,&amp;hellip;&lt;/p&gt;</description>
     </item>
     
@@ -119,7 +118,7 @@ LOG 20180601
       <pubDate>Wed, 08 May 2019 00:01:48 +0800</pubDate>
       
       <guid>/post/python-how-to-work-with-pdf-in-python/</guid>
-      <description>&lt;p&gt;閱讀利用 &lt;a href=&#34;&amp;quot;https://zh.wikipedia.org/wiki/Python&amp;quot;&#34; title=&#34;Programming Language&#34;&gt;Python&lt;/a&gt; 來處理 &lt;a href=&#34;&amp;quot;https://zh.wikipedia.org/wiki/pdf&amp;quot;&#34; title=&#34;Portable Document Format&#34;&gt;PDF&lt;/a&gt; 的文章，並作簡單的筆記。&lt;/p&gt;</description>
+      <description>&lt;p&gt;閱讀利用 &lt;a href=&#34;%22https://zh.wikipedia.org/wiki/Python%22&#34; title=&#34;Programming Language&#34;&gt;Python&lt;/a&gt; 來處理 &lt;a href=&#34;%22https://zh.wikipedia.org/wiki/pdf%22&#34; title=&#34;Portable Document Format&#34;&gt;PDF&lt;/a&gt; 的文章，並作簡單的筆記。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -155,8 +154,7 @@ LOG 20180601
       <pubDate>Sun, 03 Jun 2018 23:30:28 +0800</pubDate>
       
       <guid>/post/learning-google-spreadsheet-functions/</guid>
-      <description>&lt;p&gt;使用 &lt;a href=&#34;&amp;quot;https://support.google.com/docs/answer/3093342&amp;quot;&#34; title=&#34;匯入多種結構化資料類型的資料，包括 XML、HTML、CSV、TSV 和 RSS 以及 ATOM XML 資訊提供。&#34;&gt;IMPORTXML&lt;/a&gt; 讀 HTML 的資料進 Google 試算表。&lt;/p&gt;
-
+      <description>&lt;p&gt;使用 &lt;a href=&#34;%22https://support.google.com/docs/answer/3093342%22&#34; title=&#34;匯入多種結構化資料類型的資料，包括 XML、HTML、CSV、TSV 和 RSS 以及 ATOM XML 資訊提供。&#34;&gt;IMPORTXML&lt;/a&gt; 讀 HTML 的資料進 Google 試算表。&lt;/p&gt;
 &lt;p&gt;以下節錄 Google 試算表使用說明，或許改天再加一些使用記錄。&lt;/p&gt;</description>
     </item>
     
@@ -176,9 +174,8 @@ LOG 20180601
       <pubDate>Sat, 02 Jun 2018 18:50:15 +0800</pubDate>
       
       <guid>/post/pycon-tw-2018-june-01-02-taipei-todolist/</guid>
-      <description>&lt;p&gt;今年的 &lt;a href=&#34;https://tw.pycon.org/2018/zh-hant/&#34; title=&#34;PYCON TW 2018 Official Site&#34;&gt;PYCON TW 2018&lt;/a&gt; ,Taipei June  01-02，
+      <description>&lt;p&gt;今年的 &lt;a href=&#34;https://tw.pycon.org/2018/zh-hant/&#34; title=&#34;PYCON TW 2018 Official Site&#34;&gt;PYCON TW 2018&lt;/a&gt; ,Taipei June  01-02， 
 筆記一下有什麼有趣的主題。&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCHLnNgRnfGYDzPCCH8qGbQw&#34; title=&#34;PYCON TW 2018 Official Youtube Channel&#34;&gt;PYCON TW 2018 Youtube&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://tw.pycon.org/2018/zh-hant/events/schedule/&#34;&gt;PyCon TW 2018 Talks Schedule&lt;/a&gt;&lt;/li&gt;
@@ -220,7 +217,6 @@ LOG 20180601
       <guid>/post/pycon-usa-2018-may-09-17-cleveland-oh-todolist/</guid>
       <description>&lt;p&gt;今年的 &lt;a href=&#34;https://us.pycon.org/2018/&#34; title=&#34;PYCON 2018 Official Site&#34;&gt;PYCON 2018&lt;/a&gt; ,USA 在 May  09-17,Cleveland,OH 結束了。
 筆記一下有什麼有趣的主題。&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCsX05-2sVSH7Nx3zuk3NYuQ&#34; title=&#34;PYCON 2018 Official Youtube Channel&#34;&gt;PYCON 2018 的 Youtube 頻道&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://us.pycon.org/2018/schedule/tutorials/&#34;&gt;PyCon 2018 Tutorials Schedule&lt;/a&gt;&lt;/li&gt;
@@ -254,7 +250,6 @@ LOG 20180601
       
       <guid>/post/reading-7habits-for-effective-text-editing-2.0/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=p6K4iIMlouI&#34;&gt;7 Habits For Effective Text Editing 2.0 - YouTube&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;by &lt;a href=&#34;http://www.moolenaar.net/&#34;&gt;Bram Moolenaar&lt;/a&gt; , Vim的作者談有效率的編輯 , &lt;a href=&#34;http://www.moolenaar.net/habits_2007.pdf&#34;&gt;Slide Here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -265,7 +260,6 @@ LOG 20180601
       
       <guid>/post/udemy-python-easily-migrate-excel-files-to-a-database/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.udemy.com/python-easily-migrate-excel-files-to-a-database/learn/v4/overview&#34;&gt;Python: Easily migrate Excel files to a database&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;是個 約35 min的免費課程，花點時間來看看。&lt;/p&gt;</description>
     </item>
     
@@ -277,7 +271,9 @@ LOG 20180601
       <guid>/post/software-intro-magix-vegas-pro-14-edit/</guid>
       <description>&lt;dl&gt;
 &lt;dt&gt;Vegas Pro是：&lt;/dt&gt;
-&lt;dd&gt;&lt;p&gt;VEGAS Pro 曾是索尼推出的一款非線性編輯軟體，現在由MAGIX開發及推出。最初由 Sonic Foundry開發，2003年至2016年間由索尼旗下子公司Sony Creative Software 負責開發維護工作。 &lt;a href=&#34;https://en.wikipedia.org/wiki/Vegas_Pro&#34; title=&#34;之前為Sony產品， 2016年Sony 出售予MAGIX&#34;&gt;維基百科&lt;/a&gt;&lt;/p&gt;&lt;/dd&gt;
+&lt;dd&gt;
+&lt;p&gt;VEGAS Pro 曾是索尼推出的一款非線性編輯軟體，現在由MAGIX開發及推出。最初由 Sonic Foundry開發，2003年至2016年間由索尼旗下子公司Sony Creative Software 負責開發維護工作。 &lt;a href=&#34;https://en.wikipedia.org/wiki/Vegas_Pro&#34; title=&#34;之前為Sony產品， 2016年Sony 出售予MAGIX&#34;&gt;維基百科&lt;/a&gt;&lt;/p&gt;
+&lt;/dd&gt;
 &lt;/dl&gt;</description>
     </item>
     
@@ -299,7 +295,6 @@ LOG 20180601
       
       <guid>/post/reading-automate-the-boring-stuff-with-python-1st/</guid>
       <description>&lt;p&gt;心得筆記&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Automate the Boring Stuff with Python&lt;/li&gt;
 &lt;li&gt;Practical Programming for Total Beginners&lt;/li&gt;
@@ -313,7 +308,7 @@ LOG 20180601
       <pubDate>Tue, 17 Apr 2018 02:47:36 +0800</pubDate>
       
       <guid>/post/15-minute-apps/</guid>
-      <description>&lt;p&gt;&amp;rdquo; &lt;a href=&#34;https://martinfitzpatrick.name/article/15-minute-apps/&#34; title=&#34;Common desktop apps in Python, using PyQt&#34;&gt;15 Minute Apps&lt;/a&gt;  | Common desktop apps in Python, using PyQt&amp;rdquo;
+      <description>&lt;p&gt;&amp;quot; &lt;a href=&#34;https://martinfitzpatrick.name/article/15-minute-apps/&#34; title=&#34;Common desktop apps in Python, using PyQt&#34;&gt;15 Minute Apps&lt;/a&gt;  | Common desktop apps in Python, using PyQt&amp;rdquo;
 簡單筆記&lt;/p&gt;</description>
     </item>
     
@@ -332,7 +327,7 @@ LOG 20180601
       <pubDate>Sat, 14 Apr 2018 14:44:03 +0800</pubDate>
       
       <guid>/post/python-import-system/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;(https://manikos.github.io/how-pythons-import-machinery-works)&#34;&gt;How python&amp;rsquo;s import machinery works&lt;/a&gt; 簡單的筆記，
+      <description>&lt;p&gt;&lt;a href=&#34;(https://manikos.github.io/how-pythons-import-machinery-works)&#34;&gt;How python&#39;s import machinery works&lt;/a&gt; 簡單的筆記，
 順便整理一下 &lt;a href=&#34;https://docs.python.org/3/reference/import.html&#34; title=&#34;access to the code in another module&#34;&gt;import&lt;/a&gt; 的資料。&lt;/p&gt;</description>
     </item>
     
@@ -371,7 +366,7 @@ LOG 20180601
       
       <guid>/post/reading-dokusho-issatsu-matomenasai-2013/</guid>
       <description>&lt;p&gt;活用一輩子的讀書筆記術【完全攻略版】 2013
-   作者： 奧野宣之 簡單筆記心得。&lt;/p&gt;</description>
+作者： 奧野宣之 簡單筆記心得。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -390,9 +385,8 @@ LOG 20180601
       
       <guid>/post/learn-language-in-six-months/</guid>
       <description>&lt;p&gt;TED 影片簡單心得筆記。&lt;/p&gt;
-
-&lt;p&gt;【TED】6個月掌握流利的外語學習方法
-How to learn any language in six months
+&lt;p&gt;【TED】6個月掌握流利的外語學習方法 
+How to learn any language in six months 
 by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;</description>
     </item>
     
@@ -403,7 +397,6 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;</description>
       
       <guid>/post/reading-hackingvim72/</guid>
       <description>&lt;p&gt;Hacking Vim 7.2 讀後心得。&lt;/p&gt;
-
 &lt;p&gt;以及一些簡單的筆記、和心得記錄。&lt;/p&gt;</description>
     </item>
     
@@ -414,8 +407,7 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;</description>
       
       <guid>/post/golang-intro/</guid>
       <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;
-
-&lt;p&gt;Archetypes are located in the &lt;code&gt;archetypes&lt;/code&gt; directory in the source of your site. To learn more about archetypes, visit &lt;a href=&#34;https://gohugo.io/content-management/archetypes/&#34;&gt;Archetypes&lt;/a&gt; on the Hugo website. And when you&amp;rsquo;re ready, check out the &lt;a href=&#34;https://comfusion.github.io/after-dark/#customizing&#34;&gt;Customizing&lt;/a&gt; section of the After Dark documentation for additional options.&lt;/p&gt;</description>
+&lt;p&gt;Archetypes are located in the &lt;code&gt;archetypes&lt;/code&gt; directory in the source of your site. To learn more about archetypes, visit &lt;a href=&#34;https://gohugo.io/content-management/archetypes/&#34;&gt;Archetypes&lt;/a&gt; on the Hugo website. And when you&#39;re ready, check out the &lt;a href=&#34;https://comfusion.github.io/after-dark/#customizing&#34;&gt;Customizing&lt;/a&gt; section of the After Dark documentation for additional options.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -434,9 +426,9 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;</description>
       
       <guid>/post/markdown-syntax-intro/</guid>
       <description>Markdown 文件 NOTE: This is Traditional Chinese Edition Document of Markdown Syntax. If you are seeking for English Edition Document. Please refer to Markdown: Syntax.
- Markdown: Syntax  概述  哲學 行內 HTML 特殊字元自動轉換  區塊元素  段落和換行 標題 區塊引言 清單 程式碼區塊 分隔線  區段元素  連結 強調 程式碼 圖片  其它  跳脫字元 自動連結  感謝  注意：這份文件是用 Markdown 寫的，你可以看看它的原始檔 。
-概述 哲學 Markdown 的目標是實現「易讀易寫」。
-不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。Markdown 語法受到一些既有 text-to-HTML 格式的影響，包括 Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，然而最大靈感來源其實是純文字的電子郵件格式。</description>
+Markdown: Syntax  概述  哲學 行內 HTML 特殊字元自動轉換   區塊元素  段落和換行 標題 區塊引言 清單 程式碼區塊 分隔線   區段元素  連結 強調 程式碼 圖片   其它  跳脫字元 自動連結   感謝  **注意：**這份文件是用 Markdown 寫的，你可以看看它的原始檔 。
+ Markdown 的目標是實現「易讀易寫」。
+不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。Markdown 語法受到一些既有 text-to-HTML 格式的影響，包括 [Setext] 1、[atx] 2、[Textile] 3、[reStructuredText] 4、[Grutatext] 5 和 [EtText] 6，然而最大靈感來源其實是純文字的電子郵件格式。</description>
     </item>
     
     <item>
@@ -458,7 +450,7 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;</description>
       <guid>/post/this-is-new-blog-post/</guid>
       <description>鳳山房價較高雄市中心便宜，吸引首購自住客前往置產，成為今年高雄上半年不動產交易 量最多的行政區，而交易主力在總價500～700萬外加車位的20年以上透天。 鳳山生活機能完善，房價較高雄市中心便宜，吸引首購族置產
 鳳山生活圈鄰近鳳山捷運站及鳳山火車站，具備雙鐵優勢，加上距國道1號約10分鐘車程 ，交通便利，且商圈林立，吸引家樂福、迪卡儂等大型賣場進駐，區域內還有大東文化藝 術中心、大東濕地公園等公共建設，近期鳳山體育館也規劃將改建成運動中心，生活機能 十分豐富。
-print(&amp;#34;hello,world!&amp;#34;) print()
+print(&amp;#34;hello,world!&amp;#34;)print()
 1var a string2var b string3var c string4var d string &amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;div&amp;gt;&amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt;{{ range .Data.Pages }}{{ .Render &amp;#34;summary&amp;#34;}}{{ end }}&amp;lt;/div&amp;gt;&amp;lt;/section&amp;gt; </description>
     </item>
     
@@ -492,7 +484,7 @@ http://img.ltn.com.tw/Upload/liveNews/BigPic/600_php014Tpo.jpg
       
       <guid>/post/what-is-hugo/</guid>
       <description>Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike other systems which dynamically build a page every time a visitor requests one, Hugo does the building when you create your content. Since websites are viewed far more often than they are edited, Hugo is optimized for website viewing while providing a great writing experience.
-Sites built with Hugo are extremely fast and very secure.</description>
+Sites built with Hugo are extremely fast and very secure. Hugo sites can be hosted anywhere, including Appernetic, Heroku, GoDaddy, DreamHost, GitHub Pages, Surge, Aerobatic, Google Cloud Storage, Amazon S3 and CloudFront, and work well with CDNs.</description>
     </item>
     
     <item>
@@ -502,8 +494,8 @@ Sites built with Hugo are extremely fast and very secure.</description>
       
       <guid>/post/introduction/</guid>
       <description>Hugo is written in Go with support for multiple platforms.
-The latest release can be found at Hugo Releases. We currently provide pre-built binaries for &amp;nbsp;Windows, &amp;nbsp;Linux, &amp;nbsp;FreeBSD and &amp;nbsp;OS&amp;nbsp;X (Darwin) for x64, i386 and ARM architectures.
-Hugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan&amp;nbsp;9 and Solaris. See http://golang.org/doc/install/source for the full set of supported combinations of target operating systems and compilation architectures.</description>
+The latest release can be found at Hugo Releases. We currently provide pre-built binaries for Windows, Linux, FreeBSD and OS X (Darwin) for x64, i386 and ARM architectures.
+Hugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan 9 and Solaris. See http://golang.org/doc/install/source for the full set of supported combinations of target operating systems and compilation architectures.</description>
     </item>
     
     <item>
@@ -512,8 +504,8 @@ Hugo may also be compiled from source wherever the Go compiler tool chain can ru
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>/post/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&#39;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&#39;t cover using CSS to style your theme.
+We&#39;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
@@ -547,8 +539,8 @@ Follow the following steps:
       
       <guid>/post/migrate-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
+▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&#39;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
     </item>
     
   </channel>

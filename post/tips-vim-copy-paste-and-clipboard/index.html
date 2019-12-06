@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-11-29T21:29:53 CST">
+<meta name="revised" content="2019-12-06T23:21:24 CST">
 <title>Tips Vim Copy Paste and Clipboard :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -487,14 +487,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#概述">概述</a></li>
-<li><a href="#混用">混用</a></li>
-<li><a href="#分開使用">分開使用</a></li>
-<li><a href="#參考連結">參考連結</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
         </div>
     </div>
     
@@ -523,50 +516,38 @@
     
     
     <p>Vim 複製、貼上，及使用系統的剪貼簿。</p>
-
 <p>Task list: 😄</p>
-
-<ul class="task-list">
-<li><label><input type="checkbox" checked disabled class="task-list-item"> 初稿</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 再讀</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 筆記</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 完成</label></li>
+<ul>
+<li><input checked="" disabled="" type="checkbox">初稿</li>
+<li><input disabled="" type="checkbox">再讀</li>
+<li><input disabled="" type="checkbox">筆記</li>
+<li><input disabled="" type="checkbox">完成</li>
 </ul>
-
-<h1 id="概述">概述</h1>
-
+<h1 id="heading">概述</h1>
 <p>Vim 複製、貼上，及使用系統的剪貼簿。</p>
-
-<h1 id="混用">混用</h1>
-
+<h1 id="heading1">混用</h1>
 <p>在 ~/.vimrc 加上</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">clipboard</span>=<span style="color:#a6e22e">unnamed</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span># <span style="color:#a6e22e">set</span> <span style="color:#a6e22e">mouse</span>=<span style="color:#a6e22e">a</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span># <span style="color:#a6e22e">讓mouse一選</span>，<span style="color:#a6e22e">就直接是選取模式了</span></code></pre></div>
-<p>Vim 內的剪貼即會依系統剪貼簿內容變更。</p>
-
-<h1 id="分開使用">分開使用</h1>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">clipboard</span>=<span style="color:#a6e22e">unnamed</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span># <span style="color:#a6e22e">set</span> <span style="color:#a6e22e">mouse</span>=<span style="color:#a6e22e">a</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span># <span style="color:#a6e22e">讓mouse一選</span>，<span style="color:#a6e22e">就直接是選取模式了</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Vim 內的剪貼即會依系統剪貼簿內容變更。</p>
+<h1 id="heading2">分開使用</h1>
 <p>一般的 Vim 指令</p>
-
 <ul>
 <li><code>yy</code> : 是複製整行</li>
 <li><code>dd</code> : 是剪下整行</li>
 </ul>
-
 <p>使用系統剪貼簿，要加前置 <code>&quot;+</code></p>
-
 <ul>
 <li><code>&quot;+yy</code> : 複製整行進系統剪貼簿</li>
 <li><code>&quot;+dd</code> : 剪下整行進系統剪貼簿</li>
 <li><code>&quot;+gP</code> : 貼上系統剪貼簿內容後，把遊標放在最後</li>
 </ul>
-
-<p><strong>See Also</strong>
-- <a href="https://stackoverflow.com/questions/13317586/explain-gp-command-from-gvim-menu">Explain &ldquo;+gP command from gvim menu</a></p>
-
-<h1 id="參考連結">參考連結</h1>
-
+<p><strong>See Also</strong></p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/13317586/explain-gp-command-from-gvim-menu">Explain &ldquo;+gP command from gvim menu</a></li>
+</ul>
+<h1 id="heading3">參考連結</h1>
 <ol>
 <li><a href="https://fcamel-life.blogspot.tw/2011/02/vim-terminal-windows-clipboard.html">讓 vim 的複製貼上和其它 terminal 以及 Windows 共用 clipboard</a></li>
 <li><a href="http://littleqnote.blogspot.tw/2013/09/vim-clipboard.html">讓 Vim 跟與你的系統剪貼簿 (clipboard) 共舞</a></li>

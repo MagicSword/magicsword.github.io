@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-11-29T21:29:53 CST">
+<meta name="revised" content="2019-12-06T23:21:24 CST">
 <title>Reading Code Complete 2nd :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -487,15 +487,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#簡介">簡介</a></li>
-<li><a href="#第一部分-打好基礎">第一部分 打好基礎</a></li>
-<li><a href="#第二部分-建立高品質的程式碼">第二部分 建立高品質的程式碼</a></li>
-<li><a href="#筆記">筆記</a></li>
-<li><a href="#參考連結">參考連結</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
         </div>
     </div>
     
@@ -522,17 +514,14 @@
     
     
     <p>Code Complete 2nd 主要是講軟體工程方面的內容。通常簡寫為 <code>cc2e</code></p>
-
 <ul>
-<li>書名：CODE COMPLETE 2中文版：軟體開發實務指南（第二版）
-
-<ul>
+<li>書名：CODE COMPLETE 2中文版：軟體開發實務指南（第二版）</li>
 <li>原名：Code Complete: A Practical Handbook of Software Construction, Second Edition</li>
-<li><a href="https://www.books.com.tw/products/0010805887">博客來</a></li>
-<li><a href="https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670">Amazon</a></li>
-<li>作者： Steve McConnell<br /></li>
+<li>[博客來] (<a href="https://www.books.com.tw/products/0010805887">https://www.books.com.tw/products/0010805887</a>)</li>
+<li>[Amazon] (<a href="https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670">https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670</a>)</li>
+<li>作者： Steve McConnell</li>
 <li>譯者： 金戈, 湯凌, 陳碩, 張菲</li>
-<li>出版社：博碩<br /></li>
+<li>出版社：博碩</li>
 <li>出版日期：2018/11/23</li>
 <li>語言：繁體中文</li>
 <li>定價：1280元</li>
@@ -540,22 +529,16 @@
 <li>規格：平裝 / 912頁 / 18.5 x 23 cm / 普通級 / 單色印刷 / 二版</li>
 <li>出版地：英國</li>
 <li>本書分類：電腦資訊&gt; 程式設計/APP開發&gt; 軟體工程/遊戲開發</li>
-</ul></li>
 </ul>
-
 <p>Task list: 😄</p>
-
-<ul class="task-list">
-<li><label><input type="checkbox" checked disabled class="task-list-item"> 初稿</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 再讀</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 筆記</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 完成</label></li>
+<ul>
+<li><input checked="" disabled="" type="checkbox">初稿</li>
+<li><input disabled="" type="checkbox">再讀</li>
+<li><input disabled="" type="checkbox">筆記</li>
+<li><input disabled="" type="checkbox">完成</li>
 </ul>
-
-<h1 id="簡介">簡介</h1>
-
+<h1 id="heading">簡介</h1>
 <p>本書分為幾個部分：</p>
-
 <ol>
 <li>第一部分 打好基礎</li>
 <li>第二部分 建立高品質的程式碼</li>
@@ -565,7 +548,6 @@
 <li>第六部分 系統考慮</li>
 <li>第七部分 軟體工藝</li>
 </ol>
-
 <ul>
 <li>主要是在軟體工程的內容，如何寫出好的程式碼。</li>
 <li>而什麼是好的程式碼？易於維護、讓人容易理解的就是好的程式碼。</li>
@@ -575,69 +557,46 @@
 自已專案的表現。</li>
 <li>本書寫在時間是 2004 年，不過概念的東西不會差太多。</li>
 </ul>
-
-<h1 id="第一部分-打好基礎">第一部分 打好基礎</h1>
-
+<h1 id="-">第一部分 打好基礎</h1>
 <p>1~4 章</p>
-
 <p>寫程式、蓋房子，本質上都是在建造一個東西。建築學中的概念也常常使用在軟體工程學中。
-工程開始前，需要有的一些步驟：討論需求、建築藍圖、架構確認、資源管理、本地化、國際化，
+工程開始前，需要有的一些步驟：討論需求、建築藍圖、架構確認、資源管理、本地化、國際化， 
 使用者界面、效能、輸入輸出、容錯性。在真正動手前，考慮周到，之後才不會多走了錯路。
 算是在 孫子兵法 中廟算的階段。</p>
-
-<h1 id="第二部分-建立高品質的程式碼">第二部分 建立高品質的程式碼</h1>
-
+<h1 id="-1">第二部分 建立高品質的程式碼</h1>
 <p><strong>5 Design in Construction</strong></p>
-
 <p>軟體設計，在動手寫程式碼前，規劃軟體的架構，像是設計模式、使用者介面、資料庫存取、
 耦合標準、高內聚力</p>
-
 <p><strong>6 Working Classes</strong></p>
-
 <p>Class 類別，很多物件導向的程式中常用到的。
 抽象資料類別 ADTs，類別介面、為何要用 Class?，超越類別 Packages</p>
-
 <p><strong>7 High-Quality Routines</strong></p>
-
 <p>Routines(子程式)：為了完成特別的功能而寫的方法， 可被呼叫。
-程式中，一定有些動作會重複的做，把它分出來，需要時再呼叫，程式可以變的比較易讀，且有效率。
-好的子程式名稱：描述子程式的功能，簡潔，對傳回值有所描述，動詞+受詞？命名要有一致性。
-子程式要多長？200行以下會比較好。
+程式中，一定有些動作會重複的做，把它分出來，需要時再呼叫，程式可以變的比較易讀，且有效率。 
+好的子程式名稱：描述子程式的功能，簡潔，對傳回值有所描述，動詞+受詞？命名要有一致性。 
+子程式要多長？200行以下會比較好。 
 如何使用子程式參數(傳入值)？</p>
-
 <p><strong>8 Defensive Programming</strong></p>
-
 <p>撰寫程式時，錯誤難免，但事前的一些規範，能有效的防止產出錯誤。
 輸入資料檢查、斷言、錯誤處理、例外、隔離程式、輸助除錯的程式碼…</p>
-
 <p><strong>9 The Pseudocode Programming Process</strong></p>
-
 <ul>
 <li>Pseudocode(虛擬碼)，可以想作是思考的步驟。</li>
 <li>Pseudocode Programming Process(PPP)有助於減少設計、編寫文件所需的工作。</li>
 <li>如何寫好虛擬碼？</li>
 <li>PPP的替代方案？重構，契約式設計，測式導行設計(TDD)</li>
 </ul>
-
 <p>#第三部分 變數</p>
-
 <p><strong>10 General Issues in Using Variables</strong></p>
-
 <p>變數型態、作用範圍、持續時間…</p>
-
 <p><strong>11 The Power of Variable Names</strong></p>
-
 <ul>
 <li>好的變數命名，可以增加易讀性。變數的資料型態、功能、作用範圍、前綴</li>
 <li>命名要有一致性，避免和保留字太相近</li>
 </ul>
-
 <p><strong>12 Fundamental Data Types</strong></p>
-
 <p>數值、整數、浮點數、字元字串、布林、列舉、具名常數、陣列</p>
-
 <p><strong>13 Unusual Data Types</strong></p>
-
 <ul>
 <li>結構體：<code>struct</code>in C++, <code>Structure</code> in Visual Basic ，
 基本上是多種資料型態結合的自訂資料型態。</li>
@@ -646,102 +605,66 @@
 <li>全域資料：程式中任何人都可以取用這個資料，所以容易被不對的子程式、不對的時間被
 取用，錯誤就會常發生，不好管理。</li>
 </ul>
-
 <p>#第四部分 語句</p>
-
 <p><strong>14 Organizing Straight-Line Code</strong></p>
-
-<p><a href="http://terms.naer.edu.tw/detail/1287109/">Straight-Line Code(直線碼)</a> :
+<p>[Straight-Line Code(直線碼)] (<a href="http://terms.naer.edu.tw/detail/1287109/">http://terms.naer.edu.tw/detail/1287109/</a>) :
 指程式中不含任何循環或迴圈者。若需要重複某程式段，則依順序直接寫出其程式碼，而不用循環指令。</p>
-
 <p><strong>15 Using Conditionals</strong></p>
-
 <p><code>if-else</code>, <code>switch-case</code>,&hellip;</p>
-
 <p><strong>16 Controlling Loops</strong></p>
-
 <p><code>for loop</code>, <code>while</code>,&hellip;</p>
-
 <p><strong>17 Unusual Control Structures</strong></p>
-
 <p>recursive structure, <code>goto</code> clause, &hellip;</p>
-
 <p><strong>18 Table-Driven Methods</strong></p>
-
 <p>用查表，來代替 <code>if-else</code>之類的設計模式。簡單的情境，或許 邏輯子句較方便。但是情境越複雜，查表法的好處也越大。</p>
-
 <p><strong>19 General Control Issues</strong></p>
-
 <p>布林運算、巢狀結構、結構化設計…</p>
-
 <p>#第五部分 程式碼改善</p>
-
 <p>程式寫作中、寫完後除錯，debug的過程</p>
-
 <p><strong>20 The Software-Quality Landscape</strong></p>
-
 <p>產品有要正確性(運作結果正常)，可用性(易學易用)，效率(運行速度可用)，…
 測試方法，Alpha, Beta 測試，…</p>
-
 <p><strong>21 Collaborative Construction</strong></p>
-
 <ul>
 <li>通常是團隊來完成一個產品， 所以人員協同合作分配，</li>
 </ul>
-
 <dl>
 <dt><strong>Pair-Programming</strong>(結對程式設計)：</dt>
-<dd><p>兩個程式設計師在一個電腦上共同工作。一個人輸入程式碼，而另一個人審查他輸入的每一行程式碼。</p></dd>
-<dd><p>輸入程式碼的人稱作駕駛員，審查程式碼的人稱作觀察員（或導航員）。兩個程式設計師經常互換角色。</p></dd>
+<dd>
+<p>兩個程式設計師在一個電腦上共同工作。一個人輸入程式碼，而另一個人審查他輸入的每一行程式碼。</p>
+</dd>
+<dd>輸入程式碼的人稱作駕駛員，審查程式碼的人稱作觀察員（或導航員）。兩個程式設計師經常互換角色。</dd>
 </dl>
-
 <p><strong>22 Developer Testing</strong></p>
-
 <p>Unit-Test, Component Test, Intergration Test,Regression Test, System Test,&hellip;</p>
-
 <p><strong>23 Debugging</strong></p>
-
 <p>除錯方式、方法，…</p>
-
 <p><strong>24 Refactoring</strong></p>
-
 <dl>
 <dt>重構(Refactoring):</dt>
-<dd><p>指對軟體程式碼做任何更動以增加可讀性或者簡化結構而不影響輸出結果。</p></dd>
+<dd>
+<p>指對軟體程式碼做任何更動以增加可讀性或者簡化結構而不影響輸出結果。</p>
+</dd>
 </dl>
-
 <p>程式不可能一寫出來就是最完美的，常要經過多次修改，追加功能，減少功能， 除錯…</p>
-
 <p><strong>25 Code-Tuning Strategies</strong></p>
-
 <p>Code-Tuning 程式碼調整，和重構不同的是，通常為了增加程式的效率而作。
 改寫程式邏輯、用新的運算法，…。為了快，而重寫。</p>
-
 <p><strong>26 Code-Tuning Techniques</strong></p>
-
 <p>本章著重在程式碼範圍的調整，較細節的部分。</p>
-
 <p>#第六部分 系統考慮</p>
-
 <p><strong>27 How Program Size Affects Construction</strong></p>
-
 <p>專案管理，團隊協調</p>
-
 <p><strong>28 Managing Construction</strong></p>
-
 <ul>
 <li>需求變更，設計變更</li>
 <li>程式碼變更：版本控制，備份</li>
 <li>進度評估：甘特圖…</li>
 <li>專業的專案管理人才</li>
 </ul>
-
 <p><strong>29 Integration</strong></p>
-
 <p>整合，不同專案間的整合，不同團隊間的整合，不同公司間的整合，</p>
-
 <p><strong>30 Programming Tools</strong></p>
-
 <ul>
 <li>設計工具：UML</li>
 <li>原始碼工具：IDE, Editor,Compare tool, Merge tool, Code Formatter, Document, Refactor</li>
@@ -750,42 +673,27 @@
 <li>自行設計的工具：DRY, 自已寫工具</li>
 <li>工具夢想世界：</li>
 </ul>
-
 <p>#第七部分 軟體工藝</p>
-
 <p><strong>31 Layout and Style</strong></p>
-
 <p>Coding Style: 程式寫出來，要讓人看的懂。斷行、段落，註解…</p>
-
 <p>**32 Self-Documenting Code **</p>
-
 <ul>
 <li>內部文件：通常是寫在程式碼內的註解。外部文件：另外寫的軟體操作說明書。</li>
 <li>註解或不註解：註解是為了方便人了解程式，但是如果程式碼本身易於了解，註解或許就不是必要，反而增加閱讀量。</li>
 <li>參考其他人的註解標準</li>
 </ul>
-
 <p>**33 Personal Character **</p>
-
 <p>性格影響結果</p>
-
 <p><strong>34 Themes in Software Craftsmanship</strong></p>
-
 <p>以人為本</p>
-
 <p><strong>35 Where to Find More Information</strong></p>
-
 <ul>
 <li>其他書、期刊、參考書目</li>
 </ul>
-
-<h1 id="筆記">筆記</h1>
-
+<h1 id="heading1">筆記</h1>
 <p>900多頁這樣大略翻了一下，說的東西還真的是很多。軟體工程真的是教你如何寫程式走向架構軟體、
 建造一個新的東西的學問。細讀可能還要很多時間，有空再來慢慢讀。</p>
-
-<h1 id="參考連結">參考連結</h1>
-
+<h1 id="heading2">參考連結</h1>
 <ol>
 <li><a href="https://stevemcconnell.com/books/">SteveMcConnell作者網站</a></li>
 <li><a href="https://dotblogs.com.tw/hatelove/2018/12/23/code-complete-2nd-edition-reading-guide">【Code Complete 2nd Edition：軟體開發實務指南】怎麼讀這本 1.7 kg 重的經典磚塊書</a></li>

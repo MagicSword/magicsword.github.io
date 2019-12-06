@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-11-29T21:29:53 CST">
+<meta name="revised" content="2019-12-06T23:21:24 CST">
 <title>Python How to Work With PDF in Python :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -487,23 +487,7 @@
     
     <div class="progress">
         <div class="wrapper">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#概述">概述</a></li>
-<li><a href="#前言">前言</a></li>
-<li><a href="#pypdf-演進">pyPDF 演進</a></li>
-<li><a href="#安裝">安裝</a></li>
-<li><a href="#提取">提取</a></li>
-<li><a href="#旋轉">旋轉</a></li>
-<li><a href="#合併">合併</a></li>
-<li><a href="#分拆">分拆</a></li>
-<li><a href="#加浮水印">加浮水印</a></li>
-<li><a href="#加密">加密</a></li>
-<li><a href="#結論">結論</a></li>
-<li><a href="#進階閱讀">進階閱讀</a></li>
-<li><a href="#參考連結">參考連結</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
         </div>
     </div>
     
@@ -529,30 +513,24 @@
     
     
     
-    <p>閱讀利用 <a href="&quot;https://zh.wikipedia.org/wiki/Python&quot;" title="Programming Language">Python</a> 來處理 <a href="&quot;https://zh.wikipedia.org/wiki/pdf&quot;" title="Portable Document Format">PDF</a> 的文章，並作簡單的筆記。</p>
-
+    <p>閱讀利用 <a href="%22https://zh.wikipedia.org/wiki/Python%22" title="Programming Language">Python</a> 來處理 <a href="%22https://zh.wikipedia.org/wiki/pdf%22" title="Portable Document Format">PDF</a> 的文章，並作簡單的筆記。</p>
 <p>Task list: 😄</p>
-
-<ul class="task-list">
-<li><label><input type="checkbox" checked disabled class="task-list-item"> 初稿</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 再讀</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 筆記</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> 完成</label></li>
+<ul>
+<li><input checked="" disabled="" type="checkbox">初稿</li>
+<li><input disabled="" type="checkbox">再讀</li>
+<li><input disabled="" type="checkbox">筆記</li>
+<li><input disabled="" type="checkbox">完成</li>
 </ul>
-
-<h1 id="概述">概述</h1>
-
+<h1 id="heading">概述</h1>
 <p>原文 <a href="https://realpython.com/pdf-python/">How to Work With a PDF in Python</a></p>
-
 <p>文章大概分為幾個部分</p>
-
 <ul>
 <li>簡介 python 內用來處理 PDF 的程式庫，及演進
-
 <ul>
 <li>pyPDF,pyPDF2,pyPDF4</li>
 <li>pdfrw</li>
-</ul></li>
+</ul>
+</li>
 <li>安裝</li>
 <li>提取</li>
 <li>合併</li>
@@ -562,123 +540,92 @@
 <li>結論</li>
 <li>進階閱讀</li>
 </ul>
-
 <p>這篇文章大概就原文內容作摘要，加上一些心得筆記。或許之後有空來考慮翻譯？</p>
-
-<h1 id="前言">前言</h1>
-
-<p><a href="&quot;https://zh.wikipedia.org/wiki/pdf&quot;" title="Portable Document Format">PDF</a> 可攜式文件格式, 是 Adobe 公司的文件規格，常見的文件交換格式。目前是
+<h1 id="heading1">前言</h1>
+<p><a href="%22https://zh.wikipedia.org/wiki/pdf%22" title="Portable Document Format">PDF</a> 可攜式文件格式, 是 Adobe 公司的文件規格，常見的文件交換格式。目前是
 ISO 下的開放文件格式。</p>
-
 <p>python 下用來處理 PDF 的程式庫除了 pyPDFx 外，還有：</p>
-
 <ul>
 <li>pdfminer</li>
 <li>pdfquery</li>
-<li>PDFlib&rsquo;s TET library with python binding</li>
+<li>PDFlib's TET library with python binding</li>
 <li>Reportlab</li>
 <li>pdfrw</li>
 </ul>
-
 <p>本文主要是以 pyPDFx 為主。</p>
-
-<h1 id="pypdf-演進">pyPDF 演進</h1>
-
+<h1 id="pypdf-">pyPDF 演進</h1>
 <ul>
 <li>最初的 pyPDF 是在2005</li>
-<li><a href="&quot;https://github.com/mstamy2/PyPDF2&quot;" title="A utility to read and write PDFs with Python">pyPDF2</a> 最近失去維護，而 <a href="&quot;https://github.com/claird/PyPDF4&quot;" title="A utility to read and write PDFs with Python">pyPDF4</a> 跟 <a href="&quot;https://github.com/mstamy2/PyPDF2&quot;" title="A utility to read and write PDFs with Python">pyPDF2</a> 不完全相容</li>
-<li>本文主要以 <a href="&quot;https://github.com/mstamy2/PyPDF2&quot;" title="A utility to read and write PDFs with Python">pyPDF2</a> 為主</li>
-<li><a href="&quot;https://github.com/pmaupin/pdfrw&quot;" title="pdfrw is a pure Python library that reads and writes PDFs">pdfrw</a> : 和 ReportLab 整合，有不少功能</li>
+<li><a href="%22https://github.com/mstamy2/PyPDF2%22" title="A utility to read and write PDFs with Python">pyPDF2</a> 最近失去維護，而 <a href="%22https://github.com/claird/PyPDF4%22" title="A utility to read and write PDFs with Python">pyPDF4</a> 跟 <a href="%22https://github.com/mstamy2/PyPDF2%22" title="A utility to read and write PDFs with Python">pyPDF2</a> 不完全相容</li>
+<li>本文主要以 <a href="%22https://github.com/mstamy2/PyPDF2%22" title="A utility to read and write PDFs with Python">pyPDF2</a> 為主</li>
+<li><a href="%22https://github.com/pmaupin/pdfrw%22" title="pdfrw is a pure Python library that reads and writes PDFs">pdfrw</a> : 和 ReportLab 整合，有不少功能</li>
 </ul>
-
-<h1 id="安裝">安裝</h1>
+<h1 id="heading2">安裝</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">    $ pip install pypdf2
     <span style="color:#75715e"># 或是用 Anaconda</span>
-    $ conda install pypdf2</code></pre></div>
-<h1 id="提取">提取</h1>
-
+    $ conda install pypdf2
+</code></pre></div><h1 id="heading3">提取</h1>
 <ul>
 <li>可以用 pyPDF2 萃取出 metadata, 包括 Author,Creator,Producer,Subject
 ,Title,Number of Pages。</li>
 <li><code>PyPDF2.PdfFileReader.getDocumentInfo()</code> 來讀 pdf metadata</li>
 <li><code>PyPDF2.PdfFileReader.getNumPages()</code> 來讀頁數</li>
-<li>例子中  <a href="&quot;https://realpython.com/python-f-strings/&quot;" title="f-string">f-string</a>   ，可以參考文章</li>
+<li>例子中  <a href="%22https://realpython.com/python-f-strings/%22" title="f-string">f-string</a>   ，可以參考文章</li>
 <li>PyPDF2 中還有 <code>.extractText()</code> 用來讀內文，不過效果不好</li>
-
-<li><p>要讀內文的話，建議用 <a href="&quot;https://github.com/euske/pdfminer&quot;" title="PDFMiner">PDFMiner</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># extract_doc_info.py</span>
+<li>要讀內文的話，建議用 <a href="%22https://github.com/euske/pdfminer%22" title="PDFMiner">PDFMiner</a></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># extract_doc_info.py</span>
 
 <span style="color:#f92672">from</span> PyPDF2 <span style="color:#f92672">import</span> PdfFileReader
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">extract_information</span>(pdf_path):
-<span style="color:#66d9ef">with</span> open(pdf_path, <span style="color:#e6db74">&#39;rb&#39;</span>) <span style="color:#66d9ef">as</span> f:
-    pdf <span style="color:#f92672">=</span> PdfFileReader(f)
-    information <span style="color:#f92672">=</span> pdf<span style="color:#f92672">.</span>getDocumentInfo()
-    number_of_pages <span style="color:#f92672">=</span> pdf<span style="color:#f92672">.</span>getNumPages()
+    <span style="color:#66d9ef">with</span> open(pdf_path, <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">rb</span><span style="color:#e6db74">&#39;</span>) <span style="color:#66d9ef">as</span> f:
+        pdf <span style="color:#f92672">=</span> PdfFileReader(f)
+        information <span style="color:#f92672">=</span> pdf<span style="color:#f92672">.</span>getDocumentInfo()
+        number_of_pages <span style="color:#f92672">=</span> pdf<span style="color:#f92672">.</span>getNumPages()
 
-txt <span style="color:#f92672">=</span> f<span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">Information about {pdf_path}: 
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">Author: {information.author}
-</span><span style="color:#e6db74">Creator: {information.creator}
-</span><span style="color:#e6db74">Producer: {information.producer}
-</span><span style="color:#e6db74">Subject: {information.subject}
-</span><span style="color:#e6db74">Title: {information.title}
-</span><span style="color:#e6db74">Number of pages: {number_of_pages}
-</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+    txt <span style="color:#f92672">=</span> f<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74"></span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">    Information about {pdf_path}: </span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74"></span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">    Author: {information.author}</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">    Creator: {information.creator}</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">    Producer: {information.producer}</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">    Subject: {information.subject}</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">    Title: {information.title}</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">    Number of pages: {number_of_pages}</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">    </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
 
-<span style="color:#66d9ef">print</span>(txt)
-<span style="color:#66d9ef">return</span> information
+    <span style="color:#66d9ef">print</span>(txt)
+    <span style="color:#66d9ef">return</span> information
 
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
-path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;reportlab-sample.pdf&#39;</span>
-extract_information(path)</code></pre></div></li>
-</ul>
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">__main__</span><span style="color:#e6db74">&#39;</span>:
+    path <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">reportlab-sample.pdf</span><span style="color:#e6db74">&#39;</span>
+    extract_information(path)
 
-<h1 id="旋轉">旋轉</h1>
-
+</code></pre></div><h1 id="heading4">旋轉</h1>
 <p><code>PdfFileWriter.rotateClockwise(90)</code> 寫入時，可以旋轉頁面。
 <code>.getPage() addPage()</code></p>
-
-<p>Note
-<div class="notices note" >
-PyPDF2 只能以90度的倍數旋轉，其他的角度會得到 <code>AssertionError</code>
-</div></p>
-
-<h1 id="合併">合併</h1>
-
+<p>Note</p>
+<!-- raw HTML omitted -->
+<h1 id="heading5">合併</h1>
 <p>將兩個 pdf 文件合成一個檔案，像是把本文、加上封面、和封底。</p>
-
 <p>方式：讀進兩個文件的每一頁，一頁一頁寫進新的 pdf ，產生合併的新文檔。</p>
-
-<h1 id="分拆">分拆</h1>
-
+<h1 id="heading6">分拆</h1>
 <p>讀進各頁，把想分出去的頁數寫到新檔</p>
-
-<h1 id="加浮水印">加浮水印</h1>
-
+<h1 id="heading7">加浮水印</h1>
 <p><code>PdfFileReader.mergePage(浮水印pdf檔)</code> 加上浮水印</p>
-
-<h1 id="加密">加密</h1>
-
+<h1 id="heading8">加密</h1>
 <ul>
 <li>PyPDF2 目前只能加密碼鎖上文件。</li>
 <li>admin 有 read/write 的權限。user 只有 read 的權限</li>
 <li>加密長度預設是 40bit</li>
 </ul>
-
-<p><code>PdfFileWriter.encrypt(user_pwd=password, owner_pwd=None, 
-                       use_128bit=True)</code></p>
-
-<h1 id="結論">結論</h1>
-
+<p><code>PdfFileWriter.encrypt(user_pwd=password, owner_pwd=None,  use_128bit=True)</code></p>
+<h1 id="heading9">結論</h1>
 <p>PyPDF2 功能不少，不過 取出文字的功能好像不太完美，
-或許要看看其他程式庫。像是 <a href="&quot;https://github.com/euske/pdfminer&quot;" title="PDFMiner">PDFMiner</a></p>
-
-<h1 id="進階閱讀">進階閱讀</h1>
-
-<h1 id="參考連結">參考連結</h1>
-
+或許要看看其他程式庫。像是 <a href="%22https://github.com/euske/pdfminer%22" title="PDFMiner">PDFMiner</a></p>
+<h1 id="heading10">進階閱讀</h1>
+<h1 id="heading11">參考連結</h1>
 <ol>
 <li><a href="https://realpython.com/pdf-python/">How to Work With a PDF in Python</a></li>
 <li><a href="https://realpython.com/python-f-strings/">f-string</a></li>
