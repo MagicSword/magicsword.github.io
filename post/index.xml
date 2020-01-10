@@ -6,10 +6,55 @@
     <description>Recent content in Posts on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Nov 2019 21:05:53 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Dec 2019 17:38:18 +0800</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reading 20191228 Record</title>
+      <link>/post/reading-20191228-record/</link>
+      <pubDate>Sat, 28 Dec 2019 17:38:18 +0800</pubDate>
+      
+      <guid>/post/reading-20191228-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading 20191219 Record</title>
+      <link>/post/reading-20191219-record/</link>
+      <pubDate>Thu, 19 Dec 2019 18:54:07 +0800</pubDate>
+      
+      <guid>/post/reading-20191219-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading 20191214 Record</title>
+      <link>/post/reading-20191214-record/</link>
+      <pubDate>Sat, 14 Dec 2019 20:13:35 +0800</pubDate>
+      
+      <guid>/post/reading-20191214-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python Html Parsing</title>
+      <link>/post/python-html-parsing/</link>
+      <pubDate>Fri, 13 Dec 2019 20:13:58 +0800</pubDate>
+      
+      <guid>/post/python-html-parsing/</guid>
+      <description>&lt;p&gt;Python Parsing libs.  bs4, lxml, pyquery, html.parser&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading 20191206 Record</title>
+      <link>/post/reading-20191206-record/</link>
+      <pubDate>Fri, 06 Dec 2019 19:22:40 +0800</pubDate>
+      
+      <guid>/post/reading-20191206-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Reading 20191129 Record</title>
@@ -161,6 +206,15 @@
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCHLnNgRnfGYDzPCCH8qGbQw&#34; title=&#34;PYCON TW 2018 Official Youtube Channel&#34;&gt;PYCON TW 2018 Youtube&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://tw.pycon.org/2018/zh-hant/events/schedule/&#34;&gt;PyCon TW 2018 Talks Schedule&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s Footer</title>
+      <link>/post/_footer/</link>
+      <pubDate>Fri, 01 Jun 2018 21:35:33 +0800</pubDate>
+      
+      <guid>/post/_footer/</guid>
+      <description>hello Hello, This is footer. in ./post/</description>
     </item>
     
     <item>

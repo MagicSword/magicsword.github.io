@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-12-06T23:21:24 CST">
+<meta name="revised" content="2020-01-11T00:40:37 CST">
 <title>Chapter 18 以 GUI 自動化來控制鍵盤和滑鼠] :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -25,6 +25,25 @@
   }
 </style>
 <meta name="description" content="pyautogui 控制 keyboard, mouse">
+
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+<style>
+      body {
+        font-family: "Microsoft JhengHei",'Noto Sans TC', sans-serif;
+        font-size: 24px;
+      }  
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;  
+      }
+
+ 
+</style>
 
 
     
@@ -73,6 +92,41 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/reading-20191228-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191228-record/">
+            <i class='fa fa-file'></i> Reading 20191228 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191219-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191219-record/">
+            <i class='fa fa-file'></i> Reading 20191219 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191214-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191214-record/">
+            <i class='fa fa-file'></i> Reading 20191214 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/python-html-parsing/" class="dd-item">
+        <div>
+          <a href="/post/python-html-parsing/">
+            <i class='fa fa-file'></i> Python Html Parsing
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191206-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191206-record/">
+            <i class='fa fa-file'></i> Reading 20191206 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/reading-20191129-record/" class="dd-item">
         <div>
           <a href="/post/reading-20191129-record/">
@@ -182,6 +236,13 @@
         <div>
           <a href="/post/pycon-tw-2018-june-01-02-taipei-todolist/">
             <i class='fa fa-file'></i> PYCON TW 2018 June 01 02 Taipei Todolist
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/_footer/" class="dd-item">
+        <div>
+          <a href="/post/_footer/">
+            <i class='fa fa-file'></i> It&#39;s Footer
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -404,20 +465,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/articles/" class="dd-item haschildren
+    <li data-nav-id="" class="dd-item
         ">
       <div>
-      <a href="/articles/">Articles</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="">Articles</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
-        <ul>
-      <li data-nav-id="/articles/article-test/" class="dd-item">
-        <div>
-          <a href="/articles/article-test/">
-            Article Test
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
     </li>
 
 
@@ -426,9 +478,11 @@
                 <li class="" role=""><h3>More</h3><a href="/tags/" target="_blank" rel="noopener"><i class='fa fa-tags'></i> <label>Tags</label></a></li>
                 <li class="" role=""><a href="/categories/" target="_blank" rel="noopener"><i class='fa fa-folder-open'></i> <label>Categories</label></a></li>
                 <li class="" role=""><a href="/about/" target="_blank" rel="noopener"><i class='fa fa-bullhorn'></i> <label>About</label></a></li>
-                <li class="" role=""><a href="https://docdock.netlify.com/shortcodes/icon/" target="_blank" rel="noopener"><i class='fa fa-car'></i> <label>FontAwesome Icon</label></a></li>
                 <li class="" role=""><a href="https://gohugo.io/" target="_blank" rel="noopener"><i class='fa fa-bookmark'></i> <label>Hugo Documentation</label></a></li>
                 <li class="" role=""><a href="https://github.com/MagicSword/" target="_blank" rel="noopener"><i class='fa fa-github'></i> <label>Github repo</label></a></li>
+                <li class="" role=""><a href="https://docdock.netlify.com/shortcodes/" target="_blank" rel="noopener"><i class='fa fa-github'></i> <label>DocDock theme doc</label></a></li>
+                <li class="" role=""><a href="https://docdock.netlify.com/shortcodes/icon/" target="_blank" rel="noopener"><i class='fa fa-car'></i> <label>FontAwesome Icon</label></a></li>
+                <li class="" role=""><a href="https://www.markdownguide.org/extended-syntax/" target="_blank" rel="noopener"><i class='fa fa-github'></i> <label>MD Syntax</label></a></li>
         </section>
             <a id="clear-history" class="" href="#" data-clear-history-toggle=""><i class="fa  fa-history"></i> Clear History</a>
 
@@ -489,27 +543,27 @@
         <div class="wrapper">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#heading2">程式：目前的游標位置</a></li>
-    <li><a href="#heading3">控制滑鼠游標的互動</a></li>
-    <li><a href="#heading4">滑鼠游標的捲動</a></li>
+    <li><a href="#heading-2">程式：目前的游標位置</a></li>
+    <li><a href="#heading-3">控制滑鼠游標的互動</a></li>
+    <li><a href="#heading-4">滑鼠游標的捲動</a></li>
   </ul>
 
   <ul>
     <li><a href="#-mousenow-">程式：擴充 mouseNow 的功能</a></li>
-    <li><a href="#heading6">影像圖片的識別</a></li>
+    <li><a href="#heading-6">影像圖片的識別</a></li>
   </ul>
 
   <ul>
-    <li><a href="#heading8">傳送一個字串</a></li>
-    <li><a href="#heading9">鍵盤按鍵名稱</a></li>
-    <li><a href="#heading10">按下，釋放按鍵</a></li>
-    <li><a href="#heading11">快速鍵組合</a></li>
+    <li><a href="#heading-8">傳送一個字串</a></li>
+    <li><a href="#heading-9">鍵盤按鍵名稱</a></li>
+    <li><a href="#heading-10">按下，釋放按鍵</a></li>
+    <li><a href="#heading-11">快速鍵組合</a></li>
   </ul>
 
   <ul>
     <li><a href="#looking-busy">Looking Busy</a></li>
     <li><a href="#instant-messenger-bot">Instant Messenger Bot</a></li>
-    <li><a href="#gameplaying-bot-tutorial">Game-Playing Bot Tutorial</a></li>
+    <li><a href="#game-playing-bot-tutorial">Game-Playing Bot Tutorial</a></li>
   </ul>
 </nav>
         </div>
@@ -598,7 +652,7 @@
 <li>訊息方塊</li>
 <li>截圖</li>
 </ul>
-<h1 id="heading1">控制滑鼠移動</h1>
+<h1 id="heading-1">控制滑鼠移動</h1>
 <ul>
 <li>畫面左上為原點 (0,0) ，向右 X 軸 正，向下 Y 軸 正</li>
 </ul>
@@ -626,7 +680,7 @@
 <dt><code>pyautogui.moveRel(xdis,ydis,duration=xxsec)</code></dt>
 <dd>相對座標移動</dd>
 </dl>
-<h2 id="heading2">程式：目前的游標位置</h2>
+<h2 id="heading-2">程式：目前的游標位置</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pyautogui
 <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Press Ctrl-C to quit</span><span style="color:#e6db74">&#39;</span>)
 
@@ -640,7 +694,7 @@
         <span style="color:#75715e"># 字串印出後，用等長的 Backspace 刪除，並 flush</span>
 <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">KeyboardInterrupt</span>:
     <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Done.</span><span style="color:#e6db74">&#39;</span>)
-</code></pre></div><h2 id="heading3">控制滑鼠游標的互動</h2>
+</code></pre></div><h2 id="heading-3">控制滑鼠游標的互動</h2>
 <p><strong>Click</strong></p>
 <ul>
 <li>Click : mosueDown, mouseUp</li>
@@ -672,7 +726,7 @@ distance <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</s
     pyautogui<span style="color:#f92672">.</span>dragRel(<span style="color:#f92672">-</span>distance,<span style="color:#ae81ff">0</span>, duration <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>) <span style="color:#75715e"># move left</span>
     distance <span style="color:#f92672">=</span> distance <span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>
     pyautogui<span style="color:#f92672">.</span>dragRel(<span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span>distance, duration <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>) <span style="color:#75715e"># move up</span>
-</code></pre></div><h2 id="heading4">滑鼠游標的捲動</h2>
+</code></pre></div><h2 id="heading-4">滑鼠游標的捲動</h2>
 <dl>
 <dt><code>pyautogui.scroll(xdistance)</code>:</dt>
 <dd>傳入整數引數，向上(正數)、或向下(負數)捲動，這個單位在不同作業系統可能會不同，可能要先試看看。</dd>
@@ -693,7 +747,7 @@ pyperclip<span style="color:#f92672">.</span>copy(numbers)
 
 <span style="color:#f92672">import</span> time<span style="color:#f92672">,</span> pyautogui
 time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</span>); pyautogui<span style="color:#f92672">.</span>scroll(<span style="color:#ae81ff">100</span>)
-</code></pre></div><h1 id="heading5">螢幕操作的函式</h1>
+</code></pre></div><h1 id="heading-5">螢幕操作的函式</h1>
 <ul>
 <li>根據螢幕截圖的內容，分析後，再進行動作</li>
 <li>需要 Pillow (Linux中需要 scrot 來截圖)</li>
@@ -714,15 +768,15 @@ time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</spa
 <p><code>pyautogui.pixelMatchsColor(xpos,ypos,(R,G,B))</code></p>
 <h2 id="-mousenow-">程式：擴充 mouseNow 的功能</h2>
 <p>pass</p>
-<h2 id="heading6">影像圖片的識別</h2>
+<h2 id="heading-6">影像圖片的識別</h2>
 <ul>
 <li><code>pyautogui.locateOnScreen(</code>path2pic<code>)</code>找出小圖的位置在目前螢幕的某個位置</li>
 <li>傳回值是 左上的座標 (xpos,ypos，寬，高)</li>
 </ul>
-<h1 id="heading7">控制鍵盤</h1>
-<h2 id="heading8">傳送一個字串</h2>
+<h1 id="heading-7">控制鍵盤</h1>
+<h2 id="heading-8">傳送一個字串</h2>
 <p><code>pyautogui.typewrite('string')</code></p>
-<h2 id="heading9">鍵盤按鍵名稱</h2>
+<h2 id="heading-9">鍵盤按鍵名稱</h2>
 <ul>
 <li>一般字元 a-z,A-Z, 符號 …</li>
 <li>控制字元，BACKSPACE, ENTER, DELETE&hellip;</li>
@@ -732,12 +786,12 @@ time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</spa
 <ul>
 <li><a href="https://pyautogui.readthedocs.io/en/latest/keyboard.html#keyboard-keys">KEYBOARD_KEYS</a></li>
 </ul>
-<h2 id="heading10">按下，釋放按鍵</h2>
+<h2 id="heading-10">按下，釋放按鍵</h2>
 <ul>
-<li><code>pyautogui.keyUp('shift')`,</code>pyautogui.keyDown(&lsquo;ctrl&rsquo;)`</li>
+<li><code>pyautogui.keyUp('shift')</code>,<code>pyautogui.keyDown('ctrl')</code></li>
 <li><code>pyautogui.press('a')</code> = keyDown + keyUp</li>
 </ul>
-<h2 id="heading11">快速鍵組合</h2>
+<h2 id="heading-11">快速鍵組合</h2>
 <ul>
 <li><code>pyautogui.hotkey('ctrl','alt','shift','s')</code> 可以同時按下多鍵</li>
 </ul>
@@ -762,17 +816,17 @@ time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</spa
 <li>hotkey([key1, key2, key3]). Simulates pressing the given keyboard key strings down in order and then releasing them in reverse order.</li>
 <li>screenshot(). Returns a screenshot as an Image object. (See Chapter 17 for information on Image objects.)</li>
 </ul>
-<h1 id="heading12">程式：自動填寫表單</h1>
+<h1 id="heading-12">程式：自動填寫表單</h1>
 <ul>
 <li>簡列需要的動作</li>
 <li>詳列一下細步的動作，可用虛擬碼寫作</li>
 <li>實作</li>
 </ul>
-<h1 id="heading13">總結</h1>
+<h1 id="heading-13">總結</h1>
 <ul>
 <li>自動化可以節省不少時間，但是錯誤處理也很重要，可以確定程式走在正確的路徑上。</li>
 </ul>
-<h1 id="heading14">習題</h1>
+<h1 id="heading-14">習題</h1>
 <dl>
 <dt>Q: 1. How can you trigger PyAutoGUI’s fail safe to stop a program?</dt>
 <dd>A: 把游標移出邊界。</dd>
@@ -796,7 +850,7 @@ time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</spa
 <dd>A: <code>time.sleep(2)</code></dd>
 <dd>錯，是用  <code>pyautogui.PAUSE= 2</code></dd>
 </dl>
-<h1 id="heading15">實作</h1>
+<h1 id="heading-15">實作</h1>
 <h2 id="looking-busy">Looking Busy</h2>
 <p>防閒罝動作：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pyautogui
@@ -816,9 +870,9 @@ timespan <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</spa
     <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Done.</span><span style="color:#e6db74">&#39;</span>)
 </code></pre></div><h2 id="instant-messenger-bot">Instant Messenger Bot</h2>
 <p>pass</p>
-<h2 id="gameplaying-bot-tutorial">Game-Playing Bot Tutorial</h2>
+<h2 id="game-playing-bot-tutorial">Game-Playing Bot Tutorial</h2>
 <p>pass</p>
-<h1 id="heading16">參考連結</h1>
+<h1 id="heading-16">參考連結</h1>
 <ol>
 <li><a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python 作者網站</a></li>
 <li><a href="https://pyautogui.readthedocs.io/en/latest/">PyAutoGUI Docs</a></li>
@@ -829,6 +883,9 @@ timespan <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</spa
           <footer class=" footline" >
 	
 </footer>
+
+<h2> Content footer here </h2>
+
   </div>
 </div>
 
@@ -857,6 +914,7 @@ timespan <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</spa
     
     
 
-    
+    <h1>  你好呀 Footer Here  </h1>
+
   </body>
 </html>

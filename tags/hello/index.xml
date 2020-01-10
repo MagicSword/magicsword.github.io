@@ -6,10 +6,28 @@
     <description>Recent content in hello on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Sep 2017 04:21:50 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Dec 2019 17:38:18 +0800</lastBuildDate>
     
 	<atom:link href="/tags/hello/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reading 20191228 Record</title>
+      <link>/post/reading-20191228-record/</link>
+      <pubDate>Sat, 28 Dec 2019 17:38:18 +0800</pubDate>
+      
+      <guid>/post/reading-20191228-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading 20191219 Record</title>
+      <link>/post/reading-20191219-record/</link>
+      <pubDate>Thu, 19 Dec 2019 18:54:07 +0800</pubDate>
+      
+      <guid>/post/reading-20191219-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Golang Intro</title>
@@ -19,15 +37,6 @@
       <guid>/post/golang-intro/</guid>
       <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;
 &lt;p&gt;Archetypes are located in the &lt;code&gt;archetypes&lt;/code&gt; directory in the source of your site. To learn more about archetypes, visit &lt;a href=&#34;https://gohugo.io/content-management/archetypes/&#34;&gt;Archetypes&lt;/a&gt; on the Hugo website. And when you&#39;re ready, check out the &lt;a href=&#34;https://comfusion.github.io/after-dark/#customizing&#34;&gt;Customizing&lt;/a&gt; section of the After Dark documentation for additional options.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Article Test</title>
-      <link>/articles/article-test/</link>
-      <pubDate>Sun, 24 Sep 2017 04:04:34 +0800</pubDate>
-      
-      <guid>/articles/article-test/</guid>
-      <description>Article tesete</description>
     </item>
     
   </channel>

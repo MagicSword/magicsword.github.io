@@ -18,16 +18,62 @@
       
       <guid>/about/</guid>
       <description>個人筆記收集整理
-之前用 Pelican Pelican
-後來有用過 Nikola, Hexo
-目前用 Hugo
+之前用
+ Pelican Nikola Hexo  目前用 Hugo
 Blog commit log
 Netlify Hugo: After-dark
-CheatSheet emoji cheat sheet
- LOG 20180601
- 加入 Netlify.com 的設定 netlify.toml，hugo設定 把 theme 改成用 submodule , git submodule add git://github.com/chneukirchen/rack.git rack 把 theme 換成 docdock forestry.io(線上寫作工具) ,netlify(compile,net hosting) test  20191021
- Hugo 0.59 release 新功能，影像處理 {{ $image.Resize &amp;quot;600x jpg #b31280&amp;quot; }} PageMethod : 上下頁，上下段  20191029
- [Hugo 0.49 加入了 Archtype bundle ，可以用整個目錄的範本[() 改完 theme 以後，記得要更新 theme\docdock\archtypes 裡的範本   Ref:  StaticGen 靜態網站生成工具比較  </description>
+CheatSheet
+emoji cheat sheet
+ Themes git submodule add git@github.com:MeiK2333/github-style.git themes/github-style
+ https://github.com/vjeantet/hugo-theme-docdock https://github.com/matcornic/hugo-theme-learn  Simple
+ https://github.com/MeiK2333/github-style https://github.com/xiaoheiAh/hugo-theme-pure https://github.com/knadh/hugo-ink https://github.com/stackbithq/stackbit-theme-fresh/tree/hugo https://themes.gohugo.io/osprey-delight/ https://themes.gohugo.io/hugo-business-frontpage-theme/ https://themes.gohugo.io/hugo-theme-pure/  Dark
+ https://after-dark.habd.as/feature/quick-install/ https://github.com/guangmean/Niello  LOG 20180601
+ 加入 Netlify.com 的設定 netlify.toml，hugo設定 把 theme 改成用 submodule , git submodule add git://github.com/chneukirchen/rack.git rack 把 theme 換成 docdock forestry.io(線上寫作工具) ,netlify(compile,net hosting) test  20191021</description>
+    </item>
+    
+    <item>
+      <title>Reading 20191228 Record</title>
+      <link>/post/reading-20191228-record/</link>
+      <pubDate>Sat, 28 Dec 2019 17:38:18 +0800</pubDate>
+      
+      <guid>/post/reading-20191228-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading 20191219 Record</title>
+      <link>/post/reading-20191219-record/</link>
+      <pubDate>Thu, 19 Dec 2019 18:54:07 +0800</pubDate>
+      
+      <guid>/post/reading-20191219-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading 20191214 Record</title>
+      <link>/post/reading-20191214-record/</link>
+      <pubDate>Sat, 14 Dec 2019 20:13:35 +0800</pubDate>
+      
+      <guid>/post/reading-20191214-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python Html Parsing</title>
+      <link>/post/python-html-parsing/</link>
+      <pubDate>Fri, 13 Dec 2019 20:13:58 +0800</pubDate>
+      
+      <guid>/post/python-html-parsing/</guid>
+      <description>&lt;p&gt;Python Parsing libs.  bs4, lxml, pyquery, html.parser&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reading 20191206 Record</title>
+      <link>/post/reading-20191206-record/</link>
+      <pubDate>Fri, 06 Dec 2019 19:22:40 +0800</pubDate>
+      
+      <guid>/post/reading-20191206-record/</guid>
+      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -189,6 +235,15 @@ CheatSheet emoji cheat sheet
       
       <guid>/_footer/</guid>
       <description>hello Hello, This is footer.</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s Footer</title>
+      <link>/post/_footer/</link>
+      <pubDate>Fri, 01 Jun 2018 21:35:33 +0800</pubDate>
+      
+      <guid>/post/_footer/</guid>
+      <description>hello Hello, This is footer. in ./post/</description>
     </item>
     
     <item>
@@ -408,15 +463,6 @@ by Chris Lonsdale at TEDxLingnanUniversity&lt;/p&gt;</description>
       <guid>/post/golang-intro/</guid>
       <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;
 &lt;p&gt;Archetypes are located in the &lt;code&gt;archetypes&lt;/code&gt; directory in the source of your site. To learn more about archetypes, visit &lt;a href=&#34;https://gohugo.io/content-management/archetypes/&#34;&gt;Archetypes&lt;/a&gt; on the Hugo website. And when you&#39;re ready, check out the &lt;a href=&#34;https://comfusion.github.io/after-dark/#customizing&#34;&gt;Customizing&lt;/a&gt; section of the After Dark documentation for additional options.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Article Test</title>
-      <link>/articles/article-test/</link>
-      <pubDate>Sun, 24 Sep 2017 04:04:34 +0800</pubDate>
-      
-      <guid>/articles/article-test/</guid>
-      <description>Article tesete</description>
     </item>
     
     <item>

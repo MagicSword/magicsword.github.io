@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-12-06T23:21:24 CST">
+<meta name="revised" content="2020-01-11T00:40:38 CST">
 <title>Python Debugging With Pdb :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -25,6 +25,25 @@
   }
 </style>
 <meta name="description" content="pdb 函式庫 使用">
+
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+<style>
+      body {
+        font-family: "Microsoft JhengHei",'Noto Sans TC', sans-serif;
+        font-size: 24px;
+      }  
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;  
+      }
+
+ 
+</style>
 
 
     
@@ -73,6 +92,41 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/reading-20191228-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191228-record/">
+            <i class='fa fa-file'></i> Reading 20191228 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191219-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191219-record/">
+            <i class='fa fa-file'></i> Reading 20191219 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191214-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191214-record/">
+            <i class='fa fa-file'></i> Reading 20191214 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/python-html-parsing/" class="dd-item">
+        <div>
+          <a href="/post/python-html-parsing/">
+            <i class='fa fa-file'></i> Python Html Parsing
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20191206-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20191206-record/">
+            <i class='fa fa-file'></i> Reading 20191206 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/reading-20191129-record/" class="dd-item">
         <div>
           <a href="/post/reading-20191129-record/">
@@ -182,6 +236,13 @@
         <div>
           <a href="/post/pycon-tw-2018-june-01-02-taipei-todolist/">
             <i class='fa fa-file'></i> PYCON TW 2018 June 01 02 Taipei Todolist
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/_footer/" class="dd-item">
+        <div>
+          <a href="/post/_footer/">
+            <i class='fa fa-file'></i> It&#39;s Footer
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -404,20 +465,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/articles/" class="dd-item haschildren
+    <li data-nav-id="" class="dd-item
         ">
       <div>
-      <a href="/articles/">Articles</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="">Articles</a><i class="fa fa-circle-thin read-icon"></i>
       </div>
-        <ul>
-      <li data-nav-id="/articles/article-test/" class="dd-item">
-        <div>
-          <a href="/articles/article-test/">
-            Article Test
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
     </li>
 
 
@@ -426,9 +478,11 @@
                 <li class="" role=""><h3>More</h3><a href="/tags/" target="_blank" rel="noopener"><i class='fa fa-tags'></i> <label>Tags</label></a></li>
                 <li class="" role=""><a href="/categories/" target="_blank" rel="noopener"><i class='fa fa-folder-open'></i> <label>Categories</label></a></li>
                 <li class="" role=""><a href="/about/" target="_blank" rel="noopener"><i class='fa fa-bullhorn'></i> <label>About</label></a></li>
-                <li class="" role=""><a href="https://docdock.netlify.com/shortcodes/icon/" target="_blank" rel="noopener"><i class='fa fa-car'></i> <label>FontAwesome Icon</label></a></li>
                 <li class="" role=""><a href="https://gohugo.io/" target="_blank" rel="noopener"><i class='fa fa-bookmark'></i> <label>Hugo Documentation</label></a></li>
                 <li class="" role=""><a href="https://github.com/MagicSword/" target="_blank" rel="noopener"><i class='fa fa-github'></i> <label>Github repo</label></a></li>
+                <li class="" role=""><a href="https://docdock.netlify.com/shortcodes/" target="_blank" rel="noopener"><i class='fa fa-github'></i> <label>DocDock theme doc</label></a></li>
+                <li class="" role=""><a href="https://docdock.netlify.com/shortcodes/icon/" target="_blank" rel="noopener"><i class='fa fa-car'></i> <label>FontAwesome Icon</label></a></li>
+                <li class="" role=""><a href="https://www.markdownguide.org/extended-syntax/" target="_blank" rel="noopener"><i class='fa fa-github'></i> <label>MD Syntax</label></a></li>
         </section>
             <a id="clear-history" class="" href="#" data-clear-history-toggle=""><i class="fa  fa-history"></i> Clear History</a>
 
@@ -489,12 +543,12 @@
         <div class="wrapper">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#heading3">顯示</a></li>
-    <li><a href="#heading4">程式流程</a></li>
-    <li><a href="#heading5">監視變數</a></li>
-    <li><a href="#heading6">中斷點</a></li>
+    <li><a href="#heading-3">顯示</a></li>
+    <li><a href="#heading-4">程式流程</a></li>
+    <li><a href="#heading-5">監視變數</a></li>
+    <li><a href="#heading-6">中斷點</a></li>
     <li><a href="#python-caller-id">Python Caller ID</a></li>
-    <li><a href="#heading7">結語</a></li>
+    <li><a href="#heading-7">結語</a></li>
   </ul>
 </nav>
         </div>
@@ -572,13 +626,13 @@ exec  pdb
 <li>l - 列出目前的程式片段</li>
 <li>q - 離開</li>
 </ul>
-<h1 id="heading1">在程式內設置中斷點</h1>
+<h1 id="heading-1">在程式內設置中斷點</h1>
 <p>在程式碼內載內 <a href="https://docs.python.org/3/library/pdb.html">pdb</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pdb; pdb<span style="color:#f92672">.</span>set_trace()
 </code></pre></div><p>執行程式後，就會互動除錯模式。</p>
 <p>Python 3.7, <a href="https://www.python.org/dev/peps/pep-0553/">PEP 553</a> 加入一個比較簡單的除錯內建函式 <code>breakpoint()</code></p>
-<h1 id="heading2">指令說明</h1>
-<h2 id="heading3">顯示</h2>
+<h1 id="heading-2">指令說明</h1>
+<h2 id="heading-3">顯示</h2>
 <ul>
 <li><code>l(ist) [first[, last]]</code>：顯示目前執行的到程式碼，沒加參數的話，就是印出單行</li>
 <li><code>ll</code> long list: 印出多行程式碼，並指出目前執行的到行數</li>
@@ -587,18 +641,18 @@ exec  pdb
 <li><code>whatis expression</code>：印出變數的型態，int or string &hellip;</li>
 <li><code>a(rgs)</code> ：列出目前函數的所有參數</li>
 </ul>
-<h2 id="heading4">程式流程</h2>
+<h2 id="heading-4">程式流程</h2>
 <ul>
 <li><code>n (next)</code>：執行程式下一行</li>
 <li><code>s (step)</code>：步進程式</li>
 <li><code>c(ont(inue))</code>：執行到下一個中斷點停止</li>
 </ul>
-<h2 id="heading5">監視變數</h2>
+<h2 id="heading-5">監視變數</h2>
 <ul>
 <li><code>display [expression]</code>：監視變數，變數有變動時，就會顯示。</li>
 <li><code>undisplay [expression]</code>：停止監視變數</li>
 </ul>
-<h2 id="heading6">中斷點</h2>
+<h2 id="heading-6">中斷點</h2>
 <ul>
 <li><code>b(reak) [([filename:]lineno | function) [, condition]]</code>：設罝中斷點， <code>b</code> 不加參數，會列出所有中斷點。</li>
 <li><code>tbreak [([filename:]lineno | function) [, condition]]</code>：暫時中斷點，執行後，就會被移除。</li>
@@ -608,9 +662,9 @@ exec  pdb
 </ul>
 <h2 id="python-caller-id">Python Caller ID</h2>
 <p>pass</p>
-<h2 id="heading7">結語</h2>
+<h2 id="heading-7">結語</h2>
 <p><a href="https://docs.python.org/3/library/pdb.html">pdb</a> 是個很好用的工具，熟練使用的話，能輕易找出程式問題。</p>
-<h1 id="heading8">參考連結</h1>
+<h1 id="heading-8">參考連結</h1>
 <ol>
 <li><a href="https://realpython.com/python-debugging-pdb/">Python Debugging With Pdb</a></li>
 <li><a href="https://ithelp.ithome.com.tw/articles/10161849">Python初學起步走-Day30 - 除錯(使用pdb)</a></li>
@@ -622,6 +676,9 @@ exec  pdb
           <footer class=" footline" >
 	
 </footer>
+
+<h2> Content footer here </h2>
+
   </div>
 </div>
 
@@ -650,6 +707,7 @@ exec  pdb
     
     
 
-    
+    <h1>  你好呀 Footer Here  </h1>
+
   </body>
 </html>
