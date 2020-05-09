@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-01-11T00:40:38 CST">
+<meta name="revised" content="2020-05-09T10:56:03 CST">
 <title>Python Import System :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -92,6 +92,34 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/reading-20200321-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200321-record/">
+            <i class='fa fa-file'></i> Reading 20200321 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200312-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200312-record/">
+            <i class='fa fa-file'></i> Reading 20200312 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200220-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200220-record/">
+            <i class='fa fa-file'></i> Reading 20200220 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200211-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200211-record/">
+            <i class='fa fa-file'></i> Reading 20200211 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/reading-20191228-record/" class="dd-item">
         <div>
           <a href="/post/reading-20191228-record/">
@@ -465,12 +493,6 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="" class="dd-item
-        ">
-      <div>
-      <a href="">Articles</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
 
 
 
@@ -543,12 +565,12 @@
         <div class="wrapper">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#sysmodules-">sys.modules 先找</a></li>
-    <li><a href="#sysmeta-path-">sys.meta_path 次之</a></li>
+    <li><a href="#sysmodules-先找"><code>sys.modules</code> 先找</a></li>
+    <li><a href="#sysmeta_path-次之"><code>sys.meta_path</code> 次之</a></li>
   </ul>
 
   <ul>
-    <li><a href="#heading-5">參考連結</a></li>
+    <li><a href="#參考連結">參考連結</a></li>
   </ul>
 </nav>
         </div>
@@ -576,12 +598,12 @@
     
     
     
-    <p><a href="(https://manikos.github.io/how-pythons-import-machinery-works)">How python's import machinery works</a> 簡單的筆記，
+    <p><a href="(https://manikos.github.io/how-pythons-import-machinery-works)">How python&rsquo;s import machinery works</a> 簡單的筆記，
 順便整理一下 <a href="https://docs.python.org/3/reference/import.html" title="access to the code in another module">import</a> 的資料。</p>
-<h1 id="heading">概述</h1>
+<h1 id="概述">概述</h1>
 <p><a href="https://docs.python.org/3/reference/import.html" title="access to the code in another module">import</a> 就像 C的 <code>include</code> &hellip;用來引用其他的程式庫。 
 並簡單說明引用的機制、優先順序。</p>
-<h1 id="heading-1">名詞解釋</h1>
+<h1 id="名詞解釋">名詞解釋</h1>
 <dl>
 <dt><a href="https://docs.python.org/3/tutorial/modules.html#modules">modules</a>:</dt>
 <dd>
@@ -594,7 +616,7 @@
 </dd>
 <dd><code>packages</code> 是 <code>modules</code> 的集合，import name 通常是 資料夾名。</dd>
 </dl>
-<h1 id="heading-2">範例檔案結構</h1>
+<h1 id="範例檔案結構">範例檔案結構</h1>
 <p>假設有個 <code>package</code> 長這樣</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tmp/
   my_package/
@@ -603,51 +625,51 @@
 </code></pre></div><p><code>my_module.py</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span>:
     <span style="color:#66d9ef">def</span> __init__(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">init called</span><span style="color:#e6db74">&#39;</span>)
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;init called&#39;</span>)
 
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">caps</span>(self, word):
         <span style="color:#66d9ef">print</span>(word<span style="color:#f92672">.</span>upper())
-</code></pre></div><h1 id="import-"><code>import</code> 方法一</h1>
+</code></pre></div><h1 id="import-方法一"><code>import</code> 方法一</h1>
 <p>進 <code>tmp</code>後，執行 <code>python</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$cd tmp
 $python
 </code></pre></div><p>通常 <code>import</code> 的方式是這樣。
 物件產生時，和物件方法執行時，會印出一些訊息。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">from</span> my_package <span style="color:#f92672">import</span> my_module
-<span style="color:#f92672">&gt;&gt;</span><span style="color:#f92672">&gt;</span> something <span style="color:#f92672">=</span> my_module<span style="color:#f92672">.</span>MyClass()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> my_package <span style="color:#f92672">import</span> my_module
+<span style="color:#f92672">&gt;&gt;&gt;</span> something <span style="color:#f92672">=</span> my_module<span style="color:#f92672">.</span>MyClass()
 init  called
-<span style="color:#f92672">&gt;&gt;</span><span style="color:#f92672">&gt;</span> something<span style="color:#f92672">.</span>caps(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">hello</span><span style="color:#e6db74">&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> something<span style="color:#f92672">.</span>caps(<span style="color:#e6db74">&#39;hello&#39;</span>)
 HELLO
-</code></pre></div><h1 id="import-import-module-"><code>import</code> 方法二：<code>import_module</code> 動態載入</h1>
+</code></pre></div><h1 id="import-方法二import_module-動態載入"><code>import</code> 方法二：<code>import_module</code> 動態載入</h1>
 <p>先載入 <a href="https://docs.python.org/3/library/importlib.html#importlib.import_module">import_module</a> 後，再用它載入其他的 <code>package</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">from</span> importlib <span style="color:#f92672">import</span> import_module
-<span style="color:#f92672">&gt;&gt;</span><span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&gt;&gt;</span><span style="color:#f92672">&gt;</span> my_module <span style="color:#f92672">=</span> import_module(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">my_package.my_module</span><span style="color:#e6db74">&#39;</span>)
-<span style="color:#f92672">&gt;&gt;</span><span style="color:#f92672">&gt;</span> obj <span style="color:#f92672">=</span> my_module<span style="color:#f92672">.</span>MyClass()
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> importlib <span style="color:#f92672">import</span> import_module
+<span style="color:#f92672">&gt;&gt;&gt;</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> my_module <span style="color:#f92672">=</span> import_module(<span style="color:#e6db74">&#39;my_package.my_module&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> obj <span style="color:#f92672">=</span> my_module<span style="color:#f92672">.</span>MyClass()
 init called
-<span style="color:#f92672">&gt;&gt;</span><span style="color:#f92672">&gt;</span> obj<span style="color:#f92672">.</span>caps(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">hello</span><span style="color:#e6db74">&#39;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> obj<span style="color:#f92672">.</span>caps(<span style="color:#e6db74">&#39;hello&#39;</span>)
 HELLO
-</code></pre></div><h1 id="heading-3">手動載入</h1>
+</code></pre></div><h1 id="手動載入">手動載入</h1>
 <p><a href="https://stackoverflow.com/questions/67631/how-to-import-a-module-given-the-full-path#answer-43602557">How to import a module given the full path?</a></p>
-<h1 id="python-module-">Python module 的載入機制</h1>
-<h2 id="sysmodules-"><code>sys.modules</code> 先找</h2>
+<h1 id="python-module-的載入機制">Python module 的載入機制</h1>
+<h2 id="sysmodules-先找"><code>sys.modules</code> 先找</h2>
 <ul>
 <li><code>sys.modules</code> 是 python 執行時會先載入的 module，通常是系統內建的程式庫</li>
 <li>如果你有把 import my_module , my_module 也會出現在 sys.modules 中。</li>
 </ul>
-<h2 id="sysmeta-path-"><code>sys.meta_path</code> 次之</h2>
+<h2 id="sysmeta_path-次之"><code>sys.meta_path</code> 次之</h2>
 <p>前面的 sys.modules 找不到後，會載入 <code>sys.meta_path</code> 物件，開始從 <code>sys.path</code> 裡去找你想載入的 packages。</p>
 <p>這邊比較需要記得就是 <code>sys.path</code> 是放要載入的程式庫的路徑，
 所以把你的程式庫路徑加進 <code>sys.path</code> 應該就可以找到了。</p>
-<h1 id="heading-4">其他</h1>
+<h1 id="其他">其他</h1>
 <p>整個 <code>import</code> 載入的機制，參考連結說的滿清楚的的，
 太細節的部分，之後有空再來細看。</p>
-<h2 id="heading-5">參考連結</h2>
+<h2 id="參考連結">參考連結</h2>
 <ol>
 <li><a href="https://docs.python.org/3/reference/import.html">Python Docs: 5.The import system</a></li>
-<li><a href="https://manikos.github.io/how-pythons-import-machinery-works">How python's import machinery works</a></li>
+<li><a href="https://manikos.github.io/how-pythons-import-machinery-works">How python&rsquo;s import machinery works</a></li>
 <li><a href="https://github.com/miedzinski/import-pypi">import-pypi:import modules form pypi</a></li>
-<li><a href="https://stackoverflow.com/questions/7948494/whats-the-difference-between-a-python-module-and-a-python-package">StockOverFlow:What's the difference between a Python module and a Python package?</a></li>
+<li><a href="https://stackoverflow.com/questions/7948494/whats-the-difference-between-a-python-module-and-a-python-package">StockOverFlow:What&rsquo;s the difference between a Python module and a Python package?</a></li>
 </ol>
 
     
@@ -686,7 +708,7 @@ HELLO
     
     
 
-    <h1>  你好呀 Footer Here  </h1>
+    <h1>  layout custom Footer Here  </h1>
 
   </body>
 </html>

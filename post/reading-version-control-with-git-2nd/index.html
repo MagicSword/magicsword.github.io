@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-01-11T00:40:38 CST">
+<meta name="revised" content="2020-05-09T10:56:04 CST">
 <title>Reading Version Control With Git 2nd :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -92,6 +92,34 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/reading-20200321-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200321-record/">
+            <i class='fa fa-file'></i> Reading 20200321 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200312-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200312-record/">
+            <i class='fa fa-file'></i> Reading 20200312 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200220-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200220-record/">
+            <i class='fa fa-file'></i> Reading 20200220 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200211-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200211-record/">
+            <i class='fa fa-file'></i> Reading 20200211 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/reading-20191228-record/" class="dd-item">
         <div>
           <a href="/post/reading-20191228-record/">
@@ -465,12 +493,6 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="" class="dd-item
-        ">
-      <div>
-      <a href="">Articles</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
 
 
 
@@ -543,7 +565,7 @@
         <div class="wrapper">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#-git-reset-">使用 git reset 指令</a></li>
+    <li><a href="#使用-git-reset-指令">使用 git reset 指令</a></li>
   </ul>
 
   <ul>
@@ -578,17 +600,17 @@
     <p>Version Control with Git, 2nd Edition 簡單的一些筆記。</p>
 <p>Task list: 😄</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox">初稿</li>
-<li><input disabled="" type="checkbox">再讀</li>
-<li><input disabled="" type="checkbox">筆記</li>
-<li><input disabled="" type="checkbox">完成</li>
+<li><input checked="" disabled="" type="checkbox"> 初稿</li>
+<li><input disabled="" type="checkbox"> 再讀</li>
+<li><input disabled="" type="checkbox"> 筆記</li>
+<li><input disabled="" type="checkbox"> 完成</li>
 </ul>
 <p><img src="https://covers.oreillystatic.com/images/0636920022862/cat.gif" alt="Version Control with Git, 2nd Edition"></p>
 <p><a href="http://shop.oreilly.com/product/0636920022862.do">Version Control with Git, 2nd Edition</a>
 <!-- raw HTML omitted --> Powerful tools and techniques for collaborative software development</p>
 <ul>
 <li>By Jon Loeliger, Matthew McCullough</li>
-<li>Publisher: O'Reilly Media</li>
+<li>Publisher: O&rsquo;Reilly Media</li>
 <li>Release Date: August 2012</li>
 <li>Pages: 456</li>
 </ul>
@@ -606,20 +628,20 @@
 <li>出版地：台灣</li>
 </ul>
 <p><a href="https://github.com/terryjbates/version-control-with-git">Exercise Codes</a></p>
-<h1 id="heading">概述</h1>
+<h1 id="概述">概述</h1>
 <dl>
 <dt>: 這本書可以幫助您快速搞懂如何使用Git來追蹤、分支、合併並且管理程式碼修訂版本。</dt>
 <dd>藉由詳盡的步驟說明，本書將帶領您了解Git的基礎與進階技術，</dd>
 <dd>充分發揮這套版本控制系統的強大功能。</dd>
 </dl>
-<h1 id="ch1-">Ch1 簡介</h1>
+<h1 id="ch1-簡介">Ch1 簡介</h1>
 <ul>
 <li>Git by Linus Torvalds at 2005，主要是用於 Linux Kernel 開發使用，之前是用  BitKeeper</li>
 <li>分散式、分布式、去中心化，代表不需要中央管理，可以各自修改，最後再視需求合併。</li>
 <li>Git  主要是由 C 寫成的，速度快</li>
 <li>利用 SHA-1 hashes 來辨識檔案</li>
 </ul>
-<h1 id="ch2--git">Ch2 安裝 Git</h1>
+<h1 id="ch2-安裝-git">Ch2 安裝 Git</h1>
 <ul>
 <li>Debian/Ubuntu: <code>sudo apt install git</code></li>
 <li>MicroSoft Windows 下有兩種  git@Cygwin, <a href="http://msysgit.github.io/">Git for Windows</a>@msysGit</li>
@@ -632,7 +654,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="ch3-">Ch3 準備開始</h1>
+<h1 id="ch3-準備開始">Ch3 準備開始</h1>
 <p><strong>建立程式庫</strong> 
 在想監控的目錄中
 <code>git init</code>
@@ -674,7 +696,7 @@ $git commit -m <span style="color:#e6db74">&#34;mv rm some file&#34;</span>
 <p>別名</p>
 <p><code>git config --global alias.show-graph 'log --graph --abbrev-commit --pretty=oneline'</code></p>
 <p>之後打<code>git show-graph</code> 就好</p>
-<h1 id="ch4--">Ch4  基本概念</h1>
+<h1 id="ch4--基本概念">Ch4  基本概念</h1>
 <p>Git  版本控制的一些概念。</p>
 <p><strong>程式庫 Repositories</strong></p>
 <p>程式庫：</p>
@@ -784,7 +806,7 @@ Repository n. 容器；貯藏處，
 <li>輕量 lightweight tag: 不會建立永久物件</li>
 <li>標示 annotated tag: 會建立你提交的物件</li>
 </ol>
-<h1 id="ch5-">Ch5 檔案管理及索引</h1>
+<h1 id="ch5-檔案管理及索引">Ch5 檔案管理及索引</h1>
 <p>基本上，本章討論檔案管理的一些方法，<code>create</code>, <code>remove</code>,<code>move</code>,<code>rename</code></p>
 <p><strong>索引</strong></p>
 <p>被<code>git add</code>指令加入的指令，才會被加入 index中</p>
@@ -846,7 +868,7 @@ Repository n. 容器；貯藏處，
 可以把規則放在 <code>.git/info/exclude</code> 中，就不會被複製了。</p>
 <p><strong>git的物件模型及檔案</strong></p>
 <p>pass</p>
-<h1 id="ch6-">Ch6 提交</h1>
+<h1 id="ch6-提交">Ch6 提交</h1>
 <p>提交：檔案庫間的變動。</p>
 <p>提交會將目前的狀態，送到檔案庫，Git只會儲存變動的部分，
 並產生新的 SHA1-hash。Git 很適合經常性的提交。</p>
@@ -954,7 +976,7 @@ Repository n. 容器；貯藏處，
 ，會在每個改變後，註記這個變動是在哪個提交後產生的。</p>
 <p><strong>使用 git log -Sstring</strong></p>
 <p><code>git log -Sstring</code> 可以找出 string 這個字串是在哪個版本加入的。</p>
-<h1 id="ch7-">Ch7 分支</h1>
+<h1 id="ch7-分支">Ch7 分支</h1>
 <dl>
 <dt>分支是：</dt>
 <dd>
@@ -1094,7 +1116,7 @@ $git branch -d bug/pr-3
 <li>git 是運算、檢索出兩個樹狀檔的差別</li>
 <li>git 使用的方式較快</li>
 </ul>
-<h1 id="ch9-merge-">Ch9 Merge 合併</h1>
+<h1 id="ch9-merge-合併">Ch9 Merge 合併</h1>
 <p>多人合作時，要將各別的成果整合時，就需要合併(Merge)資料。
 合併時，其本上是把兩個分支整合成一個新的 commit 來表示這個合併後的新狀態。
 有衝突的部分，會在 Index 上標示 unmerged ，讓使用者決定。</p>
@@ -1153,10 +1175,10 @@ $git branch -d bug/pr-3
 <dd>子樹</dd>
 </dl>
 <p><strong>翻譯有點…先pass</strong></p>
-<h1 id="ch10-">Ch10 修改送交</h1>
+<h1 id="ch10-修改送交">Ch10 修改送交</h1>
 <p><code>Commit</code> 記錄著歷史、和變更記錄。 但是已送交的記錄也是有些工具可以修改。</p>
 <p>要注意的是，如果是會出現在別人容器的送交，記得不要修改，以免產生問題。</p>
-<h2 id="-git-reset-">使用 git reset 指令</h2>
+<h2 id="使用-git-reset-指令">使用 git reset 指令</h2>
 <p><code>git reset --soft commit</code></p>
 <ul>
 <li><code>git reset</code> 的指令可以讓目前工作目錄的 HEAD, Index, 工作目錄 回到之前的某的狀態。</li>
@@ -1192,14 +1214,14 @@ $git branch -d bug/pr-3
 </tbody>
 </table>
 <h1 id="ch11-stash-and-reflog">Ch11 Stash and Reflog</h1>
-<h1 id="ch12-">Ch12 遠端容器</h1>
-<h1 id="ch13-">Ch13 管理容器</h1>
+<h1 id="ch12-遠端容器">Ch12 遠端容器</h1>
+<h1 id="ch13-管理容器">Ch13 管理容器</h1>
 <h1 id="ch14-patchs">Ch14 Patchs</h1>
-<h1 id="ch15-">Ch15 掛鉤</h1>
-<h1 id="ch16-">Ch16 結合專案</h1>
-<h1 id="ch17-submodule">Ch17 Submodule實務</h1>
-<h1 id="ch18--svn--git">Ch18 在 svn 容器上用 git</h1>
-<h1 id="ch19-">Ch19 進階操作</h1>
+<h1 id="ch15-掛鉤">Ch15 掛鉤</h1>
+<h1 id="ch16-結合專案">Ch16 結合專案</h1>
+<h1 id="ch17-submodule實務">Ch17 Submodule實務</h1>
+<h1 id="ch18-在-svn-容器上用-git">Ch18 在 svn 容器上用 git</h1>
+<h1 id="ch19-進階操作">Ch19 進階操作</h1>
 <h1 id="ch20-tips">Ch20 Tips</h1>
 <h1 id="ch21-git-and-github">Ch21 Git and Github</h1>
 <p><a href="https://github.com">Github</a> 是有 社交功能的 原始碼分享網站。</p>
@@ -1292,7 +1314,7 @@ show       (展示) 展示各種類型的物件
 status     (狀態) 展示工作樹的狀態
 tag        (標籤) 建立、列出、刪除、或驗證標籤物件及其 GPG 簽字</p>
 <hr>
-<h1 id="heading-1">參考連結</h1>
+<h1 id="參考連結">參考連結</h1>
 <ol>
 <li><a href="https://marklodato.github.io/visual-git-guide/index-zh-tw.html?no-svg">圖解Git</a></li>
 <li><a href="https://realpython.com/python-git-github-intro/">Introduction to Git and GitHub for Python Developers</a></li>
@@ -1344,7 +1366,7 @@ tag        (標籤) 建立、列出、刪除、或驗證標籤物件及其 GPG �
     
     
 
-    <h1>  你好呀 Footer Here  </h1>
+    <h1>  layout custom Footer Here  </h1>
 
   </body>
 </html>

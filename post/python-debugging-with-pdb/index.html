@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-01-11T00:40:38 CST">
+<meta name="revised" content="2020-05-09T10:56:03 CST">
 <title>Python Debugging With Pdb :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -92,6 +92,34 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/reading-20200321-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200321-record/">
+            <i class='fa fa-file'></i> Reading 20200321 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200312-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200312-record/">
+            <i class='fa fa-file'></i> Reading 20200312 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200220-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200220-record/">
+            <i class='fa fa-file'></i> Reading 20200220 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200211-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200211-record/">
+            <i class='fa fa-file'></i> Reading 20200211 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/reading-20191228-record/" class="dd-item">
         <div>
           <a href="/post/reading-20191228-record/">
@@ -465,12 +493,6 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="" class="dd-item
-        ">
-      <div>
-      <a href="">Articles</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
 
 
 
@@ -543,12 +565,12 @@
         <div class="wrapper">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#heading-3">顯示</a></li>
-    <li><a href="#heading-4">程式流程</a></li>
-    <li><a href="#heading-5">監視變數</a></li>
-    <li><a href="#heading-6">中斷點</a></li>
+    <li><a href="#顯示">顯示</a></li>
+    <li><a href="#程式流程">程式流程</a></li>
+    <li><a href="#監視變數">監視變數</a></li>
+    <li><a href="#中斷點">中斷點</a></li>
     <li><a href="#python-caller-id">Python Caller ID</a></li>
-    <li><a href="#heading-7">結語</a></li>
+    <li><a href="#結語">結語</a></li>
   </ul>
 </nav>
         </div>
@@ -580,7 +602,7 @@
     
     <p><a href="https://realpython.com/python-debugging-pdb/">Python Debugging With Pdb</a>
 簡單心得</p>
-<h1 id="heading">概述</h1>
+<h1 id="概述">概述</h1>
 <p><a href="https://docs.python.org/3/library/pdb.html">pdb</a> 是 <code>pytyon</code> 內建提供類似 <code>gdb</code> 功能，
 用來除錯的程式庫。</p>
 <p>大概有兩種用法：</p>
@@ -593,7 +615,7 @@
 <li>一步一步執行程式，或是 執行到某個地方停止，重新開始執行程式</li>
 <li>監視某個變數的值。</li>
 </ul>
-<h1 id="-pdb">直接使用 <code>pdb</code></h1>
+<h1 id="直接使用-pdb">直接使用 <code>pdb</code></h1>
 <p>python 執行程式時，執行 <code>pdb</code> 模組</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$python -m pdb myscript.py
 </code></pre></div><p>這樣就會進入互動式除錯模式。按 <code>h(elp)</code> 看說明：
@@ -626,13 +648,13 @@ exec  pdb
 <li>l - 列出目前的程式片段</li>
 <li>q - 離開</li>
 </ul>
-<h1 id="heading-1">在程式內設置中斷點</h1>
+<h1 id="在程式內設置中斷點">在程式內設置中斷點</h1>
 <p>在程式碼內載內 <a href="https://docs.python.org/3/library/pdb.html">pdb</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pdb; pdb<span style="color:#f92672">.</span>set_trace()
 </code></pre></div><p>執行程式後，就會互動除錯模式。</p>
 <p>Python 3.7, <a href="https://www.python.org/dev/peps/pep-0553/">PEP 553</a> 加入一個比較簡單的除錯內建函式 <code>breakpoint()</code></p>
-<h1 id="heading-2">指令說明</h1>
-<h2 id="heading-3">顯示</h2>
+<h1 id="指令說明">指令說明</h1>
+<h2 id="顯示">顯示</h2>
 <ul>
 <li><code>l(ist) [first[, last]]</code>：顯示目前執行的到程式碼，沒加參數的話，就是印出單行</li>
 <li><code>ll</code> long list: 印出多行程式碼，並指出目前執行的到行數</li>
@@ -641,18 +663,18 @@ exec  pdb
 <li><code>whatis expression</code>：印出變數的型態，int or string &hellip;</li>
 <li><code>a(rgs)</code> ：列出目前函數的所有參數</li>
 </ul>
-<h2 id="heading-4">程式流程</h2>
+<h2 id="程式流程">程式流程</h2>
 <ul>
 <li><code>n (next)</code>：執行程式下一行</li>
 <li><code>s (step)</code>：步進程式</li>
 <li><code>c(ont(inue))</code>：執行到下一個中斷點停止</li>
 </ul>
-<h2 id="heading-5">監視變數</h2>
+<h2 id="監視變數">監視變數</h2>
 <ul>
 <li><code>display [expression]</code>：監視變數，變數有變動時，就會顯示。</li>
 <li><code>undisplay [expression]</code>：停止監視變數</li>
 </ul>
-<h2 id="heading-6">中斷點</h2>
+<h2 id="中斷點">中斷點</h2>
 <ul>
 <li><code>b(reak) [([filename:]lineno | function) [, condition]]</code>：設罝中斷點， <code>b</code> 不加參數，會列出所有中斷點。</li>
 <li><code>tbreak [([filename:]lineno | function) [, condition]]</code>：暫時中斷點，執行後，就會被移除。</li>
@@ -662,9 +684,9 @@ exec  pdb
 </ul>
 <h2 id="python-caller-id">Python Caller ID</h2>
 <p>pass</p>
-<h2 id="heading-7">結語</h2>
+<h2 id="結語">結語</h2>
 <p><a href="https://docs.python.org/3/library/pdb.html">pdb</a> 是個很好用的工具，熟練使用的話，能輕易找出程式問題。</p>
-<h1 id="heading-8">參考連結</h1>
+<h1 id="參考連結">參考連結</h1>
 <ol>
 <li><a href="https://realpython.com/python-debugging-pdb/">Python Debugging With Pdb</a></li>
 <li><a href="https://ithelp.ithome.com.tw/articles/10161849">Python初學起步走-Day30 - 除錯(使用pdb)</a></li>
@@ -707,7 +729,7 @@ exec  pdb
     
     
 
-    <h1>  你好呀 Footer Here  </h1>
+    <h1>  layout custom Footer Here  </h1>
 
   </body>
 </html>

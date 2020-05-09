@@ -6,7 +6,7 @@
     <description>Recent content in Tags on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Dec 2019 17:38:18 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2020 17:36:08 +0800</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>hello</title>
       <link>/tags/hello/</link>
-      <pubDate>Sat, 28 Dec 2019 17:38:18 +0800</pubDate>
+      <pubDate>Sat, 21 Mar 2020 17:36:08 +0800</pubDate>
       
       <guid>/tags/hello/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>world</title>
       <link>/tags/world/</link>
-      <pubDate>Sat, 28 Dec 2019 17:38:18 +0800</pubDate>
+      <pubDate>Sat, 21 Mar 2020 17:36:08 +0800</pubDate>
       
       <guid>/tags/world/</guid>
       <description></description>
@@ -183,6 +183,15 @@
     </item>
     
     <item>
+      <title>go</title>
+      <link>/tags/go/</link>
+      <pubDate>Sun, 03 Jun 2018 23:30:28 +0800</pubDate>
+      
+      <guid>/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>google</title>
       <link>/tags/google/</link>
       <pubDate>Sun, 03 Jun 2018 23:30:28 +0800</pubDate>
@@ -257,7 +266,7 @@
     <item>
       <title>blog</title>
       <link>/tags/blog/</link>
-      <pubDate>Fri, 01 Jun 2018 14:53:57 +0800</pubDate>
+      <pubDate>Fri, 01 Jun 2018 16:12:30 +0800</pubDate>
       
       <guid>/tags/blog/</guid>
       <description></description>
@@ -266,7 +275,7 @@
     <item>
       <title>hugo</title>
       <link>/tags/hugo/</link>
-      <pubDate>Fri, 01 Jun 2018 14:53:57 +0800</pubDate>
+      <pubDate>Fri, 01 Jun 2018 16:12:30 +0800</pubDate>
       
       <guid>/tags/hugo/</guid>
       <description></description>
@@ -539,15 +548,6 @@
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>go</title>
-      <link>/tags/go/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/go/</guid>
       <description></description>
     </item>
     

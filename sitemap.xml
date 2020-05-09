@@ -9,36 +9,56 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2019-12-28T17:38:18+08:00</lastmod>
+    <lastmod>2020-03-21T17:36:08+08:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/hello/</loc>
-    <lastmod>2019-12-28T17:38:18+08:00</lastmod>
+    <lastmod>2020-03-21T17:36:08+08:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-12-28T17:38:18+08:00</lastmod>
+    <lastmod>2020-03-21T17:36:08+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/reading-20191228-record/</loc>
-    <lastmod>2019-12-28T17:38:18+08:00</lastmod>
+    <loc>/post/reading-20200321-record/</loc>
+    <lastmod>2020-03-21T17:36:08+08:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2019-12-28T17:38:18+08:00</lastmod>
+    <lastmod>2020-03-21T17:36:08+08:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/technology/</loc>
-    <lastmod>2019-12-28T17:38:18+08:00</lastmod>
+    <lastmod>2020-03-21T17:36:08+08:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/world/</loc>
+    <lastmod>2020-03-21T17:36:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/reading-20200312-record/</loc>
+    <lastmod>2020-03-12T23:59:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/reading-20200220-record/</loc>
+    <lastmod>2020-02-20T19:06:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/reading-20200211-record/</loc>
+    <lastmod>2020-02-11T20:01:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/reading-20191228-record/</loc>
     <lastmod>2019-12-28T17:38:18+08:00</lastmod>
   </url>
   
@@ -153,12 +173,12 @@
   </url>
   
   <url>
-    <loc>/categories/programming/</loc>
+    <loc>/tags/programming/</loc>
     <lastmod>2019-05-18T19:35:09+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/programming/</loc>
+    <loc>/categories/programming/</loc>
     <lastmod>2019-05-18T19:35:09+08:00</lastmod>
   </url>
   
@@ -228,6 +248,11 @@
   </url>
   
   <url>
+    <loc>/tags/go/</loc>
+    <lastmod>2018-06-03T23:30:28+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/google/</loc>
     <lastmod>2018-06-03T23:30:28+08:00</lastmod>
   </url>
@@ -293,18 +318,18 @@
   </url>
   
   <url>
+    <loc>/tags/blog/</loc>
+    <lastmod>2018-06-01T16:12:30+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2018-06-01T16:12:30+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/blog/</loc>
-    <lastmod>2018-06-01T14:53:57+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/hugo/</loc>
-    <lastmod>2018-06-01T14:53:57+08:00</lastmod>
+    <lastmod>2018-06-01T16:12:30+08:00</lastmod>
   </url>
   
   <url>
@@ -614,11 +639,6 @@
   
   <url>
     <loc>/post/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   

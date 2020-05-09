@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-01-11T00:40:38 CST">
+<meta name="revised" content="2020-05-09T10:56:04 CST">
 <title>Reading HackingVim 7.2 :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -92,6 +92,34 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/reading-20200321-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200321-record/">
+            <i class='fa fa-file'></i> Reading 20200321 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200312-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200312-record/">
+            <i class='fa fa-file'></i> Reading 20200312 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200220-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200220-record/">
+            <i class='fa fa-file'></i> Reading 20200220 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200211-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200211-record/">
+            <i class='fa fa-file'></i> Reading 20200211 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/reading-20191228-record/" class="dd-item">
         <div>
           <a href="/post/reading-20191228-record/">
@@ -465,12 +493,6 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="" class="dd-item
-        ">
-      <div>
-      <a href="">Articles</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
 
 
 
@@ -543,84 +565,84 @@
         <div class="wrapper">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#21-">2.1 設定檔的位置</a></li>
-    <li><a href="#22-">2.2 字體</a></li>
-    <li><a href="#23--colorscheme">2.3 配色 (colorscheme)</a>
+    <li><a href="#21-設定檔的位置">2.1 設定檔的位置</a></li>
+    <li><a href="#22-字體">2.2 字體</a></li>
+    <li><a href="#23-配色-colorscheme">2.3 配色 (colorscheme)</a>
       <ul>
-        <li><a href="#231--hightlight">2.3.1 高亮 (hightlight)</a></li>
+        <li><a href="#231-高亮-hightlight">2.3.1 高亮 (hightlight)</a></li>
       </ul>
     </li>
-    <li><a href="#24-statusline">2.4 狀態列(statusline)</a></li>
-    <li><a href="#25--menutoolbar">2.5 切換選單、工具列 Menu,Toolbar</a></li>
-    <li><a href="#26-">2.6 自訂選單、工具列</a></li>
-    <li><a href="#27-tabs">2.7 修改頁籤(Tabs)</a></li>
-    <li><a href="#28-">2.8 工作區個人化</a>
+    <li><a href="#24-狀態列statusline">2.4 狀態列(statusline)</a></li>
+    <li><a href="#25-切換選單工具列-menutoolbar">2.5 切換選單、工具列 Menu,Toolbar</a></li>
+    <li><a href="#26-自訂選單工具列">2.6 自訂選單、工具列</a></li>
+    <li><a href="#27-修改頁籤tabs">2.7 修改頁籤(Tabs)</a></li>
+    <li><a href="#28-工作區個人化">2.8 工作區個人化</a>
       <ul>
-        <li><a href="#281--cursor">2.8.1 光標 cursor</a></li>
-        <li><a href="#282--line-numbers">2.8.2 行號 line numbers</a></li>
-        <li><a href="#283--spell-checking">2.8.3 拼寫檢查 Spell checking</a></li>
-        <li><a href="#284--tooltip">2.8.4 工具提示 Tooltip</a></li>
-        <li><a href="#285--abbreviations">2.8.5 使用縮寫 abbreviations</a></li>
-        <li><a href="#286--key-bindings">2.8.6 修改按鍵綁定 Key bindings</a></li>
+        <li><a href="#281-光標-cursor">2.8.1 光標 cursor</a></li>
+        <li><a href="#282-行號-line-numbers">2.8.2 行號 line numbers</a></li>
+        <li><a href="#283-拼寫檢查-spell-checking">2.8.3 拼寫檢查 Spell checking</a></li>
+        <li><a href="#284-工具提示-tooltip">2.8.4 工具提示 Tooltip</a></li>
+        <li><a href="#285-使用縮寫-abbreviations">2.8.5 使用縮寫 abbreviations</a></li>
+        <li><a href="#286-修改按鍵綁定-key-bindings">2.8.6 修改按鍵綁定 Key bindings</a></li>
       </ul>
     </li>
-    <li><a href="#29-">2.9 小結</a></li>
+    <li><a href="#29-小結">2.9 小結</a></li>
   </ul>
 
   <ul>
-    <li><a href="#31-">3.1 文件內移動</a>
+    <li><a href="#31-文件內移動">3.1 文件內移動</a>
       <ul>
-        <li><a href="#311-">3.1.1 基於上下文的移動</a></li>
+        <li><a href="#311-基於上下文的移動">3.1.1 基於上下文的移動</a></li>
       </ul>
     </li>
-    <li><a href="#32--help-">3.2 使用 Help 說明文件</a></li>
-    <li><a href="#33-buffer">3.3 在多個緩衝區(Buffer)間移動</a></li>
-    <li><a href="#34-">3.4 快速打開引用文件</a></li>
-    <li><a href="#35--search">3.5 搜尋 Search</a>
+    <li><a href="#32-使用-help-說明文件">3.2 使用 Help 說明文件</a></li>
+    <li><a href="#33-在多個緩衝區buffer間移動">3.3 在多個緩衝區(Buffer)間移動</a></li>
+    <li><a href="#34-快速打開引用文件">3.4 快速打開引用文件</a></li>
+    <li><a href="#35-搜尋-search">3.5 搜尋 Search</a>
       <ul>
-        <li><a href="#351-">3.5.1 在目前文件中搜索</a></li>
-        <li><a href="#352-">3.5.2 在多個文件中搜索</a></li>
-        <li><a href="#353-">3.5.3 在說明文件中搜索</a></li>
+        <li><a href="#351-在目前文件中搜索">3.5.1 在目前文件中搜索</a></li>
+        <li><a href="#352-在多個文件中搜索">3.5.2 在多個文件中搜索</a></li>
+        <li><a href="#353-在說明文件中搜索">3.5.3 在說明文件中搜索</a></li>
       </ul>
     </li>
-    <li><a href="#36-">3.6 標記位置</a>
+    <li><a href="#36-標記位置">3.6 標記位置</a>
       <ul>
-        <li><a href="#361-">3.6.1 可見標記</a></li>
-        <li><a href="#362-">3.6.2 隱形標記</a></li>
+        <li><a href="#361-可見標記">3.6.1 可見標記</a></li>
+        <li><a href="#362-隱形標記">3.6.2 隱形標記</a></li>
       </ul>
     </li>
-    <li><a href="#37-">3.7 小結</a></li>
+    <li><a href="#37-小結">3.7 小結</a></li>
   </ul>
 
   <ul>
-    <li><a href="#41-">4.1 模版</a></li>
-    <li><a href="#411-">4.1.1 模版文件</a></li>
-    <li><a href="#412-">4.1.2 把縮寫作為模版</a></li>
+    <li><a href="#41-模版">4.1 模版</a></li>
+    <li><a href="#411-模版文件">4.1.1 模版文件</a></li>
+    <li><a href="#412-把縮寫作為模版">4.1.2 把縮寫作為模版</a></li>
     <li><a href="#413-snipmate">4.1.3 snipMate</a></li>
-    <li><a href="#414--snippets-pluging">4.1.4 其他 snippets Pluging</a></li>
+    <li><a href="#414-其他-snippets-pluging">4.1.4 其他 snippets Pluging</a></li>
     <li><a href="#42-tag-list">4.2 Tag List</a></li>
-    <li><a href="#43-autocomplete-">4.3 AutoComplete 自動補全</a>
+    <li><a href="#43-autocomplete-自動補全">4.3 AutoComplete 自動補全</a>
       <ul>
-        <li><a href="#432-">4.3.2 依字典的自動補全</a></li>
+        <li><a href="#432-依字典的自動補全">4.3.2 依字典的自動補全</a></li>
         <li><a href="#433-omnicompletion">4.3.3 Omnicompletion</a></li>
-        <li><a href="#434---autocomplete">4.3.4  多合一 autocomplete</a></li>
+        <li><a href="#434--多合一-autocomplete">4.3.4  多合一 autocomplete</a></li>
       </ul>
     </li>
-    <li><a href="#44--macros">4.4 錄製巨集 Macros</a></li>
-    <li><a href="#45--session">4.5 會話 Session</a>
+    <li><a href="#44-錄製巨集-macros">4.4 錄製巨集 Macros</a></li>
+    <li><a href="#45-會話-session">4.5 會話 Session</a>
       <ul>
-        <li><a href="#451-">4.5.1 簡單會話使用</a></li>
-        <li><a href="#452--session-">4.5.2 個人化 Session 使用</a></li>
+        <li><a href="#451-簡單會話使用">4.5.1 簡單會話使用</a></li>
+        <li><a href="#452-個人化-session-使用">4.5.2 個人化 Session 使用</a></li>
         <li><a href="#453-sessions-as-a-project-manager">4.5.3 Sessions as a project manager</a></li>
       </ul>
     </li>
-    <li><a href="#46---undo-">4.6 暫存器 和 Undo 分支</a>
+    <li><a href="#46-暫存器-和-undo-分支">4.6 暫存器 和 Undo 分支</a>
       <ul>
-        <li><a href="#461-">4.6.1 暫存器</a></li>
+        <li><a href="#461-暫存器">4.6.1 暫存器</a></li>
         <li><a href="#462-unod-list">4.6.2 Unod list</a></li>
       </ul>
     </li>
-    <li><a href="#47-folding-">4.7 Folding 折疉</a>
+    <li><a href="#47-folding-折疉">4.7 Folding 折疉</a>
       <ul>
         <li><a href="#471-simple-text-file-outlining">4.7.1 Simple text file outlining</a></li>
         <li><a href="#472-using-vimdiff-to-track-the-changes">4.7.2 Using vimdiff to track the changes</a></li>
@@ -628,43 +650,43 @@
         <li><a href="#474-using-diff-to-track-changes">4.7.4 Using diff to track changes</a></li>
       </ul>
     </li>
-    <li><a href="#48-">4.8 打開任意位置的文件</a>
+    <li><a href="#48-打開任意位置的文件">4.8 打開任意位置的文件</a>
       <ul>
         <li><a href="#481-faster-remote-file-editing">4.8.1 Faster remote file editing</a></li>
       </ul>
     </li>
-    <li><a href="#49-">4.9 小結</a></li>
+    <li><a href="#49-小結">4.9 小結</a></li>
   </ul>
 
   <ul>
-    <li><a href="#51-">5.1 文本格式化</a>
+    <li><a href="#51-文本格式化">5.1 文本格式化</a>
       <ul>
-        <li><a href="#511-">5.1.1 文本分段</a></li>
-        <li><a href="#512-">5.1.2 內文對齊</a></li>
-        <li><a href="#513-">5.1.3 標記標題</a></li>
-        <li><a href="#514-">5.1.4 建立清單</a></li>
+        <li><a href="#511-文本分段">5.1.1 文本分段</a></li>
+        <li><a href="#512-內文對齊">5.1.2 內文對齊</a></li>
+        <li><a href="#513-標記標題">5.1.3 標記標題</a></li>
+        <li><a href="#514-建立清單">5.1.4 建立清單</a></li>
       </ul>
     </li>
-    <li><a href="#52-">5.2 代碼格式化</a></li>
-    <li><a href="#53-">5.3 使用外部工具格式化</a></li>
-    <li><a href="#54-">5.4 小結</a></li>
+    <li><a href="#52-代碼格式化">5.2 代碼格式化</a></li>
+    <li><a href="#53-使用外部工具格式化">5.3 使用外部工具格式化</a></li>
+    <li><a href="#54-小結">5.4 小結</a></li>
   </ul>
 
   <ul>
-    <li><a href="#61--syntax-color-scheme">6.1 語法配色 syntax-color scheme</a></li>
-    <li><a href="#62--syntax-regions">6.2 區域高亮 Syntax regions</a>
+    <li><a href="#61-語法配色-syntax-color-scheme">6.1 語法配色 syntax-color scheme</a></li>
+    <li><a href="#62-區域高亮-syntax-regions">6.2 區域高亮 Syntax regions</a>
       <ul>
         <li><a href="#621-color-scheme-and-syntax-coloring">6.2.1 Color scheme and syntax coloring</a></li>
       </ul>
     </li>
-    <li><a href="#63--using-scripts">6.3 使用腳本 Using scripts</a>
+    <li><a href="#63-使用腳本-using-scripts">6.3 使用腳本 Using scripts</a>
       <ul>
         <li><a href="#631-script-types">6.3.1 Script types</a></li>
         <li><a href="#632-installing-scripts">6.3.2 Installing scripts</a></li>
         <li><a href="#633-uninstalling-scripts">6.3.3 Uninstalling scripts</a></li>
       </ul>
     </li>
-    <li><a href="#64--script-development">6.4 腳本開發 Script development</a>
+    <li><a href="#64-腳本開發-script-development">6.4 腳本開發 Script development</a>
       <ul>
         <li><a href="#641-script-writing-basics">6.4.1 Script writing basics</a></li>
       </ul>
@@ -704,13 +726,13 @@
         <li><a href="#763-vim-scripting-in-ruby">7.6.3 Vim scripting in Ruby</a></li>
       </ul>
     </li>
-    <li><a href="#77--summary">7.7 小結 Summary</a></li>
+    <li><a href="#77-小結-summary">7.7 小結 Summary</a></li>
   </ul>
 
   <ul>
-    <li><a href="#b1--vimrc-">B.1 保持 Vimrc 簡潔的技巧</a></li>
-    <li><a href="#b2-vimrc">B.2 Vimrc的設定系統</a></li>
-    <li><a href="#b3-vimrc">B.3 Vimrc雲端儲存</a></li>
+    <li><a href="#b1-保持-vimrc-簡潔的技巧">B.1 保持 Vimrc 簡潔的技巧</a></li>
+    <li><a href="#b2-vimrc的設定系統">B.2 Vimrc的設定系統</a></li>
+    <li><a href="#b3-vimrc雲端儲存">B.3 Vimrc雲端儲存</a></li>
   </ul>
 </nav>
         </div>
@@ -742,10 +764,10 @@
 <p>以及一些簡單的筆記、和心得記錄。</p>
 <p>Task list: 😄</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox">初稿</li>
-<li><input disabled="" type="checkbox">修正</li>
-<li><input disabled="" type="checkbox">incomplete</li>
-<li><input disabled="" type="checkbox">completed</li>
+<li><input checked="" disabled="" type="checkbox"> 初稿</li>
+<li><input disabled="" type="checkbox"> 修正</li>
+<li><input disabled="" type="checkbox"> incomplete</li>
+<li><input disabled="" type="checkbox"> completed</li>
 </ul>
 <p><img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_reader_book_cover/0509_Hacking%20Vim%207.2cov.jpg" alt="Hacking Vim 7.2"></p>
 <p><a href="https://www.packtpub.com/application-development/hacking-vim-72">Hacking Vim 7.2</a>
@@ -760,7 +782,7 @@
 <li>Language: English</li>
 </ul>
 <p><a href="https://www.packtpub.com/lcode_download/5226">Code Files</a></p>
-<h1 id="heading">概述</h1>
+<h1 id="概述">概述</h1>
 <p>這本書大概是講一些比較進階的Vim設定使用的內容。</p>
 <p>Table of Contents:</p>
 <table>
@@ -801,7 +823,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="ch1-getting-started-with-vim-">Ch1: GETTING STARTED WITH VIM #簡介</h1>
+<h1 id="ch1-getting-started-with-vim-簡介">Ch1: GETTING STARTED WITH VIM #簡介</h1>
 <p>簡介了 Vim 的歷史，從 ex,vi,STEVIE,Elvis,nvi,Vim,Vile。</p>
 <p>不過沒提到較新的 <a href="https://github.com/neovim/neovim">neovim</a>。</p>
 <p>另外一些比較有趣的編輯器:</p>
@@ -812,71 +834,71 @@
 <li>Visual Stuido Code</li>
 <li>Atom</li>
 </ul>
-<h1 id="ch2-personalizing-vim--------vim">Ch2: PERSONALIZING VIM        #Vim個人化</h1>
-<h2 id="21-">2.1 設定檔的位置</h2>
+<h1 id="ch2-personalizing-vim--------vim個人化">Ch2: PERSONALIZING VIM        #Vim個人化</h1>
+<h2 id="21-設定檔的位置">2.1 設定檔的位置</h2>
 <ul>
 <li>作業系統的不同： Linux(.vimrc) , MSWin(_vimrc)</li>
 <li>操作界面的不同： Console(vimrc), GUI(gvimrc), vi/ex mode(exrc)</li>
 </ul>
 <p>在Vim下輸入指令，直接顯示目前的設定檔位置：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">echo</span> $<span style="color:#a6e22e">HOME</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">echo</span> $<span style="color:#a6e22e">MYVIMRC</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">echo</span> $<span style="color:#a6e22e">MYGVIMRC</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">echo</span> $<span style="color:#a6e22e">HOME</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">echo</span> $<span style="color:#a6e22e">MYVIMRC</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">echo</span> $<span style="color:#a6e22e">MYGVIMRC</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>gvimrc 主要是輸入一些在GUI特有的設定，最好是能把跟 vimrc的設定分開。</p>
-<h2 id="22-">2.2 字體</h2>
+<h2 id="22-字體">2.2 字體</h2>
 <p>在GUI下輸入，可以打開字型視窗。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">guifont</span>=*<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">guifont</span>=*<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>不同的的作業系統下設定字型的方式有點差異。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34; Linux</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">guifont</span>=<span style="color:#a6e22e">Courier</span>\ <span style="color:#a6e22e">New</span>\ <span style="color:#ae81ff">14</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; MSWin</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">guifont</span>=<span style="color:#a6e22e">Courier</span>\ <span style="color:#a6e22e">New</span>:<span style="color:#ae81ff">14</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">help</span> <span style="color:#a6e22e">guifont</span>  <span style="color:#75715e">&#34;更多的資料</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34; Linux</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">guifont</span>=<span style="color:#a6e22e">Courier</span>\ <span style="color:#a6e22e">New</span>\ <span style="color:#ae81ff">14</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; MSWin</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">guifont</span>=<span style="color:#a6e22e">Courier</span>\ <span style="color:#a6e22e">New</span>:<span style="color:#ae81ff">14</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">help</span> <span style="color:#a6e22e">guifont</span>  <span style="color:#75715e">&#34;更多的資料</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>See Also: <a href="http://vim.wikia.com/wiki/Setting_the_font_in_the_GUI">Setting the font in the GUI</a></p>
-<h2 id="23--colorscheme">2.3 配色 (colorscheme)</h2>
+<h2 id="23-配色-colorscheme">2.3 配色 (colorscheme)</h2>
 <p>配色在 console，和GUI下，同一colorscheme會有不同的效果，
 所以選擇 colorscheme應該要注意。</p>
-<h3 id="231--hightlight">2.3.1 高亮 (hightlight)</h3>
+<h3 id="231-高亮-hightlight">2.3.1 高亮 (hightlight)</h3>
 <p>pass</p>
-<h2 id="24-statusline">2.4 狀態列(statusline)</h2>
+<h2 id="24-狀態列statusline">2.4 狀態列(statusline)</h2>
 <p>狀態列可以設定滿多東西的，文件名，格式，文件長度…</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">statusline</span>=%<span style="color:#a6e22e">F</span>%<span style="color:#a6e22e">m</span>%<span style="color:#a6e22e">r</span>%<span style="color:#a6e22e">h</span>%<span style="color:#a6e22e">w</span>\ [<span style="color:#a6e22e">FORMAT</span>=%{&amp;<span style="color:#a6e22e">ff</span>}]\ [<span style="color:#a6e22e">TYP</span>[<span style="color:#a6e22e">HEX</span>=\%<span style="color:#ae81ff">02</span>.<span style="color:#ae81ff">2</span>B]\ [<span style="color:#a6e22e">POS</span>=%<span style="color:#ae81ff">04</span>l,%<span style="color:#ae81ff">04</span>v]\ [%<span style="color:#a6e22e">p</span>%%]\ [<span style="color:#a6e22e">LEN</span>=%<span style="color:#a6e22e">L</span>]<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">statusline</span>=%<span style="color:#a6e22e">F</span>%<span style="color:#a6e22e">m</span>%<span style="color:#a6e22e">r</span>%<span style="color:#a6e22e">h</span>%<span style="color:#a6e22e">w</span>\ [<span style="color:#a6e22e">FORMAT</span>=%{&amp;<span style="color:#a6e22e">ff</span>}]\ [<span style="color:#a6e22e">TYP</span>[<span style="color:#a6e22e">HEX</span>=\%<span style="color:#ae81ff">02</span>.<span style="color:#ae81ff">2</span>B]\ [<span style="color:#a6e22e">POS</span>=%<span style="color:#ae81ff">04</span>l,%<span style="color:#ae81ff">04</span>v]\ [%<span style="color:#a6e22e">p</span>%%]\ [<span style="color:#a6e22e">LEN</span>=%<span style="color:#a6e22e">L</span>]<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>但這設定完後，不會馬上出現，要設定 statusline的位置在最後兩行，才會出現。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">laststatus</span>=<span style="color:#ae81ff">2</span>  #<span style="color:#a6e22e">狀態列在最後第二行</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">laststatus</span>=<span style="color:#ae81ff">0</span>  #<span style="color:#a6e22e">狀態列關閉</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h2 id="25--menutoolbar">2.5 切換選單、工具列 Menu,Toolbar</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">laststatus</span>=<span style="color:#ae81ff">2</span>  #<span style="color:#a6e22e">狀態列在最後第二行</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">laststatus</span>=<span style="color:#ae81ff">0</span>  #<span style="color:#a6e22e">狀態列關閉</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="25-切換選單工具列-menutoolbar">2.5 切換選單、工具列 Menu,Toolbar</h2>
 <p>在GUI下，可以設定功能到選單、工具列上。</p>
-<h2 id="26-">2.6 自訂選單、工具列</h2>
+<h2 id="26-自訂選單工具列">2.6 自訂選單、工具列</h2>
 <p>增加選單</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">menu</span> <span style="color:#a6e22e">menupath</span> <span style="color:#a6e22e">command</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">menu</span> <span style="color:#a6e22e">menupath</span> <span style="color:#a6e22e">command</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><code>menu</code> 的指令就是像 <code>map</code> 把選單映射到一個指令</p>
 <p>例如</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">menu</span> <span style="color:#a6e22e">Tabs</span>.<span style="color:#a6e22e">Next</span> &lt;<span style="color:#a6e22e">ESC</span>&gt;:<span style="color:#a6e22e">tabnext</span>&lt;<span style="color:#a6e22e">cr</span>&gt;<span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h2 id="27-tabs">2.7 修改頁籤(Tabs)</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">menu</span> <span style="color:#a6e22e">Tabs</span>.<span style="color:#a6e22e">Next</span> &lt;<span style="color:#a6e22e">ESC</span>&gt;:<span style="color:#a6e22e">tabnext</span>&lt;<span style="color:#a6e22e">cr</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="27-修改頁籤tabs">2.7 修改頁籤(Tabs)</h2>
 <p>從 Vim 7.0開始支援 頁籤 Tabs，每個 Tabs有個別的屬性。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">tabline</span> <span style="color:#a6e22e">tabline</span>-<span style="color:#a6e22e">layout</span>  <span style="color:#75715e">&#34; Tabs的狀態列</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">guitablabel</span> <span style="color:#75715e">&#34; gvim的Tab狀態列</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h2 id="28-">2.8 工作區個人化</h2>
-<h3 id="281--cursor">2.8.1 光標 cursor</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">cursorline</span>   <span style="color:#75715e">&#34; 顯示cursor line</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">CursorLine</span> <span style="color:#a6e22e">guibg</span>=<span style="color:#a6e22e">lightblue</span> <span style="color:#a6e22e">ctermbg</span>=<span style="color:#a6e22e">lightgray</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; 設定 cursorline 顏色</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">cursorcolumn</span> <span style="color:#75715e">&#34; 顯示縱向的指標行</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">CursorColumn</span> <span style="color:#a6e22e">guibg</span>=<span style="color:#a6e22e">blue</span> <span style="color:#a6e22e">ctermbg</span>=<span style="color:#a6e22e">gray</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; 設定 cursorcolumn 顏色</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">nocursorcolumn</span> <span style="color:#75715e">&#34; 關閉cursorcolumn</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h3 id="282--line-numbers">2.8.2 行號 line numbers</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34; 打開行號</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">number</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">nu</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">nonumber</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">nonu</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; 預設的行號佔 4個space, 下面指令可以修改預設值</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">numberwidth</span>=`<span style="color:#a6e22e">widch</span>`<span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h3 id="283--spell-checking">2.8.3 拼寫檢查 Spell checking</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">tabline</span> <span style="color:#a6e22e">tabline</span>-<span style="color:#a6e22e">layout</span>  <span style="color:#75715e">&#34; Tabs的狀態列</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">guitablabel</span> <span style="color:#75715e">&#34; gvim的Tab狀態列</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="28-工作區個人化">2.8 工作區個人化</h2>
+<h3 id="281-光標-cursor">2.8.1 光標 cursor</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">cursorline</span>   <span style="color:#75715e">&#34; 顯示cursor line</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">CursorLine</span> <span style="color:#a6e22e">guibg</span>=<span style="color:#a6e22e">lightblue</span> <span style="color:#a6e22e">ctermbg</span>=<span style="color:#a6e22e">lightgray</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; 設定 cursorline 顏色</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">cursorcolumn</span> <span style="color:#75715e">&#34; 顯示縱向的指標行</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">CursorColumn</span> <span style="color:#a6e22e">guibg</span>=<span style="color:#a6e22e">blue</span> <span style="color:#a6e22e">ctermbg</span>=<span style="color:#a6e22e">gray</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; 設定 cursorcolumn 顏色</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">nocursorcolumn</span> <span style="color:#75715e">&#34; 關閉cursorcolumn</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h3 id="282-行號-line-numbers">2.8.2 行號 line numbers</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34; 打開行號</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">number</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">nu</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">nonumber</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">nonu</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; 預設的行號佔 4個space, 下面指令可以修改預設值</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">numberwidth</span>=`<span style="color:#a6e22e">widch</span>`<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h3 id="283-拼寫檢查-spell-checking">2.8.3 拼寫檢查 Spell checking</h3>
 <p>Vim 7.0 以後有內建的 spell check</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">spell</span>  <span style="color:#75715e">&#34; 打開拼寫檢查</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">spelllang</span>=<span style="color:#a6e22e">en_us</span> <span style="color:#75715e">&#34; 設定拼寫語言</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">spell</span>  <span style="color:#75715e">&#34; 打開拼寫檢查</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">spelllang</span>=<span style="color:#a6e22e">en_us</span> <span style="color:#75715e">&#34; 設定拼寫語言</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>錯字的配色</strong></p>
 <ul>
 <li>在console(terminal)下，紅底白字</li>
@@ -887,18 +909,18 @@
 <li>把遊標移到錯誤的字，輸入  <code>z=</code>，可以更正錯誤的拼字。</li>
 <li><code>]s</code> and <code>[s</code> 可以移動到上一個、下一個錯誤拼字</li>
 </ul>
-<h3 id="284--tooltip">2.8.4 工具提示 Tooltip</h3>
-<h3 id="285--abbreviations">2.8.5 使用縮寫 abbreviations</h3>
+<h3 id="284-工具提示-tooltip">2.8.4 工具提示 Tooltip</h3>
+<h3 id="285-使用縮寫-abbreviations">2.8.5 使用縮寫 abbreviations</h3>
 <p>使用縮寫來減少重複輸入</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">iabbrev</span> <span style="color:#a6e22e">myAddr</span> <span style="color:#ae81ff">32</span> <span style="color:#a6e22e">Lincoln</span> <span style="color:#a6e22e">Road</span>, <span style="color:#a6e22e">Birmingham</span> <span style="color:#a6e22e">B27</span> <span style="color:#ae81ff">6</span>PA, <span style="color:#a6e22e">United</span> <span style="color:#a6e22e">Kingdom</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">iabbrev</span> <span style="color:#a6e22e">myAddr</span> <span style="color:#ae81ff">32</span> <span style="color:#a6e22e">Lincoln</span> <span style="color:#a6e22e">Road</span>, <span style="color:#a6e22e">Birmingham</span> <span style="color:#a6e22e">B27</span> <span style="color:#ae81ff">6</span>PA, <span style="color:#a6e22e">United</span> <span style="color:#a6e22e">Kingdom</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>可以在 輸入模式中，輸入 myAddr後，變成之前設定的地址。</p>
 <ul>
 <li>:abbreviate(abbr): Abbreviations for all modes   #全模式</li>
 <li>:iabbrev(iabbr): Abbreviations for the insert mode #輸入模式</li>
 <li>:cabbrev(cabbr): Abbreviations for the command line only #命令模式</li>
 </ul>
-<h3 id="286--key-bindings">2.8.6 修改按鍵綁定 Key bindings</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">map</span> &lt;<span style="color:#a6e22e">C</span>-<span style="color:#a6e22e">s</span>&gt; &lt;<span style="color:#a6e22e">esc</span>&gt;:<span style="color:#a6e22e">w</span>&lt;<span style="color:#a6e22e">cr</span>&gt;<span style="color:#960050;background-color:#1e0010">
+<h3 id="286-修改按鍵綁定-key-bindings">2.8.6 修改按鍵綁定 Key bindings</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">map</span> &lt;<span style="color:#a6e22e">C</span>-<span style="color:#a6e22e">s</span>&gt; &lt;<span style="color:#a6e22e">esc</span>&gt;:<span style="color:#a6e22e">w</span>&lt;<span style="color:#a6e22e">cr</span>&gt;<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>把按鍵和指令重新指定。</p>
 <ul>
 <li>🗺 For the Normal, Insert, Visual, and Command-line modes</li>
@@ -993,18 +1015,18 @@
 </tr>
 </tbody>
 </table>
-<h2 id="29-">2.9 小結</h2>
+<h2 id="29-小結">2.9 小結</h2>
 <p>這章說明了各種設定修改的方式。</p>
-<h1 id="ch3-better-navigation---------">Ch3: BETTER NAVIGATION         #移動</h1>
+<h1 id="ch3-better-navigation---------移動">Ch3: BETTER NAVIGATION         #移動</h1>
 <p>本章說明在各文件快速移動的方式。遊標移動、在多文件中移動、使用說明文件、搜索、標記。</p>
-<h2 id="31-">3.1 文件內移動</h2>
-<h3 id="311-">3.1.1 基於上下文的移動</h3>
+<h2 id="31-文件內移動">3.1 文件內移動</h2>
+<h3 id="311-基於上下文的移動">3.1.1 基於上下文的移動</h3>
 <p>文件結構的不同，可分為兩種情形：</p>
 <ul>
 <li>一般文件：段落、語句、單詞</li>
 <li>程式碼：函數、區塊、單行</li>
 </ul>
-<h4 id="3111-">3.1.1.1 一般文件</h4>
+<h4 id="3111-一般文件">3.1.1.1 一般文件</h4>
 <ul>
 <li><code>h</code>,<code>j</code>,<code>k</code>,<code>l</code>  #左、下、上、右</li>
 <li><code>{</code>,<code>}</code>      #段落首、尾</li>
@@ -1019,7 +1041,7 @@
 <p>由字母、數字、dash(-)、underline(_)組成
 以非空白字母組成</p>
 </blockquote>
-<h4 id="3112-">3.1.1.2 程式碼</h4>
+<h4 id="3112-程式碼">3.1.1.2 程式碼</h4>
 <p>Vim無法辨識所有程式的結構，不過C語言預設是可以的。</p>
 <p>函數</p>
 <ul>
@@ -1040,7 +1062,7 @@ end of a function)</li>
 </ul>
 <p><code>gd</code>: 跳到變數定義區段
 <code>gD</code>: 跳到全域變數定義區段</p>
-<h4 id="312-">3.1.2 在長行內移動</h4>
+<h4 id="312-在長行內移動">3.1.2 在長行內移動</h4>
 <dl>
 <dt>長行：</dt>
 <dd>
@@ -1048,7 +1070,7 @@ end of a function)</li>
 </dd>
 </dl>
 <p><code>gk</code>,<code>gj</code> :會以視覺上的行為主而移動。</p>
-<h2 id="32--help-">3.2 使用 Help 說明文件</h2>
+<h2 id="32-使用-help-說明文件">3.2 使用 Help 說明文件</h2>
 <p>Vim的說明文件可以：</p>
 <ul>
 <li>按 <!-- raw HTML omitted --> 進入</li>
@@ -1060,7 +1082,7 @@ end of a function)</li>
 <li><!-- raw HTML omitted --> : 跳回前一個位置</li>
 </ul>
 <p>文章內還有一些比較進階的設定。</p>
-<h2 id="33-buffer">3.3 在多個緩衝區(Buffer)間移動</h2>
+<h2 id="33-在多個緩衝區buffer間移動">3.3 在多個緩衝區(Buffer)間移動</h2>
 <p>打開的文件，是存在緩衝區(Buffer)中。</p>
 <ul>
 <li><code>:buffers</code>: buffer list</li>
@@ -1068,18 +1090,18 @@ end of a function)</li>
 <li><code>:bnext(bn)</code>: Next buffer</li>
 <li><code>:bprevious(bp)</code>: Previous buffer</li>
 </ul>
-<h2 id="34-">3.4 快速打開引用文件</h2>
+<h2 id="34-快速打開引用文件">3.4 快速打開引用文件</h2>
 <p>像是在 C語言中的 <code>#include</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&#34;example.h&#34;</span><span style="color:#75715e">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;example.h&#34;</span><span style="color:#75715e">
 </span></code></pre></div><p>在 <code>example.h</code> 上按 <code>gf</code>，Vim就會把檔案讀入緩衝區</p>
-<h2 id="35--search">3.5 搜尋 Search</h2>
+<h2 id="35-搜尋-search">3.5 搜尋 Search</h2>
 <p>分三種：</p>
 <ul>
 <li>在目前文件中搜索</li>
 <li>在多文件中搜索</li>
 <li>在說明文件中搜索</li>
 </ul>
-<h3 id="351-">3.5.1 在目前文件中搜索</h3>
+<h3 id="351-在目前文件中搜索">3.5.1 在目前文件中搜索</h3>
 <p>找單詞</p>
 <ul>
 <li>普通模式下 <code>?example</code>，命令模式下 <code>/example</code>可以找單詞</li>
@@ -1087,10 +1109,10 @@ end of a function)</li>
 <li><code>//</code>,<code>??</code>: 上一次搜索的輸入</li>
 <li><code>#</code>,<code>*</code>: 搜索在遊標上的單詞，向上移動， 向下移動</li>
 </ul>
-<h3 id="352-">3.5.2 在多個文件中搜索</h3>
+<h3 id="352-在多個文件中搜索">3.5.2 在多個文件中搜索</h3>
 <p>搜索的指令，在Unix系統下有 <code>grep</code>，MSWin下有 <code>find</code>,<code>findstr</code>，
 而在 Vim下，有：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">vimgrep</span> <span style="color:#e6db74">/pattern/</span>[<span style="color:#a6e22e">j</span>][<span style="color:#a6e22e">g</span>] <span style="color:#a6e22e">file</span> <span style="color:#a6e22e">file2</span>... <span style="color:#a6e22e">fileN</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">vimgrep</span> <span style="color:#e6db74">/pattern/</span>[<span style="color:#a6e22e">j</span>][<span style="color:#a6e22e">g</span>] <span style="color:#a6e22e">file</span> <span style="color:#a6e22e">file2</span>... <span style="color:#a6e22e">fileN</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><ul>
 <li>/pattern/ : 正則表示式</li>
 <li><code>j</code>: 把結果輸入到 <code>quickfix</code> 列表</li>
@@ -1101,26 +1123,26 @@ end of a function)</li>
 <li><code>:clist</code>:顯示 <code>quickfix</code>結果</li>
 <li><code>cnext(cn)</code>,<code>cprevious(cp)</code>:在 <code>quickfix</code>列表中移動</li>
 </ul>
-<h3 id="353-">3.5.3 在說明文件中搜索</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">helpgrep</span> <span style="color:#a6e22e">pattern</span> [@<span style="color:#a6e22e">LANG</span>]<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; @LANG，可以指定說明文件的語言，例子：</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">helpgrep</span> <span style="color:#a6e22e">completion</span>@<span style="color:#a6e22e">en</span><span style="color:#960050;background-color:#1e0010">
+<h3 id="353-在說明文件中搜索">3.5.3 在說明文件中搜索</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">helpgrep</span> <span style="color:#a6e22e">pattern</span> [@<span style="color:#a6e22e">LANG</span>]<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; @LANG，可以指定說明文件的語言，例子：</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">helpgrep</span> <span style="color:#a6e22e">completion</span>@<span style="color:#a6e22e">en</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>如果是新增加的文件，可以用下面的指令生成文件tags</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">helptags</span> <span style="color:#e6db74">/path/</span><span style="color:#a6e22e">to</span>/<span style="color:#a6e22e">doc</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h2 id="36-">3.6 標記位置</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">helptags</span> <span style="color:#e6db74">/path/</span><span style="color:#a6e22e">to</span>/<span style="color:#a6e22e">doc</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="36-標記位置">3.6 標記位置</h2>
 <p>有時文件太長，要在個各處移動，標記(Marks)可以在某行前
 作記號。例：</p>
 <ul>
 <li>可見標記</li>
 <li>隱形標記</li>
 </ul>
-<h3 id="361-">3.6.1 可見標記</h3>
+<h3 id="361-可見標記">3.6.1 可見標記</h3>
 <p>通常是會在行號前面，用來標記某一行的符號。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">sign</span> <span style="color:#a6e22e">define</span> <span style="color:#a6e22e">name</span> <span style="color:#a6e22e">arguments</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">sign</span> <span style="color:#a6e22e">define</span> <span style="color:#a6e22e">name</span> <span style="color:#a6e22e">arguments</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>定義標記列顏色</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">SignColumn</span> <span style="color:#a6e22e">guibg</span>=<span style="color:#a6e22e">darkgrey</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">SignColumn</span> <span style="color:#a6e22e">guibg</span>=<span style="color:#a6e22e">darkgrey</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>pass</p>
-<h3 id="362-">3.6.2 隱形標記</h3>
+<h3 id="362-隱形標記">3.6.2 隱形標記</h3>
 <p>另一種標記方式，基本上看不到，除非打開標記列表</p>
 <p><code>:marks</code>: 打開標記列表
 <code>ma</code> : 標記 <code>a</code>
@@ -1149,13 +1171,13 @@ end of a function)</li>
 </tr>
 </tbody>
 </table>
-<h2 id="37-">3.7 小結</h2>
+<h2 id="37-小結">3.7 小結</h2>
 <p>這一節描述了cursor的移動，搜索、或是在各文件中移動的方式。</p>
-<h1 id="ch4-production-boosters-------">Ch4: PRODUCTION BOOSTERS       #增強生產力</h1>
+<h1 id="ch4-production-boosters-------增強生產力">Ch4: PRODUCTION BOOSTERS       #增強生產力</h1>
 <p>這一章會簡介一些能增加效率的工具。</p>
-<h2 id="41-">4.1 模版</h2>
+<h2 id="41-模版">4.1 模版</h2>
 <p>建立模版 Template ，減少重複性的工作。</p>
-<h2 id="411-">4.1.1 模版文件</h2>
+<h2 id="411-模版文件">4.1.1 模版文件</h2>
 <p>應該可以分為兩種行為</p>
 <ul>
 <li>新建立文件時，讀取 已有的模版  或是骨架 Skeleton</li>
@@ -1166,14 +1188,14 @@ end of a function)</li>
 <li>建立模版檔：在 <code>$VIMHOME</code>/templates/下加入新的  <code>file-type.tpl</code> ，像是 <code>html.tpl</code></li>
 <li>設定程式設定： 加入 <code>autocmd</code> 在開啟新檔時，自動讀入模版。</li>
 </ul>
-<h2 id="412-">4.1.2 把縮寫作為模版</h2>
+<h2 id="412-把縮寫作為模版">4.1.2 把縮寫作為模版</h2>
 <p>前面有提為的功能 縮寫可以用來快速輸入一些結構，像是迴圈、或是snippets</p>
 <h2 id="413-snipmate">4.1.3 snipMate</h2>
 <p>更完整的功能，有人編寫了完整的 plugins。</p>
 <p><a href="https://vimawesome.com/plugin/snipmate">https://vimawesome.com/plugin/snipmate</a>
 <a href="https://www.vim.org/scripts/script.php?script_id=2540">https://www.vim.org/scripts/script.php?script_id=2540</a>
 <a href="https://github.com/garbas/vim-snipmate">https://github.com/garbas/vim-snipmate</a></p>
-<h2 id="414--snippets-pluging">4.1.4 其他 snippets Pluging</h2>
+<h2 id="414-其他-snippets-pluging">4.1.4 其他 snippets Pluging</h2>
 <p>比較
 <a href="http://vim-wiki.mawercer.de/wiki/topic/text-snippets-skeletons-templates.html">http://vim-wiki.mawercer.de/wiki/topic/text-snippets-skeletons-templates.html</a></p>
 <p>除了 snipMate以外，還有其他plugins有snippets的功能</p>
@@ -1201,7 +1223,7 @@ The standard snippets repository for neosnippet</p>
 <p>###　4.2.1 Tag List 的其他用法</p>
 <p>除了用來找函數、和變數外，還有其他用法。</p>
 <p><code>:help tags</code></p>
-<h2 id="43-autocomplete-">4.3 AutoComplete 自動補全</h2>
+<h2 id="43-autocomplete-自動補全">4.3 AutoComplete 自動補全</h2>
 <p>分三種</p>
 <ul>
 <li>依前後文</li>
@@ -1211,7 +1233,7 @@ The standard snippets repository for neosnippet</p>
 <p>4.3.1 已知單詞的自動補全</p>
 <p><code>C-p</code> <code>C-n</code> 在打完的前兩個字母後按，</p>
 <p>會出現auto complete的選項，向前、或向後</p>
-<h3 id="432-">4.3.2 依字典的自動補全</h3>
+<h3 id="432-依字典的自動補全">4.3.2 依字典的自動補全</h3>
 <p>利用已有的字典作 autocomplete</p>
 <p>設定字典檔
 <code>:set dictionary+=/path/to/dictionary/file/with/words</code></p>
@@ -1229,12 +1251,12 @@ x是進入autocomplete模式， k是從字典中找相近的單字。</p>
 <h3 id="433-omnicompletion">4.3.3 Omnicompletion</h3>
 <p><code>C-x C-o</code> 進入 Omnicompletion 模式</p>
 <p>pass</p>
-<h3 id="434---autocomplete">4.3.4  多合一 autocomplete</h3>
+<h3 id="434--多合一-autocomplete">4.3.4  多合一 autocomplete</h3>
 <p>把前面多種autocomplete模式整合
 這個指令可以找到,<code>CleverTab()</code></p>
 <p><code>help ins-complete</code></p>
 <p>可以用 <code>Tab</code> 來選取需要的選項。</p>
-<h2 id="44--macros">4.4 錄製巨集 Macros</h2>
+<h2 id="44-錄製巨集-macros">4.4 錄製巨集 Macros</h2>
 <p>用來錄製指令</p>
 <ul>
 <li>qa: Record from now on into register a. Any register can be used, but q is often used for simplicity.</li>
@@ -1242,63 +1264,63 @@ x是進入autocomplete模式， k是從字典中找相近的單字。</p>
 <li>@a: Executes the recording in register a (replace with any register).</li>
 <li>@@: Repeats the last executed command.</li>
 </ul>
-<h2 id="45--session">4.5 會話 Session</h2>
+<h2 id="45-會話-session">4.5 會話 Session</h2>
 <p>Vim保存了許多資訊，分成幾種：</p>
 <ul>
 <li>View: 單一視窗的資訊</li>
 <li>Session: 多個View的集合</li>
 <li>Other: 其他通用的設定</li>
 </ul>
-<h3 id="451-">4.5.1 簡單會話使用</h3>
+<h3 id="451-簡單會話使用">4.5.1 簡單會話使用</h3>
 <p>保存目前視圖、會話</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">mkview</span> <span style="color:#a6e22e">file</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">mksession</span> <span style="color:#a6e22e">file</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">viewdir</span>=$<span style="color:#a6e22e">HOME</span><span style="color:#e6db74">/.vim/</span><span style="color:#a6e22e">views</span>  <span style="color:#75715e">&#34; 設定視圖存放的目錄</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">mkview</span> <span style="color:#a6e22e">file</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">mksession</span> <span style="color:#a6e22e">file</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">viewdir</span>=$<span style="color:#a6e22e">HOME</span><span style="color:#e6db74">/.vim/</span><span style="color:#a6e22e">views</span>  <span style="color:#75715e">&#34; 設定視圖存放的目錄</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">
-</span><span style="color:#75715e">&#34; 載入視圖方式</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>$<span style="color:#a6e22e">vim</span> -<span style="color:#a6e22e">S</span> <span style="color:#a6e22e">Session</span>.<span style="color:#a6e22e">vim</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">source</span> <span style="color:#a6e22e">Session</span>.<span style="color:#a6e22e">vim</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">loadview</span> <span style="color:#a6e22e">View</span>.<span style="color:#a6e22e">vim</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h3 id="452--session-">4.5.2 個人化 Session 使用</h3>
+</span><span style="color:#75715e">&#34; 載入視圖方式</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>$<span style="color:#a6e22e">vim</span> -<span style="color:#a6e22e">S</span> <span style="color:#a6e22e">Session</span>.<span style="color:#a6e22e">vim</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">source</span> <span style="color:#a6e22e">Session</span>.<span style="color:#a6e22e">vim</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">loadview</span> <span style="color:#a6e22e">View</span>.<span style="color:#a6e22e">vim</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h3 id="452-個人化-session-使用">4.5.2 個人化 Session 使用</h3>
 <p>pass</p>
 <h3 id="453-sessions-as-a-project-manager">4.5.3 Sessions as a project manager</h3>
 <p>pass</p>
-<h2 id="46---undo-">4.6 暫存器 和 Undo 分支</h2>
+<h2 id="46-暫存器-和-undo-分支">4.6 暫存器 和 Undo 分支</h2>
 <ul>
 <li>暫存器 Register: 儲存多個緩衝區的高級剪貼薄</li>
 <li>Undo Branching: 文件修改的記錄</li>
 </ul>
-<h3 id="461-">4.6.1 暫存器</h3>
+<h3 id="461-暫存器">4.6.1 暫存器</h3>
 <h3 id="462-unod-list">4.6.2 Unod list</h3>
-<h2 id="47-folding-">4.7 Folding 折疉</h2>
+<h2 id="47-folding-折疉">4.7 Folding 折疉</h2>
 <p>把段落、或是區塊 多行折疉成一行</p>
 <h3 id="471-simple-text-file-outlining">4.7.1 Simple text file outlining</h3>
 <h3 id="472-using-vimdiff-to-track-the-changes">4.7.2 Using vimdiff to track the changes</h3>
 <h3 id="473-navigation-in-vimdiff">4.7.3 Navigation in vimdiff</h3>
 <h3 id="474-using-diff-to-track-changes">4.7.4 Using diff to track changes</h3>
-<h2 id="48-">4.8 打開任意位置的文件</h2>
+<h2 id="48-打開任意位置的文件">4.8 打開任意位置的文件</h2>
 <p>打開遠端的文件</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">Nread</span> <span style="color:#a6e22e">ftp</span>:<span style="color:#e6db74">//</span><span style="color:#a6e22e">user</span>@<span style="color:#a6e22e">server</span><span style="color:#e6db74">/path/</span><span style="color:#a6e22e">to</span>/<span style="color:#a6e22e">file</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">Nwrite</span> <span style="color:#a6e22e">server</span> <span style="color:#a6e22e">user</span> <span style="color:#a6e22e">passwd</span> <span style="color:#a6e22e">path</span><span style="color:#e6db74">/to/</span><span style="color:#a6e22e">file</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">Nread</span> <span style="color:#a6e22e">ftp</span>:<span style="color:#e6db74">//</span><span style="color:#a6e22e">user</span>@<span style="color:#a6e22e">server</span><span style="color:#e6db74">/path/</span><span style="color:#a6e22e">to</span>/<span style="color:#a6e22e">file</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">Nwrite</span> <span style="color:#a6e22e">server</span> <span style="color:#a6e22e">user</span> <span style="color:#a6e22e">passwd</span> <span style="color:#a6e22e">path</span><span style="color:#e6db74">/to/</span><span style="color:#a6e22e">file</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><h3 id="481-faster-remote-file-editing">4.8.1 Faster remote file editing</h3>
-<h2 id="49-">4.9 小結</h2>
-<h1 id="ch5-advanced-formatting-">Ch5: ADVANCED FORMATTING 進階格式化</h1>
+<h2 id="49-小結">4.9 小結</h2>
+<h1 id="ch5-advanced-formatting-進階格式化">Ch5: ADVANCED FORMATTING 進階格式化</h1>
 <p>將文件重新排版的過程。</p>
 <ul>
 <li>文本格式化</li>
 <li>代碼格式化</li>
 <li>使用外部工具格式化</li>
 </ul>
-<h2 id="51-">5.1 文本格式化</h2>
-<h3 id="511-">5.1.1 文本分段</h3>
+<h2 id="51-文本格式化">5.1 文本格式化</h2>
+<h3 id="511-文本分段">5.1.1 文本分段</h3>
 <p>例：將長行自動斷行</p>
 <p><code>gpap</code></p>
-<h3 id="512-">5.1.2 內文對齊</h3>
+<h3 id="512-內文對齊">5.1.2 內文對齊</h3>
 <p>向左、 置中、向右對齊</p>
-<h3 id="513-">5.1.3 標記標題</h3>
+<h3 id="513-標記標題">5.1.3 標記標題</h3>
 <p>在 Markdown、reST中，H1、H2的語法可以寫成：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">Level1
 ====== 
@@ -1309,9 +1331,9 @@ Level2
 <span style="color:#75715e">### Level3
 </span></code></pre></div><p>這邊利用接鍵組合，可以快速在文字下加上相同長度的 <code>=</code>，或<code>-</code></p>
 <p>像在 <code>New Heading</code>上按 <code>yypVr=o</code></p>
-<h3 id="514-">5.1.4 建立清單</h3>
+<h3 id="514-建立清單">5.1.4 建立清單</h3>
 <p>用函式快速加入 lists的格式</p>
-<h2 id="52-">5.2 代碼格式化</h2>
+<h2 id="52-代碼格式化">5.2 代碼格式化</h2>
 <p>排版良好的程式碼，對方便閱讀很有幫助。</p>
 <p>前面幾小節 介紹了縮排的幾個方式。</p>
 <ul>
@@ -1321,44 +1343,44 @@ Level2
 <li>Indentexpr: pass</li>
 </ul>
 <p>要貼程式碼時，可以用下面的指令，讓貼上的程式碼排版不會跑掉。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">paste</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">nopaste</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">pastetoggle</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h2 id="53-">5.3 使用外部工具格式化</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">paste</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">nopaste</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">pastetoggle</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="53-使用外部工具格式化">5.3 使用外部工具格式化</h2>
 <p>使用 其他程式來排版，像是 Indent,Berkeley Par,Tidy</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34; 設定 indent</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">equalprg</span>=<span style="color:#a6e22e">program</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34; 設定 indent</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">set</span> <span style="color:#a6e22e">equalprg</span>=<span style="color:#a6e22e">program</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>Tidy 是用來排版 XML,HTML 文件的工具。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34; XML 文件</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">au</span> <span style="color:#a6e22e">FileType</span> <span style="color:#a6e22e">xml</span> <span style="color:#a6e22e">exe</span> <span style="color:#e6db74">&#34;:silent 1,$!tidy --input-xml true --indent yes -q&#34;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; HTML 文件</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">au</span> <span style="color:#a6e22e">FileType</span> <span style="color:#a6e22e">html</span>,<span style="color:#a6e22e">htm</span> <span style="color:#a6e22e">exe</span> <span style="color:#e6db74">&#34;:silent 1,$!tidy --indent yes -q&#34;</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h2 id="54-">5.4 小結</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34; XML 文件</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">au</span> <span style="color:#a6e22e">FileType</span> <span style="color:#a6e22e">xml</span> <span style="color:#a6e22e">exe</span> <span style="color:#e6db74">&#34;:silent 1,$!tidy --input-xml true --indent yes -q&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; HTML 文件</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">au</span> <span style="color:#a6e22e">FileType</span> <span style="color:#a6e22e">html</span>,<span style="color:#a6e22e">htm</span> <span style="color:#a6e22e">exe</span> <span style="color:#e6db74">&#34;:silent 1,$!tidy --indent yes -q&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="54-小結">5.4 小結</h2>
 <p>本章介紹了一些排版的方式</p>
-<h1 id="ch6-basic-vim-scripting--vim-scripting">Ch6: BASIC VIM SCRIPTING 基本 Vim Scripting</h1>
+<h1 id="ch6-basic-vim-scripting-基本-vim-scripting">Ch6: BASIC VIM SCRIPTING 基本 Vim Scripting</h1>
 <p>Vim可以透過 VimScript使用許多功能，且容易分享， 
 而且還可以支援外部語言，如python,ruby,perl,lua&hellip;</p>
-<h2 id="61--syntax-color-scheme">6.1 語法配色 syntax-color scheme</h2>
+<h2 id="61-語法配色-syntax-color-scheme">6.1 語法配色 syntax-color scheme</h2>
 <p>syntax-color scheme會將程式中的 關鍵字以不同的顏色表示，</p>
 <p>不僅使程式易讀、而且可以容易發現打錯的字。</p>
 <p>語法上色，先要找出關鍵字，然後設置對應的顏色，以下是例子：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">syntax</span> <span style="color:#a6e22e">match</span> <span style="color:#a6e22e">myComments</span> <span style="color:#e6db74">&#34;/\*.*\*/&#34;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">syntax</span> <span style="color:#a6e22e">keyword</span> <span style="color:#a6e22e">myVars</span> <span style="color:#a6e22e">x</span> <span style="color:#a6e22e">y</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">syntax</span> <span style="color:#a6e22e">match</span> <span style="color:#a6e22e">mySymbols</span> <span style="color:#e6db74">&#34;[{}();=]&#34;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">syntax</span> <span style="color:#a6e22e">keyword</span> <span style="color:#a6e22e">myKeywords</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">return</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">myVars</span> <span style="color:#a6e22e">ctermfg</span>=<span style="color:#a6e22e">red</span> <span style="color:#a6e22e">guifg</span>=<span style="color:#a6e22e">red</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">mySymbols</span> <span style="color:#a6e22e">ctermfg</span>=<span style="color:#a6e22e">blue</span> <span style="color:#a6e22e">guifg</span>=<span style="color:#a6e22e">blue</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">myKeywords</span> <span style="color:#a6e22e">ctermfg</span>=<span style="color:#a6e22e">green</span> <span style="color:#a6e22e">guifg</span>=<span style="color:#a6e22e">green</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">myComments</span> <span style="color:#a6e22e">ctermfg</span>=<span style="color:#a6e22e">yellow</span> <span style="color:#a6e22e">guifg</span>=<span style="color:#a6e22e">yellow</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h2 id="62--syntax-regions">6.2 區域高亮 Syntax regions</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">syntax</span> <span style="color:#a6e22e">match</span> <span style="color:#a6e22e">myComments</span> <span style="color:#e6db74">&#34;/\*.*\*/&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">syntax</span> <span style="color:#a6e22e">keyword</span> <span style="color:#a6e22e">myVars</span> <span style="color:#a6e22e">x</span> <span style="color:#a6e22e">y</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">syntax</span> <span style="color:#a6e22e">match</span> <span style="color:#a6e22e">mySymbols</span> <span style="color:#e6db74">&#34;[{}();=]&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">syntax</span> <span style="color:#a6e22e">keyword</span> <span style="color:#a6e22e">myKeywords</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">return</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">myVars</span> <span style="color:#a6e22e">ctermfg</span>=<span style="color:#a6e22e">red</span> <span style="color:#a6e22e">guifg</span>=<span style="color:#a6e22e">red</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">mySymbols</span> <span style="color:#a6e22e">ctermfg</span>=<span style="color:#a6e22e">blue</span> <span style="color:#a6e22e">guifg</span>=<span style="color:#a6e22e">blue</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">myKeywords</span> <span style="color:#a6e22e">ctermfg</span>=<span style="color:#a6e22e">green</span> <span style="color:#a6e22e">guifg</span>=<span style="color:#a6e22e">green</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">myComments</span> <span style="color:#a6e22e">ctermfg</span>=<span style="color:#a6e22e">yellow</span> <span style="color:#a6e22e">guifg</span>=<span style="color:#a6e22e">yellow</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="62-區域高亮-syntax-regions">6.2 區域高亮 Syntax regions</h2>
 <p>像是注釋之類的，一整個區塊要上色的，例子如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">syntax</span> <span style="color:#a6e22e">region</span> <span style="color:#a6e22e">myComments</span> <span style="color:#a6e22e">start</span>=<span style="color:#e6db74">/\/\*/</span> <span style="color:#a6e22e">end</span>=<span style="color:#e6db74">/\*\//</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">syntax</span> <span style="color:#a6e22e">region</span> <span style="color:#a6e22e">myComments</span> <span style="color:#a6e22e">start</span>=<span style="color:#e6db74">/\/\*/</span> <span style="color:#a6e22e">end</span>=<span style="color:#e6db74">/\*\//</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>pass</p>
 <h3 id="621-color-scheme-and-syntax-coloring">6.2.1 Color scheme and syntax coloring</h3>
 <p>除了個別指定顏色外，也可以用配色方案中定義的顏色，
 這樣的話，可以隨著 color scheme改變語法顏色。</p>
-<h2 id="63--using-scripts">6.3 使用腳本 Using scripts</h2>
+<h2 id="63-使用腳本-using-scripts">6.3 使用腳本 Using scripts</h2>
 <p>除了自已開發功能外，也可以在網路上找別人寫好的plugin回來安裝</p>
 <ul>
 <li><a href="https://www.vim.org/scripts/index.php" title="Office Site for VimScript">Vim.org/Script</a></li>
@@ -1388,7 +1410,7 @@ Level2
 <h3 id="633-uninstalling-scripts">6.3.3 Uninstalling scripts</h3>
 <p>移除的方式就直接和安裝方式相關，</p>
 <p>通常是把 <code>.vim</code>下的檔案移除，再把 vimrc內的設定去掉。</p>
-<h2 id="64--script-development">6.4 腳本開發 Script development</h2>
+<h2 id="64-腳本開發-script-development">6.4 腳本開發 Script development</h2>
 <p>寫自己想要的功能。</p>
 <p>在開發腳本時，可能要注意各個Vim的版本，在各平台上可用的功具、函數可能也不用，
 在寫腳本時，要注意，另外一些功能最好也保留可以讓用戶修改的功能，保留彈性。</p>
@@ -1403,7 +1425,7 @@ Level2
 <li>浮點數 float: 3.1415</li>
 </ul>
 <p>例：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">echo</span> <span style="color:#ae81ff">10</span> + <span style="color:#ae81ff">0</span>x<span style="color:#ae81ff">10</span> + <span style="color:#ae81ff">010</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">echo</span> <span style="color:#ae81ff">10</span> + <span style="color:#ae81ff">0</span>x<span style="color:#ae81ff">10</span> + <span style="color:#ae81ff">010</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>字串</strong></p>
 <ul>
 <li>用單、雙引號包起來的字符: <code>&quot; &quot; , ' '</code></li>
@@ -1411,7 +1433,7 @@ Level2
 <li><code>\n</code> 是換行(new line)，<code>\r</code>是 Return ,<code>\t</code>是Tab, <code>\&lt;CR&gt;是 Return</code> 其他的符號 參照下面連結</li>
 </ul>
 <p><a href="https://en.wikipedia.org/wiki/Escape_sequences_in_C">C語言中的 Escape sequences</a></p>
-<h4 id="-variables">變數 Variables</h4>
+<h4 id="變數-variables">變數 Variables</h4>
 <ol>
 <li>字串 String: 字符的集合</li>
 <li>數值 Number: 前面所述的十、十六、八進位的數字</li>
@@ -1420,31 +1442,31 @@ Level2
 <li>函數參照 Funcref: A reference to a function</li>
 </ol>
 <p>定義變數，都是用 <code>:let</code> 來賦值的</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myvar</span>=<span style="color:#a6e22e">somevalue</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myvalue</span>=<span style="color:#ae81ff">100</span>  <span style="color:#75715e">&#34;數值</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mystring</span>=<span style="color:#e6db74">&#34;this is a test&#34;</span> <span style="color:#75715e">&#34; 字串</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myvar</span>=<span style="color:#a6e22e">somevalue</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myvalue</span>=<span style="color:#ae81ff">100</span>  <span style="color:#75715e">&#34;數值</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mystring</span>=<span style="color:#e6db74">&#34;this is a test&#34;</span> <span style="color:#75715e">&#34; 字串</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>型值會自動轉換</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myvar</span>=<span style="color:#e6db74">&#39;123&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">echo</span> <span style="color:#a6e22e">myvar</span><span style="color:#ae81ff">-23</span>   <span style="color:#75715e">&#34; 會顯示100</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myvar</span>=<span style="color:#e6db74">&#39;123&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">echo</span> <span style="color:#a6e22e">myvar</span><span style="color:#ae81ff">-23</span>   <span style="color:#75715e">&#34; 會顯示100</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>字串經過數值運算會轉成數字。另有，型值強制轉換函數 <code>string()</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myunber</span>=<span style="color:#a6e22e">mystring</span>+<span style="color:#ae81ff">0</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mystring</span>=<span style="color:#a6e22e">string</span>(<span style="color:#a6e22e">mynumber</span>)<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myunber</span>=<span style="color:#a6e22e">mystring</span>+<span style="color:#ae81ff">0</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mystring</span>=<span style="color:#a6e22e">string</span>(<span style="color:#a6e22e">mynumber</span>)<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>List</strong></p>
 <p>list是一群變數的集合。
 list[0]是第一個元素。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mylistvar1</span> = [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>.<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">0</span>x<span style="color:#ae81ff">04</span>, <span style="color:#e6db74">&#34;six&#34;</span>, <span style="color:#a6e22e">myvar</span>, [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>]]<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mylistvar1</span> = [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>.<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">0</span>x<span style="color:#ae81ff">04</span>, <span style="color:#e6db74">&#34;six&#34;</span>, <span style="color:#a6e22e">myvar</span>, [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>]]<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>字典 Dictionary</strong></p>
 <p>字典是 key-value pairs，鍵和鍵值的互相參照的序列。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mydictvar2</span> =  {<span style="color:#ae81ff">1</span>: <span style="color:#e6db74">&#34;one&#34;</span>,<span style="color:#ae81ff">2</span>: <span style="color:#e6db74">&#34;two&#34;</span>,<span style="color:#e6db74">&#34;tens&#34;</span>:{<span style="color:#ae81ff">0</span>: <span style="color:#e6db74">&#34;ten&#34;</span>,<span style="color:#ae81ff">1</span>: <span style="color:#e6db74">&#34;eleven&#34;</span>}}<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mydictvar2</span> =  {<span style="color:#ae81ff">1</span>: <span style="color:#e6db74">&#34;one&#34;</span>,<span style="color:#ae81ff">2</span>: <span style="color:#e6db74">&#34;two&#34;</span>,<span style="color:#e6db74">&#34;tens&#34;</span>:{<span style="color:#ae81ff">0</span>: <span style="color:#e6db74">&#34;ten&#34;</span>,<span style="color:#ae81ff">1</span>: <span style="color:#e6db74">&#34;eleven&#34;</span>}}<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>key不一定是數值，也不需要照順序。</p>
 <p><strong>函式</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">Myfunrefvar</span>= <span style="color:#66d9ef">function</span>(<span style="color:#e6db74">&#34;Myfunction&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">Myfunrefvar</span>= <span style="color:#66d9ef">function</span>(<span style="color:#e6db74">&#34;Myfunction&#34;</span>)<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><ul>
 <li>變量 Myfunrefvar , 綁定到 函數 Myfunction</li>
 <li>自定變數名以大寫開頭，跟vim內建的變數區別。</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">echo</span>  <span style="color:#a6e22e">Myfunrefvar</span>()<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">echo</span>  <span style="color:#a6e22e">Myfunrefvar</span>()<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><ul>
 <li>使用函數時，函數名後加 ()</li>
 </ul>
@@ -1464,19 +1486,19 @@ list[0]是第一個元素。</p>
 <li>a: Argument scope—used in arguments for functions</li>
 </ul>
 <p>Vim中的注釋是以引號開始 &quot;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">g</span>:<span style="color:#a6e22e">sum</span>=<span style="color:#ae81ff">0</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">SumNumbers</span>(<span style="color:#a6e22e">num1</span>,<span style="color:#a6e22e">num2</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">l</span>:<span style="color:#a6e22e">sum</span> = <span style="color:#a6e22e">a</span>:<span style="color:#a6e22e">num1</span>+<span style="color:#a6e22e">a</span>:<span style="color:#a6e22e">num2</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">    &#34;check if previous sum was lower than this</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">g</span>:<span style="color:#a6e22e">sum</span> &lt; <span style="color:#a6e22e">l</span>:<span style="color:#a6e22e">sum</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>       <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">g</span>:<span style="color:#a6e22e">sum</span>=<span style="color:#a6e22e">l</span>:<span style="color:#a6e22e">sum</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#66d9ef">endif</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#a6e22e">return</span> <span style="color:#a6e22e">l</span>:<span style="color:#a6e22e">sum</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">endfunction</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; test code, this will print 7 (value of l:sum)</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">echo</span> <span style="color:#a6e22e">SumNumbers</span>(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; this should also print  7 (value of g:sum)</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">echo</span> <span style="color:#a6e22e">g</span>:<span style="color:#a6e22e">sum</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">g</span>:<span style="color:#a6e22e">sum</span>=<span style="color:#ae81ff">0</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">SumNumbers</span>(<span style="color:#a6e22e">num1</span>,<span style="color:#a6e22e">num2</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">l</span>:<span style="color:#a6e22e">sum</span> = <span style="color:#a6e22e">a</span>:<span style="color:#a6e22e">num1</span>+<span style="color:#a6e22e">a</span>:<span style="color:#a6e22e">num2</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">    &#34;check if previous sum was lower than this</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">g</span>:<span style="color:#a6e22e">sum</span> &lt; <span style="color:#a6e22e">l</span>:<span style="color:#a6e22e">sum</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>       <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">g</span>:<span style="color:#a6e22e">sum</span>=<span style="color:#a6e22e">l</span>:<span style="color:#a6e22e">sum</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#66d9ef">endif</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#a6e22e">return</span> <span style="color:#a6e22e">l</span>:<span style="color:#a6e22e">sum</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">endfunction</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; test code, this will print 7 (value of l:sum)</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">echo</span> <span style="color:#a6e22e">SumNumbers</span>(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; this should also print  7 (value of g:sum)</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">echo</span> <span style="color:#a6e22e">g</span>:<span style="color:#a6e22e">sum</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>See Also</strong>:</p>
 <ul>
 <li><a href="http://learnvimscriptthehardway.stevelosh.com/chapters/25.html">LVtHW:Number</a></li>
@@ -1488,13 +1510,13 @@ list[0]是第一個元素。</p>
 </ul>
 <h4 id="conditions">Conditions</h4>
 <p>If條件式</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">condition1</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#a6e22e">code</span>-<span style="color:#a6e22e">to</span>-<span style="color:#a6e22e">execute</span>-<span style="color:#66d9ef">if</span>-<span style="color:#a6e22e">condition1</span>-<span style="color:#a6e22e">is</span>-<span style="color:#a6e22e">true</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">else</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">condition2</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>      <span style="color:#a6e22e">code</span>-<span style="color:#a6e22e">to</span>-<span style="color:#a6e22e">execute</span>-<span style="color:#66d9ef">if</span>-<span style="color:#a6e22e">condition2</span>-<span style="color:#a6e22e">is</span>-<span style="color:#a6e22e">true</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#66d9ef">endif</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">endif</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">condition1</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#a6e22e">code</span>-<span style="color:#a6e22e">to</span>-<span style="color:#a6e22e">execute</span>-<span style="color:#66d9ef">if</span>-<span style="color:#a6e22e">condition1</span>-<span style="color:#a6e22e">is</span>-<span style="color:#a6e22e">true</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">else</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">condition2</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>      <span style="color:#a6e22e">code</span>-<span style="color:#a6e22e">to</span>-<span style="color:#a6e22e">execute</span>-<span style="color:#66d9ef">if</span>-<span style="color:#a6e22e">condition2</span>-<span style="color:#a6e22e">is</span>-<span style="color:#a6e22e">true</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#66d9ef">endif</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">endif</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>See Also</strong>:</p>
 <ul>
 <li><code>:help if</code> 向下翻，還有 <code>while, for, try , catch, throw,final</code></li>
@@ -1504,31 +1526,31 @@ list[0]是第一個元素。</p>
 <p>List, Dic 的 <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" title="Create, read, update and delete">CRUD</a></p>
 <p>[CRUD」分別為 Create, Read, Update, Delete</p>
 <p><strong>Create</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mylist</span> = [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#e6db74">&#34;cat&#34;</span>, <span style="color:#a6e22e">myvar1</span>]<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mydicfruit</span> = {<span style="color:#e6db74">&#39;banana&#39;</span>:<span style="color:#e6db74">&#39;yellow&#39;</span>,<span style="color:#e6db74">&#39;apple&#39;</span>:<span style="color:#e6db74">&#39;green&#39;</span>,<span style="color:#e6db74">&#39;orange&#39;</span>:<span style="color:#e6db74">&#39;orange&#39;</span>}<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mylist</span> = [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#e6db74">&#34;cat&#34;</span>, <span style="color:#a6e22e">myvar1</span>]<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mydicfruit</span> = {<span style="color:#e6db74">&#39;banana&#39;</span>:<span style="color:#e6db74">&#39;yellow&#39;</span>,<span style="color:#e6db74">&#39;apple&#39;</span>:<span style="color:#e6db74">&#39;green&#39;</span>,<span style="color:#e6db74">&#39;orange&#39;</span>:<span style="color:#e6db74">&#39;orange&#39;</span>}<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>Read</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">echo</span> <span style="color:#a6e22e">mylist</span>[<span style="color:#ae81ff">0</span>],<span style="color:#a6e22e">mylist</span>[<span style="color:#ae81ff">-1</span>] <span style="color:#75715e">&#34; 1  , cat (-1是最後的一個值)</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">echo</span> <span style="color:#a6e22e">mydicfruit</span>[<span style="color:#e6db74">&#39;banana&#39;</span>] <span style="color:#75715e">&#34; yellow</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; 如果 key是[0-9][a-zA-Z][_]的話</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">echo</span> <span style="color:#a6e22e">mydicfruit</span>.<span style="color:#a6e22e">banana</span>  <span style="color:#75715e">&#34; yellow</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">echo</span> <span style="color:#a6e22e">mylist</span>[<span style="color:#ae81ff">0</span>],<span style="color:#a6e22e">mylist</span>[<span style="color:#ae81ff">-1</span>] <span style="color:#75715e">&#34; 1  , cat (-1是最後的一個值)</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">echo</span> <span style="color:#a6e22e">mydicfruit</span>[<span style="color:#e6db74">&#39;banana&#39;</span>] <span style="color:#75715e">&#34; yellow</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; 如果 key是[0-9][a-zA-Z][_]的話</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">echo</span> <span style="color:#a6e22e">mydicfruit</span>.<span style="color:#a6e22e">banana</span>  <span style="color:#75715e">&#34; yellow</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>Update</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mylist</span>[<span style="color:#ae81ff">0</span>]=<span style="color:#ae81ff">99</span> <span style="color:#75715e">&#34; </span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mydicfruit</span>[<span style="color:#e6db74">&#39;banana&#39;</span>]=<span style="color:#e6db74">&#39;green&#39;</span> <span style="color:#75715e">&#34; </span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mylist</span>[<span style="color:#ae81ff">0</span>]=<span style="color:#ae81ff">99</span> <span style="color:#75715e">&#34; </span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mydicfruit</span>[<span style="color:#e6db74">&#39;banana&#39;</span>]=<span style="color:#e6db74">&#39;green&#39;</span> <span style="color:#75715e">&#34; </span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>Delete</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34;用 unlet</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">unlet</span> <span style="color:#a6e22e">mylist</span>[<span style="color:#ae81ff">0</span>]<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">unlet</span> <span style="color:#a6e22e">mydicfruit</span>[<span style="color:#e6db74">&#39;banana&#39;</span>] <span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34;用 unlet</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">unlet</span> <span style="color:#a6e22e">mylist</span>[<span style="color:#ae81ff">0</span>]<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">unlet</span> <span style="color:#a6e22e">mydicfruit</span>[<span style="color:#e6db74">&#39;banana&#39;</span>] <span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">
-</span><span style="color:#75715e">&#34; remove()</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">call</span> <span style="color:#a6e22e">remove</span>(<span style="color:#a6e22e">mylist</span>,<span style="color:#ae81ff">2</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#75715e">&#34; remove()</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">call</span> <span style="color:#a6e22e">remove</span>(<span style="color:#a6e22e">mylist</span>,<span style="color:#ae81ff">2</span>)<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>其他操作</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mylist3</span> = <span style="color:#a6e22e">mylist1</span> + <span style="color:#a6e22e">mylist</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mylist4</span> += [<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">8</span>]<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; extend() 會把兩個 list 相加</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">call</span> <span style="color:#a6e22e">extend</span>(<span style="color:#a6e22e">mylist3</span>,<span style="color:#a6e22e">mylist4</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">echo</span> <span style="color:#a6e22e">myilst3</span> <span style="color:#75715e">&#34; mylist3會變成 mylist3 + mylist4, mylist4 不變 </span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; add() list4 加進 list3，變成 list3 的一個元素</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">call</span> <span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">mylist3</span>,<span style="color:#a6e22e">mylist4</span>)<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mylist3</span> = <span style="color:#a6e22e">mylist1</span> + <span style="color:#a6e22e">mylist</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mylist4</span> += [<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">8</span>]<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; extend() 會把兩個 list 相加</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">call</span> <span style="color:#a6e22e">extend</span>(<span style="color:#a6e22e">mylist3</span>,<span style="color:#a6e22e">mylist4</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">echo</span> <span style="color:#a6e22e">myilst3</span> <span style="color:#75715e">&#34; mylist3會變成 mylist3 + mylist4, mylist4 不變 </span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; add() list4 加進 list3，變成 list3 的一個元素</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">call</span> <span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">mylist3</span>,<span style="color:#a6e22e">mylist4</span>)<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>See Also</strong>:</p>
 <ul>
 <li><code>:help Dictionary, List</code></li>
@@ -1537,15 +1559,15 @@ list[0]是第一個元素。</p>
 </ul>
 <h4 id="loops">Loops</h4>
 <p><strong>For Loops</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">for</span> <span style="color:#a6e22e">item</span> <span style="color:#a6e22e">in</span> <span style="color:#a6e22e">mylist</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>   <span style="color:#a6e22e">call</span> <span style="color:#a6e22e">remove</span>(<span style="color:#a6e22e">mylist</span>, <span style="color:#ae81ff">0</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">endfor</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">for</span> <span style="color:#a6e22e">item</span> <span style="color:#a6e22e">in</span> <span style="color:#a6e22e">mylist</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>   <span style="color:#a6e22e">call</span> <span style="color:#a6e22e">remove</span>(<span style="color:#a6e22e">mylist</span>, <span style="color:#ae81ff">0</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">endfor</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>While Loops</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lnum</span> = <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">while</span> <span style="color:#a6e22e">lnum</span> &lt;= <span style="color:#a6e22e">line</span>(<span style="color:#e6db74">&#34;$&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>	:<span style="color:#a6e22e">call</span> <span style="color:#a6e22e">FixLine</span>(<span style="color:#a6e22e">lnum</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>	:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lnum</span> = <span style="color:#a6e22e">lnum</span> + <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">endwhile</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lnum</span> = <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">while</span> <span style="color:#a6e22e">lnum</span> &lt;= <span style="color:#a6e22e">line</span>(<span style="color:#e6db74">&#34;$&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>	:<span style="color:#a6e22e">call</span> <span style="color:#a6e22e">FixLine</span>(<span style="color:#a6e22e">lnum</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>	:<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lnum</span> = <span style="color:#a6e22e">lnum</span> + <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">endwhile</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>See Also</strong>:</p>
 <ul>
 <li><code>:help break</code> : 離開 loop</li>
@@ -1577,10 +1599,10 @@ list[0]是第一個元素。</p>
 <li><code>:help local-variables</code></li>
 <li><code>:help function-lsit</code></li>
 </ul>
-<h1 id="65--summary">6.5 小結 Summary</h1>
+<h1 id="65-小結-summary">6.5 小結 Summary</h1>
 <p>VimScript 的安裝、移除，管理。</p>
 <p>基本的資料型態、結構、操作。</p>
-<h1 id="ch7-extended-vim-scripting--vim-scripting">Ch7: EXTENDED VIM SCRIPTING 進階 Vim Scripting</h1>
+<h1 id="ch7-extended-vim-scripting-進階-vim-scripting">Ch7: EXTENDED VIM SCRIPTING 進階 Vim Scripting</h1>
 <p>本章會介紹 Script的結構，技巧、如何除錯、使用其他外部語言。</p>
 <h2 id="71-script-structure">7.1 Script structure</h2>
 <h3 id="711-script-header">7.1.1 Script header</h3>
@@ -1591,20 +1613,20 @@ list[0]是第一個元素。</p>
 <li><a href="https://creativecommons.org/licenses/?lang=zh_TW">CreativeCommons</a></li>
 </ul>
 <p>像是：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34; myscript.vim  : Example script to show how a script is structured.</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; Version       : 1.0.5</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; Maintainer    : Who Who &lt;who@what.com&gt;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; Last modified : 01/01/2007</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; License       : This script is released under the Vim License.</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#75715e">&#34; myscript.vim  : Example script to show how a script is structured.</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; Version       : 1.0.5</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; Maintainer    : Who Who &lt;who@what.com&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; Last modified : 01/01/2007</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; License       : This script is released under the Vim License.</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><h3 id="712-script-loaded-check">7.1.2 Script-loaded check</h3>
 <p>腳本在執行前，最好先檢查腳本是否正常載入，以免發生問題。</p>
 <p>ex: 如果腳本載入不成功，會先把函數先缷載，
 把loaded_myscript(是不是要載入腳本)設成true，</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">exists</span>(<span style="color:#e6db74">&#34;loaded_myscript&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>   <span style="color:#a6e22e">delfunction</span> <span style="color:#a6e22e">MyglobalfunctionB</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>   <span style="color:#a6e22e">delfunction</span> <span style="color:#a6e22e">MyglobalfunctionC</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">endif</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">loaded_myscript</span>=<span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">exists</span>(<span style="color:#e6db74">&#34;loaded_myscript&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>   <span style="color:#a6e22e">delfunction</span> <span style="color:#a6e22e">MyglobalfunctionB</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>   <span style="color:#a6e22e">delfunction</span> <span style="color:#a6e22e">MyglobalfunctionC</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">endif</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">loaded_myscript</span>=<span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><h3 id="713-script-configuration">7.1.3 Script configuration</h3>
 <p>腳本的開頭可以放設定，如：顏色，路徑…
 或是一些設定使用者已有原本的設定，
@@ -1639,19 +1661,19 @@ list[0]是第一個元素。</p>
 <h2 id="72-scripting-tips">7.2 Scripting tips</h2>
 <h3 id="721-gvim-or-vim">7.2.1 Gvim or Vim?</h3>
 <p>Gvim 和 vim有不少不同的地方，如何知道目前執行的是哪一個版本？</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;gui_running&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">	&#34;execute gui-only command here&#34;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">endif</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;gui_running&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">	&#34;execute gui-only command here&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">endif</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>See Also</strong>:</p>
 <ul>
 <li><code>:help 'feature-list</code></li>
 </ul>
 <h3 id="722-which-operating-system">7.2.2 Which operating system?</h3>
 <p>作業系統間的不同：路徑、檔案存取權限、…</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;win16&#34;</span>) || <span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;win32&#34;</span>) || <span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;win64&#34;</span>)|| <span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;win95&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">   &#34; do windows things here</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">elseif</span> <span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;unix&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">   &#34; do linux/unix things here</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;win16&#34;</span>) || <span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;win32&#34;</span>) || <span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;win64&#34;</span>)|| <span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;win95&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">   &#34; do windows things here</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">elseif</span> <span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;unix&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">   &#34; do linux/unix things here</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>說明文件內的例子：</p>
 <ul>
 <li>macunix                 Macintosh version of Vim, using Unix files (OS-X).</li>
@@ -1670,10 +1692,10 @@ list[0]是第一個元素。</p>
 <p>主版號.副版號.補丁編號</p>
 </dd>
 </dl>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">v</span>:<span style="color:#a6e22e">version</span> &gt;= <span style="color:#ae81ff">702</span> || <span style="color:#a6e22e">v</span>:<span style="color:#a6e22e">version</span> == <span style="color:#ae81ff">701</span> &amp;&amp; <span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;patch123&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">   &#34; code here is only done for version 7.1 with patch 123 </span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">   &#34; and version 7.2 and above</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">endif</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">v</span>:<span style="color:#a6e22e">version</span> &gt;= <span style="color:#ae81ff">702</span> || <span style="color:#a6e22e">v</span>:<span style="color:#a6e22e">version</span> == <span style="color:#ae81ff">701</span> &amp;&amp; <span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;patch123&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">   &#34; code here is only done for version 7.1 with patch 123 </span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">   &#34; and version 7.2 and above</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">endif</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><code>:if has(&quot;patch-7.4.123&quot;)</code></p>
 <h3 id="724-printing-longer-lines">7.2.4 Printing longer lines</h3>
 <p>視窗的寬度不少可能超出 80，如果內容太長，
@@ -1698,30 +1720,30 @@ list[0]是第一個元素。</p>
 <code>*myscript.txt* Documentation for example script myscript.vim</code></p>
 <p>文件的第一行，開頭字符號一定要是 <code>\*</code> ，兩個<code>\*</code>中間是文件檔名， 後面是文件簡述</p>
 <p>這邊用書上的例子：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">*<span style="color:#a6e22e">myscript</span>.<span style="color:#a6e22e">txt</span>* <span style="color:#a6e22e">Documentation</span> <span style="color:#a6e22e">for</span> <span style="color:#a6e22e">example</span> <span style="color:#a6e22e">script</span> <span style="color:#a6e22e">myscript</span>.<span style="color:#a6e22e">vim</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Script</span> : <span style="color:#a6e22e">myscript</span>.<span style="color:#a6e22e">vim</span> - <span style="color:#a6e22e">Example</span> <span style="color:#a6e22e">script</span> <span style="color:#a6e22e">for</span> <span style="color:#a6e22e">vim</span> <span style="color:#a6e22e">developers</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Author</span> : <span style="color:#a6e22e">Kim</span> <span style="color:#a6e22e">Schulz</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Email</span> : &lt;<span style="color:#a6e22e">kim</span>@<span style="color:#a6e22e">schulz</span>.<span style="color:#a6e22e">dk</span>&gt;<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Changed</span> : <span style="color:#ae81ff">01</span><span style="color:#e6db74">/01/</span><span style="color:#ae81ff">2007</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>=============================================================<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>											*<span style="color:#a6e22e">myscript</span>-<span style="color:#a6e22e">intro</span>*<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#ae81ff">1</span>. <span style="color:#a6e22e">Overview</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">This</span> <span style="color:#a6e22e">document</span> <span style="color:#a6e22e">gives</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">short</span> <span style="color:#a6e22e">introduction</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">example</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">myscript</span>.<span style="color:#a6e22e">vim</span>.<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">This</span> <span style="color:#a6e22e">script</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">made</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">an</span> <span style="color:#a6e22e">example</span> <span style="color:#a6e22e">for</span> <span style="color:#a6e22e">vim</span> <span style="color:#a6e22e">users</span> <span style="color:#a6e22e">on</span> <span style="color:#a6e22e">how</span> <span style="color:#a6e22e">to</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">structure</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">simple</span> <span style="color:#a6e22e">vim</span> <span style="color:#a6e22e">plugin</span> <span style="color:#a6e22e">script</span> <span style="color:#a6e22e">such</span> <span style="color:#a6e22e">that</span> <span style="color:#a6e22e">it</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">easy</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">to</span> <span style="color:#a6e22e">read</span> <span style="color:#a6e22e">and</span> <span style="color:#a6e22e">figure</span> <span style="color:#a6e22e">out</span>.<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">The</span> <span style="color:#a6e22e">following</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">covered</span> <span style="color:#a6e22e">in</span> <span style="color:#a6e22e">this</span> <span style="color:#a6e22e">document</span>:<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#ae81ff">1</span>. <span style="color:#a6e22e">Overview</span> 		|<span style="color:#a6e22e">myscript</span>-<span style="color:#a6e22e">intro</span>|<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#ae81ff">2</span>. <span style="color:#a6e22e">Mappings</span> 		|<span style="color:#a6e22e">myscript</span>-<span style="color:#a6e22e">mappings</span>|<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#ae81ff">3</span>. <span style="color:#a6e22e">Functions</span> 		|<span style="color:#a6e22e">myscript</span>-<span style="color:#a6e22e">functions</span>|<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#ae81ff">4</span>. <span style="color:#a6e22e">Todo</span> 			|<span style="color:#a6e22e">myscript</span>-<span style="color:#a6e22e">todo</span>|<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>=============================================================<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">*<span style="color:#a6e22e">myscript</span>.<span style="color:#a6e22e">txt</span>* <span style="color:#a6e22e">Documentation</span> <span style="color:#a6e22e">for</span> <span style="color:#a6e22e">example</span> <span style="color:#a6e22e">script</span> <span style="color:#a6e22e">myscript</span>.<span style="color:#a6e22e">vim</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Script</span> : <span style="color:#a6e22e">myscript</span>.<span style="color:#a6e22e">vim</span> - <span style="color:#a6e22e">Example</span> <span style="color:#a6e22e">script</span> <span style="color:#a6e22e">for</span> <span style="color:#a6e22e">vim</span> <span style="color:#a6e22e">developers</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Author</span> : <span style="color:#a6e22e">Kim</span> <span style="color:#a6e22e">Schulz</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Email</span> : &lt;<span style="color:#a6e22e">kim</span>@<span style="color:#a6e22e">schulz</span>.<span style="color:#a6e22e">dk</span>&gt;<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Changed</span> : <span style="color:#ae81ff">01</span><span style="color:#e6db74">/01/</span><span style="color:#ae81ff">2007</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>=============================================================<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>											*<span style="color:#a6e22e">myscript</span>-<span style="color:#a6e22e">intro</span>*<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#ae81ff">1</span>. <span style="color:#a6e22e">Overview</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">This</span> <span style="color:#a6e22e">document</span> <span style="color:#a6e22e">gives</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">short</span> <span style="color:#a6e22e">introduction</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">example</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">myscript</span>.<span style="color:#a6e22e">vim</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">This</span> <span style="color:#a6e22e">script</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">made</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">an</span> <span style="color:#a6e22e">example</span> <span style="color:#a6e22e">for</span> <span style="color:#a6e22e">vim</span> <span style="color:#a6e22e">users</span> <span style="color:#a6e22e">on</span> <span style="color:#a6e22e">how</span> <span style="color:#a6e22e">to</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">structure</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">simple</span> <span style="color:#a6e22e">vim</span> <span style="color:#a6e22e">plugin</span> <span style="color:#a6e22e">script</span> <span style="color:#a6e22e">such</span> <span style="color:#a6e22e">that</span> <span style="color:#a6e22e">it</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">easy</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">to</span> <span style="color:#a6e22e">read</span> <span style="color:#a6e22e">and</span> <span style="color:#a6e22e">figure</span> <span style="color:#a6e22e">out</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">The</span> <span style="color:#a6e22e">following</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">covered</span> <span style="color:#a6e22e">in</span> <span style="color:#a6e22e">this</span> <span style="color:#a6e22e">document</span>:<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#ae81ff">1</span>. <span style="color:#a6e22e">Overview</span> 		|<span style="color:#a6e22e">myscript</span>-<span style="color:#a6e22e">intro</span>|<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#ae81ff">2</span>. <span style="color:#a6e22e">Mappings</span> 		|<span style="color:#a6e22e">myscript</span>-<span style="color:#a6e22e">mappings</span>|<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#ae81ff">3</span>. <span style="color:#a6e22e">Functions</span> 		|<span style="color:#a6e22e">myscript</span>-<span style="color:#a6e22e">functions</span>|<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#ae81ff">4</span>. <span style="color:#a6e22e">Todo</span> 			|<span style="color:#a6e22e">myscript</span>-<span style="color:#a6e22e">todo</span>|<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>=============================================================<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><ul>
 <li>首行是特別資訊</li>
 <li>檔頭資訊</li>
@@ -1730,8 +1752,8 @@ list[0]是第一個元素。</p>
 <li><code>\&gt;</code> Code here<code>\&lt;</code> 中間的是Code</li>
 </ul>
 <p>寫好文件後，執行：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">helptags</span> <span style="color:#a6e22e">docdir</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; docdir 是指向你的文件  `PLUGIN/doc` </span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">helptags</span> <span style="color:#a6e22e">docdir</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">&#34; docdir 是指向你的文件  `PLUGIN/doc` </span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>See Also</strong>:</p>
 <ul>
 <li><code>:help 'help-translated'</code></li>
@@ -1746,20 +1768,20 @@ list[0]是第一個元素。</p>
 <h3 id="762-vim-scripting-in-python">7.6.2 Vim scripting in Python</h3>
 <p>這邊只看一下比較熟的python。</p>
 <p>單行</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">python3</span> <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;This is  Python3&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">python3</span> <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;This is  Python3&#34;</span>)<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>多行</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">python3</span> &lt;&lt; *<span style="color:#a6e22e">endpattern</span>*<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">some</span> <span style="color:#a6e22e">statement</span> <span style="color:#a6e22e">here</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">and</span> <span style="color:#a6e22e">here</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>*<span style="color:#a6e22e">endpattern</span>*<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">python3</span> &lt;&lt; *<span style="color:#a6e22e">endpattern</span>*<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">some</span> <span style="color:#a6e22e">statement</span> <span style="color:#a6e22e">here</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">and</span> <span style="color:#a6e22e">here</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>*<span style="color:#a6e22e">endpattern</span>*<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">
-</span><span style="color:#75715e">&#34; endpattern : 像是 EOF</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#75715e">&#34; endpattern : 像是 EOF</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>Vim 的的 <code>vim</code> 模組，可以讀取vim的資訊</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">import</span> <span style="color:#a6e22e">vim</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">window</span> = <span style="color:#a6e22e">vim</span>.<span style="color:#a6e22e">current</span>.<span style="color:#a6e22e">window</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">window</span>.<span style="color:#a6e22e">height</span> = <span style="color:#ae81ff">200</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">window</span>.<span style="color:#a6e22e">width</span> = <span style="color:#ae81ff">10</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">window</span>.<span style="color:#a6e22e">cursor</span> = (<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>)<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">import</span> <span style="color:#a6e22e">vim</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">window</span> = <span style="color:#a6e22e">vim</span>.<span style="color:#a6e22e">current</span>.<span style="color:#a6e22e">window</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">window</span>.<span style="color:#a6e22e">height</span> = <span style="color:#ae81ff">200</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">window</span>.<span style="color:#a6e22e">width</span> = <span style="color:#ae81ff">10</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">window</span>.<span style="color:#a6e22e">cursor</span> = (<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>)<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p><strong>See Also</strong>:</p>
 <p>下面的命令可以用來獲取所有的可用函数列表:</p>
 <ul>
@@ -1767,17 +1789,17 @@ list[0]是第一個元素。</p>
 </ul>
 <h3 id="763-vim-scripting-in-ruby">7.6.3 Vim scripting in Ruby</h3>
 <p>pass</p>
-<h2 id="77--summary">7.7 小結 Summary</h2>
+<h2 id="77-小結-summary">7.7 小結 Summary</h2>
 <p>pass</p>
-<h1 id="appendix-a-vim">Appendix A Vim的其他功能</h1>
+<h1 id="appendix-a-vim的其他功能">Appendix A Vim的其他功能</h1>
 <p>Vim game，發 mail,twitter,IRC&hellip;</p>
 <p>或是 設定成 IDE</p>
 <pre><code>:help compiler
 :help quickfix
 </code></pre><p>參考 <a href="http://vim.wikia.com/wiki/Use_Vim_like_an_IDE">http://vim.wikia.com/wiki/Use_Vim_like_an_IDE</a></p>
-<h1 id="appendix-b-vimrc-">Appendix B Vimrc 設定</h1>
+<h1 id="appendix-b-vimrc-設定">Appendix B Vimrc 設定</h1>
 <p>Vimrc是 Vim 所有設定存放的檔案，隨著時間 Vimrc可能會變的越來越大，而以維護。</p>
-<h2 id="b1--vimrc-">B.1 保持 Vimrc 簡潔的技巧</h2>
+<h2 id="b1-保持-vimrc-簡潔的技巧">B.1 保持 Vimrc 簡潔的技巧</h2>
 <ol>
 <li><code>:set nocompatible</code>: 把vim設成不相容模式，能開啟比較多的功能。</li>
 <li>使用注釋: 使用 <code>&quot;</code> 開頭的注釋，可以讓區段的功能容易了解修改</li>
@@ -1786,14 +1808,14 @@ list[0]是第一個元素。</p>
 <li>測試時使用另一份vimrc</li>
 <li>不同系統使用不定的設定: 像是 .vimrc.linux , _vimrc.win32 , _gvimrc.win32 , &hellip; etc.</li>
 </ol>
-<h2 id="b2-vimrc">B.2 Vimrc的設定系統</h2>
+<h2 id="b2-vimrc的設定系統">B.2 Vimrc的設定系統</h2>
 <p><a href="https://www.vim.org/scripts/script.php?script_id=1894">Vim Setup system : Vim Setup system - persistent setup directly in vim </a></p>
 <p>這個plugin讓vim的設定，有選單的可以直接設定，設定完了，再存回 .vimrc</p>
 <p>有GUI來設定，的確是方便了一些。</p>
-<h2 id="b3-vimrc">B.3 Vimrc雲端儲存</h2>
+<h2 id="b3-vimrc雲端儲存">B.3 Vimrc雲端儲存</h2>
 <p>把vim的設定放在網路上，可以方便在多台機器間轉移。</p>
 <p>這邊是用 <code>netrw</code> 來讀寫網路上的設定檔。</p>
-<h1 id="heading-1">參考連結</h1>
+<h1 id="參考連結">參考連結</h1>
 <ol>
 <li><a href="https://www.packtpub.com/application-development/hacking-vim-72">Hacking Vim 7.2 by Kim Schulz April 2010</a></li>
 <li><a href="https://github.com/wuzhouhui/hacking_vim">HackingVim72簡中</a></li>
@@ -1843,7 +1865,7 @@ list[0]是第一個元素。</p>
     
     
 
-    <h1>  你好呀 Footer Here  </h1>
+    <h1>  layout custom Footer Here  </h1>
 
   </body>
 </html>

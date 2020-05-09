@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-01-11T00:40:38 CST">
+<meta name="revised" content="2020-05-09T10:56:04 CST">
 <title>Picon: 在互動的環境下執行 Python 程式碼 :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -92,6 +92,34 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/reading-20200321-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200321-record/">
+            <i class='fa fa-file'></i> Reading 20200321 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200312-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200312-record/">
+            <i class='fa fa-file'></i> Reading 20200312 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200220-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200220-record/">
+            <i class='fa fa-file'></i> Reading 20200220 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200211-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200211-record/">
+            <i class='fa fa-file'></i> Reading 20200211 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/reading-20191228-record/" class="dd-item">
         <div>
           <a href="/post/reading-20191228-record/">
@@ -465,12 +493,6 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="" class="dd-item
-        ">
-      <div>
-      <a href="">Articles</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
 
 
 
@@ -543,7 +565,7 @@
         <div class="wrapper">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#heading-4">參考連結</a></li>
+    <li><a href="#參考連結">參考連結</a></li>
   </ul>
 </nav>
         </div>
@@ -574,12 +596,12 @@
     
     
     <p>可以在即時在編輯器看到程式碼執行的結果。</p>
-<h1 id="heading">概述</h1>
+<h1 id="概述">概述</h1>
 <p><a href="https://github.com/gokcehan/picon" title="Run your code in python interactive console from the command line">picon</a> 實際上的用法，看作者的圖可能比較清楚。</p>
 <p><img src="https://camo.githubusercontent.com/88d5900dd1f78cb0133411865ab6c99fe9356910/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f386342684d5a74417934763059644d72514a2f67697068792e676966" alt="Picon in Vim by gokcehan"></p>
-<h1 id="heading-1">安裝</h1>
+<h1 id="安裝">安裝</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$pip install picon
-</code></pre></div><h1 id="heading-2">用法</h1>
+</code></pre></div><h1 id="用法">用法</h1>
 <p><a href="https://github.com/gokcehan/picon" title="Run your code in python interactive console from the command line">picon</a> 的用法大概有三種：</p>
 <ol>
 <li>Default: <code>picon example.py</code>
@@ -591,7 +613,7 @@
 輸出的行開頭多了 <code>#|</code> ，這個模式下的輸出，
 可以直接被編輯器讀取。</li>
 </ol>
-<h1 id="heading-3">語法</h1>
+<h1 id="語法">語法</h1>
 <p>python 互動命令列的語法跟正常的 python 語法有點不同。
 在互動模式下，變數不用加 <code>print</code> ，會直接印出。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#960050;background-color:#1e0010">$</span> cat <span style="color:#66d9ef">return</span><span style="color:#f92672">.</span>py
@@ -608,19 +630,19 @@
 塊。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    <span style="color:#960050;background-color:#1e0010">$</span> cat block<span style="color:#f92672">.</span>py
     <span style="color:#66d9ef">if</span> True:
-        <span style="color:#66d9ef">print</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">one</span><span style="color:#e6db74">&#39;</span>
+        <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#39;one&#39;</span>
 
-        <span style="color:#66d9ef">print</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">two</span><span style="color:#e6db74">&#39;</span>
+        <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#39;two&#39;</span>
     <span style="color:#960050;background-color:#1e0010">$</span> python block<span style="color:#f92672">.</span>py
     one
     two
     <span style="color:#960050;background-color:#1e0010">$</span> picon block<span style="color:#f92672">.</span>py
     one
-      File <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&lt;console&gt;</span><span style="color:#e6db74">&#34;</span>, line <span style="color:#ae81ff">1</span>
-        <span style="color:#66d9ef">print</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">two</span><span style="color:#e6db74">&#39;</span>
+      File <span style="color:#e6db74">&#34;&lt;console&gt;&#34;</span>, line <span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#39;two&#39;</span>
         <span style="color:#f92672">^</span>
     <span style="color:#a6e22e">IndentationError</span>: unexpected indent
-</code></pre></div><h1 id="vim-">Vim 整合</h1>
+</code></pre></div><h1 id="vim-整合">Vim 整合</h1>
 <p><code>:%!picon -a</code>： Vim打開程式碼後，在命令模式下執行 <code>:%!picon -a</code> ，
 即可看到執行的結果以註解出現在下一行。</p>
 <p><code>Picon</code> 指令： 保留游標的位置 和 把 picon 所作的變動合到一個 undo 的步驟中。
@@ -632,7 +654,7 @@
 <pre><code>autocmd Filetype python autocmd BufWritePre &lt;buffer&gt; Picon
 autocmd Filetype python autocmd CursorHold &lt;buffer&gt; Picon
 </code></pre>
-<h2 id="heading-4">參考連結</h2>
+<h2 id="參考連結">參考連結</h2>
 <ol>
 <li><a href="https://github.com/gokcehan/picon">Picon</a></li>
 </ol>
@@ -674,7 +696,7 @@ autocmd Filetype python autocmd CursorHold &lt;buffer&gt; Picon
     
     
 
-    <h1>  你好呀 Footer Here  </h1>
+    <h1>  layout custom Footer Here  </h1>
 
   </body>
 </html>

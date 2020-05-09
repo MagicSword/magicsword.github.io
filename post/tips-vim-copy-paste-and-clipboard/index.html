@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-01-11T00:40:37 CST">
+<meta name="revised" content="2020-05-09T10:56:04 CST">
 <title>Tips Vim Copy Paste and Clipboard :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -92,6 +92,34 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/reading-20200321-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200321-record/">
+            <i class='fa fa-file'></i> Reading 20200321 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200312-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200312-record/">
+            <i class='fa fa-file'></i> Reading 20200312 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200220-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200220-record/">
+            <i class='fa fa-file'></i> Reading 20200220 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200211-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200211-record/">
+            <i class='fa fa-file'></i> Reading 20200211 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/reading-20191228-record/" class="dd-item">
         <div>
           <a href="/post/reading-20191228-record/">
@@ -465,12 +493,6 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="" class="dd-item
-        ">
-      <div>
-      <a href="">Articles</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
 
 
 
@@ -572,20 +594,20 @@
     <p>Vim 複製、貼上，及使用系統的剪貼簿。</p>
 <p>Task list: 😄</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox">初稿</li>
-<li><input disabled="" type="checkbox">再讀</li>
-<li><input disabled="" type="checkbox">筆記</li>
-<li><input disabled="" type="checkbox">完成</li>
+<li><input checked="" disabled="" type="checkbox"> 初稿</li>
+<li><input disabled="" type="checkbox"> 再讀</li>
+<li><input disabled="" type="checkbox"> 筆記</li>
+<li><input disabled="" type="checkbox"> 完成</li>
 </ul>
-<h1 id="heading">概述</h1>
+<h1 id="概述">概述</h1>
 <p>Vim 複製、貼上，及使用系統的剪貼簿。</p>
-<h1 id="heading-1">混用</h1>
+<h1 id="混用">混用</h1>
 <p>在 ~/.vimrc 加上</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">clipboard</span>=<span style="color:#a6e22e">unnamed</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span># <span style="color:#a6e22e">set</span> <span style="color:#a6e22e">mouse</span>=<span style="color:#a6e22e">a</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span># <span style="color:#a6e22e">讓mouse一選</span>，<span style="color:#a6e22e">就直接是選取模式了</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">clipboard</span>=<span style="color:#a6e22e">unnamed</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span># <span style="color:#a6e22e">set</span> <span style="color:#a6e22e">mouse</span>=<span style="color:#a6e22e">a</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span># <span style="color:#a6e22e">讓mouse一選</span>，<span style="color:#a6e22e">就直接是選取模式了</span><span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>Vim 內的剪貼即會依系統剪貼簿內容變更。</p>
-<h1 id="heading-2">分開使用</h1>
+<h1 id="分開使用">分開使用</h1>
 <p>一般的 Vim 指令</p>
 <ul>
 <li><code>yy</code> : 是複製整行</li>
@@ -601,7 +623,7 @@
 <ul>
 <li><a href="https://stackoverflow.com/questions/13317586/explain-gp-command-from-gvim-menu">Explain &ldquo;+gP command from gvim menu</a></li>
 </ul>
-<h1 id="heading-3">參考連結</h1>
+<h1 id="參考連結">參考連結</h1>
 <ol>
 <li><a href="https://fcamel-life.blogspot.tw/2011/02/vim-terminal-windows-clipboard.html">讓 vim 的複製貼上和其它 terminal 以及 Windows 共用 clipboard</a></li>
 <li><a href="http://littleqnote.blogspot.tw/2013/09/vim-clipboard.html">讓 Vim 跟與你的系統剪貼簿 (clipboard) 共舞</a></li>
@@ -646,7 +668,7 @@
     
     
 
-    <h1>  你好呀 Footer Here  </h1>
+    <h1>  layout custom Footer Here  </h1>
 
   </body>
 </html>

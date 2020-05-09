@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-01-11T00:40:37 CST">
+<meta name="revised" content="2020-05-09T10:56:04 CST">
 <title>Reading Vim Text Objects the Definitive Guide :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -92,6 +92,34 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/reading-20200321-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200321-record/">
+            <i class='fa fa-file'></i> Reading 20200321 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200312-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200312-record/">
+            <i class='fa fa-file'></i> Reading 20200312 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200220-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200220-record/">
+            <i class='fa fa-file'></i> Reading 20200220 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200211-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200211-record/">
+            <i class='fa fa-file'></i> Reading 20200211 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/reading-20191228-record/" class="dd-item">
         <div>
           <a href="/post/reading-20191228-record/">
@@ -465,12 +493,6 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="" class="dd-item
-        ">
-      <div>
-      <a href="">Articles</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
 
 
 
@@ -543,12 +565,12 @@
         <div class="wrapper">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#heading-3">純文字文字物件</a>
+    <li><a href="#純文字文字物件">純文字文字物件</a>
       <ul>
         <li><a href="#word">Word</a></li>
       </ul>
     </li>
-    <li><a href="#heading-4">自訂文字物件</a>
+    <li><a href="#自訂文字物件">自訂文字物件</a>
       <ul>
         <li><a href="#camelcasemotion">CamelCaseMotion</a></li>
         <li><a href="#function-auguments">function auguments</a></li>
@@ -588,17 +610,17 @@
     <p>Vim Text Object，vim 裡的文字物件，操作方式。</p>
 <p>Task list: 😄</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox">初稿</li>
-<li><input disabled="" type="checkbox">再讀</li>
-<li><input disabled="" type="checkbox">筆記</li>
-<li><input disabled="" type="checkbox">完成</li>
+<li><input checked="" disabled="" type="checkbox"> 初稿</li>
+<li><input disabled="" type="checkbox"> 再讀</li>
+<li><input disabled="" type="checkbox"> 筆記</li>
+<li><input disabled="" type="checkbox"> 完成</li>
 </ul>
-<h1 id="heading">概述</h1>
+<h1 id="概述">概述</h1>
 <p><a href="https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/" title="Vim Text Objects: The Definitive Guide">Vim Text Objects: The Definitive Guide</a></p>
 <p>本文讀完上面的文章後，一些心得筆記。</p>
 <p>Vim 裡文字可分為一些單位來操作： character, word, sentence, paragraph, 
 (或是程式中的 function, class,&hellip;，又或者用 plugin 自定義結構)</p>
-<h1 id="heading-1">語法結構</h1>
+<h1 id="語法結構">語法結構</h1>
 <ul>
 <li>
 <p>[number] &lt; command &gt;[text object or motion]</p>
@@ -612,7 +634,7 @@
 </ul>
 <p>一般的編輯命令，主要的結構就是上述的 編輯命令 + 文字物件 ，或是移動動作，
 像是：刪除一行，移到文章末。</p>
-<h1 id="heading-2">文字物件</h1>
+<h1 id="文字物件">文字物件</h1>
 <p>上面有提到的文字物件，就是 Vim 中編輯動作操作的對象，一個字，一句，一段，整篇文章，…</p>
 <p>大概可以分成幾種討論：</p>
 <ol>
@@ -621,7 +643,7 @@
 <li>程式語言的文字物件： function, class</li>
 <li>自定義的文字物件：&hellip;</li>
 </ol>
-<h2 id="heading-3">純文字文字物件</h2>
+<h2 id="純文字文字物件">純文字文字物件</h2>
 <h3 id="word">Word</h3>
 <p><strong>範圍選擇</strong>：i(inner ) 和 a(around)</p>
 <ul>
@@ -659,7 +681,7 @@
 <li>dit : 會刪除 what a name</li>
 <li>di&gt; : 會刪除 角括號 內的內容</li>
 </ul>
-<h2 id="heading-4">自訂文字物件</h2>
+<h2 id="自訂文字物件">自訂文字物件</h2>
 <h3 id="camelcasemotion">CamelCaseMotion</h3>
 <p><a href="https://github.com/bkad/CamelCaseMotion" title="A vim script to provide CamelCase motion through words">CamelCaseMotion</a></p>
 <p><a href="https://zh.wikipedia.org/wiki/%E9%A7%9D%E5%B3%B0%E5%BC%8F%E5%A4%A7%E5%B0%8F%E5%AF%AB" title="駝峰式大小寫">CamelCase</a> :</p>
@@ -680,10 +702,10 @@
 <p><a href="https://github.com/michaeljsmith/vim-indent-object">https://github.com/michaeljsmith/vim-indent-object</a></p>
 <h3 id="ruby-block">Ruby Block</h3>
 <p>Ruby Block <a href="https://github.com/nelstrom/vim-textobj-rubyblock">https://github.com/nelstrom/vim-textobj-rubyblock</a></p>
-<h1 id="heading-5">結語</h1>
+<h1 id="結語">結語</h1>
 <p>Vim Text Object 可以精確的指出動作的目標。
 熟悉使用，可以讓Vim的編輯動作變快。</p>
-<h1 id="heading-6">參考連結</h1>
+<h1 id="參考連結">參考連結</h1>
 <ol>
 <li><a href="https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/" title="Vim Text Objects: The Definitive Guide">Vim Text Objects: The Definitive Guide</a></li>
 <li><a href="http://yyq123.blogspot.com/2016/12/vim-text-objects.html">VIM学习笔记 文本对象（Text Objects）</a></li>
@@ -727,7 +749,7 @@
     
     
 
-    <h1>  你好呀 Footer Here  </h1>
+    <h1>  layout custom Footer Here  </h1>
 
   </body>
 </html>

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-01-11T00:40:37 CST">
+<meta name="revised" content="2020-05-09T10:56:04 CST">
 <title>Udemy Python Easily Migrate Excel Files to a Database :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -92,6 +92,34 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/reading-20200321-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200321-record/">
+            <i class='fa fa-file'></i> Reading 20200321 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200312-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200312-record/">
+            <i class='fa fa-file'></i> Reading 20200312 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200220-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200220-record/">
+            <i class='fa fa-file'></i> Reading 20200220 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200211-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200211-record/">
+            <i class='fa fa-file'></i> Reading 20200211 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/reading-20191228-record/" class="dd-item">
         <div>
           <a href="/post/reading-20191228-record/">
@@ -465,12 +493,6 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="" class="dd-item
-        ">
-      <div>
-      <a href="">Articles</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
 
 
 
@@ -549,7 +571,7 @@
     <li><a href="#5-reading-data-single-cellrowcolumn">5. Reading data (single cell/row/column)</a></li>
     <li><a href="#6-iterating-through-rows">6. Iterating through rows</a></li>
     <li><a href="#7-writing-to-excel-sheets">7. Writing to Excel sheets</a></li>
-    <li><a href="#8-formulas-in-openpyxl">8. Formula's in openpyxl</a>
+    <li><a href="#8-formulas-in-openpyxl">8. Formula&rsquo;s in openpyxl</a>
       <ul>
         <li><a href="#quiz-1">Quiz 1:</a></li>
       </ul>
@@ -595,12 +617,12 @@
 <p>是個 約35 min的免費課程，花點時間來看看。</p>
 <p>Task list: 😄</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox">初稿</li>
-<li><input disabled="" type="checkbox">再讀</li>
-<li><input disabled="" type="checkbox">筆記</li>
-<li><input disabled="" type="checkbox">完成</li>
+<li><input checked="" disabled="" type="checkbox"> 初稿</li>
+<li><input disabled="" type="checkbox"> 再讀</li>
+<li><input disabled="" type="checkbox"> 筆記</li>
+<li><input disabled="" type="checkbox"> 完成</li>
 </ul>
-<h1 id="heading">概述</h1>
+<h1 id="概述">概述</h1>
 <p><a href="https://www.udemy.com/python-easily-migrate-excel-files-to-a-database/learn/v4/overview">Python: Easily migrate Excel files to a database</a>
 使用 <a href="https://openpyxl.readthedocs.io/en/stable/" title="A Python library to read/write Excel 2010 xlsx/xlsm files">openpyxl</a> 來讀寫 Excel2010/xlsx/xlsm 檔到資料庫，這邊是使用 <a href="https://www.sqlite.org/" title="SQLite is a self-contained, high-reliability, embedded, full-featured, public-domain, SQL database engine">SQLite</a> 當例子</p>
 <p>另外在 [Automate the Boring Stuff with Python 的 Ch12] (Chapter 12 – Working with Excel Spreadsheets)
@@ -627,21 +649,21 @@
 <p><code>revenue.xlsx</code> 是個簡單的 Excel 檔，三個欄位(column) ，Product,Price,Quantity sold
 四筆資料(row)。共有兩個(Sheet)頁面，April , May</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> openpyxl <span style="color:#f92672">import</span> load_workbook
-wb <span style="color:#f92672">=</span> load_workbook(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">revenue.xlsx</span><span style="color:#e6db74">&#39;</span>)
+wb <span style="color:#f92672">=</span> load_workbook(<span style="color:#e6db74">&#39;revenue.xlsx&#39;</span>)
 wb<span style="color:#f92672">.</span>active
 wb<span style="color:#f92672">.</span>sheetnames
-ws <span style="color:#f92672">=</span> wb[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">May</span><span style="color:#e6db74">&#39;</span>]
+ws <span style="color:#f92672">=</span> wb[<span style="color:#e6db74">&#39;May&#39;</span>]
 </code></pre></div><h2 id="5-reading-data-single-cellrowcolumn">5. Reading data (single cell/row/column)</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;</span><span style="color:#f92672">&gt;</span> ws[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">B4</span><span style="color:#e6db74">&#39;</span>]
-<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">May</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>B3<span style="color:#f92672">&gt;</span>
-<span style="color:#f92672">&gt;&gt;</span><span style="color:#f92672">&gt;</span> ws[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">B4</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>value
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> ws[<span style="color:#e6db74">&#39;B4&#39;</span>]
+<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74">&#39;May&#39;</span><span style="color:#f92672">.</span>B3<span style="color:#f92672">&gt;</span>
+<span style="color:#f92672">&gt;&gt;&gt;</span> ws[<span style="color:#e6db74">&#39;B4&#39;</span>]<span style="color:#f92672">.</span>value
 <span style="color:#ae81ff">900</span>
-<span style="color:#f92672">&gt;&gt;</span><span style="color:#f92672">&gt;</span> ws<span style="color:#f92672">.</span>cell(row<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>,column<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">.</span>value
+<span style="color:#f92672">&gt;&gt;&gt;</span> ws<span style="color:#f92672">.</span>cell(row<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>,column<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">.</span>value
 <span style="color:#ae81ff">900</span>
-<span style="color:#f92672">&gt;&gt;</span><span style="color:#f92672">&gt;</span> ws[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">1</span><span style="color:#e6db74">&#39;</span>]   
-(<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">May</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>A1<span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">May</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>B1<span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">May</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>C1<span style="color:#f92672">&gt;</span>)
-<span style="color:#f92672">&gt;&gt;</span><span style="color:#f92672">&gt;</span> ws[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">C</span><span style="color:#e6db74">&#39;</span>]
-(<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">May</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>C1<span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">May</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>C2<span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">May</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>C3<span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">May</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>C4<span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">May</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>C5<span style="color:#f92672">&gt;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> ws[<span style="color:#e6db74">&#39;1&#39;</span>]   
+(<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74">&#39;May&#39;</span><span style="color:#f92672">.</span>A1<span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74">&#39;May&#39;</span><span style="color:#f92672">.</span>B1<span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74">&#39;May&#39;</span><span style="color:#f92672">.</span>C1<span style="color:#f92672">&gt;</span>)
+<span style="color:#f92672">&gt;&gt;&gt;</span> ws[<span style="color:#e6db74">&#39;C&#39;</span>]
+(<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74">&#39;May&#39;</span><span style="color:#f92672">.</span>C1<span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74">&#39;May&#39;</span><span style="color:#f92672">.</span>C2<span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74">&#39;May&#39;</span><span style="color:#f92672">.</span>C3<span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74">&#39;May&#39;</span><span style="color:#f92672">.</span>C4<span style="color:#f92672">&gt;</span>,<span style="color:#f92672">&lt;</span>Cell <span style="color:#e6db74">&#39;May&#39;</span><span style="color:#f92672">.</span>C5<span style="color:#f92672">&gt;</span>)
 </code></pre></div><h2 id="6-iterating-through-rows">6. Iterating through rows</h2>
 <ul>
 <li>選取區塊：<code>ws['A2:C5']</code></li>
@@ -652,17 +674,17 @@ ws <span style="color:#f92672">=</span> wb[<span style="color:#e6db74"></span><s
 <li>一次寫入一列資料： <code>wb.append(['Laptop','900','25'])</code></li>
 <li>寫入新資料後，用 <code>wb.save('revenue.xlsx')</code></li>
 </ul>
-<h2 id="8-formulas-in-openpyxl">8. Formula's in openpyxl</h2>
+<h2 id="8-formulas-in-openpyxl">8. Formula&rsquo;s in openpyxl</h2>
 <p>Excel 內的方程式。如果沒有特別設定，有些儲存格的內容會是 <code>=SUM(A1:C4)</code>
 ，如果在讀檔時，加上 <code>data_only=True</code>  ，就只會讀出最後運算的內容了。
 ，或者說是在 Cache 內的內容。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> openpyxl <span style="color:#f92672">import</span> load_workbook
 
-wb <span style="color:#f92672">=</span> load_workbook(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">excel_files</span><span style="color:#e6db74">\</span><span style="color:#e6db74">excel_fomulas.xlsx</span><span style="color:#e6db74">&#39;</span>,data_only<span style="color:#f92672">=</span> True)
+wb <span style="color:#f92672">=</span> load_workbook(<span style="color:#e6db74">&#39;excel_files\excel_fomulas.xlsx&#39;</span>,data_only<span style="color:#f92672">=</span> True)
 
 ws <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>active
 
-<span style="color:#66d9ef">print</span>(ws[<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">C2</span><span style="color:#e6db74">&#39;</span>]<span style="color:#f92672">.</span>value)
+<span style="color:#66d9ef">print</span>(ws[<span style="color:#e6db74">&#39;C2&#39;</span>]<span style="color:#f92672">.</span>value)
 </code></pre></div><h3 id="quiz-1">Quiz 1:</h3>
 <p>讀取各儲存格，</p>
 <ul>
@@ -676,18 +698,18 @@ ws <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>ac
 <p>把所有檔案的資料印出來。</p>
 <p>revenue_2016.xlsx
 revenue_2017.xlsx</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#test_multiple_files.py</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#test_multiple_files.py</span>
 <span style="color:#f92672">import</span> os
 <span style="color:#f92672">from</span> openpyxl <span style="color:#f92672">import</span> load_workbook
 
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">parse_products</span>():
     big_list_of_all_rows <span style="color:#f92672">=</span> []
 
-    <span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>listdir(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">excel_files</span><span style="color:#e6db74">&#34;</span>):
-        wb <span style="color:#f92672">=</span> load_workbook(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">excel_files</span><span style="color:#e6db74">&#39;</span>,file))
+    <span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>listdir(<span style="color:#e6db74">&#34;excel_files&#34;</span>):
+        wb <span style="color:#f92672">=</span> load_workbook(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(<span style="color:#e6db74">&#39;excel_files&#39;</span>,file))
 
         <span style="color:#66d9ef">for</span> sheetname <span style="color:#f92672">in</span> wb<span style="color:#f92672">.</span>sheetnames:
-            <span style="color:#75715e">#print(&#34;Current sheet is:&#34;,sheetname)</span>
+            <span style="color:#75715e">#print(&#34;Current sheet is:&#34;,sheetname)</span>
             ws <span style="color:#f92672">=</span> wb[sheetname]
 
             <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> ws<span style="color:#f92672">.</span>iter_rows(min_row<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>):
@@ -704,11 +726,11 @@ revenue_2017.xlsx</p>
 測試產生SQlite的檔案 <code>revenue.db</code></p>
 <h2 id="11-store-excel-data-in-a-database-sqlite">11. Store excel data in a database (sqlite)</h2>
 <p>將之前打開多檔的程式改寫一下，寫入 <code>revenue.db</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#database.py</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#database.py</span>
 <span style="color:#f92672">from</span> peewee <span style="color:#f92672">import</span> SqliteDatabase,Model,CharField,FloatField,IntegerField
 <span style="color:#f92672">from</span> test_multiple_files <span style="color:#f92672">import</span> parse_products
 
-db <span style="color:#f92672">=</span> SqliteDatabase(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">revenue.db</span><span style="color:#e6db74">&#39;</span>)
+db <span style="color:#f92672">=</span> SqliteDatabase(<span style="color:#e6db74">&#39;revenue.db&#39;</span>)
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Product</span>(Model):
     name <span style="color:#f92672">=</span> CharField()
@@ -727,9 +749,9 @@ product_rows <span style="color:#f92672">=</span> parse_products()
     product<span style="color:#f92672">.</span>save()
 
 db<span style="color:#f92672">.</span>close()
-</code></pre></div><h1 id="heading-1">心得</h1>
+</code></pre></div><h1 id="心得">心得</h1>
 <p>用程式幫你讀 Excel 檔，寫入資料庫，能省下很多時間。</p>
-<h1 id="heading-2">參考連結</h1>
+<h1 id="參考連結">參考連結</h1>
 <ol>
 <li><a href="https://www.fullstackpython.com/object-relational-mappers-orms.html">Object-relational mappers (ORMs)</a></li>
 </ol>
@@ -770,7 +792,7 @@ db<span style="color:#f92672">.</span>close()
     
     
 
-    <h1>  你好呀 Footer Here  </h1>
+    <h1>  layout custom Footer Here  </h1>
 
   </body>
 </html>

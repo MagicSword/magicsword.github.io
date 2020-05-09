@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-01-11T00:40:37 CST">
+<meta name="revised" content="2020-05-09T10:56:03 CST">
 <title>Learning Google Spreadsheet Functions :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -92,6 +92,34 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/reading-20200321-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200321-record/">
+            <i class='fa fa-file'></i> Reading 20200321 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200312-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200312-record/">
+            <i class='fa fa-file'></i> Reading 20200312 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200220-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200220-record/">
+            <i class='fa fa-file'></i> Reading 20200220 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200211-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200211-record/">
+            <i class='fa fa-file'></i> Reading 20200211 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/reading-20191228-record/" class="dd-item">
         <div>
           <a href="/post/reading-20191228-record/">
@@ -465,12 +493,6 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="" class="dd-item
-        ">
-      <div>
-      <a href="">Articles</a><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-    </li>
 
 
 
@@ -543,12 +565,12 @@
         <div class="wrapper">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#importxml">IMPORTXML</a>
+    <li><a href="#importxml"><a href="%22https://support.google.com/docs/answer/3093342%22" title="匯入多種結構化資料類型的資料，包括 XML、HTML、CSV、TSV 和 RSS 以及 ATOM XML 資訊提供。">IMPORTXML</a></a>
       <ul>
         <li><a href="#xpath">XPath</a></li>
       </ul>
     </li>
-    <li><a href="#regexextract">REGEXEXTRACT</a></li>
+    <li><a href="#regexextract"><a href="https://support.google.com/docs/answer/3098244" title="根據規則運算式擷取符合規則的子字串。">REGEXEXTRACT</a></a></li>
   </ul>
 </nav>
         </div>
@@ -582,12 +604,12 @@
 <p>以下節錄 Google 試算表使用說明，或許改天再加一些使用記錄。</p>
 <p>Task list: 😄</p>
 <ul>
-<li><input checked="" disabled="" type="checkbox">初稿</li>
-<li><input disabled="" type="checkbox">再讀</li>
-<li><input disabled="" type="checkbox">筆記</li>
-<li><input disabled="" type="checkbox">完成</li>
+<li><input checked="" disabled="" type="checkbox"> 初稿</li>
+<li><input disabled="" type="checkbox"> 再讀</li>
+<li><input disabled="" type="checkbox"> 筆記</li>
+<li><input disabled="" type="checkbox"> 完成</li>
 </ul>
-<h1 id="heading">使用函數</h1>
+<h1 id="使用函數">使用函數</h1>
 <p>在儲存格中輸入等號 (=) 及您要使用的函式</p>
 
 <div class="alert alert-info" role="alert">注意：系統可能會根據您的資料提供建議的公式和範圍。</div>
@@ -624,9 +646,9 @@ IMPORTXML(A2,B2)
 此函式僅接受輸入文字 (而非數字)，並傳回文字做為輸出結果。如果您希望系統傳回數字，請在使用此函式時一併使用 VALUE 函式。如果要以數字做為輸入值，請先使用 TEXT 函式將其轉換為文字。</p>
 <p>使用例子：</p>
 <pre><code>=regexextract(A1,&quot;\[[^\]]+\]&quot;)
-</code></pre><h1 id="heading-1">後記</h1>
+</code></pre><h1 id="後記">後記</h1>
 <p>Google Spreadsheet 只能對 &ldquo;靜態&rdquo; 網頁，其他的網頁可能還是需要爬蟲程式</p>
-<h1 id="heading-2">參考連結</h1>
+<h1 id="參考連結">參考連結</h1>
 <ol>
 <li><a href="http://ccckmit.wikidot.com/regularexpression">正規表示式 Regular Expression</a></li>
 <li><a href="http://blog.infographics.tw/2016/11/google-spreadsheet-data-scraping/">無痛爬梳自己來，用 Google Spreadsheet 爬取網頁資料</a></li>
@@ -670,7 +692,7 @@ IMPORTXML(A2,B2)
     
     
 
-    <h1>  你好呀 Footer Here  </h1>
+    <h1>  layout custom Footer Here  </h1>
 
   </body>
 </html>
