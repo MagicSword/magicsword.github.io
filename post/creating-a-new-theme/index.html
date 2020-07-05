@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-05-09T10:56:03 CST">
+<meta name="revised" content="2020-07-05T19:35:40 CST">
 <title>Creating a New Theme :: After-Dark</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -92,6 +92,27 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/post/reading-20200609-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200609-record/">
+            <i class='fa fa-file'></i> Reading 20200609 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200512-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200512-record/">
+            <i class='fa fa-file'></i> Reading 20200512 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/post/reading-20200419-record/" class="dd-item">
+        <div>
+          <a href="/post/reading-20200419-record/">
+            <i class='fa fa-file'></i> Reading 20200419 Record
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/post/reading-20200321-record/" class="dd-item">
         <div>
           <a href="/post/reading-20200321-record/">
@@ -1110,7 +1131,7 @@ $
 :wq
 
 $
-</code></pre><p>Hugo uses the Go template engine. That engine scans the template files for commands which are enclosed between &ldquo;{{&rdquo; and &ldquo;}}&quot;. In our template, the commands are:</p>
+</code></pre><p>Hugo uses the Go template engine. That engine scans the template files for commands which are enclosed between &ldquo;{{&rdquo; and &ldquo;}}&rdquo;. In our template, the commands are:</p>
 <ol>
 <li>range</li>
 <li>.Title</li>
@@ -1298,7 +1319,7 @@ i'm speechless
 -rw-rw-r--  1 mdhender  staff   358 Sep 27 15:08 public/post/first-post/index.html
 -rw-rw-r--  1 mdhender  staff     0 Sep 27 15:08 public/post/index.html
 -rw-rw-r--  1 mdhender  staff   342 Sep 27 15:08 public/post/second-post/index.html
-</code></pre><p>Notice that the page wasn&rsquo;t created at the top level. It was created in a sub-directory named &lsquo;about-time/'. That name came from our slug. Hugo will use the slug to name the generated content. It&rsquo;s a reasonable default, by the way, but we can learn a few things by fighting it for this file.</p>
+</code></pre><p>Notice that the page wasn&rsquo;t created at the top level. It was created in a sub-directory named &lsquo;about-time/&rsquo;. That name came from our slug. Hugo will use the slug to name the generated content. It&rsquo;s a reasonable default, by the way, but we can learn a few things by fighting it for this file.</p>
 <p>One other thing. Take a look at the home page.</p>
 <pre><code>$ cat public/index.html
 &lt;!DOCTYPE html&gt;
@@ -1454,7 +1475,7 @@ $ vi themes/zafta/layouts/_default/single.html
 	
 </footer>
 
-<h2> Content footer here </h2>
+<h2> custom-content-footer.html here </h2>
 
   </div>
 </div>
@@ -1484,7 +1505,7 @@ $ vi themes/zafta/layouts/_default/single.html
     
     
 
-    <h1>  layout custom Footer Here  </h1>
+    <h1>  layout custom-footer.html Here  </h1>
 
   </body>
 </html>

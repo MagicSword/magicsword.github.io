@@ -6,33 +6,15 @@
     <description>Recent content in Tags on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Mar 2020 17:36:08 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2020 19:57:38 +0800</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>hello</title>
-      <link>/tags/hello/</link>
-      <pubDate>Sat, 21 Mar 2020 17:36:08 +0800</pubDate>
-      
-      <guid>/tags/hello/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>world</title>
-      <link>/tags/world/</link>
-      <pubDate>Sat, 21 Mar 2020 17:36:08 +0800</pubDate>
-      
-      <guid>/tags/world/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>library</title>
       <link>/tags/library/</link>
-      <pubDate>Sat, 14 Dec 2019 20:13:35 +0800</pubDate>
+      <pubDate>Tue, 09 Jun 2020 19:57:38 +0800</pubDate>
       
       <guid>/tags/library/</guid>
       <description></description>
@@ -41,7 +23,7 @@
     <item>
       <title>reading</title>
       <link>/tags/reading/</link>
-      <pubDate>Sat, 14 Dec 2019 20:13:35 +0800</pubDate>
+      <pubDate>Tue, 09 Jun 2020 19:57:38 +0800</pubDate>
       
       <guid>/tags/reading/</guid>
       <description></description>
@@ -179,15 +161,6 @@
       <pubDate>Tue, 05 Jun 2018 21:07:12 +0800</pubDate>
       
       <guid>/tags/plugins/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>go</title>
-      <link>/tags/go/</link>
-      <pubDate>Sun, 03 Jun 2018 23:30:28 +0800</pubDate>
-      
-      <guid>/tags/go/</guid>
       <description></description>
     </item>
     
@@ -525,6 +498,24 @@
     </item>
     
     <item>
+      <title>hello</title>
+      <link>/tags/hello/</link>
+      <pubDate>Sun, 24 Sep 2017 04:21:50 +0800</pubDate>
+      
+      <guid>/tags/hello/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>world</title>
+      <link>/tags/world/</link>
+      <pubDate>Sun, 24 Sep 2017 04:21:50 +0800</pubDate>
+      
+      <guid>/tags/world/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>syntax</title>
       <link>/tags/syntax/</link>
       <pubDate>Sun, 24 Sep 2017 03:53:39 +0800</pubDate>
@@ -548,6 +539,15 @@
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>/tags/go/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/go/</guid>
       <description></description>
     </item>
     

@@ -6,64 +6,10 @@
     <description>Recent content in hello on After-Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Mar 2020 17:36:08 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Sep 2017 04:21:50 +0800</lastBuildDate>
     
 	<atom:link href="/tags/hello/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Reading 20200321 Record</title>
-      <link>/post/reading-20200321-record/</link>
-      <pubDate>Sat, 21 Mar 2020 17:36:08 +0800</pubDate>
-      
-      <guid>/post/reading-20200321-record/</guid>
-      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Reading 20200312 Record</title>
-      <link>/post/reading-20200312-record/</link>
-      <pubDate>Thu, 12 Mar 2020 23:59:41 +0800</pubDate>
-      
-      <guid>/post/reading-20200312-record/</guid>
-      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Reading 20200220 Record</title>
-      <link>/post/reading-20200220-record/</link>
-      <pubDate>Thu, 20 Feb 2020 19:06:17 +0800</pubDate>
-      
-      <guid>/post/reading-20200220-record/</guid>
-      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Reading 20200211 Record</title>
-      <link>/post/reading-20200211-record/</link>
-      <pubDate>Tue, 11 Feb 2020 20:01:25 +0800</pubDate>
-      
-      <guid>/post/reading-20200211-record/</guid>
-      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Reading 20191228 Record</title>
-      <link>/post/reading-20191228-record/</link>
-      <pubDate>Sat, 28 Dec 2019 17:38:18 +0800</pubDate>
-      
-      <guid>/post/reading-20191228-record/</guid>
-      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Reading 20191219 Record</title>
-      <link>/post/reading-20191219-record/</link>
-      <pubDate>Thu, 19 Dec 2019 18:54:07 +0800</pubDate>
-      
-      <guid>/post/reading-20191219-record/</guid>
-      <description>&lt;p&gt;Before you continue, please take a moment to configure your archetypes.&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>Golang Intro</title>

@@ -9,36 +9,51 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-03-21T17:36:08+08:00</lastmod>
+    <lastmod>2020-06-09T19:57:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/hello/</loc>
-    <lastmod>2020-03-21T17:36:08+08:00</lastmod>
+    <loc>/tags/library/</loc>
+    <lastmod>2020-06-09T19:57:38+08:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-03-21T17:36:08+08:00</lastmod>
+    <lastmod>2020-06-09T19:57:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/reading-20200321-record/</loc>
-    <lastmod>2020-03-21T17:36:08+08:00</lastmod>
+    <loc>/categories/reading/</loc>
+    <lastmod>2020-06-09T19:57:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/reading/</loc>
+    <lastmod>2020-06-09T19:57:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/reading-20200609-record/</loc>
+    <lastmod>2020-06-09T19:57:38+08:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-03-21T17:36:08+08:00</lastmod>
+    <lastmod>2020-06-09T19:57:38+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/technology/</loc>
-    <lastmod>2020-03-21T17:36:08+08:00</lastmod>
+    <loc>/post/reading-20200512-record/</loc>
+    <lastmod>2020-05-12T16:42:48+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/world/</loc>
+    <loc>/post/reading-20200419-record/</loc>
+    <lastmod>2020-04-19T15:37:45+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/reading-20200321-record/</loc>
     <lastmod>2020-03-21T17:36:08+08:00</lastmod>
   </url>
   
@@ -68,21 +83,6 @@
   </url>
   
   <url>
-    <loc>/tags/library/</loc>
-    <lastmod>2019-12-14T20:13:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/reading/</loc>
-    <lastmod>2019-12-14T20:13:35+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/reading/</loc>
-    <lastmod>2019-12-14T20:13:35+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/reading-20191214-record/</loc>
     <lastmod>2019-12-14T20:13:35+08:00</lastmod>
   </url>
@@ -104,6 +104,11 @@
   
   <url>
     <loc>/post/python-html-parsing/</loc>
+    <lastmod>2019-12-13T20:13:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/technology/</loc>
     <lastmod>2019-12-13T20:13:58+08:00</lastmod>
   </url>
   
@@ -245,11 +250,6 @@
   <url>
     <loc>/post/vim-plugins-markdown/</loc>
     <lastmod>2018-06-05T21:07:12+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/go/</loc>
-    <lastmod>2018-06-03T23:30:28+08:00</lastmod>
   </url>
   
   <url>
@@ -578,6 +578,16 @@
   </url>
   
   <url>
+    <loc>/tags/hello/</loc>
+    <lastmod>2017-09-24T04:21:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/world/</loc>
+    <lastmod>2017-09-24T04:21:50+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/markdown-syntax-intro/</loc>
     <lastmod>2017-09-24T03:53:39+08:00</lastmod>
   </url>
@@ -639,6 +649,11 @@
   
   <url>
     <loc>/post/hugoisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
