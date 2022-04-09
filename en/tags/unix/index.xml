@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>unix on Documentation for Hugo Learn Theme</title>
+    <link>/en/tags/unix/</link>
+    <description>Recent content in unix on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 11 Apr 2018 23:30:18 +0800</lastBuildDate><atom:link href="/en/tags/unix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tool Commandline Autojump</title>
+      <link>/en/posts/tool-commandline-autojump/</link>
+      <pubDate>Wed, 11 Apr 2018 23:30:18 +0800</pubDate>
+      
+      <guid>/en/posts/tool-commandline-autojump/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/wting/autojump&#34; title=&#34;easily navigate directories from the command line&#34;&gt;autojump&lt;/a&gt; 能快速的切換資料夾。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

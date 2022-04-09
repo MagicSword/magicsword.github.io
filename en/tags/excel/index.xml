@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>excel on Documentation for Hugo Learn Theme</title>
+    <link>/en/tags/excel/</link>
+    <description>Recent content in excel on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 04 May 2018 16:55:05 +0800</lastBuildDate><atom:link href="/en/tags/excel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Udemy Python Easily Migrate Excel Files to a Database</title>
+      <link>/en/posts/udemy-python-easily-migrate-excel-files-to-a-database/</link>
+      <pubDate>Fri, 04 May 2018 16:55:05 +0800</pubDate>
+      
+      <guid>/en/posts/udemy-python-easily-migrate-excel-files-to-a-database/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.udemy.com/python-easily-migrate-excel-files-to-a-database/learn/v4/overview&#34;&gt;Python: Easily migrate Excel files to a database&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;是個 約35 min的免費課程，花點時間來看看。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
